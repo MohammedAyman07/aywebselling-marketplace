@@ -1,8 +1,8 @@
 ============================================================
   ShopZone - E-Commerce Website Template
-  Developed by AymanInfotech
-  Contact: aymaninfotechs@gmail.com
-  Website: https://aymaninfotech.com
+  Developed by aywebselling
+  Contact: aywebsellings@gmail.com
+  Website: https://aywebselling.com
 ============================================================
 
 THANK YOU FOR CHOOSING THIS TEMPLATE!
@@ -16,8 +16,8 @@ template built with HTML5, CSS3, Bootstrap 5, and JavaScript.
 ------------------------------------------------------------
   Template Name : ShopZone E-Commerce Template
   Version       : 1.0.0
-  Developer     : AymanInfotech
-  Contact Email : aymaninfotechs@gmail.com
+  Developer     : aywebselling
+  Contact Email : aywebsellings@gmail.com
   License       : For personal and commercial use
   Bootstrap     : v5.3.2
   Icons         : Bootstrap Icons v1.11.3
@@ -71,7 +71,7 @@ TEXT CONTENT:
   Example: <h1>Your New Heading</h1>
 
 CONTACT EMAIL:
-  Search for "aymaninfotechs@gmail.com" across all pages
+  Search for "aywebsellings@gmail.com" across all pages
   and replace it with your own email address.
 
 BRAND NAME:
@@ -204,11 +204,11 @@ Recommended Hosting Providers:
 
 If you need help or have any questions, feel free to reach out:
 
-  Email: aymaninfotechs@gmail.com
+  Email: aywebsellings@gmail.com
 
 We aim to respond within 24 hours.
 
 ============================================================
   Thank you for using ShopZone Template!
-  © 2026 AymanInfotech. All rights reserved.
+  © 2026 aywebselling. All rights reserved.
 ============================================================

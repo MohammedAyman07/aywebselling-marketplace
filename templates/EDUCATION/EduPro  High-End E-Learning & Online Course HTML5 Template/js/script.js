@@ -1,7 +1,7 @@
 /**
  * Education Website Template
- * Developed by AymanInfotech
- * Contact: aymaninfotechs@gmail.com
+ * Developed by aywebselling
+ * Contact: aywebsellings@gmail.com
  */
 
 (function () {

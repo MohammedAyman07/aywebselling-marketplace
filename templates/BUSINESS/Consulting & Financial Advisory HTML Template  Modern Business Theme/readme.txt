@@ -36,4 +36,4 @@ Credits:
 - Images from Unsplash (https://unsplash.com) - For demo purposes only.
 
 Support:
-For assistance, contact AymanInfotech at aymaninfotechs@gmail.com
+For assistance, contact aywebselling at aywebsellings@gmail.com

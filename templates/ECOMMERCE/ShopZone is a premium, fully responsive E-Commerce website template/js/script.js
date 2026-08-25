@@ -1,7 +1,7 @@
 /* =====================================================
    ShopZone E-Commerce Template - Main Script
-   Developed by AymanInfotech
-   Contact: aymaninfotechs@gmail.com
+   Developed by aywebselling
+   Contact: aywebsellings@gmail.com
    ===================================================== */
 
 'use strict';

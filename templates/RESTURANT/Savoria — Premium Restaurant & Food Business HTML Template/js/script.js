@@ -1,6 +1,6 @@
 /* ============================================
    Restaurant Website Template — script.js
-   Developed by AymanInfotech
+   Developed by aywebselling
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {

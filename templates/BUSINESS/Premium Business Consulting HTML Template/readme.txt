@@ -1,11 +1,11 @@
 ================================================================
  Business Website Template
- Developed by AymanInfotech
+ Developed by aywebselling
 ================================================================
 
 Thank you for choosing this template!
 
-Contact Email: aymaninfotechs@gmail.com
+Contact Email: aywebsellings@gmail.com
 
 ================================================================
  TEMPLATE OVERVIEW
@@ -132,7 +132,7 @@ And update the --font variable in css/style.css:
 
 --- UPDATE CONTACT EMAIL ---
 Search and replace all instances of:
-  aymaninfotechs@gmail.com
+  aywebsellings@gmail.com
 with your actual email address.
 
 --- GOOGLE MAPS ---
@@ -205,7 +205,7 @@ For FTP upload:
 
 For questions, customization services, or bug reports:
 
-  Email: aymaninfotechs@gmail.com
+  Email: aywebsellings@gmail.com
 
 We typically respond within 24 business hours.
 
@@ -222,7 +222,7 @@ We typically respond within 24 business hours.
  COPYRIGHT
 ================================================================
 
-© 2026 AymanInfotech. All rights reserved.
+© 2026 aywebselling. All rights reserved.
 
 This template is provided for use under the standard
 template license terms. Redistribution or resale of the

@@ -1,12 +1,12 @@
 Medical Website Template
-Developed by AymanInfotech
+Developed by aywebselling
 
 ========================================
 THANK YOU FOR PURCHASING THIS TEMPLATE!
 ========================================
 
 Contact Email:
-aymaninfotechs@gmail.com
+aywebsellings@gmail.com
 
 ----------------------------------------
 TEMPLATE OVERVIEW
@@ -15,8 +15,8 @@ TEMPLATE OVERVIEW
 Template Name : MediCare – Professional Medical & Healthcare Website Template | HTML5, Bootstrap 5
 Version       : 1.0.0
 Release Date  : 2026
-Author        : AymanInfotech
-Contact       : aymaninfotechs@gmail.com
+Author        : aywebselling
+Contact       : aywebsellings@gmail.com
 
 Technologies Used:
 - HTML5
@@ -96,7 +96,7 @@ HOW TO CHANGE CONTACT INFORMATION
 
 Search and replace the following in all HTML files:
 
-- "aymaninfotechs@gmail.com" → your email
+- "aywebsellings@gmail.com" → your email
 - "+1 (555) 123-4567"        → your phone
 - Map src URL                → your Google Maps embed URL
 
@@ -157,10 +157,10 @@ SUPPORT
 
 For support and customization inquiries:
 
-Email: aymaninfotechs@gmail.com
+Email: aywebsellings@gmail.com
 
 We aim to respond within 24-48 hours.
 
 ========================================
-Thank you for choosing AymanInfotech!
+Thank you for choosing aywebselling!
 ========================================

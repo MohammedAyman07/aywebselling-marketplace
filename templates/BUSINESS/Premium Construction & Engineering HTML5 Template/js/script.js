@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Simulate form submission
             setTimeout(() => {
-                alert('Thank you for your message! We will get back to you shortly at aymaninfotechs@gmail.com.');
+                alert('Thank you for your message! We will get back to you shortly at aywebsellings@gmail.com.');
                 contactForm.reset();
                 btn.innerHTML = originalText;
                 btn.disabled = false;

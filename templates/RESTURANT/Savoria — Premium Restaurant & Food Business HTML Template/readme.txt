@@ -1,10 +1,10 @@
 Restaurant Website Template
-Developed by AymanInfotech
+Developed by aywebselling
 
 Thank you for purchasing this template.
 
 Contact Email:
-aymaninfotechs@gmail.com
+aywebsellings@gmail.com
 
 
 HOW TO EDIT THE WEBSITE
@@ -68,4 +68,4 @@ SUPPORT
 
 If you need support please contact:
 
-Email: aymaninfotechs@gmail.com
+Email: aywebsellings@gmail.com

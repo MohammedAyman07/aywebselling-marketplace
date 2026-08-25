@@ -38,6 +38,6 @@ CUSTOMIZATION
 SUPPORT
 ----------------
 If you have any questions or need custom integration back-end services, feel free to contact us at:
-aymaninfotechs@gmail.com
+aywebsellings@gmail.com
 
 Enjoy the template!

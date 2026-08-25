@@ -1,7 +1,7 @@
 /**
  * =========================================================
  * VIDEOGRAPHER PORTFOLIO TEMPLATE - script.js
- * Author: Ayman InfoTechs | aymaninfotechs@gmail.com
+ * Author: aywebsellings | aywebsellings@gmail.com
  * Version: 1.0
  * Description: Core JavaScript for cinematic portfolio
  * =========================================================

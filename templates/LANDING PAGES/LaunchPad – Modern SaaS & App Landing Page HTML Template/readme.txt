@@ -1,9 +1,9 @@
 ============================================================
   Landing Page Website Template
-  Developed by AymanInfotech
+  Developed by aywebselling
 
   Thank you for purchasing this template!
-  Contact Email: aymaninfotechs@gmail.com
+  Contact Email: aywebsellings@gmail.com
 ============================================================
 
 GETTING STARTED
@@ -83,7 +83,7 @@ Copy, modify, or delete these blocks as needed.
 
 HOW TO UPDATE CONTACT EMAIL
 ---------------------------
-Search for "aymaninfotechs@gmail.com" in index.html and replace
+Search for "aywebsellings@gmail.com" in index.html and replace
 all instances with your own email address.
 
 
@@ -132,11 +132,11 @@ SUPPORT
 -------
 For questions, customization requests, or bug reports:
 
-  Email: aymaninfotechs@gmail.com
+  Email: aywebsellings@gmail.com
 
 We typically respond within 24 hours.
 
 
 ============================================================
-  © 2025 AymanInfotech – All Rights Reserved
+  © 2025 aywebselling – All Rights Reserved
 ============================================================

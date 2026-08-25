@@ -1,6 +1,6 @@
 /* ============================================================
    Freelancer Portfolio Template — script.js
-   Author: Ayman InfoTechs | aymaninfotechs@gmail.com
+   Author: aywebsellings | aywebsellings@gmail.com
    ============================================================ */
 
 'use strict';

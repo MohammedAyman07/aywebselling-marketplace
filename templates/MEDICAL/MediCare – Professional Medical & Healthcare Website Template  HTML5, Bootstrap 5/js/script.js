@@ -1,7 +1,7 @@
 /*!
  * MediCare – Medical Website Template
  * script.js
- * Developed by AymanInfotech | aymaninfotechs@gmail.com
+ * Developed by aywebselling | aywebsellings@gmail.com
  */
 
 (function () {

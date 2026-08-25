@@ -1,5 +1,5 @@
 /*!
- * AYMAN INFOTECH - Premium Portfolio Template
+ * aywebselling - Premium Portfolio Template
  * Main JavaScript File
  * Version: 1.0
  */

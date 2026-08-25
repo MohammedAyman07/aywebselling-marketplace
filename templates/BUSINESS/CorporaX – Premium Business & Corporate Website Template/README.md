@@ -183,8 +183,8 @@ For the hero background:
 
 For support, customization requests, or licensing inquiries:
 
-- 📧 **Email:** aymaninfotechs@gmail.com
-- 🌐 **Website:** www.aymaninfotech.com
+- 📧 **Email:** aywebsellings@gmail.com
+- 🌐 **Website:** www.aywebselling.com
 
 
 ---
@@ -193,8 +193,8 @@ For support, customization requests, or licensing inquiries:
 
 - **Fonts:** [Google Fonts](https://fonts.google.com) – Inter & Poppins
 - **Icons:** [Font Awesome 6](https://fontawesome.com)
-- **Template:** CorporaX by [AymanInfotech](https://www.aymaninfotech.com)
+- **Template:** CorporaX by [aywebselling](https://www.aywebselling.com)
 
 ---
 
-© 2026 AymanInfotech. All rights reserved.
+© 2026 aywebselling. All rights reserved.

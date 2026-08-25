@@ -1,6 +1,6 @@
 Education Website Template
-Developed by: AymanInfotech
-Contact Email: aymaninfotechs@gmail.com
+Developed by: aywebselling
+Contact Email: aywebsellings@gmail.com
 Version: 1.0
 ==================================================
 
@@ -116,7 +116,7 @@ SUPPORT & CONTACT
 ==================================================
 
 For support, customization, or questions:
-Email: aymaninfotechs@gmail.com
+Email: aywebsellings@gmail.com
 
 ==================================================
 LICENSE
@@ -124,7 +124,7 @@ LICENSE
 
 This template is for use in a single project.
 For extended license and unlimited use, please
-contact us at aymaninfotechs@gmail.com
+contact us at aywebsellings@gmail.com
 
-(c) 2026 AymanInfotech. All Rights Reserved.
+(c) 2026 aywebselling. All Rights Reserved.
 ==================================================

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories | aywebselling</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ── Type Selector Buttons ── */
+        .type-selector {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .type-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            padding: 1.25rem 2.5rem;
+            border-radius: var(--border-radius);
+            border: 2px solid var(--color-border);
+            background: white;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--color-text);
+            transition: all 0.3s ease;
+            font-family: 'Outfit', sans-serif;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            min-width: 240px;
+            justify-content: center;
+        }
+
+        .type-btn i {
+            font-size: 1.6rem;
+        }
+
+        .type-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .type-btn.html-btn:hover,
+        .type-btn.html-btn.active {
+            background: linear-gradient(135deg, #e44d26 0%, #f16529 100%);
+            border-color: #e44d26;
+            color: white;
+        }
+
+        .type-btn.wp-btn:hover,
+        .type-btn.wp-btn.active {
+            background: linear-gradient(135deg, #21759b 0%, #00a0d2 100%);
+            border-color: #21759b;
+            color: white;
+        }
+
+        /* ── Sub-category Panel ── */
+        .sub-panel {
+            display: none;
+            animation: fadeIn 0.35s ease;
+        }
+
+        .sub-panel.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(16px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .panel-heading {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .panel-heading h2 {
+            font-size: 1.6rem;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .panel-heading .badge-type {
+            display: inline-block;
+            padding: 0.3rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .badge-html {
+            background: #fce8e4;
+            color: #e44d26;
+        }
+
+        .badge-wp {
+            background: #e0f2fe;
+            color: #21759b;
+        }
+
+        /* ── Category Cards ── */
+        .category-card {
+            background: white;
+            border: 1px solid var(--color-border);
+            padding: 2.5rem 1.5rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            height: 100%;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .category-card.html-card:hover {
+            border-color: #e44d26;
+        }
+
+        .category-card.wp-card:hover {
+            border-color: #21759b;
+        }
+
+        .category-icon {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin: 0 auto 1.25rem;
+            background-color: #f8fafc;
+            transition: all 0.3s;
+        }
+
+        .html-card .category-icon {
+            color: #e44d26;
+        }
+
+        .wp-card .category-icon {
+            color: #21759b;
+        }
+
+        .html-card:hover .category-icon {
+            background-color: #e44d26;
+            color: white;
+        }
+
+        .wp-card:hover .category-icon {
+            background-color: #21759b;
+            color: white;
+        }
+
+        .category-card h3 {
+            font-size: 1rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .category-card p {
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                AYWEB<span>SELLING</span>
+            </a>
+
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link">All Products</a></li>
+                <li><a href="categories.html" class="nav-link active">Categories</a></li>
+                <li><a href="free.html" class="nav-link">Freebies</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="products.html" class="btn btn-primary btn-sm">Browse Shop</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="section text-center" style="background-color: #f8fafc; padding: 4rem 0 2rem;">
+        <div class="container">
+            <h1>Browse Categories</h1>
+            <p class="text-muted">Choose a product type to explore all available categories.</p>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <section class="section">
+        <div class="container">
+
+            <!-- ── Step 1: Two type buttons ── -->
+            <div class="type-selector">
+                <button class="type-btn html-btn" id="btn-html" onclick="showPanel('html')">
+                    <i class="fab fa-html5"></i> HTML Templates
+                </button>
+                <button class="type-btn wp-btn" id="btn-wp" onclick="showPanel('wp')">
+                    <i class="fab fa-HTML"></i> HTML Themes
+                </button>
+            </div>
+
+            <!-- ── Step 2: HTML Sub-categories ── -->
+            <div class="sub-panel" id="panel-html">
+                <div class="panel-heading">
+                    <span class="badge-type badge-html"><i class="fab fa-html5"></i> HTML Templates</span>
+                    <h2>Browse HTML Template Categories</h2>
+                    <p class="text-muted">Click any category to view matching HTML templates.</p>
+                </div>
+                <div class="d-grid grid-cols-3 gap-lg">
+
+                    <a href="products.html?type=html&cat=business" class="category-card html-card">
+                        <div class="category-icon"><i class="fas fa-briefcase"></i></div>
+                        <h3>Business</h3>
+                        <p class="text-muted">Corporate, agency & consulting templates.</p>
+                    </a>
+
+                    <a href="products.html?type=html&cat=portfolio" class="category-card html-card">
+                        <div class="category-icon"><i class="fas fa-user-tie"></i></div>
+                        <h3>Portfolio</h3>
+                        <p class="text-muted">Showcase your work with style.</p>
+                    </a>
+
+                    <a href="products.html?type=html&cat=ecommerce" class="category-card html-card">
+                        <div class="category-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <h3>E-commerce</h3>
+                        <p class="text-muted">Online store templates with cart functionality.</p>
+                    </a>
+
+                    <a href="products.html?type=html&cat=landing" class="category-card html-card">
+                        <div class="category-icon"><i class="fas fa-rocket"></i></div>
+                        <h3>Landing Pages</h3>
+                        <p class="text-muted">High-conversion landing pages for apps & products.</p>
+                    </a>
+
+                    <a href="products.html?type=html&cat=education" class="category-card html-card">
+                        <div class="category-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>Education</h3>
+                        <p class="text-muted">LMS, university & online course templates.</p>
+                    </a>
+
+                    <a href="products.html?type=html&cat=medical" class="category-card html-card">
+                        <div class="category-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h3>Medical</h3>
+                        <p class="text-muted">Doctors, hospitals & healthcare clinics.</p>
+                    </a>
+
+                    <a href="products.html?type=html&cat=restaurant" class="category-card html-card">
+                        <div class="category-icon"><i class="fas fa-utensils"></i></div>
+                        <h3>Restaurant</h3>
+                        <p class="text-muted">Cafe, restaurant & food delivery templates.</p>
+                    </a>
+
+                    <a href="products.html?type=html&cat=saas" class="category-card html-card">
+                        <div class="category-icon"><i class="fas fa-cloud"></i></div>
+                        <h3>SaaS</h3>
+                        <p class="text-muted">Software, startup & tech dashboards.</p>
+                    </a>
+
+                    <a href="products.html?type=html&cat=blog" class="category-card html-card">
+                        <div class="category-icon"><i class="fas fa-pen-nib"></i></div>
+                        <h3>Blog</h3>
+                        <p class="text-muted">Clean designs for writers & publishers.</p>
+                    </a>
+
+                </div>
+                <div style="text-align:center; margin-top:2.5rem;">
+                    <a href="products.html?type=html" class="btn btn-primary">View All HTML Templates &rarr;</a>
+                </div>
+            </div>
+
+            <!-- ── Step 3: HTML Sub-categories ── -->
+            <div class="sub-panel" id="panel-wp">
+                <div class="panel-heading">
+                    <span class="badge-type badge-wp"><i class="fab fa-HTML"></i> HTML Themes</span>
+                    <h2>Browse HTML Theme Categories</h2>
+                    <p class="text-muted">Click any category to view matching HTML themes.</p>
+                </div>
+                <div class="d-grid grid-cols-3 gap-lg">
+
+                    <a href="products.html?type=HTML&cat=business" class="category-card wp-card">
+                        <div class="category-icon"><i class="fas fa-briefcase"></i></div>
+                        <h3>Business</h3>
+                        <p class="text-muted">Corporate, agency & consulting themes.</p>
+                    </a>
+
+                    <a href="products.html?type=HTML&cat=portfolio" class="category-card wp-card">
+                        <div class="category-icon"><i class="fas fa-user-tie"></i></div>
+                        <h3>Portfolio</h3>
+                        <p class="text-muted">Showcase your work with style.</p>
+                    </a>
+
+                    <a href="products.html?type=HTML&cat=ecommerce" class="category-card wp-card">
+                        <div class="category-icon"><i class="fas fa-shopping-bag"></i></div>
+                        <h3>E-commerce</h3>
+                        <p class="text-muted">WooCommerce-ready shop themes.</p>
+                    </a>
+
+                    <a href="products.html?type=HTML&cat=landing" class="category-card wp-card">
+                        <div class="category-icon"><i class="fas fa-rocket"></i></div>
+                        <h3>Landing Pages</h3>
+                        <p class="text-muted">High-conversion themes for apps & products.</p>
+                    </a>
+
+                    <a href="products.html?type=HTML&cat=education" class="category-card wp-card">
+                        <div class="category-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>Education</h3>
+                        <p class="text-muted">LMS & eLearning HTML themes.</p>
+                    </a>
+
+                    <a href="products.html?type=HTML&cat=medical" class="category-card wp-card">
+                        <div class="category-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h3>Medical</h3>
+                        <p class="text-muted">Doctors, hospitals & healthcare themes.</p>
+                    </a>
+
+                    <a href="products.html?type=HTML&cat=restaurant" class="category-card wp-card">
+                        <div class="category-icon"><i class="fas fa-utensils"></i></div>
+                        <h3>Restaurant</h3>
+                        <p class="text-muted">Cafe, restaurant & food delivery themes.</p>
+                    </a>
+
+                    <a href="products.html?type=HTML&cat=saas" class="category-card wp-card">
+                        <div class="category-icon"><i class="fas fa-cloud"></i></div>
+                        <h3>SaaS</h3>
+                        <p class="text-muted">Software, startup & tech dashboard themes.</p>
+                    </a>
+
+                    <a href="products.html?type=HTML&cat=blog" class="category-card wp-card">
+                        <div class="category-icon"><i class="fas fa-pen-nib"></i></div>
+                        <h3>Blog</h3>
+                        <p class="text-muted">Elegant themes for writers & publishers.</p>
+                    </a>
+
+                </div>
+                <div style="text-align:center; margin-top:2.5rem;">
+                    <a href="products.html?type=HTML" class="btn btn-primary">View All HTML Themes &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem; display: block;">
+                        AYWEB<span>SELLING</span>
+                    </a>
+                    <p style="color: #94a3b8; margin-bottom: 1.5rem;">
+                        Your destination for premium HTML templates and HTML themes.
+                    </p>
+
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="free.html">Free Templates</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li style="color: #94a3b8;"><i class="fas fa-envelope"
+                                style="margin-right:0.5rem;"></i>support@aywebselling.com</li>
+                        <li style="color: #94a3b8;"><i class="fas fa-map-marker-alt"
+                                style="margin-right:0.5rem;"></i>Global Digital Service</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                style="border-top: 1px solid #334155; margin-top: 3rem; padding-top: 1.5rem; text-align: center; color: #64748b; font-size: 0.875rem;">
+                &copy; 2026 aywebselling. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        function showPanel(type) {
+            // Hide all panels
+            document.querySelectorAll('.sub-panel').forEach(p => p.classList.remove('active'));
+            // Remove active from both buttons
+            document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
+
+            // Show selected panel & mark button active
+            document.getElementById('panel-' + type).classList.add('active');
+            document.getElementById('btn-' + type).classList.add('active');
+
+            // Smooth scroll to sub-categories
+            document.getElementById('panel-' + type).scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Auto-open panel based on URL hash e.g. categories.html#html or categories.html#wp
+        window.addEventListener('DOMContentLoaded', function () {
+            const hash = window.location.hash.replace('#', '');
+            if (hash === 'html' || hash === 'wp') {
+                showPanel(hash);
+            }
+        });
+    </script>
+</body>
+
+</html>

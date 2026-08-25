@@ -1,5 +1,5 @@
 # ⚡ Alex Morgan — Premium Portfolio Template
-### Version 1.0 | By **Ayman Infotech**
+### Version 1.0 | By **aywebselling**
 
 A modern, premium, marketplace-ready portfolio website template designed for developers, designers, freelancers, AI engineers, students, agencies, and creators.
 
@@ -245,7 +245,7 @@ This template is ready for sale on:
 - **ThemeForest** — Meets Envato quality requirements
 - **TemplateMonster** — Fully responsive and well-coded
 - **Creative Market** — Premium design quality
-- **Ayman Infotech Store** — Ready for direct sale
+- **aywebselling Store** — Ready for direct sale
 
 **Key selling points:**
 - Zero dependencies (no jQuery, no Bootstrap)
@@ -268,17 +268,17 @@ This template is ready for sale on:
 
 ## 📞 Support
 
-**Template by Ayman Infotech**
+**Template by aywebselling**
 
-- 📧 Email: aymaninfotechs@gmail.com
-- 🌐 Website: www.aymaninfotech.com
+- 📧 Email: aywebsellings@gmail.com
+- 🌐 Website: www.aywebselling.com
 - 
 
 ---
 
 ## 📜 Credits
 
-- **Design & Code:** Ayman Infotech
+- **Design & Code:** aywebselling
 - **Fonts:** [Inter](https://fonts.google.com/specimen/Inter) + [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk) via Google Fonts
 - **Icons:** Unicode Emoji (no external dependency)
 - **No external CSS frameworks** — 100% custom CSS
@@ -296,4 +296,4 @@ This template is ready for sale on:
 
 ---
 
-*Crafted with ❤️ by Ayman Infotech — making quality templates accessible to everyone.*
+*Crafted with ❤️ by aywebselling — making quality templates accessible to everyone.*

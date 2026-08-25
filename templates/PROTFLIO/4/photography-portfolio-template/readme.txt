@@ -24,7 +24,7 @@ A modern, minimal, dark-themed photographer portfolio website template. Built wi
 
 ## Usage Instructions
 1. Open any of the HTML files in your browser.
-2. Customize the content (heading texts, descriptions, email to `aymaninfotechs@gmail.com`).
+2. Customize the content (heading texts, descriptions, email to `aywebsellings@gmail.com`).
 3. Replace the Unsplash image sources with your own optimized photography for improved load times. Note: Currently, images are loaded statically via high-quality Unsplash URLs to instantly demonstrate template beauty out-of-the-box.
 
 ## Credits & Libraries Used
@@ -34,4 +34,4 @@ A modern, minimal, dark-themed photographer portfolio website template. Built wi
 - **GLightbox**: https://biati-digital.github.io/glightbox/
 
 ---
-*Created for aymaninfotechs@gmail.com*
+*Created for aywebsellings@gmail.com*

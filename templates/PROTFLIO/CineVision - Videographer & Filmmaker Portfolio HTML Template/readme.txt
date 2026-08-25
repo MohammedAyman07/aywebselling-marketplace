@@ -1,7 +1,7 @@
 ==========================================
  CINEVISION - VIDEOGRAPHER PORTFOLIO TEMPLATE
- Author: Ayman InfoTech
- Email:  aymaninfotechs@gmail.com
+ Author: aywebselling
+ Email:  aywebsellings@gmail.com
  Version: 1.0
 ==========================================
 
@@ -139,7 +139,7 @@ CREDITS
 
 CONTACT & SUPPORT
 -----------------
-Email: aymaninfotechs@gmail.com
+Email: aywebsellings@gmail.com
 
 ==========================================
          Thank you for using CineVision!

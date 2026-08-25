@@ -2,7 +2,7 @@
   DevPortfolio — Premium Developer Portfolio HTML Template
   Version : 1.0
   Author  : Portfolio Template
-  Contact : aymaninfotechs@gmail.com
+  Contact : aywebsellings@gmail.com
 ================================================================
 
 DESCRIPTION

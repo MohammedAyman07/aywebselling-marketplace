@@ -39,4 +39,4 @@ Credits:
 - Grid/Framework: Bootstrap 5
 
 Support:
-For custom modifications or inquiries, please contact: aymaninfotechs@gmail.com
+For custom modifications or inquiries, please contact: aywebsellings@gmail.com

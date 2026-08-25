@@ -1,8 +1,8 @@
 /* ==========================================================
    Template Name: Corporate Business Template
    Description: Modern corporate business website template
-   Author: AymanInfotechs
-   Author Email: aymaninfotechs@gmail.com
+   Author: aywebsellings
+   Author Email: aywebsellings@gmail.com
    Version: 1.0
    ========================================================== */
 

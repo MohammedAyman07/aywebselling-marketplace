@@ -45,4 +45,4 @@ The template currently uses high-quality CSS gradient placeholders and FontAweso
 
 Support
 -------
-For any questions or support, please contact: aymaninfotechs@gmail.com
+For any questions or support, please contact: aywebsellings@gmail.com

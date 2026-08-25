@@ -31,5 +31,5 @@ Setup Instructions:
 4. Add your own images inside the images/ folder and correct the paths securely if replacing the CDN URLs.
 
 Contact Information:
-Email: aymaninfotechs@gmail.com
+Email: aywebsellings@gmail.com
 

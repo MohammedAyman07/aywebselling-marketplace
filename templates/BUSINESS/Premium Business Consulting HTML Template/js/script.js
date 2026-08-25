@@ -1,6 +1,6 @@
 /* ============================================================
-   AymanInfotech Business Template - script.js
-   Author: AymanInfotech | aymaninfotechs@gmail.com
+   aywebselling Business Template - script.js
+   Author: aywebselling | aywebsellings@gmail.com
    ============================================================ */
 
 (function () {

@@ -3,7 +3,7 @@
   Version: 1.0
   Released: 2025
   Author: Premium Templates
-  Contact: aymaninfotechs@gmail.com
+  Contact: aywebsellings@gmail.com
 ================================================================================
 
 THANK YOU FOR DOWNLOADING ARTVISTA!
@@ -77,7 +77,7 @@ GALLERY IMAGES
   - concept
 
 CONTACT EMAIL
-  Replace "aymaninfotechs@gmail.com" with your own email address across all pages.
+  Replace "aywebsellings@gmail.com" with your own email address across all pages.
   To make the contact form actually send emails, integrate a backend service
   such as Formspree, EmailJS, or your own PHP mailer.
   
@@ -155,7 +155,7 @@ You MAY NOT:
   - Redistribute or resell this template as a standalone product
   - Claim original authorship of the template code
 
-For licensing inquiries: aymaninfotechs@gmail.com
+For licensing inquiries: aywebsellings@gmail.com
 
 
 --------------------------------------------------------------------------------
@@ -163,7 +163,7 @@ SUPPORT
 --------------------------------------------------------------------------------
 
 For questions or customization help, please contact:
-Email: aymaninfotechs@gmail.com
+Email: aywebsellings@gmail.com
 
 ================================================================================
   Thank you for choosing ArtVista – Make your art shine! 🎨

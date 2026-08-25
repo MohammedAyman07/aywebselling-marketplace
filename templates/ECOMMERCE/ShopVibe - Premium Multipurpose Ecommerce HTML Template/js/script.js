@@ -1,7 +1,7 @@
 /**
  * ShopVibe - Premium Ecommerce Template
  * Main JavaScript File
- * Author: AymanInfotechs | aymaninfotechs@gmail.com
+ * Author: aywebsellings | aywebsellings@gmail.com
  */
 
 'use strict';

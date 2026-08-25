@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Pro - Business Theme | aywebselling</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .product-gallery {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            margin-bottom: 2rem;
+            border: 1px solid var(--color-border);
+        }
+
+        .main-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 100px;
+        }
+
+        .price-box {
+            background: white;
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .price-tag {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-list li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-list i {
+            color: var(--color-secondary);
+            margin-right: 0.75rem;
+            width: 20px;
+        }
+
+        .tech-tag {
+            background: #f1f5f9;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            color: var(--color-text-muted);
+            display: inline-block;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                AYWEB<span>SELLING</span>
+            </a>
+
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link active">All Products</a></li>
+                <li><a href="categories.html" class="nav-link">Categories</a></li>
+                <li><a href="free.html" class="nav-link">Freebies</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="products.html" class="btn btn-primary btn-sm">Browse Shop</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div style="background: #f8fafc; padding: 1rem 0; border-bottom: 1px solid var(--color-border);">
+        <div class="container">
+            <p class="text-muted" style="font-size: 0.875rem;">
+                <a href="index.html">Home</a> / <a href="products.html">Products</a> / <span
+                    style="color: var(--color-text-main);">Corporate Pro</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Product Content -->
+    <section class="section" style="padding-top: 2rem;">
+        <div class="container d-grid" style="grid-template-columns: 2fr 1fr; gap: 3rem;">
+
+            <!-- Main Content Area -->
+            <div>
+                <header class="mb-4">
+                    <h1 class="mb-2">Corporate Pro - Modern Business HTML Template</h1>
+                    <div class="d-flex items-center gap-md">
+                        <div class="stars" style="color: #f59e0b; font-size: 0.9rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-muted">v2.1 Updated</span>
+                        <span class="badge badge-hot">Best Seller</span>
+                    </div>
+                </header>
+
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <i class="fas fa-desktop" style="font-size: 5rem; opacity: 0.5;"></i>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <h3>Description</h3>
+                    <p class="text-muted mb-3">
+                        Corporate Pro is a premium, high-quality HTML5 template designed specifically for business
+                        agencies, consulting firms, and corporate websites. Built with the latest web technologies, it
+                        offers a clean, modern design that establishes trust and professionalism with your clients.
+                    </p>
+                    <p class="text-muted">
+                        It includes 15+ pre-made pages, various home page variations, and a fully responsive layout that
+                        looks great on mobile devices. The code is clean, well-commented, and W3C valid, making it easy
+                        to customize even for beginners.
+                    </p>
+                </div>
+
+                <div class="mb-5">
+                    <h3>Key Features</h3>
+                    <div class="d-grid grid-cols-2 gap-md" style="margin-top: 1rem;">
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Fully Responsive Design</li>
+                            <li><i class="fas fa-check"></i> W3C Valid HTML5 & CSS3</li>
+                            <li><i class="fas fa-check"></i> SEO Optimized Structure</li>
+                            <li><i class="fas fa-check"></i> 5+ Home Page Variations</li>
+                        </ul>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Google Fonts Integration</li>
+                            <li><i class="fas fa-check"></i> Smooth Animations</li>
+                            <li><i class="fas fa-check"></i> Working Contact Form</li>
+                            <li><i class="fas fa-check"></i> Cross-Browser Compatible</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <h3>Technology Stack</h3>
+                    <div class="d-flex" style="flex-wrap: wrap; margin-top: 1rem;">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript / ES6</span>
+                        <span class="tech-tag">Bootstrap 5</span>
+                        <span class="tech-tag">FontAwesome</span>
+                        <span class="tech-tag">Sass</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="price-box">
+                    <div class="price-tag">$49</div>
+                    <p class="text-muted mb-4">Instant download &mdash; use on unlimited projects.</p>
+
+                    <div class="d-grid gap-md">
+                        <a href="demo_folder/business-pro/index.html" target="_blank"
+                            class="btn btn-secondary btn-block">
+                            <i class="fas fa-eye" style="margin-right: 0.5rem;"></i> Live Preview
+                        </a>
+                        <a href="https://gumroad.com" target="_blank" class="btn btn-primary btn-block">
+                            <i class="fas fa-shopping-cart" style="margin-right: 0.5rem;"></i> Buy Now
+                        </a>
+                    </div>
+
+                    <hr style="margin: 2rem 0; border: none; border-top: 1px solid var(--color-border);">
+
+                    <div class="mb-3">
+                        <strong><i class="fas fa-shield-alt text-primary margin-right: 0.5rem;"></i> Secure
+                            Checkout</strong>
+                        <p class="text-muted" style="font-size: 0.875rem; margin-top: 0.25rem;">256-bit SSL Encrypted
+                            payment.</p>
+                    </div>
+
+                    <div>
+                        <strong><i class="fas fa-mobile-alt text-primary" style="margin-right: 0.5rem;"></i> Fully
+                            Responsive</strong>
+                        <p class="text-muted" style="font-size: 0.875rem; margin-top: 0.25rem;">Looks flawless on all
+                            devices &mdash; desktop, tablet &amp; mobile.</p>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem; display: block;">
+                        AYWEB<span>SELLING</span>
+                    </a>
+                    <p style="color: #94a3b8; margin-bottom: 1.5rem;">
+                        Your destination for premium HTML templates and HTML themes.
+                    </p>
+
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="free.html">Free Templates</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li style="color: #94a3b8;"><i class="fas fa-envelope margin-right: 0.5rem;"></i>
+                            support@aywebselling.com</li>
+                        <li style="color: #94a3b8;"><i class="fas fa-map-marker-alt margin-right: 0.5rem;"></i> Global
+                            Digital Service</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                style="border-top: 1px solid #334155; margin-top: 3rem; padding-top: 1.5rem; text-align: center; color: #64748b; font-size: 0.875rem;">
+                &copy; 2026 aywebselling. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

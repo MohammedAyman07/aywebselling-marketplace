@@ -5,8 +5,8 @@
 
 Version    : 1.0.0
 Released   : March 2026
-Author     : Ayman InfoTech
-Email      : aymaninfotechs@gmail.com
+Author     : aywebselling
+Email      : aywebsellings@gmail.com
 License    : For personal & commercial use
 
 ================================================================================
@@ -88,7 +88,7 @@ freelancer-portfolio-template/
   ✅ Smooth scroll for all anchor links
   ✅ Animated hero section with floating elements & blobs
   ✅ Animated skill progress bars (triggered on scroll)
-  ✅ Portfolio project filter (all / web / design / marketing / seo / wordpress)
+  ✅ Portfolio project filter (all / web / design / marketing / seo / HTML)
   ✅ Counter animation on hero statistics
   ✅ Hover effects on all cards, buttons, and icons
   ✅ Contact form with simulated submission + toast notification
@@ -135,7 +135,7 @@ freelancer-portfolio-template/
      <img src="images/your-photo.jpg" alt="Your Name" />
 
 3. CONTACT EMAIL
-   Search for "aymaninfotechs@gmail.com" across all files and replace with
+   Search for "aywebsellings@gmail.com" across all files and replace with
    your own email address.
 
 4. SOCIAL MEDIA LINKS
@@ -189,7 +189,7 @@ freelancer-portfolio-template/
   If you have any questions, customization needs, or found a bug, feel free
   to reach out:
 
-  📧 Email : aymaninfotechs@gmail.com
+  📧 Email : aywebsellings@gmail.com
 
 ================================================================================
   CHANGELOG
@@ -202,5 +202,5 @@ freelancer-portfolio-template/
   - All sections and interactive features implemented
 
 ================================================================================
-  © 2026 Ayman InfoTech. All rights reserved.
+  © 2026 aywebselling. All rights reserved.
 ================================================================================

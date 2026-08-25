@@ -1,7 +1,7 @@
 /**
  * SaaS Website Template - script.js
- * Developed by AymanInfotech
- * Contact: aymaninfotechs@gmail.com
+ * Developed by aywebselling
+ * Contact: aywebsellings@gmail.com
  */
 
 'use strict';

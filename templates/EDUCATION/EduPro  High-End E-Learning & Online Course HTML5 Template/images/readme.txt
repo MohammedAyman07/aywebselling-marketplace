@@ -11,4 +11,4 @@ Supported formats: JPG, PNG, WebP, SVG
 Note: The template uses Unsplash images via CDN in the demo.
 Replace src attributes in HTML files with your own image paths.
 
-Contact: aymaninfotechs@gmail.com
+Contact: aywebsellings@gmail.com

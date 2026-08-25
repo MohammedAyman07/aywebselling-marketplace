@@ -2,8 +2,8 @@
 BLOG WEBSITE TEMPLATE
 InkFlow — Minimal Blog & Magazine HTML Template | Bootstrap 5 | Fully Responsive
 ==============================
-Developed by AymanInfotech
-Email: aymaninfotechs@gmail.com
+Developed by aywebselling
+Email: aywebsellings@gmail.com
 
 Version   : 1.0.0
 Released  : March 2026
@@ -195,7 +195,7 @@ SUPPORT & CONTACT
 For support, feedback, or customization
 requests, please reach out:
 
-  Email: aymaninfotechs@gmail.com
+  Email: aywebsellings@gmail.com
 
 We aim to respond within 24 business hours.
 

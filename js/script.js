@@ -1,0 +1,267 @@
+/**
+ * aywebselling - Premium Animation Engine
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+    initMobileMenu();
+    initCurrencySwitcher();
+    initFilters();
+    initScrollReveal();
+    initButtonRipple();
+    initCardTilt();
+    initHeroOrbs();
+    initSectionHeadings();
+    initParallaxHero();
+});
+
+/* ─────────────────────────────────────────
+   Mobile Menu
+───────────────────────────────────────── */
+function initMobileMenu() {
+    const mobileToggle = document.querySelector('.mobile-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (!mobileToggle || !navMenu) return;
+
+    mobileToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        const icon = mobileToggle.querySelector('i');
+        if (icon) {
+            icon.classList.toggle('fa-bars', !navMenu.classList.contains('active'));
+            icon.classList.toggle('fa-times', navMenu.classList.contains('active'));
+        }
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
+            navMenu.classList.remove('active');
+            const icon = mobileToggle.querySelector('i');
+            if (icon) { icon.classList.add('fa-bars'); icon.classList.remove('fa-times'); }
+        }
+    });
+}
+
+/* ─────────────────────────────────────────
+   Currency Switcher
+───────────────────────────────────────── */
+function initCurrencySwitcher() {
+    const switcher = document.getElementById('currencySwitcher');
+    const btn = document.getElementById('currencyBtn');
+    const flagEl = document.getElementById('currencyFlag') || document.querySelector('.currency-btn .flag');
+    const labelEl = document.getElementById('currencyLabel');
+    const options = document.querySelectorAll('.currency-option');
+
+    if (!switcher || !btn) return;
+
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = switcher.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!switcher.contains(e.target)) {
+            switcher.classList.remove('open');
+            btn.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+    options.forEach(opt => {
+        opt.addEventListener('click', () => {
+            const chosen = opt.dataset.currency;
+            if (!chosen) return;
+            options.forEach(o => o.classList.remove('active'));
+            opt.classList.add('active');
+            if (flagEl) flagEl.textContent = opt.dataset.flag || '';
+            if (labelEl) labelEl.textContent = chosen;
+            switcher.classList.remove('open');
+            btn.setAttribute('aria-expanded', 'false');
+            try { localStorage.setItem('ayman_currency', chosen); } catch (e) { }
+            const exp = new Date(); exp.setDate(exp.getDate() + 30);
+            document.cookie = `ayman_currency=${chosen};expires=${exp.toUTCString()};path=/`;
+        });
+    });
+
+    try {
+        const saved = localStorage.getItem('ayman_currency');
+        if (saved) {
+            const savedOpt = [...options].find(o => o.dataset.currency === saved);
+            if (savedOpt && !savedOpt.classList.contains('active')) {
+                options.forEach(o => o.classList.remove('active'));
+                savedOpt.classList.add('active');
+                if (flagEl) flagEl.textContent = savedOpt.dataset.flag || '';
+                if (labelEl) labelEl.textContent = saved;
+            }
+        }
+    } catch (e) { }
+}
+
+/* ─────────────────────────────────────────
+   Scroll Reveal (IntersectionObserver)
+───────────────────────────────────────── */
+function initScrollReveal() {
+    const targets = document.querySelectorAll('[data-reveal], [data-stagger], h2.reveal-heading');
+
+    if (!('IntersectionObserver' in window)) {
+        targets.forEach(el => el.classList.add('is-visible'));
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    targets.forEach(el => observer.observe(el));
+}
+
+/* ─────────────────────────────────────────
+   Auto-inject reveal attributes on key elements
+───────────────────────────────────────── */
+function initSectionHeadings() {
+    // Tag all section h2s for underline draw animation
+    document.querySelectorAll('section h2, header.hero h1').forEach(el => {
+        if (!el.classList.contains('reveal-heading')) el.classList.add('reveal-heading');
+    });
+
+    // Auto stagger card grids
+    document.querySelectorAll('.d-grid.grid-cols-3, .d-grid.grid-cols-2, .d-grid.grid-cols-4').forEach(grid => {
+        if (!grid.hasAttribute('data-stagger')) grid.setAttribute('data-stagger', '');
+    });
+
+    // Reveal section sub-headings and paragraphs
+    document.querySelectorAll('section.section p.text-muted').forEach((p, i) => {
+        if (!p.hasAttribute('data-reveal') && i % 2 === 0) p.setAttribute('data-reveal', '');
+    });
+
+    // Re-observe the newly tagged elements
+    initScrollReveal();
+}
+
+/* ─────────────────────────────────────────
+   Button Ripple
+───────────────────────────────────────── */
+function initButtonRipple() {
+    document.querySelectorAll('.btn').forEach(btn => {
+        btn.addEventListener('click', function (e) {
+            const rect = this.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height) * 1.5;
+            const x = e.clientX - rect.left - size / 2;
+            const y = e.clientY - rect.top - size / 2;
+
+            const ripple = document.createElement('span');
+            ripple.className = 'ripple';
+            ripple.style.cssText = `width:${size}px;height:${size}px;left:${x}px;top:${y}px`;
+            this.appendChild(ripple);
+            ripple.addEventListener('animationend', () => ripple.remove());
+        });
+    });
+}
+
+/* ─────────────────────────────────────────
+   3D Card Tilt
+───────────────────────────────────────── */
+function initCardTilt() {
+    document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const dx = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
+            const dy = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
+            const tiltX = -dy * 6;
+            const tiltY = dx * 6;
+
+            card.style.transform = `translateY(-8px) scale(1.01) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+            card.style.transition = 'transform 0.1s linear, box-shadow 0.15s ease';
+            card.style.boxShadow = `${-tiltY * 2}px ${tiltX * 2}px 40px rgba(79,70,229,0.16)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = '';
+            card.style.boxShadow = '';
+            card.style.transition = 'transform 0.5s cubic-bezier(0.16,1,0.3,1), box-shadow 0.5s ease';
+        });
+    });
+}
+
+/* ─────────────────────────────────────────
+   Hero Floating Orbs
+───────────────────────────────────────── */
+function initHeroOrbs() {
+    const hero = document.querySelector('header.hero, .hero');
+    if (!hero) return;
+
+    if (getComputedStyle(hero).position === 'static') hero.style.position = 'relative';
+
+    if (!hero.querySelector('.hero-orb-1')) {
+        const o1 = document.createElement('div');
+        o1.className = 'hero-orb-1';
+        hero.prepend(o1);
+    }
+    if (!hero.querySelector('.hero-orb-2')) {
+        const o2 = document.createElement('div');
+        o2.className = 'hero-orb-2';
+        hero.prepend(o2);
+    }
+}
+
+/* ─────────────────────────────────────────
+   Hero Mouse Parallax
+───────────────────────────────────────── */
+function initParallaxHero() {
+    const hero = document.querySelector('header.hero, .hero');
+    if (!hero) return;
+
+    let ticking = false;
+
+    document.addEventListener('mousemove', (e) => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+            const rect = hero.getBoundingClientRect();
+            if (e.clientY < rect.bottom + 100) {
+                const px = (e.clientX / window.innerWidth - 0.5) * 2;
+                const py = (e.clientY / window.innerHeight - 0.5) * 2;
+                const o1 = hero.querySelector('.hero-orb-1');
+                const o2 = hero.querySelector('.hero-orb-2');
+                if (o1) o1.style.transform = `translate(${px * 20}px, ${py * 15}px)`;
+                if (o2) o2.style.transform = `translate(${-px * 15}px, ${-py * 10}px)`;
+            }
+            ticking = false;
+        });
+    });
+}
+
+/* ─────────────────────────────────────────
+   Category Filtering
+───────────────────────────────────────── */
+function initFilters() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const productItems = document.querySelectorAll('.product-item');
+
+    if (!filterBtns.length || !productItems.length) return;
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.getAttribute('data-filter');
+
+            productItems.forEach(item => {
+                const cats = (item.getAttribute('data-category') || '').split(' ');
+                const show = (filter === 'all' || cats.includes(filter));
+                item.style.display = show ? 'block' : 'none';
+                if (show) {
+                    item.animate(
+                        [{ opacity: 0, transform: 'translateY(20px)' },
+                        { opacity: 1, transform: 'translateY(0)' }],
+                        { duration: 320, easing: 'cubic-bezier(0.16,1,0.3,1)' }
+                    );
+                }
+            });
+        });
+    });
+}

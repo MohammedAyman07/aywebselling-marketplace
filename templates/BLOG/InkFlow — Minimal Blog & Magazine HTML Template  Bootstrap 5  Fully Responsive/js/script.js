@@ -1,7 +1,7 @@
 /*!
  * BLOG WEBSITE TEMPLATE - SCRIPT.JS
- * Developed by AymanInfotech
- * Email: aymaninfotechs@gmail.com
+ * Developed by aywebselling
+ * Email: aywebsellings@gmail.com
  */
 
 'use strict';

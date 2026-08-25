@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | aywebselling</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .filter-btn {
+            background: white;
+            border: 1px solid var(--color-border);
+            padding: 0.5rem 1.25rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 500;
+            color: var(--color-text-muted);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--color-primary);
+            color: white;
+            border-color: var(--color-primary);
+        }
+
+        .filter-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+
+        .page-header {
+            background-color: #f1f5f9;
+            padding: 4rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                AYWEB<span>SELLING</span>
+            </a>
+
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link active">All Products</a></li>
+                <li><a href="categories.html" class="nav-link">Categories</a></li>
+                <li><a href="free.html" class="nav-link">Freebies</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="products.html" class="btn btn-primary btn-sm">Browse Shop</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Our Premium Collection</h1>
+            <p class="text-muted">Explore high-quality templates for every industry</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container section" style="padding-top: 0;">
+
+        <!-- Filters -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="business">Business</button>
+            <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+            <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+            <button class="filter-btn" data-filter="landing">Landing Page</button>
+            <button class="filter-btn" data-filter="education">Education</button>
+            <button class="filter-btn" data-filter="medical">Medical</button>
+            <button class="filter-btn" data-filter="saas">SaaS</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="d-grid grid-cols-3 gap-lg" id="product-grid">
+
+            <article class="card product-item" data-category="blog">
+                <div class="card-img" style="background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Blog</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/BLOG/InkFlow%20%E2%80%94%20Minimal%20Blog%20%26%20Magazine%20HTML%20Template%20%20Bootstrap%205%20%20Fully%20Responsive/index.html" target="_blank">InkFlow — Minimal Blog & Magazine HTML Template  Bootstrap 5  Fully Responsive</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Blog HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/BLOG/InkFlow%20%E2%80%94%20Minimal%20Blog%20%26%20Magazine%20HTML%20Template%20%20Bootstrap%205%20%20Fully%20Responsive/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="business">
+                <div class="card-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Business</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/BUSINESS/Agency%20-%20Creative%20Digital%20Agency%20HTML5%20Template/index.html" target="_blank">Agency - Creative Digital Agency HTML5 Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Business HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/BUSINESS/Agency%20-%20Creative%20Digital%20Agency%20HTML5%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="business">
+                <div class="card-img" style="background: linear-gradient(to top, #0ba360 0%, #3cba92 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Business</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/BUSINESS/Consulting%20%26%20Financial%20Advisory%20HTML%20Template%20%20Modern%20Business%20Theme/index.html" target="_blank">Consulting & Financial Advisory HTML Template  Modern Business Theme</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Business HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/BUSINESS/Consulting%20%26%20Financial%20Advisory%20HTML%20Template%20%20Modern%20Business%20Theme/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="business">
+                <div class="card-img" style="background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Business</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/BUSINESS/CorpBiz%20-%20Modern%20Corporate%20Business%20HTML%20Template/index.html" target="_blank">CorpBiz - Modern Corporate Business HTML Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Business HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/BUSINESS/CorpBiz%20-%20Modern%20Corporate%20Business%20HTML%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="business">
+                <div class="card-img" style="background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Business</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/BUSINESS/CorporaX%20%E2%80%93%20Premium%20Business%20%26%20Corporate%20Website%20Template/index.html" target="_blank">CorporaX – Premium Business & Corporate Website Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Business HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/BUSINESS/CorporaX%20%E2%80%93%20Premium%20Business%20%26%20Corporate%20Website%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="business">
+                <div class="card-img" style="background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Business</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/BUSINESS/FinConsult%20-%20Corporate%20Finance%20%26%20Accounting%20HTML5%20Template/index.html" target="_blank">FinConsult - Corporate Finance & Accounting HTML5 Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Business HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/BUSINESS/FinConsult%20-%20Corporate%20Finance%20%26%20Accounting%20HTML5%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="business">
+                <div class="card-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Business</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/BUSINESS/GrowUp%20%E2%80%93%20Modern%20Digital%20Marketing%20%26%20SEO%20Agency%20HTML5%20Template/index.html" target="_blank">GrowUp – Modern Digital Marketing & SEO Agency HTML5 Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Business HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/BUSINESS/GrowUp%20%E2%80%93%20Modern%20Digital%20Marketing%20%26%20SEO%20Agency%20HTML5%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="business">
+                <div class="card-img" style="background: linear-gradient(to top, #0ba360 0%, #3cba92 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Business</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/BUSINESS/Modern%20IT%20Company%20%26%20Software%20House%20HTML5%20Template/index.html" target="_blank">Modern IT Company & Software House HTML5 Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Business HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/BUSINESS/Modern%20IT%20Company%20%26%20Software%20House%20HTML5%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="business">
+                <div class="card-img" style="background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Business</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/BUSINESS/New%20folder/index.html" target="_blank">New folder</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Business HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/BUSINESS/New%20folder/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="business">
+                <div class="card-img" style="background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Business</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/BUSINESS/Premium%20Business%20Consulting%20HTML%20Template/index.html" target="_blank">Premium Business Consulting HTML Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Business HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/BUSINESS/Premium%20Business%20Consulting%20HTML%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="business">
+                <div class="card-img" style="background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Business</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/BUSINESS/Premium%20Construction%20%26%20Engineering%20HTML5%20Template/index.html" target="_blank">Premium Construction & Engineering HTML5 Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Business HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/BUSINESS/Premium%20Construction%20%26%20Engineering%20HTML5%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="business">
+                <div class="card-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Business</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/BUSINESS/StartupTech%20-%20Modern%20Business%20%26%20Agency%20HTML5%20Template/index.html" target="_blank">StartupTech - Modern Business & Agency HTML5 Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Business HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/BUSINESS/StartupTech%20-%20Modern%20Business%20%26%20Agency%20HTML5%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="ecommerce">
+                <div class="card-img" style="background: linear-gradient(to top, #0ba360 0%, #3cba92 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Ecommerce</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/ECOMMERCE/ArtHouse%20-%20Premium%20Art%20Gallery%20%26%20Creative%20Ecommerce%20HTML%20Template/index.html" target="_blank">ArtHouse - Premium Art Gallery & Creative Ecommerce HTML Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Ecommerce HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/ECOMMERCE/ArtHouse%20-%20Premium%20Art%20Gallery%20%26%20Creative%20Ecommerce%20HTML%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="ecommerce">
+                <div class="card-img" style="background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Ecommerce</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/ECOMMERCE/LUXE%20Fashion%20-%20Premium%20Ecommerce%20HTML5%20Template/index.html" target="_blank">LUXE Fashion - Premium Ecommerce HTML5 Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Ecommerce HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/ECOMMERCE/LUXE%20Fashion%20-%20Premium%20Ecommerce%20HTML5%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="ecommerce">
+                <div class="card-img" style="background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Ecommerce</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/ECOMMERCE/ShopVibe%20-%20Premium%20Multipurpose%20Ecommerce%20HTML%20Template/index.html" target="_blank">ShopVibe - Premium Multipurpose Ecommerce HTML Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Ecommerce HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/ECOMMERCE/ShopVibe%20-%20Premium%20Multipurpose%20Ecommerce%20HTML%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="ecommerce">
+                <div class="card-img" style="background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Ecommerce</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/ECOMMERCE/ShopZone%20is%20a%20premium%2C%20fully%20responsive%20E-Commerce%20website%20template/index.html" target="_blank">ShopZone is a premium, fully responsive E-Commerce website template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Ecommerce HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/ECOMMERCE/ShopZone%20is%20a%20premium%2C%20fully%20responsive%20E-Commerce%20website%20template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="ecommerce">
+                <div class="card-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Ecommerce</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/ECOMMERCE/TechStore%20-%20Responsive%20Electronics%20Store%20%26%20Tech%20Shop%20HTML%20Template/index.html" target="_blank">TechStore - Responsive Electronics Store & Tech Shop HTML Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Ecommerce HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/ECOMMERCE/TechStore%20-%20Responsive%20Electronics%20Store%20%26%20Tech%20Shop%20HTML%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="education">
+                <div class="card-img" style="background: linear-gradient(to top, #0ba360 0%, #3cba92 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Education</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/EDUCATION/EduPro%20%20High-End%20E-Learning%20%26%20Online%20Course%20HTML5%20Template/index.html" target="_blank">EduPro  High-End E-Learning & Online Course HTML5 Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Education HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/EDUCATION/EduPro%20%20High-End%20E-Learning%20%26%20Online%20Course%20HTML5%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="landing pages">
+                <div class="card-img" style="background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Landing pages</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/LANDING%20PAGES/LaunchPad%20%E2%80%93%20Modern%20SaaS%20%26%20App%20Landing%20Page%20HTML%20Template/index.html" target="_blank">LaunchPad – Modern SaaS & App Landing Page HTML Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Landing pages HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/LANDING%20PAGES/LaunchPad%20%E2%80%93%20Modern%20SaaS%20%26%20App%20Landing%20Page%20HTML%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="medical">
+                <div class="card-img" style="background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Medical</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/MEDICAL/MediCare%20%E2%80%93%20Professional%20Medical%20%26%20Healthcare%20Website%20Template%20%20HTML5%2C%20Bootstrap%205/index.html" target="_blank">MediCare – Professional Medical & Healthcare Website Template  HTML5, Bootstrap 5</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Medical HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/MEDICAL/MediCare%20%E2%80%93%20Professional%20Medical%20%26%20Healthcare%20Website%20Template%20%20HTML5%2C%20Bootstrap%205/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="protflio">
+                <div class="card-img" style="background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Protflio</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/PROTFLIO/4/index.html" target="_blank">4</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Protflio HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/PROTFLIO/4/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="protflio">
+                <div class="card-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Protflio</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/PROTFLIO/Alex%20Morgan%20%E2%80%94%20Premium%20Portfolio%20Template/index.html" target="_blank">Alex Morgan — Premium Portfolio Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Protflio HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/PROTFLIO/Alex%20Morgan%20%E2%80%94%20Premium%20Portfolio%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="protflio">
+                <div class="card-img" style="background: linear-gradient(to top, #0ba360 0%, #3cba92 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Protflio</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/PROTFLIO/ArchX%20-%20Modern%20Architecture%20%26%20Interior%20Design%20Portfolio%20HTML%20Template/index.html" target="_blank">ArchX - Modern Architecture & Interior Design Portfolio HTML Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Protflio HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/PROTFLIO/ArchX%20-%20Modern%20Architecture%20%26%20Interior%20Design%20Portfolio%20HTML%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="protflio">
+                <div class="card-img" style="background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Protflio</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/PROTFLIO/ArtVista%20%E2%80%93%20Minimal%20%26%20Creative%20HTML5%20Artist%20Portfolio%20Template/index.html" target="_blank">ArtVista – Minimal & Creative HTML5 Artist Portfolio Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Protflio HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/PROTFLIO/ArtVista%20%E2%80%93%20Minimal%20%26%20Creative%20HTML5%20Artist%20Portfolio%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="protflio">
+                <div class="card-img" style="background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Protflio</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/PROTFLIO/CineVision%20-%20Videographer%20%26%20Filmmaker%20Portfolio%20HTML%20Template/index.html" target="_blank">CineVision - Videographer & Filmmaker Portfolio HTML Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Protflio HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/PROTFLIO/CineVision%20-%20Videographer%20%26%20Filmmaker%20Portfolio%20HTML%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="protflio">
+                <div class="card-img" style="background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Protflio</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/PROTFLIO/CreativePort%20-%20Modern%20Personal%20Portfolio%20HTML%20Template/index.html" target="_blank">CreativePort - Modern Personal Portfolio HTML Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Protflio HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/PROTFLIO/CreativePort%20-%20Modern%20Personal%20Portfolio%20HTML%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="protflio">
+                <div class="card-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Protflio</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/PROTFLIO/CreativeStudio%20-%20Modern%20Designer%20Portfolio%20%26%20Resume%20HTML%20Template/index.html" target="_blank">CreativeStudio - Modern Designer Portfolio & Resume HTML Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Protflio HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/PROTFLIO/CreativeStudio%20-%20Modern%20Designer%20Portfolio%20%26%20Resume%20HTML%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="protflio">
+                <div class="card-img" style="background: linear-gradient(to top, #0ba360 0%, #3cba92 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Protflio</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/PROTFLIO/DevFolio%20-%20Personal%20Portfolio%20%26%20Resume%20HTML%20Template/index.html" target="_blank">DevFolio - Personal Portfolio & Resume HTML Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Protflio HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/PROTFLIO/DevFolio%20-%20Personal%20Portfolio%20%26%20Resume%20HTML%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="protflio">
+                <div class="card-img" style="background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Protflio</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/PROTFLIO/Freelance%20%E2%80%94%20The%20Ultimate%20Personal%20Portfolio%20HTML%20Template%20for%20Digital%20Professionals/index.html" target="_blank">Freelance — The Ultimate Personal Portfolio HTML Template for Digital Professionals</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Protflio HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/PROTFLIO/Freelance%20%E2%80%94%20The%20Ultimate%20Personal%20Portfolio%20HTML%20Template%20for%20Digital%20Professionals/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="resturant">
+                <div class="card-img" style="background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Resturant</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/RESTURANT/Savoria%20%E2%80%94%20Premium%20Restaurant%20%26%20Food%20Business%20HTML%20Template/index.html" target="_blank">Savoria — Premium Restaurant & Food Business HTML Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Resturant HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/RESTURANT/Savoria%20%E2%80%94%20Premium%20Restaurant%20%26%20Food%20Business%20HTML%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card product-item" data-category="saas">
+                <div class="card-img" style="background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); position: relative; height:200px;">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-between items-center mb-2">
+                        <span class="text-muted" style="font-size: 0.875rem;">Saas</span>
+                        <div class="stars" style="color: #f59e0b; font-size: 0.8rem;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title"><a href="templates/SAAS/CloudFlow%20-%20The%20Ultimate%20SaaS%20%26%20Startup%20HTML%20Template/index.html" target="_blank">CloudFlow - The Ultimate SaaS & Startup HTML Template</a></h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Premium Saas HTML5 template.</p>
+                    <div class="card-meta">
+                        <span class="card-price">$49</span>
+                        <div class="d-flex gap-sm">
+                            <a href="templates/SAAS/CloudFlow%20-%20The%20Ultimate%20SaaS%20%26%20Startup%20HTML%20Template/index.html" target="_blank" class="btn btn-outline btn-sm">Preview</a>
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+</div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem; display: block;">
+                        AYWEB<span>SELLING</span>
+                    </a>
+                    <p style="color: #94a3b8; margin-bottom: 1.5rem;">
+                        Your destination for premium HTML templates and HTML themes.
+                    </p>
+
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="free.html">Free Templates</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li style="color: #94a3b8;"><i class="fas fa-envelope margin-right: 0.5rem;"></i>
+                            support@aywebselling.com</li>
+                        <li style="color: #94a3b8;"><i class="fas fa-map-marker-alt margin-right: 0.5rem;"></i> Global
+                            Digital Service</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                style="border-top: 1px solid #334155; margin-top: 3rem; padding-top: 1.5rem; text-align: center; color: #64748b; font-size: 0.875rem;">
+                &copy; 2026 aywebselling. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

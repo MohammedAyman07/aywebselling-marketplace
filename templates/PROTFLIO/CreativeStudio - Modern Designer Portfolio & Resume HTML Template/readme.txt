@@ -42,8 +42,8 @@ JavaScript:
 All scripts for smooth scrolling, sticky navigation, and scrolling reveal animations are located in `js/script.js`.
 
 Contact Form:
-By default, the contact form includes a mock submission state in `script.js`. You will need to connect this to a backend script (e.g., PHP, Formspree, etc.) to process emails to aymaninfotechs@gmail.com.
+By default, the contact form includes a mock submission state in `script.js`. You will need to connect this to a backend script (e.g., PHP, Formspree, etc.) to process emails to aywebsellings@gmail.com.
 
 Contact
 -------
-For support, contact: aymaninfotechs@gmail.com
+For support, contact: aywebsellings@gmail.com

@@ -46,4 +46,4 @@ This template uses Font Awesome SVG icons mixed with modern CSS gradients for pr
 
 Support
 -------
-For any issues regarding template setup or layout bugs, please contact the developer at aymaninfotechs@gmail.com
+For any issues regarding template setup or layout bugs, please contact the developer at aywebsellings@gmail.com

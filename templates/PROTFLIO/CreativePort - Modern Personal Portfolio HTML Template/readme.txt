@@ -1,7 +1,7 @@
 Portfolio Website Template
 ==========================
-Developed by AymanInfotech
-Contact: aymaninfotechs@gmail.com
+Developed by aywebselling
+Contact: aywebsellings@gmail.com
 
 Thank you for using this template!
 
@@ -142,7 +142,7 @@ FEATURES
 ------------------------------------------------------------
 SUPPORT
 ------------------------------------------------------------
-Email: aymaninfotechs@gmail.com
+Email: aywebsellings@gmail.com
 
 We aim to respond within 24 hours. Please provide:
   - Your order/transaction ID
@@ -160,4 +160,4 @@ VERSION
 ------------------------------------------------------------
 Template Version: 1.0.0
 Release Date: March 2026
-Developed by: AymanInfotech
+Developed by: aywebselling

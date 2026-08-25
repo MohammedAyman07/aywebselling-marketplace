@@ -36,8 +36,8 @@ it-company-template/
 
 Contact & Support:
 -----------------
-Developed by: Ayman Infotech
-Email: aymaninfotechs@gmail.com
+Developed by: aywebselling
+Email: aywebsellings@gmail.com
 
 
 

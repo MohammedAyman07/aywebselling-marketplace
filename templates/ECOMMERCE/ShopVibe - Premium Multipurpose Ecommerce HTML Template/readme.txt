@@ -1,7 +1,7 @@
 ========================================================================
 ShopVibe - Premium Ecommerce HTML Template
-Author: AymanInfotechs
-Email: aymaninfotechs@gmail.com
+Author: aywebsellings
+Email: aywebsellings@gmail.com
 ========================================================================
 
 Thank you for choosing ShopVibe! This is a modern, responsive, and 
@@ -54,5 +54,5 @@ HOW TO EDIT:
 SUPPORT:
 --------------------------------------------------
 For any issues or questions, please feel free to contact:
-aymaninfotechs@gmail.com
+aywebsellings@gmail.com
 ========================================================================

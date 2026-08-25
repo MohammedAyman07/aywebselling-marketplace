@@ -1,7 +1,7 @@
 ======================================================
   CloudFlow - The Ultimate SaaS & Startup HTML Template
-  Developed by AymanInfotech
-  Contact: aymaninfotechs@gmail.com
+  Developed by aywebselling
+  Contact: aywebsellings@gmail.com
 ======================================================
 
 Thank you for using this template.
@@ -69,7 +69,7 @@ inside the HTML files to match your new filenames.
  HOW TO CHANGE CONTACT EMAIL
 ------------------------------------------------------
 
-Search for "aymaninfotechs@gmail.com" across all HTML files
+Search for "aywebsellings@gmail.com" across all HTML files
 and replace with your own email address.
 
 ------------------------------------------------------
@@ -131,7 +131,7 @@ Option C – GitHub Pages (Free):
 ------------------------------------------------------
 
 For questions, customization requests, or support:
-Email: aymaninfotechs@gmail.com
+Email: aywebsellings@gmail.com
 
 ------------------------------------------------------
  LICENSE
@@ -142,5 +142,5 @@ You may use it for client projects and reselling.
 You may NOT redistribute or resell the source files as-is.
 
 ======================================================
-  © 2026 AymanInfotech. All rights reserved.
+  © 2026 aywebselling. All rights reserved.
 ======================================================
