@@ -6,12 +6,10 @@ const templatesDir = path.join(__dirname, 'templates');
 const assetsDir = path.join(__dirname, 'assets');
 const outputFile = path.join(publicDir, 'index.html');
 
-// Create public directory if it doesn't exist
 if (!fs.existsSync(publicDir)) {
     fs.mkdirSync(publicDir, { recursive: true });
 }
 
-// Helper to copy directories recursively
 function copyDirRecursive(src, dest) {
     if (!fs.existsSync(src)) return;
     if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
@@ -29,14 +27,12 @@ function copyDirRecursive(src, dest) {
     }
 }
 
-// Copy assets and templates to public directory
 console.log('Copying assets to public...');
 copyDirRecursive(assetsDir, path.join(publicDir, 'assets'));
 console.log('Copying templates to public...');
 copyDirRecursive(templatesDir, path.join(publicDir, 'templates'));
 
-let html = `
-<!DOCTYPE html>
+let html = `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -47,25 +43,15 @@ let html = `
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
-        .site-header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; }
-        .header-inner { display: flex; justify-content: space-between; align-items: center; }
-        .site-logo a { font-size: 1.5rem; font-weight: 700; color: #333; text-decoration: none; }
-        .main-navigation ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
-        .main-navigation a { text-decoration: none; color: #555; font-weight: 500; }
-        .hero-section { background: #f8f9fa; padding: 80px 0; text-align: center; }
-        .hero-content h1 { font-size: 3rem; margin-bottom: 20px; }
-        .categories-section { padding: 60px 0; }
-        .template-category { margin-bottom: 40px; }
-        .template-category h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px; text-transform: uppercase; }
+        /* Only custom styles for the generated grid */
+        .template-category { margin-bottom: 40px; padding-top: 20px;}
+        .template-category h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px; text-transform: uppercase; color: var(--primary-color, #007bff); }
         .templates-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
-        .template-card { border: 1px solid #ddd; border-radius: 8px; padding: 20px; background: #fff; transition: transform 0.2s; }
-        .template-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-        .template-card h3 { font-size: 1.2rem; margin: 0 0 10px 0; }
-        .template-card a { display: inline-block; margin-top: 15px; padding: 8px 15px; background: #007bff; color: white; text-decoration: none; border-radius: 4px; font-size: 0.9rem; }
-        .site-footer { background: #1a1a1a; color: #fff; padding: 60px 0 20px; margin-top: 60px; }
-        .footer-widgets { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px; }
-        .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #333; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .template-card { border: 1px solid #ddd; border-radius: 8px; padding: 20px; background: #fff; transition: transform 0.2s; box-shadow: 0 5px 15px rgba(0,0,0,0.02); }
+        .template-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); border-color: var(--primary-color, #007bff); }
+        .template-card h3 { font-size: 1.2rem; margin: 0 0 15px 0; color: #333; }
+        .template-card a { display: inline-block; padding: 10px 20px; background: var(--primary-color, #007bff); color: white; text-decoration: none; border-radius: 4px; font-weight: 500; transition: background 0.3s; }
+        .template-card a:hover { background: #0056b3; color: #fff;}
     </style>
 </head>
 <body class="aywebselling-theme">
@@ -94,7 +80,7 @@ let html = `
         </div>
     </section>
 
-    <section id="templates" class="categories-section container">
+    <section id="templates" class="categories-section section-padding container">
 `;
 
 if (fs.existsSync(templatesDir)) {
@@ -157,4 +143,3 @@ html += `
 
 fs.writeFileSync(outputFile, html, 'utf8');
 console.log('Successfully generated public/index.html');
-
