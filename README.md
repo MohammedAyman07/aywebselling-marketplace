@@ -1,4 +1,4 @@
-﻿# AyWebSelling Templates Marketplace
+# AyWebSelling Templates Marketplace
 
 A lightning-fast, Vercel-ready static digital marketplace for premium HTML templates.
 
@@ -40,12 +40,12 @@ graph TD;
 ## Project Structure
 
 ```text
-├── assets/             # Global CSS, JS, and Images for the storefront
-├── templates/          # The marketplace inventory (organized by category folders)
-├── build.js            # Node.js Static Site Generator script
-├── index.html          # The generated storefront (Do not edit manually!)
-├── package.json        # NPM configuration and build scripts
-└── .gitignore          # Git exclusion rules
+??? assets/             # Global CSS, JS, and Images for the storefront
+??? templates/          # The marketplace inventory (organized by category folders)
+??? build.js            # Node.js Static Site Generator script
+??? index.html          # The generated storefront (Do not edit manually!)
+??? package.json        # NPM configuration and build scripts
+??? .gitignore          # Git exclusion rules
 ```
 
 ## How It Works
@@ -90,3 +90,4 @@ This project is optimized for **Vercel**.
 ## License
 
 MIT License
+

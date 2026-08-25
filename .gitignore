@@ -1,4 +1,4 @@
-﻿# Node.js
+# Node.js
 node_modules/
 npm-debug.log
 
@@ -26,3 +26,4 @@ Thumbs.db
 
 # Build output
 public/
+

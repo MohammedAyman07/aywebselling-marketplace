@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 
 const publicDir = path.join(__dirname, 'public');
@@ -157,3 +157,4 @@ html += `
 
 fs.writeFileSync(outputFile, html, 'utf8');
 console.log('Successfully generated public/index.html');
+
