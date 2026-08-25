@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A digital marketplace landing page for HTML templates, generated statically.",
   "scripts": {
-    "build": "node build.js",
+    "build:html": "node build.js",
     "start": "npx serve ."
   },
   "author": "",
