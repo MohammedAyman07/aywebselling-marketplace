@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+    <defs>
+        <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f8f9fa"/>
+            <stop offset="100%" stop-color="#e9ecef"/>
+        </linearGradient>
+        <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#6a11cb"/>
+            <stop offset="100%" stop-color="#2575fc"/>
+        </linearGradient>
+        <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+            <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#000000" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+    
+    <!-- Dashboard Window -->
+    <rect x="50" y="50" width="700" height="500" rx="15" fill="#ffffff" filter="url(#shadow)"/>
+    
+    <!-- Browser Header -->
+    <path d="M50 65 C50 56.7 56.7 50 65 50 L735 50 C743.3 50 750 56.7 750 65 L750 90 L50 90 Z" fill="#f1f3f5"/>
+    <circle cx="80" cy="70" r="6" fill="#ff5f56"/>
+    <circle cx="100" cy="70" r="6" fill="#ffbd2e"/>
+    <circle cx="120" cy="70" r="6" fill="#27c93f"/>
+    <rect x="150" y="60" width="400" height="20" rx="10" fill="#ffffff"/>
+    
+    <!-- Sidebar -->
+    <rect x="50" y="90" width="150" height="460" rx="0" fill="#ffffff" />
+    <line x1="200" y1="90" x2="200" y2="550" stroke="#f1f3f5" stroke-width="2"/>
+    
+    <!-- Sidebar Items -->
+    <rect x="70" y="110" width="110" height="30" rx="5" fill="url(#primary-grad)"/>
+    <rect x="70" y="150" width="90" height="15" rx="5" fill="#e9ecef"/>
+    <rect x="70" y="180" width="100" height="15" rx="5" fill="#e9ecef"/>
+    <rect x="70" y="210" width="80" height="15" rx="5" fill="#e9ecef"/>
+    <rect x="70" y="240" width="95" height="15" rx="5" fill="#e9ecef"/>
+    
+    <!-- Main Content Area -->
+    <!-- Header -->
+    <rect x="230" y="110" width="200" height="25" rx="5" fill="#343a40"/>
+    <rect x="620" y="110" width="100" height="25" rx="5" fill="#e9ecef"/>
+    
+    <!-- Cards Row -->
+    <rect x="230" y="160" width="140" height="90" rx="10" fill="#ffffff" stroke="#f1f3f5" stroke-width="2"/>
+    <rect x="250" y="180" width="40" height="40" rx="8" fill="rgba(106, 17, 203, 0.1)"/>
+    <circle cx="270" cy="200" r="10" fill="#6a11cb"/>
+    <rect x="250" y="230" width="60" height="8" rx="4" fill="#343a40"/>
+    
+    <rect x="390" y="160" width="140" height="90" rx="10" fill="#ffffff" stroke="#f1f3f5" stroke-width="2"/>
+    <rect x="410" y="180" width="40" height="40" rx="8" fill="rgba(37, 117, 252, 0.1)"/>
+    <circle cx="430" cy="200" r="10" fill="#2575fc"/>
+    <rect x="410" y="230" width="60" height="8" rx="4" fill="#343a40"/>
+    
+    <rect x="550" y="160" width="170" height="90" rx="10" fill="#ffffff" stroke="#f1f3f5" stroke-width="2"/>
+    <rect x="570" y="180" width="40" height="40" rx="8" fill="rgba(40, 167, 69, 0.1)"/>
+    <circle cx="590" cy="200" r="10" fill="#28a745"/>
+    <rect x="570" y="230" width="60" height="8" rx="4" fill="#343a40"/>
+    
+    <!-- Chart Area -->
+    <rect x="230" y="280" width="490" height="240" rx="10" fill="#ffffff" stroke="#f1f3f5" stroke-width="2"/>
+    <rect x="260" y="300" width="120" height="15" rx="5" fill="#343a40"/>
+    
+    <!-- Chart Bars (Background) -->
+    <rect x="280" y="380" width="20" height="100" rx="3" fill="#f8f9fa"/>
+    <rect x="340" y="420" width="20" height="60" rx="3" fill="#f8f9fa"/>
+    <rect x="400" y="340" width="20" height="140" rx="3" fill="#f8f9fa"/>
+    <rect x="460" y="380" width="20" height="100" rx="3" fill="#f8f9fa"/>
+    <rect x="520" y="280" width="20" height="200" rx="3" fill="#f8f9fa"/>
+    <rect x="580" y="330" width="20" height="150" rx="3" fill="#f8f9fa"/>
+    <rect x="640" y="240" width="20" height="240" rx="3" fill="#f8f9fa"/>
+
+    <!-- Gradient Fill under chart -->
+    <path d="M260 480 Q320 400 380 430 T480 340 T580 360 T680 280 L680 480 L260 480 Z" fill="url(#primary-grad)" opacity="0.1"/>
+
+    <!-- Line Chart -->
+    <path d="M260 480 Q320 400 380 430 T480 340 T580 360 T680 280" fill="none" stroke="url(#primary-grad)" stroke-width="4" stroke-linecap="round"/>
+    
+    <circle cx="260" cy="480" r="6" fill="#6a11cb" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="380" cy="430" r="6" fill="#6a11cb" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="480" cy="340" r="6" fill="#2575fc" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="580" cy="360" r="6" fill="#2575fc" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="680" cy="280" r="6" fill="#2575fc" stroke="#ffffff" stroke-width="2"/>
+</svg>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Creative Designer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Design<span>Studio</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section-padding pb-0" style="margin-top: 80px;">
+        <div class="container text-center reveal">
+            <span class="hero-subtitle">My Creative Works</span>
+            <h1 class="hero-title">Featured <span class="text-gradient">Projects</span></h1>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio-section section-padding">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="text-center mb-5 reveal filter-button-group">
+                <button class="btn btn-outline-custom active me-2 mb-2" data-filter="*"
+                    style="border-radius: 50px;">All</button>
+                <button class="btn btn-outline-custom me-2 mb-2" data-filter=".ui-design"
+                    style="border-radius: 50px;">Website UI Design</button>
+                <button class="btn btn-outline-custom me-2 mb-2" data-filter=".app-design"
+                    style="border-radius: 50px;">Mobile App Design</button>
+                <button class="btn btn-outline-custom me-2 mb-2" data-filter=".brand-identity"
+                    style="border-radius: 50px;">Brand Identity</button>
+                <button class="btn btn-outline-custom mb-2" data-filter=".logo-design" style="border-radius: 50px;">Logo
+                    Design</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item ui-design reveal">
+                    <img src="images/portfolio-1.jpg" alt="Website UI Design" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Website UI Design</span>
+                        <h4 class="portfolio-title text-white">Fintech Dashboard</h4>
+                        <a href="#" class="portfolio-link"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item app-design reveal" style="transition-delay: 0.1s;">
+                    <img src="images/portfolio-2.jpg" alt="Mobile App Design" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Mobile App Design</span>
+                        <h4 class="portfolio-title text-white">Health App Concept</h4>
+                        <a href="#" class="portfolio-link"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item brand-identity reveal" style="transition-delay: 0.2s;">
+                    <img src="images/portfolio-3.jpg" alt="Brand Identity" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Brand Identity</span>
+                        <h4 class="portfolio-title text-white">Modern Agency Identity</h4>
+                        <a href="#" class="portfolio-link"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item logo-design reveal">
+                    <img src="images/portfolio-4.jpg" alt="Logo Design" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Logo Design</span>
+                        <h4 class="portfolio-title text-white">Tech Startup Logo</h4>
+                        <a href="#" class="portfolio-link"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item ui-design reveal" style="transition-delay: 0.1s;">
+                    <img src="images/portfolio-5.jpg" alt="Website UI Design" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Website UI Design</span>
+                        <h4 class="portfolio-title text-white">E-commerce Experience</h4>
+                        <a href="#" class="portfolio-link"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item brand-identity reveal" style="transition-delay: 0.2s;">
+                    <img src="images/portfolio-6.jpg" alt="Brand Identity" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Brand Identity</span>
+                        <h4 class="portfolio-title text-white">Coffee Shop Branding</h4>
+                        <a href="#" class="portfolio-link"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Creative Designer Template. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

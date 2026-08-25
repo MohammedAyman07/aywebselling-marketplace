@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your Shopping Cart - ArtHouse">
+    <title>Shopping Cart | ArtHouse</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Art<span>House</span></a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="fa fa-bars fs-4 text-dark"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop Art</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-icons">
+                    <button class="nav-icon-btn d-none d-lg-flex" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <a href="cart.html" class="nav-icon-btn d-none d-lg-flex text-gold">
+                        <i class="fa-solid fa-bag-shopping"></i><span class="cart-badge">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Page Content -->
+    <section class="cart-section section-padding-sm mb-5">
+        <div class="container">
+            <h1 class="font-serif mb-4 pb-2 border-bottom">Shopping Cart</h1>
+            
+            <div class="row g-5">
+                <!-- Cart Items -->
+                <div class="col-lg-8 animate-fadeInUp">
+                    <div class="cart-table table-responsive">
+                        <table class="table mb-0 align-middle">
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="2">Product</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col" class="text-end">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Items will be dynamically rendered here by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <a href="shop.html" class="btn-outline border-0 ps-0 text-muted"><i class="fa-solid fa-arrow-left me-2"></i> Continue Shopping</a>
+                        <button class="btn-outline-gold px-4 py-2" style="font-size: 0.75rem;">Update Cart</button>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="col-lg-4 animate-fadeInUp delay-2">
+                    <div class="cart-summary">
+                        <h5>Order Summary</h5>
+                        
+                        <div class="summary-row">
+                            <span class="text-muted">Subtotal (2 items)</span>
+                            <span class="fw-semibold text-dark">$630.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="text-muted">Estimated Shipping</span>
+                            <span class="text-success fw-semibold">Free</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="text-muted">Taxes</span>
+                            <span class="text-muted">Calculated at checkout</span>
+                        </div>
+                        
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span class="font-serif fs-4">$630.00</span>
+                        </div>
+                        
+                        <div class="mt-4 pt-3 border-top">
+                            <label class="form-label small fw-semibold text-dark mb-2">Gift Card or Discount Code</label>
+                            <div class="coupon-input-group mb-4">
+                                <input type="text" placeholder="Enter code">
+                                <button>Apply</button>
+                            </div>
+                        </div>
+                        
+                        <a href="checkout.html" class="btn-gold w-100 justify-content-center py-3 rounded-2">
+                            Proceed to Checkout <i class="fa-solid fa-lock ms-2 small"></i>
+                        </a>
+                        
+                        <div class="text-center mt-3">
+                            <img src="https://via.placeholder.com/200x30/ffffff/cccccc?text=Secure+Payment+Badges" alt="Payments" class="img-fluid opacity-50" style="max-height: 24px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom text-center mt-0 pt-0 border-0">
+                <p class="mb-0">&copy; 2026 ArtHouse. Designed for aymaninfotechs@gmail.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div class="toast-container-custom"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

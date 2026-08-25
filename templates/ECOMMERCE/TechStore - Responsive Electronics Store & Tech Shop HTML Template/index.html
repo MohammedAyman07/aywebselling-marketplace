@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechStore – Shop the latest electronics, smartphones, laptops, headphones, smartwatches and accessories at the best prices.">
+  <meta name="keywords" content="electronics store, gadgets, smartphones, laptops, headphones, smartwatch, tech products">
+  <title>TechStore – Latest Electronics &amp; Smart Gadgets</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     TOP BAR
+============================================================ -->
+<div class="top-bar">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center gap-3">
+        <span><i class="fas fa-shipping-fast me-1"></i> Free shipping on orders over $99</span>
+        <span class="d-none d-md-inline">|</span>
+        <span class="d-none d-md-inline"><i class="fas fa-tag me-1"></i> Use code <strong class="text-neon">TECH10</strong> for 10% off</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="mailto:aymaninfotechs@gmail.com"><i class="fas fa-envelope me-1"></i> aymaninfotechs@gmail.com</a>
+        <a href="#"><i class="fas fa-phone me-1"></i> +1 (800) 123-4567</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<nav class="main-navbar" id="mainNavbar">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between gap-3">
+
+      <!-- Brand -->
+      <a href="index.html" class="navbar-brand flex-shrink-0">
+        <div class="brand-logo"><i class="fas fa-bolt me-1"></i>Tech<span>Store</span></div>
+      </a>
+
+      <!-- Search (desktop) -->
+      <div class="nav-search-wrap d-none d-lg-flex flex-grow-1" style="max-width:400px;">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" placeholder="Search electronics, laptops, phones…" id="navSearch">
+      </div>
+
+      <!-- Nav Icons & Toggler -->
+      <div class="d-flex align-items-center gap-1">
+        <a href="#" class="nav-icon-btn d-none d-md-flex" title="Wishlist" id="wishlistIcon">
+          <i class="fas fa-heart"></i>
+          <span class="badge-count" id="wishlistCount">0</span>
+        </a>
+        <a href="cart.html" class="nav-icon-btn" title="Cart" id="cartNavIcon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="badge-count" id="cartCount">0</span>
+        </a>
+        <a href="#" class="nav-icon-btn d-none d-md-flex" title="Account">
+          <i class="fas fa-user"></i>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler d-lg-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- Desktop Nav Links -->
+      <ul class="navbar-nav flex-row gap-1 d-none d-lg-flex">
+        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+        <li class="nav-item"><a href="product.html" class="nav-link">Product</a></li>
+        <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div class="collapse" id="mobileNav">
+      <div class="py-2 border-top mt-2" style="border-color: var(--border) !important;">
+        <div class="nav-search-wrap mb-2">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" placeholder="Search products…">
+        </div>
+        <ul class="navbar-nav">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="product.html" class="nav-link">Product</a></li>
+          <li><a href="cart.html" class="nav-link">Cart</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO SECTION
+============================================================ -->
+<section class="hero-section" id="hero">
+  <div class="hero-bg-glow"></div>
+  <div class="hero-bg-glow-2"></div>
+  <div class="hero-grid-overlay"></div>
+
+  <div class="container py-5 position-relative" style="z-index:1;">
+    <div class="row align-items-center gy-5">
+
+      <!-- Left: Content -->
+      <div class="col-lg-6">
+        <div class="hero-badge">
+          <i class="fas fa-bolt"></i> New Season 2025 Collection
+        </div>
+        <h1 class="hero-title">
+          Latest <span class="gradient-text">Electronics</span><br>&amp; Smart Gadgets
+        </h1>
+        <p class="hero-desc">
+          Shop the newest technology products at the best prices. Discover top-rated smartphones, laptops, audio gear, and more — all in one place.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="shop.html" class="btn-primary-custom">
+            <i class="fas fa-shopping-bag"></i> Shop Now
+          </a>
+          <a href="shop.html#deals" class="btn-outline-custom">
+            <i class="fas fa-tags"></i> View Deals
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat-item">
+            <span class="hero-stat-num">50K+</span>
+            <span class="hero-stat-label">Products</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-num">200K+</span>
+            <span class="hero-stat-label">Customers</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-num">4.9★</span>
+            <span class="hero-stat-label">Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Device Showcase -->
+      <div class="col-lg-6 d-flex justify-content-center">
+        <div class="hero-product-showcase">
+          <!-- Floating Badges -->
+          <div class="floating-badge fb-1">
+            <i class="fas fa-shield-alt"></i> 2-Year Warranty
+          </div>
+          <div class="floating-badge fb-2">
+            <i class="fas fa-truck"></i> Free Shipping
+          </div>
+          <div class="floating-badge fb-3">
+            <i class="fas fa-undo"></i> 30-Day Returns
+          </div>
+
+          <!-- Device Mockup -->
+          <div class="hero-device-mockup">
+            <div class="device-screen">
+              <div class="hero-device-inner">
+                <div class="hero-phone-icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="hero-device-tag">New Arrival</div>
+                <div class="text-center">
+                  <div style="font-size:1.1rem;font-weight:800;color:#fff;">ProMax X15</div>
+                  <div style="font-size:0.85rem;color:var(--neon);">Starting $999</div>
+                </div>
+                <div style="width:100%;background:rgba(255,255,255,0.05);border-radius:8px;padding:0.6rem;font-size:0.75rem;color:var(--text-muted);text-align:center;">
+                  <i class="fas fa-star" style="color:var(--warning);"></i>
+                  <i class="fas fa-star" style="color:var(--warning);"></i>
+                  <i class="fas fa-star" style="color:var(--warning);"></i>
+                  <i class="fas fa-star" style="color:var(--warning);"></i>
+                  <i class="fas fa-star" style="color:var(--warning);"></i>
+                  &nbsp;5.0 (2.4k)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BRANDS SECTION
+============================================================ -->
+<section class="brands-section">
+  <div class="container">
+    <div class="text-center mb-3">
+      <small class="text-muted text-uppercase" style="letter-spacing:1px;font-size:0.75rem;">Trusted Brands</small>
+    </div>
+    <div class="row row-cols-3 row-cols-md-6 g-0 align-items-center">
+      <div class="col"><div class="brand-item">Apple</div></div>
+      <div class="col"><div class="brand-item">Samsung</div></div>
+      <div class="col"><div class="brand-item">Sony</div></div>
+      <div class="col"><div class="brand-item">Dell</div></div>
+      <div class="col"><div class="brand-item">LG</div></div>
+      <div class="col"><div class="brand-item">Bose</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CATEGORIES SECTION
+============================================================ -->
+<section class="categories-section" id="categories">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">Shop by <span class="highlight">Category</span></h2>
+      <p class="section-subtitle">Browse our wide range of tech product categories</p>
+    </div>
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 g-3">
+
+      <div class="col">
+        <a href="shop.html?cat=smartphones" class="text-decoration-none">
+          <div class="category-card">
+            <div class="category-icon"><i class="fas fa-mobile-alt"></i></div>
+            <div class="category-name">Smartphones</div>
+            <div class="category-count">240+ Products</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="shop.html?cat=laptops" class="text-decoration-none">
+          <div class="category-card">
+            <div class="category-icon"><i class="fas fa-laptop"></i></div>
+            <div class="category-name">Laptops</div>
+            <div class="category-count">180+ Products</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="shop.html?cat=headphones" class="text-decoration-none">
+          <div class="category-card">
+            <div class="category-icon"><i class="fas fa-headphones"></i></div>
+            <div class="category-name">Headphones</div>
+            <div class="category-count">320+ Products</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="shop.html?cat=watches" class="text-decoration-none">
+          <div class="category-card">
+            <div class="category-icon"><i class="fas fa-clock"></i></div>
+            <div class="category-name">Smart Watches</div>
+            <div class="category-count">150+ Products</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="shop.html?cat=accessories" class="text-decoration-none">
+          <div class="category-card">
+            <div class="category-icon"><i class="fas fa-plug"></i></div>
+            <div class="category-name">Accessories</div>
+            <div class="category-count">500+ Products</div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURED PRODUCTS SECTION
+============================================================ -->
+<section class="featured-section" id="featured">
+  <div class="container">
+    <div class="section-header d-flex align-items-center justify-content-between flex-wrap gap-3">
+      <div>
+        <h2 class="section-title">Featured <span class="highlight">Products</span></h2>
+        <p class="section-subtitle">Top picks from our latest collection</p>
+      </div>
+      <a href="shop.html" class="btn-outline-custom">View All <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3" id="featuredProductGrid">
+
+      <!-- Product Card 1 -->
+      <div class="col">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <span class="product-badge"><span class="badge-new">New</span></span>
+            <div class="product-actions">
+              <button class="product-action-btn" title="Wishlist" onclick="addToWishlist(this, 'ProMax X15 Smartphone')"><i class="fas fa-heart"></i></button>
+              <a href="product.html" class="product-action-btn" title="Quick View"><i class="fas fa-eye"></i></a>
+            </div>
+            <i class="fas fa-mobile-alt product-icon"></i>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Smartphones</div>
+            <div class="product-name">ProMax X15 Smartphone</div>
+            <div class="product-rating">
+              <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+              <span class="rating-count">(2.4k)</span>
+            </div>
+            <div class="product-price">
+              <span class="price-current">$999</span>
+              <span class="price-old">$1,199</span>
+              <span class="price-discount">-17%</span>
+            </div>
+            <button class="btn-cart" onclick="addToCart(this, 'ProMax X15 Smartphone', 999)">
+              <i class="fas fa-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="col">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <span class="product-badge"><span class="badge-sale">Sale</span></span>
+            <div class="product-actions">
+              <button class="product-action-btn" title="Wishlist" onclick="addToWishlist(this, 'UltraBook Pro 16')"><i class="fas fa-heart"></i></button>
+              <a href="product.html" class="product-action-btn" title="Quick View"><i class="fas fa-eye"></i></a>
+            </div>
+            <i class="fas fa-laptop product-icon"></i>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Laptops</div>
+            <div class="product-name">UltraBook Pro 16</div>
+            <div class="product-rating">
+              <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+              <span class="rating-count">(1.8k)</span>
+            </div>
+            <div class="product-price">
+              <span class="price-current">$1,299</span>
+              <span class="price-old">$1,799</span>
+              <span class="price-discount">-28%</span>
+            </div>
+            <button class="btn-cart" onclick="addToCart(this, 'UltraBook Pro 16', 1299)">
+              <i class="fas fa-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="col">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <div class="product-actions">
+              <button class="product-action-btn" title="Wishlist" onclick="addToWishlist(this, 'SoundMax Pro Headphones')"><i class="fas fa-heart"></i></button>
+              <a href="product.html" class="product-action-btn" title="Quick View"><i class="fas fa-eye"></i></a>
+            </div>
+            <i class="fas fa-headphones-alt product-icon"></i>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Headphones</div>
+            <div class="product-name">SoundMax Pro Headphones</div>
+            <div class="product-rating">
+              <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+              <span class="rating-count">(3.1k)</span>
+            </div>
+            <div class="product-price">
+              <span class="price-current">$349</span>
+              <span class="price-old">$449</span>
+              <span class="price-discount">-22%</span>
+            </div>
+            <button class="btn-cart" onclick="addToCart(this, 'SoundMax Pro Headphones', 349)">
+              <i class="fas fa-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="col">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <span class="product-badge"><span class="badge-new">New</span></span>
+            <div class="product-actions">
+              <button class="product-action-btn" title="Wishlist" onclick="addToWishlist(this, 'Galaxy Watch 7')"><i class="fas fa-heart"></i></button>
+              <a href="product.html" class="product-action-btn" title="Quick View"><i class="fas fa-eye"></i></a>
+            </div>
+            <i class="fas fa-clock product-icon"></i>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Smart Watches</div>
+            <div class="product-name">Galaxy Watch 7</div>
+            <div class="product-rating">
+              <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+              <span class="rating-count">(980)</span>
+            </div>
+            <div class="product-price">
+              <span class="price-current">$299</span>
+              <span class="price-old">$379</span>
+              <span class="price-discount">-21%</span>
+            </div>
+            <button class="btn-cart" onclick="addToCart(this, 'Galaxy Watch 7', 299)">
+              <i class="fas fa-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 5 -->
+      <div class="col">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <span class="product-badge"><span class="badge-sale">-40%</span></span>
+            <div class="product-actions">
+              <button class="product-action-btn" onclick="addToWishlist(this, 'TabPro 12.9')"><i class="fas fa-heart"></i></button>
+              <a href="product.html" class="product-action-btn"><i class="fas fa-eye"></i></a>
+            </div>
+            <i class="fas fa-tablet-alt product-icon"></i>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Tablets</div>
+            <div class="product-name">TabPro 12.9</div>
+            <div class="product-rating">
+              <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+              <span class="rating-count">(760)</span>
+            </div>
+            <div class="product-price">
+              <span class="price-current">$599</span>
+              <span class="price-old">$999</span>
+              <span class="price-discount">-40%</span>
+            </div>
+            <button class="btn-cart" onclick="addToCart(this, 'TabPro 12.9', 599)">
+              <i class="fas fa-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 6 -->
+      <div class="col">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <div class="product-actions">
+              <button class="product-action-btn" onclick="addToWishlist(this, 'AirBuds Pro Wireless')"><i class="fas fa-heart"></i></button>
+              <a href="product.html" class="product-action-btn"><i class="fas fa-eye"></i></a>
+            </div>
+            <i class="fas fa-headphones product-icon"></i>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Audio</div>
+            <div class="product-name">AirBuds Pro Wireless</div>
+            <div class="product-rating">
+              <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+              <span class="rating-count">(2.1k)</span>
+            </div>
+            <div class="product-price">
+              <span class="price-current">$179</span>
+              <span class="price-old">$229</span>
+              <span class="price-discount">-22%</span>
+            </div>
+            <button class="btn-cart" onclick="addToCart(this, 'AirBuds Pro Wireless', 179)">
+              <i class="fas fa-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 7 -->
+      <div class="col">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <span class="product-badge"><span class="badge-new">New</span></span>
+            <div class="product-actions">
+              <button class="product-action-btn" onclick="addToWishlist(this, '4K Gaming Monitor 27-inch')"><i class="fas fa-heart"></i></button>
+              <a href="product.html" class="product-action-btn"><i class="fas fa-eye"></i></a>
+            </div>
+            <i class="fas fa-desktop product-icon"></i>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Monitors</div>
+            <div class="product-name">4K Gaming Monitor 27-inch</div>
+            <div class="product-rating">
+              <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+              <span class="rating-count">(540)</span>
+            </div>
+            <div class="product-price">
+              <span class="price-current">$449</span>
+              <span class="price-old">$549</span>
+              <span class="price-discount">-18%</span>
+            </div>
+            <button class="btn-cart" onclick="addToCart(this, '4K Gaming Monitor 27-inch', 449)">
+              <i class="fas fa-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 8 -->
+      <div class="col">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <div class="product-actions">
+              <button class="product-action-btn" onclick="addToWishlist(this, 'RGB Mechanical Keyboard')"><i class="fas fa-heart"></i></button>
+              <a href="product.html" class="product-action-btn"><i class="fas fa-eye"></i></a>
+            </div>
+            <i class="fas fa-keyboard product-icon"></i>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Accessories</div>
+            <div class="product-name">RGB Mechanical Keyboard</div>
+            <div class="product-rating">
+              <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+              <span class="rating-count">(1.3k)</span>
+            </div>
+            <div class="product-price">
+              <span class="price-current">$89</span>
+              <span class="price-old">$129</span>
+              <span class="price-discount">-31%</span>
+            </div>
+            <button class="btn-cart" onclick="addToCart(this, 'RGB Mechanical Keyboard', 89)">
+              <i class="fas fa-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+  </div>
+</section>
+
+<!-- ============================================================
+     DEALS SECTION
+============================================================ -->
+<section class="deals-section" id="deals">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">Hot <span class="highlight">Deals</span></h2>
+      <p class="section-subtitle">Limited-time offers — grab them before they're gone</p>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <div class="col-lg-7">
+        <div class="deal-banner">
+          <div class="deal-tag"><i class="fas fa-fire me-1"></i> Flash Sale</div>
+          <h2 class="deal-title">Up to <span>40% Off</span> on<br>Electronics</h2>
+          <p class="deal-desc">Switch to the latest tech and save big. Limited stock available — hurry up!</p>
+
+          <!-- Countdown Timer -->
+          <div class="deal-timer">
+            <div class="timer-unit">
+              <span class="timer-num" id="timerHours">08</span>
+              <span class="timer-label">Hours</span>
+            </div>
+            <div class="timer-unit">
+              <span class="timer-num" id="timerMinutes">45</span>
+              <span class="timer-label">Mins</span>
+            </div>
+            <div class="timer-unit">
+              <span class="timer-num" id="timerSeconds">30</span>
+              <span class="timer-label">Secs</span>
+            </div>
+          </div>
+
+          <a href="shop.html#deals" class="btn-primary-custom">
+            <i class="fas fa-bolt"></i> Shop Deals
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="d-flex flex-column gap-3 h-100">
+
+          <div class="deal-product-card">
+            <div class="deal-product-icon"><i class="fas fa-camera"></i></div>
+            <div class="flex-grow-1">
+              <div class="product-category">Cameras</div>
+              <div class="product-name" style="font-weight:700;color:#fff;">ProShot 4K Camera</div>
+              <div class="product-price mt-1">
+                <span class="price-current">$649</span>
+                <span class="price-old">$999</span>
+                <span class="price-discount">-35%</span>
+              </div>
+              <div class="deal-progress-bar">
+                <div class="deal-progress-fill" style="width: 72%;"></div>
+              </div>
+              <div class="deal-stock-text">72% sold — Only 28 left!</div>
+            </div>
+          </div>
+
+          <div class="deal-product-card">
+            <div class="deal-product-icon"><i class="fas fa-gamepad"></i></div>
+            <div class="flex-grow-1">
+              <div class="product-category">Gaming</div>
+              <div class="product-name" style="font-weight:700;color:#fff;">NexStick Pro Controller</div>
+              <div class="product-price mt-1">
+                <span class="price-current">$59</span>
+                <span class="price-old">$99</span>
+                <span class="price-discount">-40%</span>
+              </div>
+              <div class="deal-progress-bar">
+                <div class="deal-progress-fill" style="width: 89%;"></div>
+              </div>
+              <div class="deal-stock-text">89% sold — Only 11 left!</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     NEWSLETTER SECTION
+============================================================ -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-box">
+      <div class="mb-3">
+        <i class="fas fa-envelope-open-text" style="font-size:2.5rem;color:var(--neon);text-shadow:var(--neon-glow);"></i>
+      </div>
+      <h2 class="section-title mb-2">Get Exclusive <span class="highlight">Deals</span></h2>
+      <p class="text-muted mb-4">Subscribe to our newsletter and be the first to know about new arrivals and exclusive offers.</p>
+      <div class="newsletter-form">
+        <div class="newsletter-input-group">
+          <input type="email" id="newsletterEmail" placeholder="Enter your email address…">
+          <button onclick="subscribeNewsletter()"><i class="fas fa-paper-plane me-1"></i> Subscribe</button>
+        </div>
+        <p class="mt-2" style="font-size:0.78rem;color:var(--text-muted);">
+          <i class="fas fa-lock me-1"></i>No spam, unsubscribe anytime.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT SECTION
+============================================================ -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="section-title">Get in <span class="highlight">Touch</span></h2>
+      <p class="section-subtitle">We'd love to hear from you. Send us a message!</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4">
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <div style="font-weight:600;color:#fff;font-size:0.9rem;margin-bottom:0.2rem;">Email Us</div>
+            <a href="mailto:aymaninfotechs@gmail.com" style="font-size:0.85rem;color:var(--text-muted);">aymaninfotechs@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <div style="font-weight:600;color:#fff;font-size:0.9rem;margin-bottom:0.2rem;">Call Us</div>
+            <span style="font-size:0.85rem;color:var(--text-muted);">+1 (800) 123-4567</span>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div style="font-weight:600;color:#fff;font-size:0.9rem;margin-bottom:0.2rem;">Visit Us</div>
+            <span style="font-size:0.85rem;color:var(--text-muted);">123 Tech Boulevard, Silicon Valley, CA</span>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <div style="font-weight:600;color:#fff;font-size:0.9rem;margin-bottom:0.2rem;">Business Hours</div>
+            <span style="font-size:0.85rem;color:var(--text-muted);">Mon–Sat: 9 AM – 6 PM</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-8">
+        <div class="contact-form-card">
+          <form id="contactForm" onsubmit="submitContactForm(event)">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.4rem;display:block;">Full Name</label>
+                <input type="text" class="form-control-custom" placeholder="John Doe" required>
+              </div>
+              <div class="col-md-6">
+                <label style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.4rem;display:block;">Email Address</label>
+                <input type="email" class="form-control-custom" placeholder="john@example.com" required>
+              </div>
+              <div class="col-12">
+                <label style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.4rem;display:block;">Subject</label>
+                <input type="text" class="form-control-custom" placeholder="Product inquiry, order support…">
+              </div>
+              <div class="col-12">
+                <label style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.4rem;display:block;">Message</label>
+                <textarea class="form-control-custom" rows="5" placeholder="Tell us how we can help…" required style="resize:vertical;"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-primary-custom w-100 justify-content-center">
+                  <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="main-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-brand">
+          <div class="brand-logo" style="font-size:1.4rem;font-weight:900;background:linear-gradient(135deg,#fff 30%,var(--neon));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+            <i class="fas fa-bolt me-1"></i>Tech<span style="-webkit-text-fill-color:var(--neon);">Store</span>
+          </div>
+          <p>Your one-stop destination for the latest electronics, smart gadgets, and tech accessories.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h5 class="footer-heading">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h5 class="footer-heading">Categories</h5>
+        <ul class="footer-links">
+          <li><a href="shop.html">Smartphones</a></li>
+          <li><a href="shop.html">Laptops</a></li>
+          <li><a href="shop.html">Headphones</a></li>
+          <li><a href="shop.html">Smart Watches</a></li>
+          <li><a href="shop.html">Cameras</a></li>
+          <li><a href="shop.html">Accessories</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h5 class="footer-heading">Support</h5>
+        <ul class="footer-links">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Order Tracking</a></li>
+          <li><a href="#">Warranty Info</a></li>
+          <li><a href="contact.html">Live Chat</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5 class="footer-heading">Contact Info</h5>
+        <ul class="footer-links" style="color:var(--text-muted);">
+          <li style="margin-bottom:0.7rem;display:flex;align-items:flex-start;gap:0.5rem;">
+            <i class="fas fa-envelope" style="color:var(--neon);margin-top:3px;"></i>
+            <a href="mailto:aymaninfotechs@gmail.com">aymaninfotechs@gmail.com</a>
+          </li>
+          <li style="margin-bottom:0.7rem;display:flex;align-items:center;gap:0.5rem;">
+            <i class="fas fa-phone" style="color:var(--neon);"></i>
+            <span>+1 (800) 123-4567</span>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:0.5rem;">
+            <i class="fas fa-map-marker-alt" style="color:var(--neon);margin-top:3px;"></i>
+            <span>123 Tech Boulevard, Silicon Valley, CA 94025</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom mt-4">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+        <div>&copy; 2025 TechStore. All rights reserved.</div>
+        <div class="footer-payment-icons">
+          <span class="payment-icon">VISA</span>
+          <span class="payment-icon">MC</span>
+          <span class="payment-icon">PayPal</span>
+          <span class="payment-icon">Apple Pay</span>
+          <span class="payment-icon">Crypto</span>
+        </div>
+        <div>
+          <a href="#" style="font-size:0.82rem;color:var(--text-muted);margin-right:1rem;">Privacy Policy</a>
+          <a href="#" style="font-size:0.82rem;color:var(--text-muted);">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast Container -->
+<div class="toast-container-custom" id="toastContainer"></div>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom Script -->
+<script src="js/script.js"></script>
+</body>
+</html>

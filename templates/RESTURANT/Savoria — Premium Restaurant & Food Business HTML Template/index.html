@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Savoria — A premium fine dining restaurant offering exquisite cuisine, elegant ambience, and unforgettable culinary experiences.">
+  <meta name="keywords" content="restaurant, fine dining, food, gourmet, reservation, menu">
+  <title>Savoria — Premium Fine Dining Restaurant</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader"><div class="loader"></div></div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Sav<span>oria</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link nav-cta" href="reservation.html">Book a Table</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="background-image:url('images/hero-bg.png')"></div>
+    <div class="hero-content">
+      <span class="subtitle">Welcome to Savoria</span>
+      <h1>Experience the Art of Fine Dining</h1>
+      <p>Indulge in a culinary journey where every dish tells a story, crafted with passion and the freshest ingredients from around the world.</p>
+      <div class="hero-btns">
+        <a href="reservation.html" class="btn-primary-custom">Reserve a Table</a>
+        <a href="menu.html" class="btn-outline-custom" style="border-color:#fff; color:#fff;">Explore Menu</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <i class="bi bi-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT PREVIEW ========== -->
+  <section class="section-padding" id="about">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal">
+          <div class="about-img-wrapper">
+            <img src="images/dish-steak.png" alt="Our signature steak">
+            <div class="experience-badge">
+              <div class="number">25</div>
+              <div class="label">Years of<br>Excellence</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal">
+          <div class="about-content">
+            <span class="subtitle">Our Story</span>
+            <h2>A Passion for Exquisite Cuisine</h2>
+            <p>Since 1999, Savoria has been a beacon of culinary excellence, blending traditional recipes with modern innovation. Our chefs pour their hearts into every plate, using only the finest locally-sourced and organic ingredients.</p>
+            <p>Step into our world where every meal is a celebration, every flavor a story, and every visit an unforgettable experience.</p>
+            <div class="about-features">
+              <div class="about-feature-item">
+                <i class="bi bi-award"></i>
+                <span>Award Winning</span>
+              </div>
+              <div class="about-feature-item">
+                <i class="bi bi-leaf"></i>
+                <span>Organic Ingredients</span>
+              </div>
+              <div class="about-feature-item">
+                <i class="bi bi-people"></i>
+                <span>Expert Chefs</span>
+              </div>
+              <div class="about-feature-item">
+                <i class="bi bi-geo-alt"></i>
+                <span>Prime Location</span>
+              </div>
+            </div>
+            <div style="margin-top:30px">
+              <a href="about.html" class="btn-primary-custom">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED DISHES ========== -->
+  <section class="section-padding bg-section" id="dishes">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Our Specialties</span>
+        <h2>Featured Dishes</h2>
+        <div class="divider"></div>
+        <p>Discover our handpicked selection of signature dishes prepared by our world-class chefs.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="dish-card">
+            <div class="dish-card-img">
+              <img src="images/dish-steak.png" alt="Grilled Ribeye Steak">
+              <span class="badge-price">$38</span>
+              <span class="badge-tag">Popular</span>
+            </div>
+            <div class="dish-card-body">
+              <h4>Grilled Ribeye Steak</h4>
+              <p>Premium aged ribeye, rosemary butter, roasted vegetables, and red wine reduction.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="dish-card">
+            <div class="dish-card-img">
+              <img src="images/dish-pasta.png" alt="Truffle Cream Pasta">
+              <span class="badge-price">$26</span>
+            </div>
+            <div class="dish-card-body">
+              <h4>Truffle Cream Pasta</h4>
+              <p>Handmade fettuccine, black truffle cream sauce, parmesan, and fresh herbs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="dish-card">
+            <div class="dish-card-img">
+              <img src="images/dish-burger.png" alt="Wagyu Burger">
+              <span class="badge-price">$22</span>
+              <span class="badge-tag">New</span>
+            </div>
+            <div class="dish-card-body">
+              <h4>Wagyu Beef Burger</h4>
+              <p>Premium wagyu patty, aged cheddar, caramelized onions, brioche bun, truffle fries.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="dish-card">
+            <div class="dish-card-img">
+              <img src="images/dish-pizza.png" alt="Wood-Fired Margherita">
+              <span class="badge-price">$18</span>
+            </div>
+            <div class="dish-card-body">
+              <h4>Wood-Fired Margherita</h4>
+              <p>San Marzano tomatoes, fresh mozzarella, basil, extra virgin olive oil.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="dish-card">
+            <div class="dish-card-img">
+              <img src="images/dish-dessert.png" alt="Chocolate Lava Cake">
+              <span class="badge-price">$14</span>
+              <span class="badge-tag">Chef's Pick</span>
+            </div>
+            <div class="dish-card-body">
+              <h4>Chocolate Lava Cake</h4>
+              <p>Warm molten chocolate center, vanilla bean ice cream, raspberry coulis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="dish-card">
+            <div class="dish-card-img">
+              <img src="images/dish-pasta.png" alt="Seafood Linguine">
+              <span class="badge-price">$32</span>
+            </div>
+            <div class="dish-card-body">
+              <h4>Seafood Linguine</h4>
+              <p>Fresh prawns, mussels, calamari, cherry tomatoes, white wine garlic sauce.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5 reveal">
+        <a href="menu.html" class="btn-primary-custom">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SPECIAL OFFER ========== -->
+  <section class="special-offer" style="background-image:url('images/hero-bg.png')">
+    <div class="container">
+      <div class="special-offer-content reveal">
+        <span class="subtitle" style="color:var(--primary);letter-spacing:4px;font-size:0.85rem;font-weight:600;text-transform:uppercase;">Limited Time Offer</span>
+        <h2>20% Off Your First Visit</h2>
+        <p>Experience our exquisite flavors at an exclusive price. Book your table today and enjoy a memorable dining experience.</p>
+        <div class="offer-timer" id="offer-timer">
+          <div class="timer-box">
+            <div class="number" id="timer-days">00</div>
+            <div class="label">Days</div>
+          </div>
+          <div class="timer-box">
+            <div class="number" id="timer-hours">00</div>
+            <div class="label">Hours</div>
+          </div>
+          <div class="timer-box">
+            <div class="number" id="timer-mins">00</div>
+            <div class="label">Mins</div>
+          </div>
+          <div class="timer-box">
+            <div class="number" id="timer-secs">00</div>
+            <div class="label">Secs</div>
+          </div>
+        </div>
+        <a href="reservation.html" class="btn-primary-custom">Reserve Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATISTICS ========== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-6">
+          <div class="stat-item">
+            <div class="stat-icon"><i class="bi bi-emoji-smile"></i></div>
+            <div class="stat-number" data-target="15000" data-suffix="+">0</div>
+            <div class="stat-label">Happy Guests</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">
+          <div class="stat-item">
+            <div class="stat-icon"><i class="bi bi-cup-hot"></i></div>
+            <div class="stat-number" data-target="120" data-suffix="+">0</div>
+            <div class="stat-label">Menu Items</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">
+          <div class="stat-item">
+            <div class="stat-icon"><i class="bi bi-trophy"></i></div>
+            <div class="stat-number" data-target="28">0</div>
+            <div class="stat-label">Awards Won</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">
+          <div class="stat-item">
+            <div class="stat-icon"><i class="bi bi-people"></i></div>
+            <div class="stat-number" data-target="50" data-suffix="+">0</div>
+            <div class="stat-label">Expert Staff</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section-padding" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Testimonials</span>
+        <h2>What Our Guests Say</h2>
+        <div class="divider"></div>
+        <p>Hear from our delighted guests about their unforgettable experiences at Savoria.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="testimonial-card">
+            <div class="quote-icon"><i class="bi bi-quote"></i></div>
+            <div class="testimonial-stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p>"An absolutely extraordinary dining experience! The flavors were impeccable, the service was outstanding, and the ambience was pure elegance. We will definitely be coming back."</p>
+            <div class="author">
+              <div class="author-info">
+                <h5>Sarah Mitchell</h5>
+                <span>Food Critic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="testimonial-card">
+            <div class="quote-icon"><i class="bi bi-quote"></i></div>
+            <div class="testimonial-stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p>"Savoria exceeded all our expectations. We celebrated our anniversary here and every moment was magical. The truffle pasta is simply divine — a must-try for every food lover."</p>
+            <div class="author">
+              <div class="author-info">
+                <h5>James & Emily</h5>
+                <span>Regular Guests</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="testimonial-card">
+            <div class="quote-icon"><i class="bi bi-quote"></i></div>
+            <div class="testimonial-stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <p>"From the moment we walked in, we were treated like royalty. The ribeye steak was cooked to perfection, and the sommelier's wine pairing recommendation was exceptional."</p>
+            <div class="author">
+              <div class="author-info">
+                <h5>Michael Anderson</h5>
+                <span>Business Executive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY PREVIEW ========== -->
+  <section class="section-padding bg-section" id="gallery-preview">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subtitle">Gallery</span>
+        <h2>Captured Moments</h2>
+        <div class="divider"></div>
+        <p>A glimpse into the artistry and ambiance of Savoria.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal">
+          <img src="images/dish-steak.png" alt="Gallery 1">
+          <div class="overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/dish-pasta.png" alt="Gallery 2">
+          <div class="overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/dish-pizza.png" alt="Gallery 3">
+          <div class="overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/dish-burger.png" alt="Gallery 4">
+          <div class="overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/dish-dessert.png" alt="Gallery 5">
+          <div class="overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/hero-bg.png" alt="Gallery 6">
+          <div class="overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+      <div class="text-center mt-5 reveal">
+        <a href="gallery.html" class="btn-primary-custom">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close-lightbox"><i class="bi bi-x-lg"></i></span>
+    <span class="lightbox-nav lightbox-prev"><i class="bi bi-chevron-left"></i></span>
+    <span class="lightbox-nav lightbox-next"><i class="bi bi-chevron-right"></i></span>
+    <img id="lightbox-img" src="" alt="Gallery Image">
+  </div>
+
+  <!-- ========== CONTACT PREVIEW ========== -->
+  <section class="section-padding" id="contact-preview">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="contact-card">
+            <i class="bi bi-geo-alt"></i>
+            <h5>Visit Us</h5>
+            <p>456 Starlight Boulevard, Aurora Heights<br>AH 99999</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="contact-card">
+            <i class="bi bi-clock"></i>
+            <h5>Opening Hours</h5>
+            <p>Mon – Fri: 11:00 AM – 11:00 PM<br>Sat – Sun: 10:00 AM – 12:00 AM</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="contact-card">
+            <i class="bi bi-telephone"></i>
+            <h5>Call Us</h5>
+            <p>+0 (000) 123-4567<br><a href="mailto:info@savoria.com">info@savoria.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEWSLETTER ========== -->
+  <section class="newsletter-section">
+    <div class="container text-center">
+      <h3>Subscribe to Our Newsletter</h3>
+      <p>Get the latest updates on events, special offers, and seasonal menus delivered to your inbox.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="footer-brand">Sav<span>oria</span></a>
+          <p>An exquisite fine dining destination where culinary artistry meets warm hospitality. Every dish is a masterpiece, every visit a memory.</p>
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i> About</a></li>
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Menu</a></li>
+            <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+            <li><a href="reservation.html"><i class="bi bi-chevron-right"></i> Reservation</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Info</h5>
+          <ul class="footer-contact">
+            <li><i class="bi bi-geo-alt"></i><span>456 Starlight Boulevard, Aurora Heights, AH 99999</span></li>
+            <li><i class="bi bi-telephone"></i><span>+0 (000) 123-4567</span></li>
+            <li><i class="bi bi-envelope"></i><span>info@savoria.com</span></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Opening Hours</h5>
+          <ul class="footer-hours">
+            <li><span>Monday – Friday</span><span>11AM – 11PM</span></li>
+            <li><span>Saturday</span><span>10AM – 12AM</span></li>
+            <li><span>Sunday</span><span>10AM – 10PM</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Savoria. Designed by <a href="https://aymaninfotech.com" target="_blank" style="color:var(--primary)">AymanInfotech</a>. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>

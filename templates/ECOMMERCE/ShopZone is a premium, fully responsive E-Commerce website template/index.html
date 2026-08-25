@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="ShopZone - Modern E-Commerce Store. Shop the latest products in fashion, electronics, and more." />
+  <title>ShopZone | Modern E-Commerce Store</title>
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ── ANNOUNCEMENT BAR ── -->
+  <div class="announcement-bar">
+    🎉 Free Shipping on orders over $50 | Use code <strong>SAVE10</strong> for 10% off &nbsp;
+    <a href="shop.html">Shop Now →</a>
+  </div>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Shop<span class="accent">Zone</span></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-1">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="navbar-icons d-flex align-items-center gap-1 ms-2">
+          <a href="#" title="Search"><i class="bi bi-search"></i></a>
+          <a href="#" title="Wishlist"><i class="bi bi-heart"></i></a>
+          <a href="cart.html" title="Cart" style="position:relative;">
+            <i class="bi bi-bag"></i>
+            <span class="cart-count" style="display:none;">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO SECTION ── -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="hero-tag">✨ New Collection 2025</div>
+          <h1 class="hero-title">
+            Build Your <span class="gradient-text">Online Store</span> Easily
+          </h1>
+          <p class="hero-subtitle">
+            Sell products online with a modern e-commerce website. Premium products, unbeatable prices, delivered to
+            your door.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="shop.html" class="btn-primary-custom">
+              <i class="bi bi-bag-heart me-2"></i>Shop Now
+            </a>
+            <a href="shop.html" class="btn-outline-custom" style="color:#fff;border-color:rgba(255,255,255,.3);">
+              <i class="bi bi-grid me-2"></i>View Products
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="hero-stat-number">10K+</div>
+              <div class="hero-stat-label">Products</div>
+            </div>
+            <div>
+              <div class="hero-stat-number">50K+</div>
+              <div class="hero-stat-label">Customers</div>
+            </div>
+            <div>
+              <div class="hero-stat-number">4.9★</div>
+              <div class="hero-stat-label">Rating</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-image-wrapper">
+            <img src="images/hero-banner.png" alt="Hero Banner - ShopZone Products" />
+            <div class="hero-badge badge-top">
+              <i class="bi bi-truck"></i> Free Delivery!
+            </div>
+            <div class="hero-badge badge-bottom">
+              <i class="bi bi-shield-check"></i> 30-Day Returns
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TRUST FEATURES ── -->
+  <section class="py-4 border-bottom">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-6 col-md-3">
+          <div class="d-flex align-items-center gap-3 p-3">
+            <div class="feature-icon-box"><i class="bi bi-truck"></i></div>
+            <div class="feature-text">
+              <h6>Free Shipping</h6>
+              <p>On orders over $50</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="d-flex align-items-center gap-3 p-3">
+            <div class="feature-icon-box"><i class="bi bi-arrow-counterclockwise"></i></div>
+            <div class="feature-text">
+              <h6>30-Day Returns</h6>
+              <p>Easy hassle-free returns</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="d-flex align-items-center gap-3 p-3">
+            <div class="feature-icon-box"><i class="bi bi-shield-lock"></i></div>
+            <div class="feature-text">
+              <h6>Secure Payment</h6>
+              <p>100% secure checkout</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="d-flex align-items-center gap-3 p-3">
+            <div class="feature-icon-box"><i class="bi bi-headset"></i></div>
+            <div class="feature-text">
+              <h6>24/7 Support</h6>
+              <p>Dedicated support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CATEGORIES ── -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <h2 class="section-title">Shop by <span class="accent">Category</span></h2>
+        <p class="section-subtitle">Explore our curated product categories</p>
+      </div>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-2 reveal">
+          <a href="shop.html" class="category-card d-block text-decoration-none">
+            <div class="category-icon">🎧</div>
+            <div class="category-name">Electronics</div>
+            <div class="category-count">124 products</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 reveal">
+          <a href="shop.html" class="category-card d-block text-decoration-none">
+            <div class="category-icon">👗</div>
+            <div class="category-name">Fashion</div>
+            <div class="category-count">340 products</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 reveal">
+          <a href="shop.html" class="category-card d-block text-decoration-none">
+            <div class="category-icon">👟</div>
+            <div class="category-name">Footwear</div>
+            <div class="category-count">89 products</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 reveal">
+          <a href="shop.html" class="category-card d-block text-decoration-none">
+            <div class="category-icon">⌚</div>
+            <div class="category-name">Watches</div>
+            <div class="category-count">56 products</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 reveal">
+          <a href="shop.html" class="category-card d-block text-decoration-none">
+            <div class="category-icon">👜</div>
+            <div class="category-name">Bags</div>
+            <div class="category-count">78 products</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 reveal">
+          <a href="shop.html" class="category-card d-block text-decoration-none">
+            <div class="category-icon">🕶️</div>
+            <div class="category-name">Accessories</div>
+            <div class="category-count">210 products</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURED PRODUCTS ── -->
+  <section class="section-padding" style="background:var(--bg-light);">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between mb-5 reveal">
+        <div>
+          <h2 class="section-title mb-1">Featured <span class="accent">Products</span></h2>
+          <p class="section-subtitle mb-0">Handpicked for you — premium quality</p>
+        </div>
+        <a href="shop.html" class="btn-outline-custom d-none d-md-block">View All <i
+            class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+      <div class="row g-4">
+        <!-- Product 1 -->
+        <div class="col-6 col-md-4 col-lg-3 reveal">
+          <div class="product-card h-100" data-product-id="p1" data-product-name="Pro Wireless Headphones"
+            data-product-price="89.99">
+            <div class="product-img-wrapper">
+              <img src="images/product-1.png" alt="Pro Wireless Headphones" loading="lazy" />
+              <div class="product-badges">
+                <span class="badge-sale">-25%</span>
+              </div>
+              <div class="product-actions">
+                <button class="action-btn" data-action="wishlist" title="Wishlist"><i class="bi bi-heart"></i></button>
+                <a href="product.html" class="action-btn" title="Quick View"><i class="bi bi-eye"></i></a>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Electronics</div>
+              <div class="product-name">Pro Wireless Headphones</div>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">(128)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">$89.99</span>
+                <span class="price-original">$119.99</span>
+                <span class="price-discount">25% off</span>
+              </div>
+              <button class="btn-add-cart"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="col-6 col-md-4 col-lg-3 reveal">
+          <div class="product-card h-100" data-product-id="p2" data-product-name="Classic White Sneakers"
+            data-product-price="69.99">
+            <div class="product-img-wrapper">
+              <img src="images/product-2.png" alt="Classic White Sneakers" loading="lazy" />
+              <div class="product-badges">
+                <span class="badge-new">New</span>
+              </div>
+              <div class="product-actions">
+                <button class="action-btn" data-action="wishlist" title="Wishlist"><i class="bi bi-heart"></i></button>
+                <a href="product.html" class="action-btn" title="Quick View"><i class="bi bi-eye"></i></a>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Footwear</div>
+              <div class="product-name">Classic White Sneakers</div>
+              <div class="product-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(84)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">$69.99</span>
+              </div>
+              <button class="btn-add-cart"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col-6 col-md-4 col-lg-3 reveal">
+          <div class="product-card h-100" data-product-id="p3" data-product-name="Smart Luxury Watch"
+            data-product-price="149.99">
+            <div class="product-img-wrapper">
+              <img src="images/product-3.png" alt="Smart Luxury Watch" loading="lazy" />
+              <div class="product-badges">
+                <span class="badge-hot">Hot</span>
+              </div>
+              <div class="product-actions">
+                <button class="action-btn" data-action="wishlist" title="Wishlist"><i class="bi bi-heart"></i></button>
+                <a href="product.html" class="action-btn" title="Quick View"><i class="bi bi-eye"></i></a>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Watches</div>
+              <div class="product-name">Smart Luxury Watch</div>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">(256)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">$149.99</span>
+                <span class="price-original">$199.99</span>
+                <span class="price-discount">25% off</span>
+              </div>
+              <button class="btn-add-cart"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="col-6 col-md-4 col-lg-3 reveal">
+          <div class="product-card h-100" data-product-id="p4" data-product-name="Premium Leather Bag"
+            data-product-price="119.99">
+            <div class="product-img-wrapper">
+              <img src="images/product-4.png" alt="Premium Leather Bag" loading="lazy" />
+              <div class="product-actions">
+                <button class="action-btn" data-action="wishlist" title="Wishlist"><i class="bi bi-heart"></i></button>
+                <a href="product.html" class="action-btn" title="Quick View"><i class="bi bi-eye"></i></a>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Bags</div>
+              <div class="product-name">Premium Leather Bag</div>
+              <div class="product-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(63)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">$119.99</span>
+                <span class="price-original">$149.99</span>
+                <span class="price-discount">20% off</span>
+              </div>
+              <button class="btn-add-cart"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SPECIAL OFFERS ── -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <h2 class="section-title">Special <span class="accent">Offers</span></h2>
+        <p class="section-subtitle">Limited time deals — grab them before they're gone!</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-7 reveal">
+          <div class="offer-banner offer-banner-dark h-100">
+            <span class="hero-tag mb-3 d-inline-block">Flash Sale ⚡</span>
+            <div class="offer-banner-title">Up to 50% Off <br>Electronics</div>
+            <div class="offer-banner-text">Grab the best deals on wireless headphones,<br>smartwatches, and more.</div>
+            <div class="countdown-box" id="countdown">
+              <div class="count-item"><span class="count-number" id="cnt-h">00</span><span
+                  class="count-label">Hours</span></div>
+              <div class="count-item"><span class="count-number" id="cnt-m">00</span><span
+                  class="count-label">Mins</span></div>
+              <div class="count-item"><span class="count-number" id="cnt-s">00</span><span
+                  class="count-label">Secs</span></div>
+            </div>
+            <a href="shop.html" class="btn-primary-custom">Shop the Sale</a>
+          </div>
+        </div>
+        <div class="col-lg-5 reveal">
+          <div class="offer-banner offer-banner-orange h-100">
+            <span class="hero-tag mb-3 d-inline-block"
+              style="background:rgba(0,0,0,.15);border-color:rgba(0,0,0,.2);color:#fff;">New Arrivals 🛍️</span>
+            <div class="offer-banner-title">Fresh Fashion<br>Collection</div>
+            <div class="offer-banner-text">Explore our latest fashion picks<br>— style meets comfort.</div>
+            <a href="shop.html" class="btn-outline-custom" style="color:#fff;border-color:rgba(255,255,255,.5);">Explore
+              Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── POPULAR ITEMS ── -->
+  <section class="section-padding" style="background:var(--bg-light);">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between mb-5 reveal">
+        <div>
+          <h2 class="section-title mb-1">Popular <span class="accent">Items</span></h2>
+          <p class="section-subtitle mb-0">Best sellers loved by our customers</p>
+        </div>
+        <a href="shop.html" class="btn-outline-custom d-none d-md-block">View All <i
+            class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-3 reveal">
+          <div class="product-card h-100" data-product-id="p5" data-product-name="Aviator Sunglasses"
+            data-product-price="49.99">
+            <div class="product-img-wrapper">
+              <img src="images/product-5.png" alt="Aviator Sunglasses" loading="lazy" />
+              <div class="product-badges"><span class="badge-sale">-30%</span></div>
+              <div class="product-actions">
+                <button class="action-btn" data-action="wishlist" title="Wishlist"><i class="bi bi-heart"></i></button>
+                <a href="product.html" class="action-btn" title="Quick View"><i class="bi bi-eye"></i></a>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Accessories</div>
+              <div class="product-name">Aviator Sunglasses</div>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">(45)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">$49.99</span>
+                <span class="price-original">$69.99</span>
+                <span class="price-discount">30% off</span>
+              </div>
+              <button class="btn-add-cart"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 reveal">
+          <div class="product-card h-100" data-product-id="p6" data-product-name="Noise Cancelling Buds"
+            data-product-price="59.99">
+            <div class="product-img-wrapper">
+              <img src="images/product-6.png" alt="Noise Cancelling Buds" loading="lazy" />
+              <div class="product-badges"><span class="badge-new">New</span></div>
+              <div class="product-actions">
+                <button class="action-btn" data-action="wishlist" title="Wishlist"><i class="bi bi-heart"></i></button>
+                <a href="product.html" class="action-btn" title="Quick View"><i class="bi bi-eye"></i></a>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Electronics</div>
+              <div class="product-name">Noise Cancelling Buds</div>
+              <div class="product-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(91)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">$59.99</span>
+              </div>
+              <button class="btn-add-cart"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 reveal">
+          <div class="product-card h-100" data-product-id="p7" data-product-name="Crossbody Mini Bag"
+            data-product-price="39.99">
+            <div class="product-img-wrapper">
+              <img src="images/product-4.png" alt="Crossbody Mini Bag" loading="lazy" />
+              <div class="product-actions">
+                <button class="action-btn" data-action="wishlist" title="Wishlist"><i class="bi bi-heart"></i></button>
+                <a href="product.html" class="action-btn" title="Quick View"><i class="bi bi-eye"></i></a>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Bags</div>
+              <div class="product-name">Crossbody Mini Bag</div>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">(32)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">$39.99</span>
+              </div>
+              <button class="btn-add-cart"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 reveal">
+          <div class="product-card h-100" data-product-id="p8" data-product-name="Sport Running Shoes"
+            data-product-price="79.99">
+            <div class="product-img-wrapper">
+              <img src="images/product-2.png" alt="Sport Running Shoes" loading="lazy" />
+              <div class="product-badges"><span class="badge-hot">Hot</span></div>
+              <div class="product-actions">
+                <button class="action-btn" data-action="wishlist" title="Wishlist"><i class="bi bi-heart"></i></button>
+                <a href="product.html" class="action-btn" title="Quick View"><i class="bi bi-eye"></i></a>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Footwear</div>
+              <div class="product-name">Sport Running Shoes</div>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">(174)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">$79.99</span>
+                <span class="price-original">$99.99</span>
+                <span class="price-discount">20% off</span>
+              </div>
+              <button class="btn-add-cart"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ── -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <h2 class="section-title">Customer <span class="accent">Reviews</span></h2>
+        <p class="section-subtitle">What our happy customers are saying</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4 reveal">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Absolutely love my new headphones! The sound quality is incredible and they
+              arrived faster than expected. Will definitely shop here again."</p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="testimonial-avatar">S</div>
+              <div>
+                <div class="testimonial-name">Sarah Johnson</div>
+                <div class="testimonial-meta">Verified Buyer · Electronics</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The leather bag I ordered is stunning — high quality materials and the
+              stitching is perfect. Fast shipping and great packaging too!"</p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="testimonial-avatar">M</div>
+              <div>
+                <div class="testimonial-name">Mike Chen</div>
+                <div class="testimonial-meta">Verified Buyer · Bags</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 reveal">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★☆</div>
+            <p class="testimonial-text">"Great selection of products and the checkout was super smooth. Customer service
+              was very helpful when I had a sizing question."</p>
+            <div class="d-flex align-items-center gap-3">
+              <div class="testimonial-avatar">A</div>
+              <div>
+                <div class="testimonial-name">Amelia Rose</div>
+                <div class="testimonial-meta">Verified Buyer · Fashion</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── NEWSLETTER ── -->
+  <section class="newsletter-section">
+    <div class="container text-center">
+      <div class="reveal">
+        <h2 class="section-title text-white mb-2">Get <span class="accent">Exclusive</span> Deals</h2>
+        <p class="text-white" style="opacity:.7;" class="mb-4">Subscribe to our newsletter and get 10% off your first
+          purchase!</p>
+        <form class="newsletter-form mt-4" novalidate>
+          <div class="newsletter-input-group">
+            <input type="email" class="newsletter-input" placeholder="Enter your email address" required />
+            <button type="submit" class="newsletter-btn"><i class="bi bi-send me-1"></i>Subscribe</button>
+          </div>
+        </form>
+        <p class="mt-3" style="color:rgba(255,255,255,.4);font-size:.78rem;">No spam, unsubscribe anytime. 🔒</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="container">
+      <div class="row g-4 pb-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">Shop<span class="accent">Zone</span></div>
+          <p class="footer-desc">Your one-stop online shop for premium products. Quality, style, and value in every
+            purchase.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-btn"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <div class="footer-heading">Contact Info</div>
+          <div class="footer-contact">
+            <p><i class="bi bi-envelope"></i> aymaninfotechs@gmail.com</p>
+            <p><i class="bi bi-clock"></i> Mon – Sat: 9 AM – 6 PM</p>
+          </div>
+          <div class="mt-3">
+            <small style="color:rgba(255,255,255,.35);">Accepted Payments:</small><br>
+            <div class="d-flex gap-2 mt-2 flex-wrap">
+              <span
+                style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.7);padding:3px 10px;border-radius:4px;font-size:.75rem;font-weight:700;">VISA</span>
+              <span
+                style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.7);padding:3px 10px;border-radius:4px;font-size:.75rem;font-weight:700;">MASTERCARD</span>
+              <span
+                style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.7);padding:3px 10px;border-radius:4px;font-size:.75rem;font-weight:700;">PAYPAL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="mb-0">© 2025 ShopZone. Developed by <a href="https://aymaninfotech.com"
+            target="_blank">AymanInfotech</a>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" title="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Browse AymanInfotech's portfolio of successful projects across web development, business consulting, digital marketing, and IT solutions." />
+    <title>Portfolio | AymanInfotech Business</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader-ring"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-custom navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand-custom" href="index.html">
+                <div class="logo-icon">A</div>
+                <span class="logo-text">Ayman<span>Infotech</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list fs-4"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-2"><a class="nav-link nav-cta" href="contact.html">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Portfolio</li>
+                </ol>
+            </nav>
+            <h1>Our Portfolio</h1>
+            <p class="lead">A collection of our finest work across diverse industries and disciplines.</p>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="section-padding">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="portfolio-filter" data-reveal>
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="consulting">Business Consulting</button>
+                <button class="filter-btn" data-filter="marketing">Digital Marketing</button>
+                <button class="filter-btn" data-filter="it">IT Solutions</button>
+                <button class="filter-btn" data-filter="finance">Financial</button>
+            </div>
+
+            <div class="row g-4">
+                <!-- Item 1 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="web" data-reveal data-reveal-delay="1">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+                                alt="E-Commerce Platform" />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-icon"><i class="bi bi-eye"></i></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-category">Web Development</div>
+                            <h5>E-Commerce Platform Redesign</h5>
+                            <p>Complete overhaul of an online retail platform that increased conversions by 120% and
+                                reduced bounce rate by 45%.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="consulting" data-reveal
+                    data-reveal-delay="2">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80"
+                                alt="Corporate Strategy" />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-icon"><i class="bi bi-eye"></i></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-category">Business Consulting</div>
+                            <h5>Corporate Growth Strategy</h5>
+                            <p>Strategic roadmap that helped a mid-size manufacturing firm successfully expand into 5
+                                new international markets.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="marketing" data-reveal
+                    data-reveal-delay="3">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=80"
+                                alt="Marketing Campaign" />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-icon"><i class="bi bi-eye"></i></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-category">Digital Marketing</div>
+                            <h5>National Brand Campaign</h5>
+                            <p>Multi-channel digital campaign achieving 3.2M impressions, 85,000 click-throughs, and a
+                                340% ROI in 3 months.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="finance" data-reveal data-reveal-delay="1">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&q=80"
+                                alt="Financial Dashboard" />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-icon"><i class="bi bi-eye"></i></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-category">Financial Consulting</div>
+                            <h5>Investment Analytics Dashboard</h5>
+                            <p>Real-time financial analytics and portfolio management platform for a leading investment
+                                firm managing $2B+ in assets.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="it" data-reveal data-reveal-delay="2">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80"
+                                alt="IT Infrastructure" />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-icon"><i class="bi bi-eye"></i></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-category">IT Solutions</div>
+                            <h5>Cloud Migration & Security</h5>
+                            <p>End-to-end cloud migration for a 500-person enterprise, reducing IT costs by 38% and
+                                achieving 99.9% uptime SLA.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="web" data-reveal data-reveal-delay="3">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=80"
+                                alt="Corporate Website" />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-icon"><i class="bi bi-eye"></i></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-category">Web Development</div>
+                            <h5>Corporate Website Rebuild</h5>
+                            <p>Full redesign and development of a Fortune 500 subsidiary's digital presence, resulting
+                                in 200% organic traffic growth.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 7 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="consulting" data-reveal
+                    data-reveal-delay="1">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80"
+                                alt="Team Consulting" />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-icon"><i class="bi bi-eye"></i></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-category">Business Consulting</div>
+                            <h5>Operational Efficiency Overhaul</h5>
+                            <p>Comprehensive process re-engineering for a logistics company, cutting operational costs
+                                by 28% within 6 months.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 8 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="marketing" data-reveal
+                    data-reveal-delay="2">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&q=80"
+                                alt="SEO Campaign" />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-icon"><i class="bi bi-eye"></i></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-category">Digital Marketing</div>
+                            <h5>SEO Dominance Campaign</h5>
+                            <p>Systematic SEO strategy that took a retail brand from page 5 to position #1 for 50+
+                                high-value keywords in 8 months.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 9 -->
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="it" data-reveal data-reveal-delay="3">
+                    <div class="portfolio-card">
+                        <div class="portfolio-img">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
+                                alt="Data Analytics" />
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-overlay-icon"><i class="bi bi-eye"></i></div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-category">IT Solutions</div>
+                            <h5>Business Intelligence Platform</h5>
+                            <p>Custom BI dashboard aggregating data from 12 sources, empowering executives with
+                                real-time decision-making insights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="newsletter-section">
+        <div class="container text-center">
+            <h2 class="mb-3">Have a Project in Mind?</h2>
+            <p style="color:rgba(255,255,255,.75);max-width:550px;margin:0 auto 28px;">Let us help you bring your vision
+                to life. Get in touch with our team for a free project discussion.</p>
+            <a href="contact.html" class="btn btn-newsletter px-5 py-3" style="font-size:1rem;">Start a Project <i
+                    class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <span class="logo-text">Ayman<span>Infotech</span></span>
+                        <p>Professional business solutions for modern companies.</p>
+                        <div class="footer-socials">
+                            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="footer-title">Services</h6>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Business Consulting</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">IT Solutions</a></li>
+                        <li><a href="services.html">Financial Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="footer-title">Contact Us</h6>
+                    <ul class="footer-contact">
+                        <li><i class="bi bi-envelope fc-icon"></i><a href="mailto:aymaninfotechs@gmail.com"
+                                style="color:rgba(255,255,255,.55);">aymaninfotechs@gmail.com</a></li>
+                        <li><i class="bi bi-clock fc-icon"></i><span>Mon – Fri: 9:00 AM – 6:00 PM</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AymanInfotech. All rights reserved.</p>
+                <p>Developed by <a href="mailto:aymaninfotechs@gmail.com">AymanInfotech</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

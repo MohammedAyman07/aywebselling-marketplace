@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Professional art services including custom illustrations, digital artwork, character design and logo design." />
+    <title>Services – ArtVista Creative Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .pkg-card {
+            background: var(--white);
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            padding: 40px 32px;
+            position: relative;
+            transition: var(--transition);
+            height: 100%;
+        }
+
+        .pkg-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-8px);
+            box-shadow: var(--shadow);
+        }
+
+        .pkg-card.featured {
+            border-color: var(--primary);
+            background: var(--dark);
+            color: var(--white);
+        }
+
+        .pkg-card.featured h3,
+        .pkg-card.featured .pkg-price {
+            color: var(--white);
+        }
+
+        .pkg-card.featured p,
+        .pkg-card.featured li {
+            color: rgba(255, 255, 255, .65);
+        }
+
+        .pkg-badge {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 4px 18px;
+            border-radius: 50px;
+            font-size: .75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            white-space: nowrap;
+        }
+
+        .pkg-price {
+            font-family: var(--font-display);
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--dark);
+            line-height: 1;
+            margin: 20px 0;
+        }
+
+        .pkg-price sup {
+            font-size: 1.2rem;
+            vertical-align: super;
+        }
+
+        .pkg-price .period {
+            font-size: .9rem;
+            color: var(--text-muted);
+            font-family: var(--font-main);
+            font-weight: 400;
+        }
+
+        .pkg-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 28px;
+        }
+
+        .pkg-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: .9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .pkg-card.featured .pkg-features li {
+            border-color: rgba(255, 255, 255, .1);
+        }
+
+        .pkg-features li i {
+            color: var(--primary);
+            font-size: .8rem;
+        }
+
+        .faq-item {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px 24px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            background: var(--light);
+            color: var(--primary);
+        }
+
+        .faq-answer {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .4s ease, padding .3s ease;
+            font-size: .92rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 200px;
+            padding: 0 24px 20px;
+        }
+
+        .faq-item.open .faq-question {
+            color: var(--primary);
+        }
+
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+            color: var(--primary);
+        }
+
+        .faq-icon {
+            transition: transform .3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="loader-ring"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Art<span>Vista</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavCollapse"
+                aria-controls="mainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavCollapse">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link nav-cta rounded-pill ms-2" href="contact.html">Hire Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Services</li>
+                </ol>
+            </nav>
+            <h1>Creative <span class="text-gradient">Services</span></h1>
+            <p>Professional art services tailored to your vision — from character design to complete illustrations</p>
+        </div>
+    </div>
+
+    <!-- SERVICES OVERVIEW -->
+    <section style="background:var(--dark);">
+        <div class="container">
+            <div class="text-center mb-5" data-reveal>
+                <span class="section-label">What I Offer</span>
+                <h2 class="section-title" style="color:var(--white);">Artistic Services</h2>
+                <p class="section-subtitle" style="color:rgba(255,255,255,.6);">Every commission is unique — crafted
+                    with care, creativity and clear communication</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-reveal data-delay="0">
+                    <div class="service-card h-100">
+                        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h4>Custom Illustrations</h4>
+                        <p>Unique digital illustrations for books, editorial, branding and personal projects. Fully
+                            custom to your brief and style.</p>
+                        <ul style="padding:0;list-style:none;font-size:.85rem;color:rgba(255,255,255,.5);">
+                            <li class="mb-1"><i class="fas fa-check me-2"
+                                    style="color:var(--primary-light);"></i>Revisions included</li>
+                            <li class="mb-1"><i class="fas fa-check me-2"
+                                    style="color:var(--primary-light);"></i>High-res final files</li>
+                            <li class="mb-1"><i class="fas fa-check me-2"
+                                    style="color:var(--primary-light);"></i>Commercial license</li>
+                        </ul>
+                        <div class="service-price mt-3">From $150</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-reveal data-delay="100">
+                    <div class="service-card h-100">
+                        <div class="service-icon"><i class="fas fa-tablet-alt"></i></div>
+                        <h4>Digital Artwork</h4>
+                        <p>High-resolution digital paintings for print, merchandise, NFTs, album covers, and commercial
+                            media campaigns.</p>
+                        <ul style="padding:0;list-style:none;font-size:.85rem;color:rgba(255,255,255,.5);">
+                            <li class="mb-1"><i class="fas fa-check me-2" style="color:var(--primary-light);"></i>300
+                                DPI print-ready</li>
+                            <li class="mb-1"><i class="fas fa-check me-2"
+                                    style="color:var(--primary-light);"></i>Layered PSD file</li>
+                            <li class="mb-1"><i class="fas fa-check me-2"
+                                    style="color:var(--primary-light);"></i>Unlimited formats</li>
+                        </ul>
+                        <div class="service-price mt-3">From $200</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-reveal data-delay="200">
+                    <div class="service-card h-100">
+                        <div class="service-icon"><i class="fas fa-user-astronaut"></i></div>
+                        <h4>Character Design</h4>
+                        <p>Original character sheets with personality, outfit design, expression sheets and full
+                            turnarounds for games and stories.</p>
+                        <ul style="padding:0;list-style:none;font-size:.85rem;color:rgba(255,255,255,.5);">
+                            <li class="mb-1"><i class="fas fa-check me-2" style="color:var(--primary-light);"></i>Front
+                                + side views</li>
+                            <li class="mb-1"><i class="fas fa-check me-2"
+                                    style="color:var(--primary-light);"></i>Expression sheet</li>
+                            <li class="mb-1"><i class="fas fa-check me-2" style="color:var(--primary-light);"></i>Color
+                                palette ref</li>
+                        </ul>
+                        <div class="service-price mt-3">From $250</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-reveal data-delay="300">
+                    <div class="service-card h-100">
+                        <div class="service-icon"><i class="fas fa-vector-square"></i></div>
+                        <h4>Logo Design</h4>
+                        <p>Creative, artistic logo design with a handcrafted feel — perfect for creative brands,
+                            studios, streamers and musicians.</p>
+                        <ul style="padding:0;list-style:none;font-size:.85rem;color:rgba(255,255,255,.5);">
+                            <li class="mb-1"><i class="fas fa-check me-2" style="color:var(--primary-light);"></i>Vector
+                                SVG included</li>
+                            <li class="mb-1"><i class="fas fa-check me-2"
+                                    style="color:var(--primary-light);"></i>Multiple variations</li>
+                            <li class="mb-1"><i class="fas fa-check me-2" style="color:var(--primary-light);"></i>Brand
+                                guide</li>
+                        </ul>
+                        <div class="service-price mt-3">From $100</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING PACKAGES -->
+    <section>
+        <div class="container">
+            <div class="text-center mb-5" data-reveal>
+                <span class="section-label">Pricing</span>
+                <h2 class="section-title">Commission Packages</h2>
+                <p class="section-subtitle">Flexible packages to fit any project size and budget</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- Basic -->
+                <div class="col-md-4" data-reveal data-delay="0">
+                    <div class="pkg-card">
+                        <h3 style="font-size:1.2rem;">Basic</h3>
+                        <div class="pkg-price"><sup>$</sup>150 <span class="period">/ piece</span></div>
+                        <p style="font-size:.9rem;color:var(--text-muted);margin-bottom:20px;">Perfect for simple
+                            illustrations and personal commissions</p>
+                        <ul class="pkg-features">
+                            <li><i class="fas fa-check"></i> 1 Character or Scene</li>
+                            <li><i class="fas fa-check"></i> Simple Background</li>
+                            <li><i class="fas fa-check"></i> 2 Revisions</li>
+                            <li><i class="fas fa-check"></i> JPG + PNG Delivery</li>
+                            <li><i class="fas fa-check"></i> 7-Day Turnaround</li>
+                            <li style="opacity:.4;"><i class="fas fa-times"></i> Commercial License</li>
+                            <li style="opacity:.4;"><i class="fas fa-times"></i> Source PSD File</li>
+                        </ul>
+                        <a href="contact.html" class="btn-outline-custom w-100 justify-content-center">Get Started</a>
+                    </div>
+                </div>
+                <!-- Featured -->
+                <div class="col-md-4" data-reveal data-delay="100">
+                    <div class="pkg-card featured">
+                        <div class="pkg-badge">Most Popular</div>
+                        <h3 style="font-size:1.2rem;">Professional</h3>
+                        <div class="pkg-price"><sup>$</sup>350 <span class="period"
+                                style="color:rgba(255,255,255,.5);">/ piece</span></div>
+                        <p style="font-size:.9rem;margin-bottom:20px;">For commercial projects, detailed character work
+                            and full scenes</p>
+                        <ul class="pkg-features">
+                            <li><i class="fas fa-check" style="color:var(--primary-light);"></i> Up to 3 Characters</li>
+                            <li><i class="fas fa-check" style="color:var(--primary-light);"></i> Detailed Background
+                            </li>
+                            <li><i class="fas fa-check" style="color:var(--primary-light);"></i> 4 Revisions</li>
+                            <li><i class="fas fa-check" style="color:var(--primary-light);"></i> All File Formats</li>
+                            <li><i class="fas fa-check" style="color:var(--primary-light);"></i> 10-Day Turnaround</li>
+                            <li><i class="fas fa-check" style="color:var(--primary-light);"></i> Commercial License</li>
+                            <li><i class="fas fa-check" style="color:var(--primary-light);"></i> Source PSD File</li>
+                        </ul>
+                        <a href="contact.html" class="btn-primary-custom w-100 justify-content-center">Get Started</a>
+                    </div>
+                </div>
+                <!-- Premium -->
+                <div class="col-md-4" data-reveal data-delay="200">
+                    <div class="pkg-card">
+                        <h3 style="font-size:1.2rem;">Premium Studio</h3>
+                        <div class="pkg-price"><sup>$</sup>750 <span class="period">/ project</span></div>
+                        <p style="font-size:.9rem;color:var(--text-muted);margin-bottom:20px;">Full creative packages —
+                            characters, environments, and world-building</p>
+                        <ul class="pkg-features">
+                            <li><i class="fas fa-check"></i> Full Scene / World-build</li>
+                            <li><i class="fas fa-check"></i> Character + Story Art</li>
+                            <li><i class="fas fa-check"></i> Unlimited Revisions</li>
+                            <li><i class="fas fa-check"></i> Priority Delivery</li>
+                            <li><i class="fas fa-check"></i> 14-Day Turnaround</li>
+                            <li><i class="fas fa-check"></i> Full Commercial Rights</li>
+                            <li><i class="fas fa-check"></i> Source + Raw Files</li>
+                        </ul>
+                        <a href="contact.html" class="btn-primary-custom w-100 justify-content-center">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="background:var(--light);">
+        <div class="container">
+            <div class="text-center mb-5" data-reveal>
+                <span class="section-label">FAQs</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="faq-item" data-reveal>
+                        <div class="faq-question">How do I start a commission? <i class="fas fa-plus faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">Simply reach out via the Contact page with your project details — style,
+                            use case, timeline and budget. I'll respond within 24 hours to discuss your vision and
+                            provide a custom quote.</div>
+                    </div>
+                    <div class="faq-item" data-reveal data-delay="50">
+                        <div class="faq-question">How many revisions are included? <i class="fas fa-plus faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">Revisions depend on the package selected. Basic includes 2, Professional
+                            includes 4, and Premium includes unlimited revisions. Major concept changes beyond the
+                            agreed scope may incur additional fees.</div>
+                    </div>
+                    <div class="faq-item" data-reveal data-delay="100">
+                        <div class="faq-question">What file formats will I receive? <i class="fas fa-plus faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">Standard packages include high-resolution JPG and PNG files.
+                            Professional and Premium tiers also include layered PSD files, SVG vector (where
+                            applicable), and any other format you require.</div>
+                    </div>
+                    <div class="faq-item" data-reveal data-delay="150">
+                        <div class="faq-question">Do you offer a payment plan? <i class="fas fa-plus faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">Yes! For commissions over $300, I offer a 50% upfront deposit with the
+                            remainder due upon delivery. Larger projects can be split into milestone-based payments.
+                        </div>
+                    </div>
+                    <div class="faq-item" data-reveal data-delay="200">
+                        <div class="faq-question">Can I use the artwork commercially? <i
+                                class="fas fa-plus faq-icon"></i></div>
+                        <div class="faq-answer">Commercial licensing is included with Professional and Premium packages.
+                            For Basic commissions, a commercial license upgrade is available as an add-on. Please
+                            specify your intended use when commissioning.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section
+        style="background:linear-gradient(135deg,var(--primary-dark),var(--primary));text-align:center;padding:80px 0;">
+        <div class="container" data-reveal>
+            <h2 style="color:var(--white);font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:16px;">Ready to Start Your
+                Project?</h2>
+            <p style="color:rgba(255,255,255,.7);margin-bottom:36px;font-size:1.05rem;">Let's collaborate and create
+                something truly remarkable together.</p>
+            <a href="contact.html" class="btn-outline-custom" style="color:white;border-color:rgba(255,255,255,.4);">
+                <i class="fas fa-paper-plane"></i> Get In Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <!-- Brand & Bio -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="footer-brand">Art<span>Vista</span></a>
+                    <p class="footer-desc">
+                        Pushing the boundaries of digital art through unique illustrations and visual storytelling.
+                        Available for international commissions and creative collaborations.
+                    </p>
+                    <div class="footer-social-enhanced">
+                        <a href="#" class="social-btn insta" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn artstation" title="ArtStation"><i
+                                class="fab fa-artstation"></i></a>
+                        <a href="#" class="social-btn behance" title="Behance"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-btn twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links Column 1 -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h5 class="footer-heading">Explore</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links Column 2 -->
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h5 class="footer-heading">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Custom Illustration</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Character Design</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Digital Artwork</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Concept Art</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Logo Design</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Contact</h5>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>aymaninfotechs@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-globe"></i>
+                        <span>Available Worldwide (Remote)</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Fast Response (24-48h)</span>
+                    </div>
+                    <div class="mt-4">
+                        <a href="contact.html" class="btn-primary-custom"
+                            style="padding:12px 28px; font-size:0.9rem; border-radius:12px;">
+                            <i class="fas fa-paper-plane"></i> Start Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 <span style="color:var(--white); font-weight:600;">ArtVista</span>. Crafted for creative
+                    professionals.
+                </div>
+                <div class="footer-legal">
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.closest('.faq-item');
+                const isOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('open'));
+                if (!isOpen) item.classList.add('open');
+            });
+        });
+    </script>
+</body>
+
+</html>

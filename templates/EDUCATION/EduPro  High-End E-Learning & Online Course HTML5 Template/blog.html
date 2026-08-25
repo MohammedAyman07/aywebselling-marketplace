@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="EduPro Blog — Study tips, career advice, learning resources, and the latest in education and technology." />
+    <title>EduPro — Blog | Education Articles &amp; Tips</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader-ring"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="logo-icon"><i
+                        class="fas fa-graduation-cap"></i></span>Edu<span class="brand-accent">Pro</span></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instructors.html">Instructors</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex gap-2 align-items-center">
+                    <a href="contact.html" class="btn-outline-custom nav-btn">Log In</a>
+                    <a href="courses.html" class="btn-primary-custom nav-btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <div class="container position-relative">
+            <span class="badge-pill mb-3 d-inline-block">EduPro Blog</span>
+            <h1>Education <span style="color:#60A5FA;">Insights</span> &amp; Tips</h1>
+            <p>Explore articles on study strategies, career growth, learning resources, and the future of education.</p>
+            <div class="breadcrumb-custom"><a href="index.html">Home</a><span>/</span><span class="current">Blog</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="section-pad bg-light-blue">
+        <div class="container">
+            <!-- Featured Article -->
+            <div class="row g-4 mb-5">
+                <div class="col-lg-8 fade-up">
+                    <div class="blog-card" style="flex-direction:row;height:auto;">
+                        <div class="blog-thumb" style="min-width:300px;height:auto;max-height:none;">
+                            <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=800&q=80&auto=format&fit=crop"
+                                alt="Study Tips Featured" loading="lazy" style="height:100%;min-height:280px;" />
+                        </div>
+                        <div class="blog-body" style="padding:32px;">
+                            <span class="blog-category">Featured · Study Tips</span>
+                            <div class="blog-title" style="font-size:1.4rem;margin-bottom:14px;">10 Proven Study
+                                Techniques That Top Students Actually Use to Retain More</div>
+                            <p class="blog-excerpt">Discover the science-backed methods that high achievers use to study
+                                smarter — not harder. From spaced repetition to the Feynman technique, these strategies
+                                have transformed how thousands learn.</p>
+                            <a href="#" class="blog-read-more"><i class="fas fa-arrow-right"></i> Read Full Article</a>
+                            <div class="blog-meta" style="margin-top:20px;">
+                                <div class="blog-author"><img src="https://i.pravatar.cc/40?img=1"
+                                        alt="James Carter" /><span>James Carter · Mar 1, 2024</span></div>
+                                <span><i class="fas fa-clock me-1"></i>8 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 fade-up fade-up-delay-1">
+                    <div class="blog-card">
+                        <div class="blog-thumb"><img
+                                src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&q=80&auto=format&fit=crop"
+                                alt="Career Advice" loading="lazy" /></div>
+                        <div class="blog-body">
+                            <span class="blog-category">Career Advice</span>
+                            <div class="blog-title">How to Land Your First Tech Job With No Experience in 2024</div>
+                            <p class="blog-excerpt">The complete roadmap for breaking into tech — from the right
+                                certifications to building a portfolio that gets noticed.</p>
+                            <a href="#" class="blog-read-more"><i class="fas fa-arrow-right"></i> Read More</a>
+                            <div class="blog-meta">
+                                <div class="blog-author"><img src="https://i.pravatar.cc/40?img=5"
+                                        alt="Sarah Johnson" /><span>Sarah Johnson · Feb 20, 2024</span></div>
+                                <span><i class="fas fa-clock me-1"></i>6 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="section-header text-center fade-up mb-4">
+                <span class="badge-pill">Latest Articles</span>
+                <h2 class="mt-2">More From Our Blog</h2>
+                <div class="divider-line"></div>
+            </div>
+            <div class="row g-4">
+                <!-- Blog 1 -->
+                <div class="col-md-6 col-xl-4 fade-up">
+                    <div class="blog-card">
+                        <div class="blog-thumb"><img
+                                src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=700&q=80&auto=format&fit=crop"
+                                alt="Study Resources" loading="lazy" /></div>
+                        <div class="blog-body">
+                            <span class="blog-category">Learning Resources</span>
+                            <div class="blog-title">The 20 Best Free Learning Resources Every Student Should Know About
+                            </div>
+                            <p class="blog-excerpt">From MIT OpenCourseWare to Khan Academy, these free resources can
+                                complement any course and accelerate your learning.</p>
+                            <a href="#" class="blog-read-more"><i class="fas fa-arrow-right"></i> Read More</a>
+                            <div class="blog-meta">
+                                <div class="blog-author"><img src="https://i.pravatar.cc/40?img=9"
+                                        alt="Emily Rivera" /><span>Emily Rivera · Feb 15, 2024</span></div>
+                                <span><i class="fas fa-clock me-1"></i>5 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog 2 -->
+                <div class="col-md-6 col-xl-4 fade-up fade-up-delay-1">
+                    <div class="blog-card">
+                        <div class="blog-thumb"><img
+                                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=700&q=80&auto=format&fit=crop"
+                                alt="Online Learning" loading="lazy" /></div>
+                        <div class="blog-body">
+                            <span class="blog-category">Study Tips</span>
+                            <div class="blog-title">How to Stay Motivated When Learning Online: 7 Science-Backed
+                                Strategies</div>
+                            <p class="blog-excerpt">Motivation dips are normal — here's how the most successful online
+                                learners maintain momentum and actually finish their courses.</p>
+                            <a href="#" class="blog-read-more"><i class="fas fa-arrow-right"></i> Read More</a>
+                            <div class="blog-meta">
+                                <div class="blog-author"><img src="https://i.pravatar.cc/40?img=12"
+                                        alt="Dr. Michael Chen" /><span>Dr. Michael Chen · Feb 10, 2024</span></div>
+                                <span><i class="fas fa-clock me-1"></i>7 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog 3 -->
+                <div class="col-md-6 col-xl-4 fade-up fade-up-delay-2">
+                    <div class="blog-card">
+                        <div class="blog-thumb"><img
+                                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&q=80&auto=format&fit=crop"
+                                alt="Career Switch" loading="lazy" /></div>
+                        <div class="blog-body">
+                            <span class="blog-category">Career Advice</span>
+                            <div class="blog-title">Career Pivot Guide: How to Switch Careers Using Online Courses in 6
+                                Months</div>
+                            <p class="blog-excerpt">Real stories and a proven framework for successfully changing
+                                careers using online education — without going back to university.</p>
+                            <a href="#" class="blog-read-more"><i class="fas fa-arrow-right"></i> Read More</a>
+                            <div class="blog-meta">
+                                <div class="blog-author"><img src="https://i.pravatar.cc/40?img=15"
+                                        alt="Robert Dawson" /><span>Robert Dawson · Jan 28, 2024</span></div>
+                                <span><i class="fas fa-clock me-1"></i>10 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog 4 -->
+                <div class="col-md-6 col-xl-4 fade-up">
+                    <div class="blog-card">
+                        <div class="blog-thumb"><img
+                                src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=700&q=80&auto=format&fit=crop"
+                                alt="AI in Education" loading="lazy" /></div>
+                        <div class="blog-body">
+                            <span class="blog-category">Technology</span>
+                            <div class="blog-title">How AI Is Transforming Education: Opportunities &amp; Challenges for
+                                Students</div>
+                            <p class="blog-excerpt">From AI tutors to personalized learning paths, artificial
+                                intelligence is reshaping how we learn. Here's what you need to know.</p>
+                            <a href="#" class="blog-read-more"><i class="fas fa-arrow-right"></i> Read More</a>
+                            <div class="blog-meta">
+                                <div class="blog-author"><img src="https://i.pravatar.cc/40?img=12"
+                                        alt="Dr. Michael Chen" /><span>Dr. Michael Chen · Jan 20, 2024</span></div>
+                                <span><i class="fas fa-clock me-1"></i>9 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog 5 -->
+                <div class="col-md-6 col-xl-4 fade-up fade-up-delay-1">
+                    <div class="blog-card">
+                        <div class="blog-thumb"><img
+                                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700&q=80&auto=format&fit=crop"
+                                alt="Group Study" loading="lazy" /></div>
+                        <div class="blog-body">
+                            <span class="blog-category">Study Tips</span>
+                            <div class="blog-title">The Power of Learning Communities: Why You Should Never Study Alone
+                            </div>
+                            <p class="blog-excerpt">Research shows that learners in communities are 5x more likely to
+                                complete courses. Here's how to find and build yours.</p>
+                            <a href="#" class="blog-read-more"><i class="fas fa-arrow-right"></i> Read More</a>
+                            <div class="blog-meta">
+                                <div class="blog-author"><img src="https://i.pravatar.cc/40?img=1"
+                                        alt="James Carter" /><span>James Carter · Jan 12, 2024</span></div>
+                                <span><i class="fas fa-clock me-1"></i>6 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog 6 -->
+                <div class="col-md-6 col-xl-4 fade-up fade-up-delay-2">
+                    <div class="blog-card">
+                        <div class="blog-thumb"><img
+                                src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=700&q=80&auto=format&fit=crop"
+                                alt="Remote Work" loading="lazy" /></div>
+                        <div class="blog-body">
+                            <span class="blog-category">Career Advice</span>
+                            <div class="blog-title">Top 10 High-Paying Remote Jobs You Can Land With an Online
+                                Certificate</div>
+                            <p class="blog-excerpt">Discover the most lucrative remote careers in 2024 that value skills
+                                over degrees — and the exact courses that lead to them.</p>
+                            <a href="#" class="blog-read-more"><i class="fas fa-arrow-right"></i> Read More</a>
+                            <div class="blog-meta">
+                                <div class="blog-author"><img src="https://i.pravatar.cc/40?img=5"
+                                        alt="Sarah Johnson" /><span>Sarah Johnson · Jan 5, 2024</span></div>
+                                <span><i class="fas fa-clock me-1"></i>8 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 fade-up">
+                <button class="btn-primary-custom"><i class="fas fa-sync-alt me-2"></i>Load More Articles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section">
+        <div class="container position-relative text-center">
+            <span class="badge-pill"
+                style="background:rgba(255,255,255,.12);color:#93C5FD;border:1px solid rgba(255,255,255,.2);">Newsletter</span>
+            <h2 class="mt-3 mb-3 fade-up">Get Weekly Learning Tips</h2>
+            <p class="mb-5 fade-up">Subscribe to receive our best articles, study tips, and career advice every week.
+            </p>
+            <form class="newsletter-form justify-content-center fade-up">
+                <input type="email" placeholder="Enter your email address..." required />
+                <button type="submit"><i class="fas fa-paper-plane me-2"></i>Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="footer-brand"><a class="navbar-brand" href="index.html"><span class="logo-icon"><i
+                                    class="fas fa-graduation-cap"></i></span>Edu<span
+                                class="brand-accent">Pro</span></a></div>
+                    <p class="footer-desc">Empowering learners worldwide with high-quality education from expert
+                        instructors.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <div class="footer-heading">Quick Links</div>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Courses</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="instructors.html"><i class="fas fa-chevron-right"></i> Instructors</a></li>
+                        <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <div class="footer-heading">Blog Topics</div>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Study Tips</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Career Advice</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Learning Resources</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Technology</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Course Reviews</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-heading">Contact Info</div>
+                    <ul class="footer-links">
+                        <li><a href="mailto:aymaninfotechs@gmail.com"><i class="fas fa-envelope"></i>
+                                aymaninfotechs@gmail.com</a></li>
+                        <li><a href="#"><i class="fas fa-clock"></i> Mon–Fri: 9:00 AM – 6:00 PM</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 <strong>EduPro</strong>. Developed by <a
+                        href="mailto:aymaninfotechs@gmail.com">AymanInfotech</a>. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Back to top"><i class="fas fa-chevron-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Checkout - LUXE Fashion.">
+  <title>Checkout – LUXE Fashion</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-beige">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg border-bottom sticky-top sticky-top-bar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">LUXE<span>.</span></a>
+      <div class="d-flex align-items-center gap-2" style="font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;">
+        <i class="bi bi-lock text-gold"></i> Secure Checkout
+      </div>
+    </div>
+  </nav>
+
+  <!-- CHECKOUT SECTION -->
+  <section class="checkout-section" style="padding:60px 0;">
+    <div class="container">
+      
+      <div class="row g-5">
+        <!-- Form Area -->
+        <div class="col-lg-8 fade-up">
+          <form id="checkout-form" novalidate>
+            
+            <!-- Step 1: Contact -->
+            <div class="bg-white p-4 p-md-5 rounded shadow-sm mb-4 border">
+              <div class="checkout-step border-0 pb-0 mb-4 pt-0">
+                <div class="checkout-step-num">1</div>
+                <h5>Contact Information</h5>
+              </div>
+              <div class="row g-3">
+                <div class="col-12">
+                  <label class="checkout-form-label">Email Address *</label>
+                  <input type="email" class="checkout-form-control" required placeholder="name@example.com">
+                </div>
+                <div class="col-12 mt-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="newsletterCheck" checked style="accent-color:var(--primary)">
+                    <label class="form-check-label text-muted-custom" for="newsletterCheck" style="font-size:13px">
+                      Email me with news and offers
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2: Shipping -->
+            <div class="bg-white p-4 p-md-5 rounded shadow-sm mb-4 border">
+              <div class="checkout-step border-0 pb-0 mb-4 pt-0">
+                <div class="checkout-step-num">2</div>
+                <h5>Shipping Address</h5>
+              </div>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <label class="checkout-form-label">First Name *</label>
+                  <input type="text" class="checkout-form-control" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="checkout-form-label">Last Name *</label>
+                  <input type="text" class="checkout-form-control" required>
+                </div>
+                <div class="col-12">
+                  <label class="checkout-form-label">Address *</label>
+                  <input type="text" class="checkout-form-control" required placeholder="Street address, P.O. box, etc.">
+                </div>
+                <div class="col-12">
+                  <label class="checkout-form-label">Apartment, suite, etc. (optional)</label>
+                  <input type="text" class="checkout-form-control">
+                </div>
+                <div class="col-md-4">
+                  <label class="checkout-form-label">City *</label>
+                  <input type="text" class="checkout-form-control" required>
+                </div>
+                <div class="col-md-4">
+                  <label class="checkout-form-label">State / Province</label>
+                  <select class="checkout-form-control form-select">
+                    <option>New York</option>
+                    <option>California</option>
+                    <option>Texas</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label class="checkout-form-label">ZIP / Postal Code *</label>
+                  <input type="text" class="checkout-form-control" required>
+                </div>
+                <div class="col-12">
+                  <label class="checkout-form-label">Phone *</label>
+                  <input type="tel" class="checkout-form-control" required>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3: Payment -->
+            <div class="bg-white p-4 p-md-5 rounded shadow-sm mb-4 border">
+              <div class="checkout-step border-0 pb-0 mb-4 pt-0">
+                <div class="checkout-step-num">3</div>
+                <h5>Payment Method</h5>
+              </div>
+              <p class="text-muted-custom mb-4" style="font-size:13px">All transactions are secure and encrypted.</p>
+              
+              <div class="payment-options">
+                <!-- Credit Card -->
+                <div class="payment-option selected">
+                  <input class="form-check-input" type="radio" name="paymentMethod" id="pay-card" checked>
+                  <label class="form-check-label w-100 d-flex justify-content-between align-items-center ms-2" for="pay-card" style="font-size:14px;font-weight:600">
+                    Credit Card
+                    <div class="d-flex gap-2 text-muted fs-5">
+                      <i class="bi bi-credit-card-2-front"></i>
+                    </div>
+                  </label>
+                </div>
+                <div class="p-3 border rounded mb-3 bg-light" id="card-details">
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <input type="text" class="checkout-form-control bg-white" placeholder="Card number">
+                    </div>
+                    <div class="col-12">
+                      <input type="text" class="checkout-form-control bg-white" placeholder="Name on card">
+                    </div>
+                    <div class="col-6">
+                      <input type="text" class="checkout-form-control bg-white" placeholder="Expiration date (MM / YY)">
+                    </div>
+                    <div class="col-6">
+                      <input type="text" class="checkout-form-control bg-white" placeholder="Security code">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Paypal -->
+                <div class="payment-option">
+                  <input class="form-check-input" type="radio" name="paymentMethod" id="pay-paypal">
+                  <label class="form-check-label w-100 d-flex justify-content-between align-items-center ms-2" for="pay-paypal" style="font-size:14px;font-weight:600">
+                    PayPal
+                    <i class="bi bi-paypal text-primary fs-5"></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <a href="cart.html" class="text-primary text-decoration-none" style="font-size:13px;font-weight:600;color:var(--primary)!important;letter-spacing:1px;text-transform:uppercase"><i class="bi bi-arrow-left me-2"></i> Return to Cart</a>
+              <button type="submit" class="btn-dark-custom">Place Order</button>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Sidebar Summary -->
+        <div class="col-lg-4 fade-up" style="transition-delay:0.1s">
+          <div class="order-summary-card bg-white border shadow-sm sticky-top" style="top:100px">
+            <h4>In Your Cart</h4>
+            <!-- Will be populated via JS -->
+            <div id="checkout-items-preview" class="mb-4">
+              <!-- Placeholder static item if JS fails -->
+              <div class="d-flex align-items-center gap-3 mb-3 pb-3 border-bottom">
+                <div class="position-relative">
+                  <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=80" alt="Item" class="rounded" style="width:60px;height:60px;object-fit:cover">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary rounded-circle" style="font-size:9px">1</span>
+                </div>
+                <div>
+                  <h6 class="mb-1" style="font-size:13px">Floral Wrap Dress</h6>
+                  <span class="text-muted-custom" style="font-size:11px">Size: S</span>
+                </div>
+                <div class="ms-auto" style="font-size:13px;font-weight:600">$89.00</div>
+              </div>
+            </div>
+
+            <div class="summary-row">
+              <span class="text-muted-custom">Subtotal</span>
+              <span id="checkout-subtotal">$89.00</span>
+            </div>
+            <div class="summary-row">
+              <span class="text-muted-custom">Shipping</span>
+              <span id="checkout-shipping">$12.00</span>
+            </div>
+            <div class="summary-row">
+              <span class="text-muted-custom">Taxes</span>
+              <span>Calculated at next step</span>
+            </div>
+            
+            <div class="summary-total mt-4">
+              <span>Total</span>
+              <span class="text-gold fs-4" id="checkout-total">$101.00</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Script to mirror cart data to checkout overview -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const cart = JSON.parse(localStorage.getItem('luxe_cart')) || [];
+      const previewCont = document.getElementById('checkout-items-preview');
+      if(cart.length > 0 && previewCont) {
+        previewCont.innerHTML = cart.map(item => `
+          <div class="d-flex align-items-center gap-3 mb-3 pb-3 border-bottom">
+            <div class="position-relative">
+              <img src="${item.image || 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=80'}" alt="${item.name}" class="rounded" style="width:60px;height:60px;object-fit:cover">
+              <span class="position-absolute top-0 start-100 translate-middle badge bg-secondary rounded-circle" style="font-size:10px; width:20px;height:20px;display:flex;align-items:center;justify-content:center">${item.qty}</span>
+            </div>
+            <div>
+              <h6 class="mb-1" style="font-size:13px">${item.name}</h6>
+              <span class="text-muted-custom" style="font-size:11px">Size: ${item.size}</span>
+            </div>
+            <div class="ms-auto" style="font-size:13px;font-weight:600">$${(item.price * item.qty).toFixed(2)}</div>
+          </div>
+        `).join('');
+        
+        const subtotal = cart.reduce((s, i) => s + i.price * i.qty, 0);
+        const shipping = subtotal > 0 ? (subtotal >= 150 ? 0 : 12) : 0;
+        document.getElementById('checkout-subtotal').textContent = '$' + subtotal.toFixed(2);
+        document.getElementById('checkout-shipping').textContent = shipping === 0 ? 'Free' : '$' + shipping.toFixed(2);
+        document.getElementById('checkout-total').textContent = '$' + (subtotal + shipping).toFixed(2);
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="CorporaX Portfolio – Explore our case studies and projects across web, mobile, branding, and marketing." />
+    <title>Portfolio – CorporaX Premium Business Template</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        .portfolio-card {
+            transition: all 0.35s ease;
+        }
+
+        .case-study-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+
+        .case-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .case-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .case-img {
+            height: 260px;
+            background: linear-gradient(135deg, #0d1b2e, #1a73e8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+        }
+
+        .case-body {
+            padding: 28px;
+        }
+
+        .case-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
+        .case-tag {
+            background: rgba(26, 115, 232, 0.1);
+            color: var(--primary);
+            border: 1px solid rgba(26, 115, 232, 0.2);
+            padding: 3px 10px;
+            border-radius: var(--radius-full);
+            font-size: 0.72rem;
+            font-weight: 600;
+        }
+
+        .case-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+
+        .case-desc {
+            font-size: 0.85rem;
+            margin-bottom: 16px;
+        }
+
+        .case-stats {
+            display: flex;
+            gap: 20px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        .cs {
+            text-align: center;
+        }
+
+        .cs-num {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--primary);
+            font-family: var(--font-secondary);
+        }
+
+        .cs-label {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+        }
+
+        @media(max-width:768px) {
+            .case-study-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon"><i class="fas fa-bolt"></i></div>Corpora<span>X</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+                <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
+                <div class="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="section-badge"
+                style="background:rgba(255,255,255,0.12);color:#fff;border-color:rgba(255,255,255,0.2)">Our Work</div>
+            <h1 class="page-hero-title">Our <span style="color:var(--accent)">Portfolio</span></h1>
+            <p class="page-hero-subtitle">Real projects, real results. Explore our work across strategy, technology,
+                design, and marketing.</p>
+            <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span class="current">Portfolio</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="section">
+        <div class="container">
+            <!-- Filter -->
+            <div class="portfolio-filter reveal">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+                <button class="filter-btn" data-filter="ai">AI & Data</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Web -->
+                <div class="portfolio-card reveal delay-1" data-cat="web">
+                    <div class="portfolio-img" style="background:linear-gradient(135deg,#1a73e8,#00d4ff)">
+                        🛒
+                        <div class="portfolio-overlay">
+                            <span>TechCart E-Commerce Platform</span>
+                            <a href="#" class="btn btn-white btn-sm"><i class="fas fa-external-link-alt"></i> View
+                                Case</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <div class="portfolio-cat">Web Development</div>
+                        <div class="portfolio-title">TechCart E-Commerce Platform</div>
+                    </div>
+                </div>
+                <div class="portfolio-card reveal delay-2" data-cat="web">
+                    <div class="portfolio-img" style="background:linear-gradient(135deg,#7c3aed,#1a73e8)">
+                        📊
+                        <div class="portfolio-overlay">
+                            <span>FinTrack SaaS Dashboard</span>
+                            <a href="#" class="btn btn-white btn-sm"><i class="fas fa-external-link-alt"></i> View
+                                Case</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <div class="portfolio-cat">Web Development</div>
+                        <div class="portfolio-title">FinTrack SaaS Dashboard</div>
+                    </div>
+                </div>
+                <!-- Mobile -->
+                <div class="portfolio-card reveal delay-3" data-cat="mobile">
+                    <div class="portfolio-img" style="background:linear-gradient(135deg,#0d1b2e,#00d4ff)">
+                        📱
+                        <div class="portfolio-overlay">
+                            <span>HealthPal Mobile App</span>
+                            <a href="#" class="btn btn-white btn-sm"><i class="fas fa-external-link-alt"></i> View
+                                Case</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <div class="portfolio-cat">Mobile App</div>
+                        <div class="portfolio-title">HealthPal Wellness App</div>
+                    </div>
+                </div>
+                <!-- Branding -->
+                <div class="portfolio-card reveal delay-1" data-cat="branding">
+                    <div class="portfolio-img" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">
+                        🎨
+                        <div class="portfolio-overlay">
+                            <span>Luxe Brand Identity</span>
+                            <a href="#" class="btn btn-white btn-sm"><i class="fas fa-external-link-alt"></i> View
+                                Case</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <div class="portfolio-cat">Branding & Design</div>
+                        <div class="portfolio-title">Luxe Retail Brand Identity</div>
+                    </div>
+                </div>
+                <!-- Marketing -->
+                <div class="portfolio-card reveal delay-2" data-cat="marketing">
+                    <div class="portfolio-img" style="background:linear-gradient(135deg,#10b981,#1a73e8)">
+                        📣
+                        <div class="portfolio-overlay">
+                            <span>GrowFast Campaign</span>
+                            <a href="#" class="btn btn-white btn-sm"><i class="fas fa-external-link-alt"></i> View
+                                Case</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <div class="portfolio-cat">Digital Marketing</div>
+                        <div class="portfolio-title">GrowFast Lead Gen Campaign</div>
+                    </div>
+                </div>
+                <!-- AI -->
+                <div class="portfolio-card reveal delay-3" data-cat="ai">
+                    <div class="portfolio-img" style="background:linear-gradient(135deg,#6366f1,#0d1b2e)">
+                        🤖
+                        <div class="portfolio-overlay">
+                            <span>AI Document Analyzer</span>
+                            <a href="#" class="btn btn-white btn-sm"><i class="fas fa-external-link-alt"></i> View
+                                Case</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <div class="portfolio-cat">AI & Automation</div>
+                        <div class="portfolio-title">AI-Powered Document Analyzer</div>
+                    </div>
+                </div>
+                <!-- More -->
+                <div class="portfolio-card reveal delay-1" data-cat="web">
+                    <div class="portfolio-img" style="background:linear-gradient(135deg,#1a73e8,#7c3aed)">
+                        🏠
+                        <div class="portfolio-overlay">
+                            <span>NestFind Real Estate Portal</span>
+                            <a href="#" class="btn btn-white btn-sm"><i class="fas fa-external-link-alt"></i> View
+                                Case</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <div class="portfolio-cat">Web Development</div>
+                        <div class="portfolio-title">NestFind Real Estate Portal</div>
+                    </div>
+                </div>
+                <div class="portfolio-card reveal delay-2" data-cat="mobile">
+                    <div class="portfolio-img" style="background:linear-gradient(135deg,#f59e0b,#1a73e8)">
+                        🚗
+                        <div class="portfolio-overlay">
+                            <span>DriveGo Ride-Share App</span>
+                            <a href="#" class="btn btn-white btn-sm"><i class="fas fa-external-link-alt"></i> View
+                                Case</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <div class="portfolio-cat">Mobile App</div>
+                        <div class="portfolio-title">DriveGo Ride-Share App</div>
+                    </div>
+                </div>
+                <div class="portfolio-card reveal delay-3" data-cat="branding">
+                    <div class="portfolio-img" style="background:linear-gradient(135deg,#0d1b2e,#10b981)">
+                        🌿
+                        <div class="portfolio-overlay">
+                            <span>GreenLeaf Brand Refresh</span>
+                            <a href="#" class="btn btn-white btn-sm"><i class="fas fa-external-link-alt"></i> View
+                                Case</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <div class="portfolio-cat">Branding & Design</div>
+                        <div class="portfolio-title">GreenLeaf Corporate Rebrand</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="section bg-secondary-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge reveal">Deep Dives</div>
+                <h2 class="section-title reveal delay-1">Featured <span>Case Studies</span></h2>
+                <p class="section-subtitle reveal delay-2">The results speak for themselves. Here are some of our most
+                    impactful projects.</p>
+            </div>
+            <div class="case-study-grid">
+                <div class="case-card reveal delay-1">
+                    <div class="case-img" style="background:linear-gradient(135deg,#1a73e8,#00d4ff)">🛒</div>
+                    <div class="case-body">
+                        <div class="case-tags"><span class="case-tag">E-Commerce</span><span class="case-tag">Web
+                                Dev</span><span class="case-tag">UX Design</span></div>
+                        <div class="case-title">TechCart: 340% Revenue Growth</div>
+                        <p class="case-desc">Rebuilt TechCart's entire e-commerce experience from the ground up.
+                            Optimized checkout flows, implemented personalized recommendations, and migrated to a
+                            headless architecture.</p>
+                        <div class="case-stats">
+                            <div class="cs">
+                                <div class="cs-num">+340%</div>
+                                <div class="cs-label">Revenue</div>
+                            </div>
+                            <div class="cs">
+                                <div class="cs-num">62%</div>
+                                <div class="cs-label">Less Churn</div>
+                            </div>
+                            <div class="cs">
+                                <div class="cs-num">4.2×</div>
+                                <div class="cs-label">Conversion</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-card reveal delay-2">
+                    <div class="case-img" style="background:linear-gradient(135deg,#10b981,#1a73e8)">📣</div>
+                    <div class="case-body">
+                        <div class="case-tags"><span class="case-tag">Marketing</span><span
+                                class="case-tag">SEO</span><span class="case-tag">PPC</span></div>
+                        <div class="case-title">GrowFast: 180% More Leads</div>
+                        <p class="case-desc">Designed and executed a full-funnel digital marketing strategy for GrowFast
+                            Agency, combining SEO, Google Ads, and content marketing to dominate their niche.</p>
+                        <div class="case-stats">
+                            <div class="cs">
+                                <div class="cs-num">+180%</div>
+                                <div class="cs-label">Leads</div>
+                            </div>
+                            <div class="cs">
+                                <div class="cs-num">-45%</div>
+                                <div class="cs-label">Cost/Lead</div>
+                            </div>
+                            <div class="cs">
+                                <div class="cs-num">#1</div>
+                                <div class="cs-label">Google Rank</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="container">
+            <h2 class="cta-title">Want Results Like These?</h2>
+            <p class="cta-subtitle">Let's discuss your project and create your own success story.</p>
+            <div class="cta-actions"><a href="contact.html" class="btn btn-white btn-lg">Start Your Project</a></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <div class="logo-icon"><i class="fas fa-bolt"></i></div>Corpora<span
+                            style="color:var(--accent)">X</span>
+                    </div>
+                    <p>Empowering businesses with smart strategy and innovative technology.</p>
+                    <div class="footer-social"><a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a><a
+                            href="#" class="social-icon"><i class="fab fa-twitter"></i></a><a href="#"
+                            class="social-icon"><i class="fab fa-facebook-f"></i></a></div>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Strategy</a></li>
+                        <li><a href="services.html">Development</a></li>
+                        <li><a href="services.html">Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:hello@corporax.com">hello@corporax.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 <a href="#">CorporaX</a>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

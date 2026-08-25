@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog – Alex Morgan | Dev Articles & Design Insights</title>
+    <meta name="description"
+        content="Developer blog covering web development, UI/UX design, AI engineering, and career insights from Alex Morgan." />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="page-loader">
+        <div class="loader-inner">
+            <div class="loader-ring"></div>
+            <div class="loader-text"><span>AM</span> Portfolio</div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-inner">
+                <a href="index.html" class="navbar-logo"><span class="logo-dot"></span>Alex<span>.M</span></a>
+                <ul class="navbar-nav">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="navbar-actions"><button class="theme-toggle"></button><a href="contact.html"
+                        class="btn btn-primary btn-sm">Hire Me</a></div>
+                <button class="hamburger"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-nav">
+        <a href="index.html" class="nav-link">🏠 Home</a><a href="about.html" class="nav-link">👤 About</a>
+        <a href="portfolio.html" class="nav-link">💼 Portfolio</a><a href="services.html" class="nav-link">⚡
+            Services</a>
+        <a href="blog.html" class="nav-link">📝 Blog</a><a href="contact.html" class="nav-link">📬 Contact</a>
+    </div>
+
+    <div class="page-hero">
+        <div class="container">
+            <div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Blog</span>
+            </div>
+            <h1 class="page-hero-title">The <span class="text-gradient">Blog</span></h1>
+            <p class="page-hero-subtitle">Thoughts on development, design, AI, and building a freelance career</p>
+        </div>
+    </div>
+
+    <!-- FEATURED POST -->
+    <section class="section-sm" style="padding-top:60px;">
+        <div class="container">
+            <div data-aos
+                style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-lg);display:grid;grid-template-columns:1fr 1fr;align-items:center;"
+                class="featured-post-grid">
+                <div
+                    style="height:360px;background:linear-gradient(135deg,rgba(108,99,255,0.2),rgba(67,203,255,0.2));display:flex;align-items:center;justify-content:center;font-size:8rem;position:relative;">
+                    📝
+                    <span
+                        style="position:absolute;top:20px;left:20px;background:var(--primary);color:#fff;padding:4px 14px;border-radius:var(--radius-full);font-size:0.78rem;font-weight:700;">FEATURED</span>
+                </div>
+                <div style="padding:48px;">
+                    <span class="badge badge-primary" style="margin-bottom:16px;display:inline-block;">AI
+                        Engineering</span>
+                    <h2
+                        style="font-family:var(--font-heading);font-size:1.7rem;font-weight:700;color:var(--text-primary);margin-bottom:16px;line-height:1.3;">
+                        Building Production-Ready AI Apps with GPT-4 and Next.js in 2026</h2>
+                    <p style="color:var(--text-secondary);line-height:1.8;margin-bottom:24px;">A comprehensive guide to
+                        integrating LLMs into modern web applications — from API design to streaming responses and cost
+                        optimization strategies.</p>
+                    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+                        <div class="blog-author">
+                            <div class="blog-author-avatar">👨‍💻</div>
+                            <div>
+                                <div class="blog-author-name">Alex Morgan</div>
+                                <div style="font-size:0.78rem;color:var(--text-muted)">Mar 15, 2026 · 12 min read</div>
+                            </div>
+                        </div>
+                        <a href="blog-detail.html" class="btn btn-primary btn-sm">Read Article →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG GRID -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header" data-aos>
+                <span class="section-tag">Latest Posts</span>
+                <h2 class="section-title">Recent <span class="text-gradient">Articles</span></h2>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card" data-aos data-aos-delay="100">
+                    <div class="blog-img" style="background:linear-gradient(135deg,#667eea22,#764ba222)">
+                        ⚛️<span class="blog-img-category">React</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta"><span>📅 Mar 10, 2026</span><span>💬 24 comments</span></div>
+                        <h3 class="blog-title">10 React Performance Patterns Every Senior Dev Should Know</h3>
+                        <p class="blog-excerpt">Deep-dive into memoization, code splitting, virtual scrolling and other
+                            patterns that make React apps blazing fast.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <div class="blog-author-avatar">👨‍💻</div>
+                                <div>
+                                    <div class="blog-author-name">Alex Morgan</div>
+                                </div>
+                            </div>
+                            <span class="blog-read-time">⏱️ 8 min</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card" data-aos data-aos-delay="200">
+                    <div class="blog-img" style="background:linear-gradient(135deg,#f093fb22,#f5576c22)">
+                        🎨<span class="blog-img-category">UI Design</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta"><span>📅 Feb 28, 2026</span><span>💬 18 comments</span></div>
+                        <h3 class="blog-title">The Ultimate Guide to Glassmorphism UI Design in 2026</h3>
+                        <p class="blog-excerpt">How to implement modern glassmorphism correctly, avoid accessibility
+                            pitfalls, and achieve that premium feel.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <div class="blog-author-avatar">👨‍💻</div>
+                                <div>
+                                    <div class="blog-author-name">Alex Morgan</div>
+                                </div>
+                            </div>
+                            <span class="blog-read-time">⏱️ 6 min</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card" data-aos data-aos-delay="300">
+                    <div class="blog-img" style="background:linear-gradient(135deg,#43cbff22,#9708cc22)">
+                        🤖<span class="blog-img-category">AI/ML</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta"><span>📅 Feb 20, 2026</span><span>💬 31 comments</span></div>
+                        <h3 class="blog-title">From Zero to AI Engineer: My 12-Month Learning Roadmap</h3>
+                        <p class="blog-excerpt">The exact curriculum, resources, and projects I used to transition from
+                            frontend dev to AI engineer.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <div class="blog-author-avatar">👨‍💻</div>
+                                <div>
+                                    <div class="blog-author-name">Alex Morgan</div>
+                                </div>
+                            </div>
+                            <span class="blog-read-time">⏱️ 10 min</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card" data-aos data-aos-delay="100">
+                    <div class="blog-img" style="background:linear-gradient(135deg,#11998e22,#38ef7d22)">
+                        💰<span class="blog-img-category">Freelance</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta"><span>📅 Feb 12, 2026</span><span>💬 45 comments</span></div>
+                        <h3 class="blog-title">How I Made $150k Freelancing as a Developer in 2023</h3>
+                        <p class="blog-excerpt">My complete playbook for finding high-value clients, pricing projects,
+                            and building recurring revenue as a freelancer.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <div class="blog-author-avatar">👨‍💻</div>
+                                <div>
+                                    <div class="blog-author-name">Alex Morgan</div>
+                                </div>
+                            </div>
+                            <span class="blog-read-time">⏱️ 15 min</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card" data-aos data-aos-delay="200">
+                    <div class="blog-img" style="background:linear-gradient(135deg,#ffecd222,#fcb69f22)">
+                        🚀<span class="blog-img-category">DevOps</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta"><span>📅 Jan 30, 2026</span><span>💬 12 comments</span></div>
+                        <h3 class="blog-title">Deploy React Apps for Free: Vercel vs Netlify vs AWS in 2026</h3>
+                        <p class="blog-excerpt">A practical cost comparison and performance benchmark for the three most
+                            popular React deployment platforms.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <div class="blog-author-avatar">👨‍💻</div>
+                                <div>
+                                    <div class="blog-author-name">Alex Morgan</div>
+                                </div>
+                            </div>
+                            <span class="blog-read-time">⏱️ 7 min</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card" data-aos data-aos-delay="300">
+                    <div class="blog-img" style="background:linear-gradient(135deg,#a18cd122,#fbc2eb22)">
+                        📐<span class="blog-img-category">Design Systems</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta"><span>📅 Jan 18, 2026</span><span>💬 22 comments</span></div>
+                        <h3 class="blog-title">Building a Design System from Scratch with CSS Variables</h3>
+                        <p class="blog-excerpt">Step-by-step guide to creating a scalable, maintainable design system
+                            using pure CSS — no Tailwind needed.</p>
+                        <div class="blog-footer">
+                            <div class="blog-author">
+                                <div class="blog-author-avatar">👨‍💻</div>
+                                <div>
+                                    <div class="blog-author-name">Alex Morgan</div>
+                                </div>
+                            </div>
+                            <span class="blog-read-time">⏱️ 9 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Load More -->
+            <div class="text-center" style="margin-top:48px;">
+                <button class="btn btn-outline btn-lg" id="loadMoreBtn">Load More Articles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="section-sm">
+        <div class="container">
+            <div class="contact-preview" data-aos>
+                <span class="section-tag">Stay Updated</span>
+                <h2 class="contact-preview-title">Subscribe to the <span class="text-gradient">Newsletter</span></h2>
+                <p class="contact-preview-text">Get bi-weekly articles on web development, design, AI, and freelancing
+                    straight to your inbox. No spam, ever.</p>
+                <form class="newsletter-form"
+                    style="display:flex;gap:12px;max-width:480px;margin:0 auto;flex-wrap:wrap;justify-content:center;">
+                    <input type="email" class="form-control" placeholder="Enter your email address"
+                        style="flex:1;min-width:240px;" />
+                    <button type="submit" class="btn btn-primary">Subscribe Free</button>
+                </form>
+                <p style="color:var(--text-muted);font-size:0.8rem;margin-top:12px;">✅ Join 3,400+ developers.
+                    Unsubscribe anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo"><span class="logo-dot" style="margin-right:4px"></span>Alex<span>.M</span>
+                    </div>
+                    <p class="footer-desc">Creative developer & designer crafting premium digital experiences worldwide.
+                    </p>
+                    <div class="footer-social"><a href="#" class="social-link">🐙</a><a href="#"
+                            class="social-link">💼</a><a href="#" class="social-link">🐦</a></div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Navigation</h4>
+                    <div class="footer-links"><a href="index.html" class="footer-link">Home</a><a href="about.html"
+                            class="footer-link">About Me</a><a href="portfolio.html" class="footer-link">Portfolio</a><a
+                            href="services.html" class="footer-link">Services</a><a href="blog.html"
+                            class="footer-link">Blog</a><a href="contact.html" class="footer-link">Contact</a></div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <div class="footer-links"><a href="services.html" class="footer-link">Web Development</a><a
+                            href="services.html" class="footer-link">UI/UX Design</a><a href="services.html"
+                            class="footer-link">Mobile Apps</a><a href="services.html" class="footer-link">AI
+                            Solutions</a></div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Newsletter</h4>
+                    <form class="newsletter-form footer-newsletter">
+                        <div class="form-group"><input type="email" class="form-control"
+                                placeholder="your@email.com" /><button type="submit"
+                                class="btn btn-primary btn-sm">Subscribe</button></div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 <span>Alex Morgan</span>. Template by <span>Ayman Infotech</span>.</p>
+                <div class="footer-links-bottom"><a href="#">Privacy</a><a href="#">Terms</a></div>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top">↑</button>
+    <script src="assets/js/main.js"></script>
+    <style>
+        @media(max-width:768px) {
+            .featured-post-grid {
+                grid-template-columns: 1fr !important
+            }
+        }
+
+        #loadMoreBtn:hover {
+            cursor: pointer
+        }
+    </style>
+    <script>
+        document.getElementById('loadMoreBtn')?.addEventListener('click', function () {
+            this.textContent = '✅ You\'ve seen all articles!';
+            this.disabled = true;
+        });
+    </script>
+</body>
+
+</html>

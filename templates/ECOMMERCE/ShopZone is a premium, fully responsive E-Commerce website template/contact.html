@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Contact ShopZone — reach out for support, questions, or feedback. We're here to help." />
+    <title>Contact Us | ShopZone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div class="announcement-bar">
+        🎉 Free Shipping on orders over $50 | Use code <strong>SAVE10</strong> for 10% off
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Shop<span class="accent">Zone</span></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="navbar-icons d-flex align-items-center gap-1 ms-2">
+                    <a href="#" title="Search"><i class="bi bi-search"></i></a>
+                    <a href="#" title="Wishlist"><i class="bi bi-heart"></i></a>
+                    <a href="cart.html" title="Cart" style="position:relative;">
+                        <i class="bi bi-bag"></i>
+                        <span class="cart-count" style="display:none;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-hero-title">Get in <span class="accent">Touch</span></h1>
+            <p class="page-hero-sub">We'd love to hear from you — we reply within 24 hours</p>
+        </div>
+    </section>
+
+    <!-- BREADCRUMB -->
+    <div class="page-breadcrumb">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Contact</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- CONTACT INFO CARDS -->
+    <section class="section-padding" style="background:var(--bg-light);">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-md-4 reveal">
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="bi bi-envelope"></i></div>
+                        <div class="contact-info-title">Email Us</div>
+                        <div class="contact-info-text">Send us an email anytime!</div>
+                        <a href="mailto:aymaninfotechs@gmail.com"
+                            class="contact-info-link d-block mt-2">aymaninfotechs@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal">
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="bi bi-clock"></i></div>
+                        <div class="contact-info-title">Business Hours</div>
+                        <div class="contact-info-text">Mon – Fri: 9:00 AM – 6:00 PM<br />Saturday: 10:00 AM – 4:00
+                            PM<br />Sunday: Closed</div>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal">
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="bi bi-headset"></i></div>
+                        <div class="contact-info-title">Live Support</div>
+                        <div class="contact-info-text">Chat with our support team</div>
+                        <a href="mailto:aymaninfotechs@gmail.com" class="contact-info-link d-block mt-2">Start Live Chat
+                            →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTACT FORM + FAQ -->
+            <div class="row g-4">
+                <!-- FORM -->
+                <div class="col-lg-7 reveal">
+                    <div class="contact-form-card">
+                        <h3
+                            style="font-family:'Poppins',sans-serif;font-weight:800;color:var(--secondary);margin-bottom:6px;">
+                            Send us a Message</h3>
+                        <p style="color:var(--text-muted);font-size:.88rem;margin-bottom:24px;">Fill out the form below
+                            and we'll get back to you within 24 hours.</p>
+
+                        <form id="contactForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label-custom">First Name *</label>
+                                    <input type="text" class="form-control-custom" placeholder="John" required />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label-custom">Last Name *</label>
+                                    <input type="text" class="form-control-custom" placeholder="Doe" required />
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label-custom">Email Address *</label>
+                                    <input type="email" class="form-control-custom" placeholder="john@example.com"
+                                        required />
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label-custom">Subject *</label>
+                                    <select class="form-control-custom" required>
+                                        <option value="">Select a topic</option>
+                                        <option>Order Inquiry</option>
+                                        <option>Product Question</option>
+                                        <option>Return & Refund</option>
+                                        <option>Shipping Issue</option>
+                                        <option>Partnership</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label-custom">Order Number (if applicable)</label>
+                                    <input type="text" class="form-control-custom" placeholder="SZ-2025-XXXX" />
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label-custom">Message *</label>
+                                    <textarea class="form-control-custom" rows="5"
+                                        placeholder="Write your message here..." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check" style="display:flex;align-items:center;gap:10px;">
+                                        <input type="checkbox" id="gdprConsent"
+                                            style="accent-color:var(--primary);width:16px;height:16px;cursor:pointer;"
+                                            required />
+                                        <label for="gdprConsent"
+                                            style="font-size:.82rem;color:var(--text-muted);cursor:pointer;">
+                                            I agree to the <a href="#" style="color:var(--primary);">Privacy Policy</a>
+                                            and consent to ShopZone processing my data.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-primary-custom"
+                                        style="padding:14px 36px;border-radius:var(--radius-sm);">
+                                        <i class="bi bi-send me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- FAQ / EXTRA INFO -->
+                <div class="col-lg-5 reveal">
+                    <!-- Social Links -->
+                    <div class="p-4 mb-4"
+                        style="background:var(--bg-white);border:1px solid var(--border);border-radius:var(--radius-md);">
+                        <h5 style="font-weight:800;color:var(--secondary);margin-bottom:16px;"><i
+                                class="bi bi-share me-2" style="color:var(--primary);"></i>Follow Us</h5>
+                        <div class="d-flex flex-column gap-3">
+                            <a href="#"
+                                style="display:flex;align-items:center;gap:14px;color:var(--text);font-weight:600;font-size:.9rem;text-decoration:none;padding:10px;background:var(--bg-light);border-radius:var(--radius-sm);transition:var(--transition);"
+                                class="hover-effect">
+                                <i class="bi bi-instagram" style="font-size:1.1rem;color:#e1306c;"></i>
+                                @shopzone_official
+                            </a>
+                            <a href="#"
+                                style="display:flex;align-items:center;gap:14px;color:var(--text);font-weight:600;font-size:.9rem;text-decoration:none;padding:10px;background:var(--bg-light);border-radius:var(--radius-sm);">
+                                <i class="bi bi-facebook" style="font-size:1.1rem;color:#1877f2;"></i> /ShopZoneStore
+                            </a>
+                            <a href="#"
+                                style="display:flex;align-items:center;gap:14px;color:var(--text);font-weight:600;font-size:.9rem;text-decoration:none;padding:10px;background:var(--bg-light);border-radius:var(--radius-sm);">
+                                <i class="bi bi-twitter-x" style="font-size:1.1rem;"></i> @ShopZone
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- FAQ -->
+                    <div class="p-4"
+                        style="background:var(--bg-white);border:1px solid var(--border);border-radius:var(--radius-md);">
+                        <h5 style="font-weight:800;color:var(--secondary);margin-bottom:16px;"><i
+                                class="bi bi-question-circle me-2" style="color:var(--primary);"></i>FAQ</h5>
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item border-0 mb-2"
+                                style="border-radius:var(--radius-sm)!important;overflow:hidden;border:1px solid var(--border)!important;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1" style="font-size:.88rem;font-weight:700;">
+                                        How long does shipping take?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body" style="font-size:.85rem;color:var(--text-muted);">
+                                        Standard shipping takes 5–7 business days. Express shipping takes 2–3 days.
+                                        Overnight delivery is also available.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-2"
+                                style="border-radius:var(--radius-sm)!important;overflow:hidden;border:1px solid var(--border)!important;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2" style="font-size:.88rem;font-weight:700;">
+                                        What is your return policy?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body" style="font-size:.85rem;color:var(--text-muted);">We
+                                        offer a 30-day hassle-free return policy. Items must be unused and in original
+                                        packaging to qualify for a full refund.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-2"
+                                style="border-radius:var(--radius-sm)!important;overflow:hidden;border:1px solid var(--border)!important;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3" style="font-size:.88rem;font-weight:700;">
+                                        Do you ship internationally?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body" style="font-size:.85rem;color:var(--text-muted);">Yes!
+                                        We ship to 120+ countries worldwide. International shipping rates and times vary
+                                        by destination.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0"
+                                style="border-radius:var(--radius-sm)!important;overflow:hidden;border:1px solid var(--border)!important;">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq4" style="font-size:.88rem;font-weight:700;">
+                                        How can I track my order?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body" style="font-size:.85rem;color:var(--text-muted);">You'll
+                                        receive a tracking number via email once your order ships. You can track it
+                                        directly on our website or the carrier's site.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row g-4 pb-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">Shop<span class="accent">Zone</span></div>
+                    <p class="footer-desc">Your one-stop online shop for premium products. Quality, style, and value in
+                        every purchase.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-btn"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <div class="footer-heading">Quick Links</div>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <div class="footer-heading">Company</div>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-heading">Contact Info</div>
+                    <div class="footer-contact">
+                        <p><i class="bi bi-envelope"></i> aymaninfotechs@gmail.com</p>
+                        <p><i class="bi bi-clock"></i> Mon – Sat: 9 AM – 6 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="mb-0">© 2025 ShopZone. Developed by <a href="https://aymaninfotech.com"
+                        target="_blank">AymanInfotech</a>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Back to Top"><i class="bi bi-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

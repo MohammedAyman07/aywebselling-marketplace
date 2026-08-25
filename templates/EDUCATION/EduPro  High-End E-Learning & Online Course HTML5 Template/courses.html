@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Browse 500+ online courses in web development, data science, design, marketing and more at EduPro." />
+    <title>EduPro — Courses | Browse All Courses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader-ring"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="logo-icon"><i
+                        class="fas fa-graduation-cap"></i></span>Edu<span class="brand-accent">Pro</span></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instructors.html">Instructors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex gap-2 align-items-center">
+                    <a href="contact.html" class="btn-outline-custom nav-btn">Log In</a>
+                    <a href="courses.html" class="btn-primary-custom nav-btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <div class="container position-relative">
+            <span class="badge-pill mb-3 d-inline-block">500+ Courses Available</span>
+            <h1>Browse Our <span style="color:#60A5FA;">Courses</span></h1>
+            <p>Explore hundreds of expert-led courses across all categories and find the perfect learning path for your
+                goals.</p>
+            <div class="breadcrumb-custom">
+                <a href="index.html">Home</a><span>/</span><span class="current">Courses</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- COURSES SECTION -->
+    <section class="section-pad bg-light-blue">
+        <div class="container">
+            <!-- Filter Tabs -->
+            <div class="filter-tabs justify-content-center fade-up">
+                <button class="filter-tab active" data-filter="all">All Courses</button>
+                <button class="filter-tab" data-filter="development">Development</button>
+                <button class="filter-tab" data-filter="marketing">Marketing</button>
+                <button class="filter-tab" data-filter="design">Design</button>
+                <button class="filter-tab" data-filter="data">Data Science</button>
+                <button class="filter-tab" data-filter="business">Business</button>
+                <button class="filter-tab" data-filter="photography">Photography</button>
+            </div>
+
+            <div class="row g-4">
+                <!-- Course 1 -->
+                <div class="col-md-6 col-xl-4 course-item fade-up" data-category="development">
+                    <div class="course-card">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80&auto=format&fit=crop"
+                                alt="Web Development" loading="lazy" />
+                            <span class="course-category-badge">Development</span>
+                            <span class="course-level-badge">Beginner</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="course-instructor"><img src="https://i.pravatar.cc/40?img=1"
+                                    alt="Instructor" /><span>James Carter</span></div>
+                            <div class="course-title">Complete Web Development Bootcamp 2024</div>
+                            <div class="course-meta"><span><i class="fas fa-clock"></i> 42h</span><span><i
+                                        class="fas fa-book-open"></i> 128 Lessons</span><span><i
+                                        class="fas fa-users"></i> 8.2K</span></div>
+                            <div class="course-footer">
+                                <div>
+                                    <div class="course-rating"><span class="stars"><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><span
+                                            class="rating-count">(4.8)</span></div><span class="course-price">$89 <span
+                                            class="course-price-old">$149</span></span>
+                                </div>
+                                <button class="btn-enroll">Enroll</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 2 -->
+                <div class="col-md-6 col-xl-4 course-item fade-up fade-up-delay-1" data-category="marketing">
+                    <div class="course-card">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80&auto=format&fit=crop"
+                                alt="Digital Marketing" loading="lazy" />
+                            <span class="course-category-badge" style="background:#F59E0B;">Marketing</span>
+                            <span class="course-level-badge">Intermediate</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="course-instructor"><img src="https://i.pravatar.cc/40?img=5"
+                                    alt="Instructor" /><span>Sarah Johnson</span></div>
+                            <div class="course-title">Digital Marketing Masterclass — SEO, Social &amp; Ads</div>
+                            <div class="course-meta"><span><i class="fas fa-clock"></i> 36h</span><span><i
+                                        class="fas fa-book-open"></i> 95 Lessons</span><span><i
+                                        class="fas fa-users"></i> 6.1K</span></div>
+                            <div class="course-footer">
+                                <div>
+                                    <div class="course-rating"><span class="stars"><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i></span><span
+                                            class="rating-count">(4.9)</span></div><span class="course-price">$79 <span
+                                            class="course-price-old">$129</span></span>
+                                </div>
+                                <button class="btn-enroll">Enroll</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 3 -->
+                <div class="col-md-6 col-xl-4 course-item fade-up fade-up-delay-2" data-category="design">
+                    <div class="course-card">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80&auto=format&fit=crop"
+                                alt="Graphic Design" loading="lazy" />
+                            <span class="course-category-badge" style="background:#7C3AED;">Design</span>
+                            <span class="course-level-badge">Beginner</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="course-instructor"><img src="https://i.pravatar.cc/40?img=9"
+                                    alt="Instructor" /><span>Emily Rivera</span></div>
+                            <div class="course-title">Graphic Design Fundamentals with Figma &amp; Photoshop</div>
+                            <div class="course-meta"><span><i class="fas fa-clock"></i> 28h</span><span><i
+                                        class="fas fa-book-open"></i> 72 Lessons</span><span><i
+                                        class="fas fa-users"></i> 5.4K</span></div>
+                            <div class="course-footer">
+                                <div>
+                                    <div class="course-rating"><span class="stars"><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><span
+                                            class="rating-count">(4.7)</span></div><span class="course-price">$69 <span
+                                            class="course-price-old">$119</span></span>
+                                </div>
+                                <button class="btn-enroll">Enroll</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 4 -->
+                <div class="col-md-6 col-xl-4 course-item fade-up" data-category="data">
+                    <div class="course-card">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80&auto=format&fit=crop"
+                                alt="Data Science" loading="lazy" />
+                            <span class="course-category-badge" style="background:#059669;">Data Science</span>
+                            <span class="course-level-badge">Advanced</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="course-instructor"><img src="https://i.pravatar.cc/40?img=12"
+                                    alt="Instructor" /><span>Dr. Michael Chen</span></div>
+                            <div class="course-title">Data Science &amp; Machine Learning with Python</div>
+                            <div class="course-meta"><span><i class="fas fa-clock"></i> 58h</span><span><i
+                                        class="fas fa-book-open"></i> 160 Lessons</span><span><i
+                                        class="fas fa-users"></i> 9.8K</span></div>
+                            <div class="course-footer">
+                                <div>
+                                    <div class="course-rating"><span class="stars"><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i></span><span
+                                            class="rating-count">(4.9)</span></div><span class="course-price">$109 <span
+                                            class="course-price-old">$179</span></span>
+                                </div>
+                                <button class="btn-enroll">Enroll</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 5 -->
+                <div class="col-md-6 col-xl-4 course-item fade-up fade-up-delay-1" data-category="business">
+                    <div class="course-card">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&q=80&auto=format&fit=crop"
+                                alt="Business Management" loading="lazy" />
+                            <span class="course-category-badge" style="background:#0F172A;">Business</span>
+                            <span class="course-level-badge">Intermediate</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="course-instructor"><img src="https://i.pravatar.cc/40?img=15"
+                                    alt="Instructor" /><span>Robert Dawson</span></div>
+                            <div class="course-title">MBA Essentials: Business Management &amp; Strategy</div>
+                            <div class="course-meta"><span><i class="fas fa-clock"></i> 32h</span><span><i
+                                        class="fas fa-book-open"></i> 88 Lessons</span><span><i
+                                        class="fas fa-users"></i> 4.3K</span></div>
+                            <div class="course-footer">
+                                <div>
+                                    <div class="course-rating"><span class="stars"><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><span
+                                            class="rating-count">(4.6)</span></div><span class="course-price">$99 <span
+                                            class="course-price-old">$159</span></span>
+                                </div>
+                                <button class="btn-enroll">Enroll</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 6 -->
+                <div class="col-md-6 col-xl-4 course-item fade-up fade-up-delay-2" data-category="photography">
+                    <div class="course-card">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=80&auto=format&fit=crop"
+                                alt="Photography" loading="lazy" />
+                            <span class="course-category-badge" style="background:#BE185D;">Photography</span>
+                            <span class="course-level-badge">All Levels</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="course-instructor"><img src="https://i.pravatar.cc/40?img=22"
+                                    alt="Instructor" /><span>Lena Mitchell</span></div>
+                            <div class="course-title">Professional Photography: From Beginner to Expert</div>
+                            <div class="course-meta"><span><i class="fas fa-clock"></i> 24h</span><span><i
+                                        class="fas fa-book-open"></i> 64 Lessons</span><span><i
+                                        class="fas fa-users"></i> 3.7K</span></div>
+                            <div class="course-footer">
+                                <div>
+                                    <div class="course-rating"><span class="stars"><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i></span><span
+                                            class="rating-count">(4.9)</span></div><span class="course-price">$59 <span
+                                            class="course-price-old">$99</span></span>
+                                </div>
+                                <button class="btn-enroll">Enroll</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 7 -->
+                <div class="col-md-6 col-xl-4 course-item fade-up" data-category="development">
+                    <div class="course-card">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&q=80&auto=format&fit=crop"
+                                alt="React JS" loading="lazy" />
+                            <span class="course-category-badge">Development</span>
+                            <span class="course-level-badge">Intermediate</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="course-instructor"><img src="https://i.pravatar.cc/40?img=3"
+                                    alt="Instructor" /><span>James Carter</span></div>
+                            <div class="course-title">React JS &amp; Next.js — Complete Modern Web Dev Course</div>
+                            <div class="course-meta"><span><i class="fas fa-clock"></i> 38h</span><span><i
+                                        class="fas fa-book-open"></i> 110 Lessons</span><span><i
+                                        class="fas fa-users"></i> 7.1K</span></div>
+                            <div class="course-footer">
+                                <div>
+                                    <div class="course-rating"><span class="stars"><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span><span
+                                            class="rating-count">(4.8)</span></div><span class="course-price">$95 <span
+                                            class="course-price-old">$159</span></span>
+                                </div>
+                                <button class="btn-enroll">Enroll</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 8 -->
+                <div class="col-md-6 col-xl-4 course-item fade-up fade-up-delay-1" data-category="design">
+                    <div class="course-card">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=600&q=80&auto=format&fit=crop"
+                                alt="UI/UX Design" loading="lazy" />
+                            <span class="course-category-badge" style="background:#7C3AED;">Design</span>
+                            <span class="course-level-badge">Intermediate</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="course-instructor"><img src="https://i.pravatar.cc/40?img=9"
+                                    alt="Instructor" /><span>Emily Rivera</span></div>
+                            <div class="course-title">UI/UX Design Masterclass: Figma, Wireframing &amp; Prototyping
+                            </div>
+                            <div class="course-meta"><span><i class="fas fa-clock"></i> 34h</span><span><i
+                                        class="fas fa-book-open"></i> 96 Lessons</span><span><i
+                                        class="fas fa-users"></i> 6.8K</span></div>
+                            <div class="course-footer">
+                                <div>
+                                    <div class="course-rating"><span class="stars"><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i></span><span
+                                            class="rating-count">(4.9)</span></div><span class="course-price">$85 <span
+                                            class="course-price-old">$139</span></span>
+                                </div>
+                                <button class="btn-enroll">Enroll</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Course 9 -->
+                <div class="col-md-6 col-xl-4 course-item fade-up fade-up-delay-2" data-category="data">
+                    <div class="course-card">
+                        <div class="course-thumb">
+                            <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&q=80&auto=format&fit=crop"
+                                alt="AI &amp; ChatGPT" loading="lazy" />
+                            <span class="course-category-badge" style="background:#059669;">AI &amp; ML</span>
+                            <span class="course-level-badge">All Levels</span>
+                        </div>
+                        <div class="course-body">
+                            <div class="course-instructor"><img src="https://i.pravatar.cc/40?img=12"
+                                    alt="Instructor" /><span>Dr. Michael Chen</span></div>
+                            <div class="course-title">Artificial Intelligence &amp; ChatGPT: Complete Practical Guide
+                            </div>
+                            <div class="course-meta"><span><i class="fas fa-clock"></i> 46h</span><span><i
+                                        class="fas fa-book-open"></i> 130 Lessons</span><span><i
+                                        class="fas fa-users"></i> 11.2K</span></div>
+                            <div class="course-footer">
+                                <div>
+                                    <div class="course-rating"><span class="stars"><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i></span><span
+                                            class="rating-count">(5.0)</span></div><span class="course-price">$119 <span
+                                            class="course-price-old">$199</span></span>
+                                </div>
+                                <button class="btn-enroll">Enroll</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Load More -->
+            <div class="text-center mt-5 fade-up">
+                <button class="btn-primary-custom"><i class="fas fa-sync-alt me-2"></i>Load More Courses</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section">
+        <div class="container position-relative text-center">
+            <span class="badge-pill"
+                style="background:rgba(255,255,255,.12);color:#93C5FD;border:1px solid rgba(255,255,255,.2);">Newsletter</span>
+            <h2 class="mt-3 mb-3 fade-up">Get New Course Notifications</h2>
+            <p class="mb-5 fade-up">Subscribe to be the first to know when new courses go live.</p>
+            <form class="newsletter-form justify-content-center fade-up">
+                <input type="email" placeholder="Enter your email address..." required />
+                <button type="submit"><i class="fas fa-paper-plane me-2"></i>Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="footer-brand"><a class="navbar-brand" href="index.html"><span class="logo-icon"><i
+                                    class="fas fa-graduation-cap"></i></span>Edu<span
+                                class="brand-accent">Pro</span></a></div>
+                    <p class="footer-desc">Empowering learners worldwide with high-quality education from expert
+                        instructors.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <div class="footer-heading">Quick Links</div>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Courses</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="instructors.html"><i class="fas fa-chevron-right"></i> Instructors</a></li>
+                        <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <div class="footer-heading">Categories</div>
+                    <ul class="footer-links">
+                        <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Web Development</a></li>
+                        <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Data Science</a></li>
+                        <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Graphic Design</a></li>
+                        <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Digital Marketing</a></li>
+                        <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Business &amp; Finance</a></li>
+                        <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Photography</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-heading">Contact Info</div>
+                    <ul class="footer-links">
+                        <li><a href="mailto:aymaninfotechs@gmail.com"><i class="fas fa-envelope"></i>
+                                aymaninfotechs@gmail.com</a></li>
+                        <li><a href="#"><i class="fas fa-clock"></i> Mon–Fri: 9:00 AM – 6:00 PM</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 <strong>EduPro</strong>. Developed by <a
+                        href="mailto:aymaninfotechs@gmail.com">AymanInfotech</a>. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Back to top"><i class="fas fa-chevron-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

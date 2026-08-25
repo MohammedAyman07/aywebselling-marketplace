@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building Production-Ready AI Apps with GPT-4 – Alex Morgan Blog</title>
+    <meta name="description"
+        content="A comprehensive guide to integrating LLMs into modern web applications — from API design to streaming responses." />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="page-loader">
+        <div class="loader-inner">
+            <div class="loader-ring"></div>
+            <div class="loader-text"><span>AM</span> Portfolio</div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-inner">
+                <a href="index.html" class="navbar-logo"><span class="logo-dot"></span>Alex<span>.M</span></a>
+                <ul class="navbar-nav">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="navbar-actions"><button class="theme-toggle"></button><a href="contact.html"
+                        class="btn btn-primary btn-sm">Hire Me</a></div>
+                <button class="hamburger"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-nav">
+        <a href="index.html" class="nav-link">🏠 Home</a><a href="about.html" class="nav-link">👤 About</a>
+        <a href="portfolio.html" class="nav-link">💼 Portfolio</a><a href="services.html" class="nav-link">⚡
+            Services</a>
+        <a href="blog.html" class="nav-link">📝 Blog</a><a href="contact.html" class="nav-link">📬 Contact</a>
+    </div>
+
+    <section style="padding-top:calc(var(--navbar-height) + 60px);padding-bottom:80px;">
+        <div class="container">
+            <div class="blog-detail-content">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb" style="margin-bottom:32px;justify-content:start;">
+                    <a href="index.html">Home</a><span class="breadcrumb-sep">/</span>
+                    <a href="blog.html">Blog</a><span class="breadcrumb-sep">/</span>
+                    <span>Article</span>
+                </div>
+
+                <!-- Header -->
+                <div class="blog-detail-header">
+                    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px;">
+                        <span class="badge badge-secondary">AI Engineering</span>
+                        <span class="badge badge-primary">Next.js</span>
+                        <span class="badge badge-primary">GPT-4</span>
+                    </div>
+                    <h1
+                        style="font-family:var(--font-heading);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:var(--text-primary);line-height:1.2;margin-bottom:24px;">
+                        Building Production-Ready AI Apps with GPT-4 and Next.js in 2026</h1>
+                    <div
+                        style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;padding:20px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+                        <div class="blog-author" style="gap:14px;">
+                            <div
+                                style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;font-size:1.6rem;">
+                                👨‍💻</div>
+                            <div>
+                                <div style="font-weight:700;color:var(--text-primary);">Alex Morgan</div>
+                                <div style="font-size:0.82rem;color:var(--text-muted);">Senior Developer & AI Engineer
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display:flex;gap:24px;color:var(--text-muted);font-size:0.85rem;flex-wrap:wrap;">
+                            <span>📅 March 15, 2026</span>
+                            <span>⏱️ 12 min read</span>
+                            <span>👁️ 8,432 views</span>
+                            <span>💬 47 comments</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Image -->
+                <div class="blog-detail-img">📝</div>
+
+                <!-- Content -->
+                <h2>Introduction: Why AI-Powered Applications Are the Future</h2>
+                <p>The landscape of web development has fundamentally shifted. In 2026, integrating large language
+                    models (LLMs) like GPT-4 into production applications is no longer experimental — it's becoming a
+                    competitive necessity. From intelligent search to automated content generation, AI capabilities are
+                    reshaping what users expect from software.</p>
+                <p>In this comprehensive guide, I'll walk you through everything you need to build a scalable,
+                    production-ready AI application using Next.js 14 and the OpenAI API. We'll cover architecture
+                    decisions, streaming responses, cost optimization, and deployment strategies.</p>
+
+                <blockquote>
+                    "AI is not going to replace developers — but developers who use AI will replace those who don't." —
+                    The emerging consensus in Silicon Valley, 2026
+                </blockquote>
+
+                <h2>1. Setting Up Your Next.js 14 Project</h2>
+                <p>Start by creating a fresh Next.js application with the App Router, which is now the recommended
+                    approach for production applications. The App Router provides excellent support for streaming
+                    responses, which is essential when working with LLMs.</p>
+                <p>Make sure to configure your environment variables properly. Never expose your OpenAI API key on the
+                    client side — always call the OpenAI API from server-side route handlers or Server Actions. This
+                    protects your API key and also allows you to implement rate limiting and usage monitoring.</p>
+
+                <h2>2. Implementing Streaming Responses</h2>
+                <p>One of the most critical UX improvements you can make in an AI application is implementing streaming
+                    responses. Instead of waiting for the entire response to generate (which can take 5–30 seconds for
+                    long outputs), streaming delivers tokens to the user in real-time, dramatically improving perceived
+                    performance.</p>
+                <p>Next.js 14's Server Actions and the Edge Runtime make this elegantly simple. Use the
+                    <code>ReadableStream</code> API combined with OpenAI's streaming SDK to pipe tokens directly to the
+                    browser as they're generated.</p>
+
+                <h2>3. Cost Optimization Strategies</h2>
+                <p>GPT-4 can become expensive at scale. Here are the strategies I use across my production applications:
+                </p>
+                <ul>
+                    <li><strong>Intelligent caching:</strong> Cache common queries using Redis or Upstash. A 30% cache
+                        hit rate can dramatically reduce costs.</li>
+                    <li><strong>Model selection:</strong> Use GPT-3.5-turbo for simple tasks, reserving GPT-4 for
+                        complex reasoning.</li>
+                    <li><strong>Prompt compression:</strong> Minimize token usage in system prompts without sacrificing
+                        quality.</li>
+                    <li><strong>Request batching:</strong> Combine multiple small requests where possible.</li>
+                    <li><strong>User rate limiting:</strong> Implement per-user limits to prevent runaway costs.</li>
+                </ul>
+
+                <h2>4. Error Handling and Fallbacks</h2>
+                <p>Production AI apps need graceful error handling. The OpenAI API can occasionally return errors due to
+                    rate limits, service outages, or context window overflow. Always implement retry logic with
+                    exponential backoff, maintain fallback responses for common queries, and monitor your application's
+                    AI error rate as a key metric.</p>
+
+                <h2>5. Deployment and Monitoring</h2>
+                <p>Vercel is the natural choice for Next.js AI applications. Their Edge Functions runtime minimizes
+                    latency for streaming responses, and their built-in analytics make it easy to monitor performance.
+                    Set up Langfuse or LangSmith for AI-specific observability — tracking token usage, latency, and
+                    response quality metrics that traditional APM tools don't capture.</p>
+
+                <h2>Conclusion</h2>
+                <p>Building production-ready AI applications requires careful thought about architecture, user
+                    experience, cost management, and reliability. The combination of Next.js 14 and GPT-4 is genuinely
+                    powerful, but the real differentiator is how thoughtfully you integrate these capabilities into a
+                    polished product experience.</p>
+                <p>Start small, measure everything, and iterate based on real user behavior. The AI applications that
+                    succeed aren't necessarily the ones with the most sophisticated models — they're the ones with the
+                    best product thinking.</p>
+
+                <!-- Author Bio -->
+                <div style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius-xl);padding:32px;margin:48px 0;display:flex;gap:24px;align-items:flex-start;"
+                    data-aos>
+                    <div
+                        style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;font-size:2.5rem;flex-shrink:0;">
+                        👨‍💻</div>
+                    <div>
+                        <h4 style="font-family:var(--font-heading);font-weight:700;margin-bottom:8px;">About Alex Morgan
+                        </h4>
+                        <p style="color:var(--text-secondary);font-size:0.92rem;line-height:1.8;margin-bottom:16px;">
+                            Senior Full Stack Developer and AI Engineer with 6+ years of experience. I write weekly
+                            about web development, AI engineering, and building a successful freelance career. Currently
+                            based in San Francisco.</p>
+                        <div style="display:flex;gap:10px;">
+                            <a href="#" class="social-link">🐙</a>
+                            <a href="#" class="social-link">💼</a>
+                            <a href="#" class="social-link">🐦</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:60px;"
+                    class="blog-nav-grid">
+                    <a href="blog.html"
+                        style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px;display:block;transition:var(--transition);"
+                        class="blog-nav-prev">
+                        <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:8px;">← Previous Article
+                        </div>
+                        <div style="font-weight:600;color:var(--text-primary);font-size:0.95rem;">React Performance
+                            Patterns Every Senior Dev Should Know</div>
+                    </a>
+                    <a href="blog.html"
+                        style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px;display:block;text-align:right;transition:var(--transition);"
+                        class="blog-nav-next">
+                        <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:8px;">Next Article →</div>
+                        <div style="font-weight:600;color:var(--text-primary);font-size:0.95rem;">The Ultimate Guide to
+                            Glassmorphism UI Design</div>
+                    </a>
+                </div>
+
+                <div class="text-center">
+                    <a href="blog.html" class="btn btn-outline btn-lg">← Back to All Articles</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo"><span class="logo-dot" style="margin-right:4px"></span>Alex<span>.M</span>
+                    </div>
+                    <p class="footer-desc">Creative developer & designer crafting premium digital experiences worldwide.
+                    </p>
+                    <div class="footer-social"><a href="#" class="social-link">🐙</a><a href="#"
+                            class="social-link">💼</a><a href="#" class="social-link">🐦</a></div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Navigation</h4>
+                    <div class="footer-links"><a href="index.html" class="footer-link">Home</a><a href="about.html"
+                            class="footer-link">About Me</a><a href="portfolio.html" class="footer-link">Portfolio</a><a
+                            href="services.html" class="footer-link">Services</a><a href="blog.html"
+                            class="footer-link">Blog</a><a href="contact.html" class="footer-link">Contact</a></div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <div class="footer-links"><a href="services.html" class="footer-link">Web Development</a><a
+                            href="services.html" class="footer-link">UI/UX Design</a><a href="services.html"
+                            class="footer-link">Mobile Apps</a><a href="services.html" class="footer-link">AI
+                            Solutions</a></div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Newsletter</h4>
+                    <form class="newsletter-form footer-newsletter">
+                        <div class="form-group"><input type="email" class="form-control"
+                                placeholder="your@email.com" /><button type="submit"
+                                class="btn btn-primary btn-sm">Subscribe</button></div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 <span>Alex Morgan</span>. Template by <span>Ayman Infotech</span>.</p>
+                <div class="footer-links-bottom"><a href="#">Privacy</a><a href="#">Terms</a></div>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top">↑</button>
+    <script src="assets/js/main.js"></script>
+    <style>
+        @media(max-width:600px) {
+            .blog-nav-grid {
+                grid-template-columns: 1fr !important
+            }
+
+            .blog-nav-next {
+                text-align: left !important
+            }
+        }
+
+        .blog-nav-prev:hover,
+        .blog-nav-next:hover {
+            border-color: var(--primary);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg)
+        }
+    </style>
+</body>
+
+</html>

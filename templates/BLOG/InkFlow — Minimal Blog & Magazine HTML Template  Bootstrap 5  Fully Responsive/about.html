@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Learn about InkFlow Blog — our story, mission, and the team behind the content." />
+    <meta name="author" content="AymanInfotech" />
+    <title>About Us - InkFlow Blog</title>
+
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✍️</text></svg>" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner"></div>
+            <p>Loading InkFlow...</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="main-navbar navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="brand-logo">
+                    <div class="logo-icon"><i class="fas fa-feather-alt"></i></div>
+                    <span class="brand-name">Ink<span>Flow</span></span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="navbar-search d-flex align-items-center">
+                    <input type="text" class="search-input" placeholder="Search articles..." aria-label="Search" />
+                    <button class="search-btn" aria-label="Submit search"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-7" data-reveal>
+                    <span class="subtitle"
+                        style="color:var(--primary); font-size:0.82rem; font-weight:600; text-transform:uppercase; letter-spacing:3px; display:block; margin-bottom:12px;">Our
+                        Story</span>
+                    <h1>About InkFlow Blog</h1>
+                    <p class="lead mt-3" style="color:rgba(255,255,255,0.7); max-width:540px;">
+                        We're a community of passionate writers, thinkers, and storytellers who believe in the
+                        transformative power of great writing. InkFlow was born from a simple idea: create a beautiful,
+                        distraction-free space where ideas can breathe and readers can explore.
+                    </p>
+                    <p style="color:rgba(255,255,255,0.55); margin-top:16px; max-width:540px; font-size:0.95rem;">
+                        Since 2020, we've published over 250 articles across technology, business, lifestyle, travel,
+                        and education — all crafted with care to inform, inspire, and spark conversation.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap mt-4">
+                        <a href="blog.html" class="btn-primary-custom">
+                            <i class="fas fa-book-open"></i> Read the Blog
+                        </a>
+                        <a href="contact.html" class="btn-outline-custom"
+                            style="color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.3);">
+                            <i class="fas fa-envelope"></i> Get in Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5" data-reveal data-delay="2">
+                    <div class="about-author-card">
+                        <div class="author-cover"></div>
+                        <img src="https://i.pravatar.cc/200?img=1" alt="Sarah Mitchell - Founder"
+                            class="author-avatar" />
+                        <div class="author-info">
+                            <h4>Sarah Mitchell</h4>
+                            <p class="role">Founder &amp; Lead Editor</p>
+                            <p style="font-size:0.88rem; color:var(--gray); line-height:1.7; margin-bottom:16px;">
+                                Sarah is an award-winning journalist turned blogger with over 12 years of experience in
+                                digital media, creative writing, and content strategy.
+                            </p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="#" style="color:var(--primary);"><i class="fab fa-x-twitter fa-lg"></i></a>
+                                <a href="#" style="color:var(--primary);"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                                <a href="#" style="color:var(--primary);"><i class="fab fa-instagram fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">About</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Mission Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6" data-reveal>
+                    <div style="position:relative; border-radius:var(--radius); overflow:hidden;">
+                        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80"
+                            alt="Our Mission"
+                            style="border-radius:var(--radius); width:100%; height:440px; object-fit:cover;" />
+                        <div
+                            style="position:absolute; bottom:20px; left:20px; background:var(--primary); color:white; padding:12px 20px; border-radius:10px; font-size:0.88rem;">
+                            <strong>Est. 2020</strong> · Over 250 Articles Published
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-reveal data-delay="2">
+                    <span class="subtitle">What We Believe</span>
+                    <h2>Our Mission &amp; Core Values</h2>
+                    <div class="divider"></div>
+                    <p>At InkFlow, we believe that great writing has the power to change perspectives, spark creativity,
+                        and connect people across cultures and backgrounds.</p>
+                    <p>Our mission is to provide a platform that makes quality long-form content accessible to everyone
+                        — whether you're a seasoned professional or a curious first-time reader.</p>
+
+                    <div class="row g-3 mt-2">
+                        <div class="col-12">
+                            <div
+                                style="display:flex; gap:14px; align-items:flex-start; padding:14px; background:var(--gray-light); border-radius:var(--radius-sm); border-left:3px solid var(--primary);">
+                                <div
+                                    style="width:38px; height:38px; background:var(--primary-light); border-radius:8px; display:flex; align-items:center; justify-content:center; color:var(--primary); flex-shrink:0;">
+                                    <i class="fas fa-pen-nib"></i>
+                                </div>
+                                <div>
+                                    <h6 style="margin-bottom:3px;">Quality Writing First</h6>
+                                    <p style="font-size:0.85rem; margin:0; color:var(--gray);">Every article is
+                                        thoroughly researched, carefully edited, and crafted for readability and impact.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div
+                                style="display:flex; gap:14px; align-items:flex-start; padding:14px; background:var(--gray-light); border-radius:var(--radius-sm); border-left:3px solid var(--primary);">
+                                <div
+                                    style="width:38px; height:38px; background:var(--primary-light); border-radius:8px; display:flex; align-items:center; justify-content:center; color:var(--primary); flex-shrink:0;">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div>
+                                    <h6 style="margin-bottom:3px;">Community Driven</h6>
+                                    <p style="font-size:0.85rem; margin:0; color:var(--gray);">We built InkFlow for
+                                        readers first — listening to feedback and evolving with our audience.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div
+                                style="display:flex; gap:14px; align-items:flex-start; padding:14px; background:var(--gray-light); border-radius:var(--radius-sm); border-left:3px solid var(--primary);">
+                                <div
+                                    style="width:38px; height:38px; background:var(--primary-light); border-radius:8px; display:flex; align-items:center; justify-content:center; color:var(--primary); flex-shrink:0;">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div>
+                                    <h6 style="margin-bottom:3px;">Diverse Perspectives</h6>
+                                    <p style="font-size:0.85rem; margin:0; color:var(--gray);">We actively collaborate
+                                        with writers from around the world to bring diverse, global viewpoints.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section-padding-sm" style="background:var(--gray-light);">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-6 col-md-3" data-reveal data-delay="1">
+                    <div class="about-stat-card">
+                        <div class="stat-number">250+</div>
+                        <div class="stat-label">Articles Published</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-reveal data-delay="2">
+                    <div class="about-stat-card">
+                        <div class="stat-number">48K</div>
+                        <div class="stat-label">Monthly Readers</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-reveal data-delay="3">
+                    <div class="about-stat-card">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Newsletter Subscribers</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-reveal data-delay="4">
+                    <div class="about-stat-card">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Years of Publishing</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Team -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header text-center" data-reveal>
+                <span class="subtitle">The Humans Behind InkFlow</span>
+                <h2>Meet Our Team</h2>
+                <div class="divider center"></div>
+                <p class="mx-auto">A small, dedicated team of writers, editors, and creatives passionate about the
+                    written word.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-6" data-reveal data-delay="1">
+                    <div class="team-card">
+                        <img src="https://i.pravatar.cc/400?img=1" alt="Sarah Mitchell" />
+                        <div class="team-info">
+                            <h5>Sarah Mitchell</h5>
+                            <p class="role">Founder &amp; Lead Editor</p>
+                            <p style="font-size:0.82rem; color:var(--gray); margin-top:6px;">Award-winning journalist
+                                with 12+ years in digital publishing.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <a href="#" style="color:var(--primary);"><i class="fab fa-x-twitter"></i></a>
+                                <a href="#" style="color:var(--primary);"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-reveal data-delay="2">
+                    <div class="team-card">
+                        <img src="https://i.pravatar.cc/400?img=5" alt="Tom Wright" />
+                        <div class="team-info">
+                            <h5>Tom Wright</h5>
+                            <p class="role">Tech Editor</p>
+                            <p style="font-size:0.82rem; color:var(--gray); margin-top:6px;">Software engineer turned
+                                tech writer covering AI, web dev, and cybersecurity.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <a href="#" style="color:var(--primary);"><i class="fab fa-x-twitter"></i></a>
+                                <a href="#" style="color:var(--primary);"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-reveal data-delay="3">
+                    <div class="team-card">
+                        <img src="https://i.pravatar.cc/400?img=9" alt="Lisa Park" />
+                        <div class="team-info">
+                            <h5>Lisa Park</h5>
+                            <p class="role">Travel &amp; Lifestyle Writer</p>
+                            <p style="font-size:0.82rem; color:var(--gray); margin-top:6px;">Full-time traveler who has
+                                visited 55+ countries and writes about every journey.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <a href="#" style="color:var(--primary);"><i class="fab fa-instagram"></i></a>
+                                <a href="#" style="color:var(--primary);"><i class="fab fa-x-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-reveal data-delay="4">
+                    <div class="team-card">
+                        <img src="https://i.pravatar.cc/400?img=22" alt="Mia Collins" />
+                        <div class="team-info">
+                            <h5>Mia Collins</h5>
+                            <p class="role">Business Writer</p>
+                            <p style="font-size:0.82rem; color:var(--gray); margin-top:6px;">Former startup founder
+                                covering entrepreneurship, marketing, and finance.</p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <a href="#" style="color:var(--primary);"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" style="color:var(--primary);"><i class="fab fa-x-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Write for Us -->
+    <section class="section-padding" style="background:var(--dark); text-align:center;">
+        <div class="container">
+            <div class="col-lg-7 mx-auto" data-reveal>
+                <span class="subtitle">Join the Community</span>
+                <h2 style="color:white; margin-top:10px;">Write for InkFlow</h2>
+                <p style="color:rgba(255,255,255,0.6); margin-top:12px; margin-bottom:28px;">
+                    Are you a passionate writer with expertise in your field? We're always looking for talented voices
+                    to join our growing community of contributors.
+                </p>
+                <a href="contact.html" class="btn-primary-custom" style="font-size:1rem; padding:14px 36px;">
+                    <i class="fas fa-pen-nib"></i> Submit Your Pitch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6" data-reveal>
+                    <h2>Stay in the Loop</h2>
+                    <p class="mb-4 mt-2">Subscribe to get the latest articles from the InkFlow team delivered weekly.
+                    </p>
+                    <form class="newsletter-form" novalidate>
+                        <div class="input-group mx-auto">
+                            <input type="email" class="form-control" placeholder="Enter your email address..."
+                                required />
+                            <button type="submit" class="btn"><i class="fas fa-paper-plane me-1"></i> Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <div class="brand-logo">
+                            <div class="logo-icon"><i class="fas fa-feather-alt"></i></div>
+                            <span class="brand-name">Ink<span>Flow</span></span>
+                        </div>
+                        <p>A minimal, elegant blog for writers and publishers. We believe in the power of words to
+                            inspire and connect.</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-heading">Quick Links</div>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Categories</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-heading">Categories</div>
+                    <ul class="footer-links">
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Technology</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Business</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Lifestyle</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Travel</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Education</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-heading">Latest Articles</div>
+                    <div class="footer-recent-post">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=100&q=80"
+                            alt="Recent Post" />
+                        <div>
+                            <h6><a href="post.html">The Art of Writing: Build a Creative Habit</a></h6><span>Mar 5,
+                                2026</span>
+                        </div>
+                    </div>
+                    <div class="footer-recent-post">
+                        <img src="https://images.unsplash.com/photo-1677442135968-6db3b0025fde?w=100&q=80"
+                            alt="Recent Post" />
+                        <div>
+                            <h6><a href="post.html">How AI is Revolutionizing Content Creation</a></h6><span>Mar 3,
+                                2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2026 <a href="#">InkFlow Blog</a>. All Rights Reserved. Developed by <a
+                                href="https://aymaninfotech.com" target="_blank" rel="noopener">AymanInfotech</a>.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Use</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Back to top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

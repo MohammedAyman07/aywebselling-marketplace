@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop LUXE Fashion – Browse our full collection of clothing and accessories for men and women.">
+  <title>Shop – LUXE Fashion</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    Free shipping on orders over $150 <span>•</span> Use code <strong>LUXE10</strong> for 10% off <span>•</span> New arrivals every Friday
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top sticky-top-bar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">LUXE<span>.</span></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-icons d-flex align-items-center">
+        <a href="#" aria-label="Search"><i class="bi bi-search"></i></a>
+        <a href="#" aria-label="Wishlist"><i class="bi bi-heart"></i></a>
+        <a href="cart.html" aria-label="Cart" style="position:relative;">
+          <i class="bi bi-bag"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Shop All</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Shop</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- SHOP SECTION -->
+  <section style="padding:60px 0; background:var(--white)">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- SIDEBAR -->
+        <div class="col-lg-3">
+          <div class="shop-sidebar">
+            <!-- Categories -->
+            <div class="sidebar-widget">
+              <h3 class="sidebar-title">Categories</h3>
+              <div class="filter-check">
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="cat-all" checked>
+                  <label class="form-check-label" for="cat-all">All Products <span class="text-muted">(512)</span></label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="cat-women">
+                  <label class="form-check-label" for="cat-women">Women's Fashion <span class="text-muted">(240)</span></label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="cat-men">
+                  <label class="form-check-label" for="cat-men">Men's Fashion <span class="text-muted">(120)</span></label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="cat-shoes">
+                  <label class="form-check-label" for="cat-shoes">Shoes <span class="text-muted">(85)</span></label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="cat-acc">
+                  <label class="form-check-label" for="cat-acc">Accessories <span class="text-muted">(60)</span></label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Price Range -->
+            <div class="sidebar-widget">
+              <h3 class="sidebar-title">Price Range</h3>
+              <input type="range" class="form-range" min="0" max="500" value="300" id="priceRange" oninput="document.getElementById('priceVal').textContent='$'+this.value">
+              <div class="d-flex justify-content-between" style="font-size:13px;color:var(--gray-text)">
+                <span>$0</span>
+                <span>Max: <strong id="priceVal">$300</strong></span>
+              </div>
+            </div>
+
+            <!-- Colors -->
+            <div class="sidebar-widget">
+              <h3 class="sidebar-title">Colors</h3>
+              <div class="color-swatches">
+                <div class="color-swatch active" style="background:#111" title="Black"></div>
+                <div class="color-swatch" style="background:#fff;border:1px solid #ddd" title="White"></div>
+                <div class="color-swatch" style="background:#f5f0eb" title="Beige"></div>
+                <div class="color-swatch" style="background:#c9a84c" title="Gold"></div>
+                <div class="color-swatch" style="background:#8b7355" title="Brown"></div>
+                <div class="color-swatch" style="background:#2c3e50" title="Navy"></div>
+                <div class="color-swatch" style="background:#e74c3c" title="Red"></div>
+                <div class="color-swatch" style="background:#27ae60" title="Green"></div>
+              </div>
+            </div>
+
+            <!-- Size -->
+            <div class="sidebar-widget">
+              <h3 class="sidebar-title">Size</h3>
+              <div class="size-options">
+                <button class="size-btn">XS</button>
+                <button class="size-btn active">S</button>
+                <button class="size-btn">M</button>
+                <button class="size-btn">L</button>
+                <button class="size-btn">XL</button>
+                <button class="size-btn">XXL</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCTS GRID -->
+        <div class="col-lg-9">
+          <!-- Sort Bar -->
+          <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+            <p class="mb-0" style="font-size:14px;color:var(--gray-text)">Showing <strong>512</strong> products</p>
+            <div class="d-flex align-items-center gap-3">
+              <select class="sort-select form-select" aria-label="Sort products">
+                <option value="">Sort by: Featured</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Newest First</option>
+                <option>Best Selling</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <!-- Product Cards (12 products) -->
+            <div class="col-lg-4 col-md-6 fade-up product-filterable" data-category="women">
+              <div class="product-card">
+                <div class="product-image-wrap">
+                  <span class="product-badge badge-new">New</span>
+                  <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&q=80" alt="Floral Wrap Dress">
+                  <div class="product-actions">
+                    <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+                  </div>
+                </div>
+                <div class="product-body">
+                  <div class="product-category">Women</div>
+                  <h3 class="product-name"><a href="product.html">Floral Wrap Dress</a></h3>
+                  <div class="product-stars">★★★★★ <span>(48)</span></div>
+                  <div class="product-price"><span class="price-current">$89.00</span></div>
+                  <button class="btn-add-cart" data-add-cart data-id="p1" data-name="Floral Wrap Dress" data-price="89" data-image="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=80">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 fade-up product-filterable" data-category="men">
+              <div class="product-card">
+                <div class="product-image-wrap">
+                  <span class="product-badge badge-sale">Sale</span>
+                  <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=400&q=80" alt="Classic Slim Blazer">
+                  <div class="product-actions">
+                    <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+                  </div>
+                </div>
+                <div class="product-body">
+                  <div class="product-category">Men</div>
+                  <h3 class="product-name"><a href="product.html">Classic Slim Blazer</a></h3>
+                  <div class="product-stars">★★★★★ <span>(32)</span></div>
+                  <div class="product-price"><span class="price-current">$129.00</span><span class="price-original">$180.00</span></div>
+                  <button class="btn-add-cart" data-add-cart data-id="p2" data-name="Classic Slim Blazer" data-price="129" data-image="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=80">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 fade-up product-filterable" data-category="shoes">
+              <div class="product-card">
+                <div class="product-image-wrap">
+                  <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=400&q=80" alt="White Sneakers">
+                  <div class="product-actions">
+                    <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                    <button class="product-action-btn" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+                  </div>
+                </div>
+                <div class="product-body">
+                  <div class="product-category">Shoes</div>
+                  <h3 class="product-name"><a href="product.html">Minimalist Sneakers</a></h3>
+                  <div class="product-stars">★★★★☆ <span>(27)</span></div>
+                  <div class="product-price"><span class="price-current">$95.00</span></div>
+                  <button class="btn-add-cart" data-add-cart data-id="p3" data-name="Minimalist Sneakers" data-price="95" data-image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=80">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 fade-up product-filterable" data-category="accessories">
+              <div class="product-card">
+                <div class="product-image-wrap">
+                  <span class="product-badge badge-new">New</span>
+                  <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&q=80" alt="Crossbody Bag">
+                  <div class="product-actions">
+                    <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                  </div>
+                </div>
+                <div class="product-body">
+                  <div class="product-category">Accessories</div>
+                  <h3 class="product-name"><a href="product.html">Leather Crossbody Bag</a></h3>
+                  <div class="product-stars">★★★★★ <span>(61)</span></div>
+                  <div class="product-price"><span class="price-current">$149.00</span></div>
+                  <button class="btn-add-cart" data-add-cart data-id="p4" data-name="Leather Crossbody Bag" data-price="149" data-image="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=80">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 fade-up product-filterable" data-category="women">
+              <div class="product-card">
+                <div class="product-image-wrap">
+                  <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=400&q=80" alt="Silk Blouse">
+                  <div class="product-actions">
+                    <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                  </div>
+                </div>
+                <div class="product-body">
+                  <div class="product-category">Women</div>
+                  <h3 class="product-name"><a href="product.html">Silk Satin Blouse</a></h3>
+                  <div class="product-stars">★★★★★ <span>(39)</span></div>
+                  <div class="product-price"><span class="price-current">$72.00</span></div>
+                  <button class="btn-add-cart" data-add-cart data-id="p5" data-name="Silk Satin Blouse" data-price="72" data-image="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=80">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 fade-up product-filterable" data-category="men">
+              <div class="product-card">
+                <div class="product-image-wrap">
+                  <span class="product-badge badge-sale">Sale</span>
+                  <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&q=80" alt="Linen Trousers">
+                  <div class="product-actions">
+                    <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                  </div>
+                </div>
+                <div class="product-body">
+                  <div class="product-category">Men</div>
+                  <h3 class="product-name"><a href="product.html">Premium Linen Trousers</a></h3>
+                  <div class="product-stars">★★★★☆ <span>(21)</span></div>
+                  <div class="product-price"><span class="price-current">$68.00</span><span class="price-original">$95.00</span></div>
+                  <button class="btn-add-cart" data-add-cart data-id="p6" data-name="Premium Linen Trousers" data-price="68" data-image="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=80">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 fade-up product-filterable" data-category="shoes">
+              <div class="product-card">
+                <div class="product-image-wrap">
+                  <span class="product-badge badge-new">New</span>
+                  <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400&q=80" alt="Chelsea Boots">
+                  <div class="product-actions">
+                    <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                  </div>
+                </div>
+                <div class="product-body">
+                  <div class="product-category">Shoes</div>
+                  <h3 class="product-name"><a href="product.html">Premium Chelsea Boots</a></h3>
+                  <div class="product-stars">★★★★★ <span>(44)</span></div>
+                  <div class="product-price"><span class="price-current">$185.00</span></div>
+                  <button class="btn-add-cart" data-add-cart data-id="p7" data-name="Premium Chelsea Boots" data-price="185" data-image="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=80">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 fade-up product-filterable" data-category="accessories">
+              <div class="product-card">
+                <div class="product-image-wrap">
+                  <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400&q=80" alt="Gold Wristwatch">
+                  <div class="product-actions">
+                    <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                  </div>
+                </div>
+                <div class="product-body">
+                  <div class="product-category">Accessories</div>
+                  <h3 class="product-name"><a href="product.html">Gold Accent Wristwatch</a></h3>
+                  <div class="product-stars">★★★★★ <span>(58)</span></div>
+                  <div class="product-price"><span class="price-current">$299.00</span></div>
+                  <button class="btn-add-cart" data-add-cart data-id="p8" data-name="Gold Accent Wristwatch" data-price="299" data-image="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=80">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 fade-up product-filterable" data-category="women">
+              <div class="product-card">
+                <div class="product-image-wrap">
+                  <span class="product-badge badge-new">New</span>
+                  <img src="https://images.unsplash.com/photo-1594938298603-c8148c4b4357?w=400&q=80" alt="Cashmere Sweater">
+                  <div class="product-actions">
+                    <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                  </div>
+                </div>
+                <div class="product-body">
+                  <div class="product-category">Women</div>
+                  <h3 class="product-name"><a href="product.html">Cashmere Sweater</a></h3>
+                  <div class="product-stars">★★★★★ <span>(35)</span></div>
+                  <div class="product-price"><span class="price-current">$115.00</span></div>
+                  <button class="btn-add-cart" data-add-cart data-id="p9" data-name="Cashmere Sweater" data-price="115" data-image="https://images.unsplash.com/photo-1594938298603-c8148c4b4357?w=80">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 fade-up product-filterable" data-category="women">
+              <div class="product-card">
+                <div class="product-image-wrap">
+                  <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=400&q=80" alt="Wide Leg Pants">
+                  <div class="product-actions">
+                    <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                  </div>
+                </div>
+                <div class="product-body">
+                  <div class="product-category">Women</div>
+                  <h3 class="product-name"><a href="product.html">Wide Leg Pants</a></h3>
+                  <div class="product-stars">★★★★☆ <span>(18)</span></div>
+                  <div class="product-price"><span class="price-current">$79.00</span></div>
+                  <button class="btn-add-cart" data-add-cart data-id="p10" data-name="Wide Leg Pants" data-price="79" data-image="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=80">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 fade-up product-filterable" data-category="men">
+              <div class="product-card">
+                <div class="product-image-wrap">
+                  <span class="product-badge badge-new">New</span>
+                  <img src="https://images.unsplash.com/photo-1622519407650-3df9883f76a5?w=400&q=80" alt="Linen Shirt">
+                  <div class="product-actions">
+                    <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                  </div>
+                </div>
+                <div class="product-body">
+                  <div class="product-category">Men</div>
+                  <h3 class="product-name"><a href="product.html">Premium Linen Shirt</a></h3>
+                  <div class="product-stars">★★★★★ <span>(29)</span></div>
+                  <div class="product-price"><span class="price-current">$65.00</span></div>
+                  <button class="btn-add-cart" data-add-cart data-id="p11" data-name="Premium Linen Shirt" data-price="65" data-image="https://images.unsplash.com/photo-1622519407650-3df9883f76a5?w=80">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 fade-up product-filterable" data-category="shoes">
+              <div class="product-card">
+                <div class="product-image-wrap">
+                  <span class="product-badge badge-new">New</span>
+                  <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=400&q=80" alt="Platform Heels">
+                  <div class="product-actions">
+                    <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                  </div>
+                </div>
+                <div class="product-body">
+                  <div class="product-category">Shoes</div>
+                  <h3 class="product-name"><a href="product.html">Platform Block Heels</a></h3>
+                  <div class="product-stars">★★★★★ <span>(50)</span></div>
+                  <div class="product-price"><span class="price-current">$139.00</span></div>
+                  <button class="btn-add-cart" data-add-cart data-id="p12" data-name="Platform Block Heels" data-price="139" data-image="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=80">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <nav class="mt-5" aria-label="Shop pagination">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled"><a class="page-link" href="#">‹</a></li>
+              <li class="page-item active"><a class="page-link" href="#" style="background:var(--primary);border-color:var(--primary)">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">›</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">LUXE<span>.</span></div>
+          <p class="footer-about">A premium fashion destination where style meets sophistication.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Shop</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html">New Arrivals</a></li>
+            <li><a href="shop.html">Women</a></li>
+            <li><a href="shop.html">Men</a></li>
+            <li><a href="shop.html">Shoes</a></li>
+            <li><a href="shop.html">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Info</h5>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-heading">Contact</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <span><a href="mailto:aymaninfotechs@gmail.com" style="color:rgba(255,255,255,0.6)">aymaninfotechs@gmail.com</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <p>© 2025 <a href="#">LUXE Fashion</a>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

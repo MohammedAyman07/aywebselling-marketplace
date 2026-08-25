@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Learn about the artist – background, artistic style, experience, and creative journey." />
+    <title>About – ArtVista Creative Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="loader-ring"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Art<span>Vista</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavCollapse"
+                aria-controls="mainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavCollapse">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link nav-cta rounded-pill ms-2" href="contact.html">Hire Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">About</li>
+                </ol>
+            </nav>
+            <h1>About the <span class="text-gradient">Artist</span></h1>
+            <p>Get to know the creative mind behind the artwork — the story, process, and passion</p>
+        </div>
+    </div>
+
+    <!-- BIO SECTION -->
+    <section>
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5" data-reveal="left">
+                    <div class="about-image-wrap pe-lg-3">
+                        <div class="about-image-deco"></div>
+                        <img src="images/hero-banner.jpg" alt="Artist" class="about-image-main" />
+                        <div class="about-image-badge">
+                            <div class="years" data-target="8" data-suffix="+">0</div>
+                            <div class="years-label">Years of<br />Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-reveal="right">
+                    <span class="section-label">My Story</span>
+                    <h2 class="section-title">Where Imagination Meets<br />Craftsmanship</h2>
+                    <p class="text-muted mb-3">
+                        My name is Alex Rivera, a self-taught digital artist and illustrator based remotely. I
+                        discovered my love for
+                        visual storytelling at a young age, sketching fantasy worlds in notebooks before transitioning
+                        to digital media.
+                    </p>
+                    <p class="text-muted mb-3">
+                        Over the past 8 years, I've had the privilege of collaborating with game studios, book
+                        publishers, streaming
+                        platforms, and individual clients — producing artwork that spans character design, environment
+                        concept art,
+                        book cover illustrations, album artwork, and branded digital paintings.
+                    </p>
+                    <p class="text-muted mb-4">
+                        My artistic style blends intricate detail with atmospheric color — heavily influenced by fantasy
+                        literature,
+                        mythology, and the ethereal beauty of nature. Every piece tells a story, and it's my mission to
+                        make that
+                        story unforgettable.
+                    </p>
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <div style="background:var(--light);border-radius:var(--radius-sm);padding:20px;">
+                                <div
+                                    style="color:var(--primary);font-size:1.8rem;font-weight:700;font-family:var(--font-display);">
+                                    150+</div>
+                                <div
+                                    style="font-size:.85rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.06em;">
+                                    Artworks Completed</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div style="background:var(--light);border-radius:var(--radius-sm);padding:20px;">
+                                <div
+                                    style="color:var(--primary);font-size:1.8rem;font-weight:700;font-family:var(--font-display);">
+                                    80+</div>
+                                <div
+                                    style="font-size:.85rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.06em;">
+                                    Satisfied Clients</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="gallery.html" class="btn-primary-custom"><i class="fas fa-images"></i> View
+                            Portfolio</a>
+                        <a href="contact.html" class="btn-outline-custom"><i class="fas fa-envelope"></i> Commission
+                            Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section style="background:var(--light);">
+        <div class="container">
+            <div class="text-center mb-5" data-reveal>
+                <span class="section-label">Expertise</span>
+                <h2 class="section-title">Skills &amp; Tools</h2>
+                <p class="section-subtitle">The techniques and software behind every artwork</p>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6" data-reveal="left">
+                    <div class="about-skills">
+                        <div class="skill-item">
+                            <div class="skill-label"><span>Digital Illustration</span><span>95%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-label"><span>Concept Art &amp; World-Building</span><span>88%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-label"><span>Character Design</span><span>92%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-label"><span>Digital Painting</span><span>90%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-label"><span>Typography &amp; Logo Design</span><span>75%</span></div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-reveal="right">
+                    <div class="row g-3">
+                        <!-- Tool badges -->
+                        <div class="col-6 col-sm-4" style="text-align:center;">
+                            <div
+                                style="background:var(--white);border-radius:var(--radius);padding:20px 16px;box-shadow:0 4px 20px rgba(0,0,0,.07);">
+                                <i class="fab fa-adobe"
+                                    style="font-size:2rem;color:#FF0000;margin-bottom:8px;display:block;"></i>
+                                <div style="font-size:.82rem;font-weight:600;color:var(--text);">Photoshop</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4" style="text-align:center;">
+                            <div
+                                style="background:var(--white);border-radius:var(--radius);padding:20px 16px;box-shadow:0 4px 20px rgba(0,0,0,.07);">
+                                <i class="fas fa-paint-brush"
+                                    style="font-size:2rem;color:var(--primary);margin-bottom:8px;display:block;"></i>
+                                <div style="font-size:.82rem;font-weight:600;color:var(--text);">Procreate</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4" style="text-align:center;">
+                            <div
+                                style="background:var(--white);border-radius:var(--radius);padding:20px 16px;box-shadow:0 4px 20px rgba(0,0,0,.07);">
+                                <i class="fab fa-sketch"
+                                    style="font-size:2rem;color:#F7B500;margin-bottom:8px;display:block;"></i>
+                                <div style="font-size:.82rem;font-weight:600;color:var(--text);">Sketch</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4" style="text-align:center;">
+                            <div
+                                style="background:var(--white);border-radius:var(--radius);padding:20px 16px;box-shadow:0 4px 20px rgba(0,0,0,.07);">
+                                <i class="fab fa-figma"
+                                    style="font-size:2rem;color:#0ACF83;margin-bottom:8px;display:block;"></i>
+                                <div style="font-size:.82rem;font-weight:600;color:var(--text);">Figma</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4" style="text-align:center;">
+                            <div
+                                style="background:var(--white);border-radius:var(--radius);padding:20px 16px;box-shadow:0 4px 20px rgba(0,0,0,.07);">
+                                <i class="fas fa-vector-square"
+                                    style="font-size:2rem;color:#FF7C00;margin-bottom:8px;display:block;"></i>
+                                <div style="font-size:.82rem;font-weight:600;color:var(--text);">Illustrator</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4" style="text-align:center;">
+                            <div
+                                style="background:var(--white);border-radius:var(--radius);padding:20px 16px;box-shadow:0 4px 20px rgba(0,0,0,.07);">
+                                <i class="fas fa-cube"
+                                    style="font-size:2rem;color:#4285F4;margin-bottom:8px;display:block;"></i>
+                                <div style="font-size:.82rem;font-weight:600;color:var(--text);">Blender</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE TIMELINE -->
+    <section>
+        <div class="container">
+            <div class="text-center mb-5" data-reveal>
+                <span class="section-label">Journey</span>
+                <h2 class="section-title">Creative Experience</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div style="position:relative;">
+                        <!-- Timeline line -->
+                        <div
+                            style="position:absolute;left:50%;top:0;bottom:0;width:2px;background:var(--grey);transform:translateX(-50%);">
+                        </div>
+
+                        <!-- Item 1 -->
+                        <div class="row g-0 mb-4" data-reveal>
+                            <div class="col-5 text-end pe-4 pt-2">
+                                <div style="font-weight:700;color:var(--primary);font-size:.85rem;">2024 – Present</div>
+                                <div style="font-weight:600;margin-top:4px;">Freelance Artist</div>
+                                <div style="font-size:.85rem;color:var(--text-muted);">Remote / Worldwide</div>
+                            </div>
+                            <div class="col-2 d-flex flex-column align-items-center">
+                                <div
+                                    style="width:16px;height:16px;border-radius:50%;background:var(--primary);border:3px solid var(--white);box-shadow:0 0 0 3px var(--primary-light);flex-shrink:0;margin-top:4px;">
+                                </div>
+                            </div>
+                            <div class="col-5 ps-4">
+                                <p style="font-size:.9rem;color:var(--text-muted);">Providing custom illustration,
+                                    character design, and concept art services to global clients across gaming,
+                                    publishing, and branding.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="row g-0 mb-4" data-reveal data-delay="100">
+                            <div class="col-5 text-end pe-4 pt-2">
+                                <div style="font-weight:700;color:var(--primary);font-size:.85rem;">2021 – 2024</div>
+                                <div style="font-weight:600;margin-top:4px;">Senior Concept Artist</div>
+                                <div style="font-size:.85rem;color:var(--text-muted);">Dreamscape Studio</div>
+                            </div>
+                            <div class="col-2 d-flex flex-column align-items-center">
+                                <div
+                                    style="width:16px;height:16px;border-radius:50%;background:var(--secondary);border:3px solid var(--white);box-shadow:0 0 0 3px rgba(249,115,22,.4);flex-shrink:0;margin-top:4px;">
+                                </div>
+                            </div>
+                            <div class="col-5 ps-4">
+                                <p style="font-size:.9rem;color:var(--text-muted);">Led the visual development for 3
+                                    indie game titles, managing a team of 4 artists and overseeing art direction from
+                                    concept to final assets.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="row g-0 mb-4" data-reveal data-delay="200">
+                            <div class="col-5 text-end pe-4 pt-2">
+                                <div style="font-weight:700;color:var(--primary);font-size:.85rem;">2018 – 2021</div>
+                                <div style="font-weight:600;margin-top:4px;">Illustrator</div>
+                                <div style="font-size:.85rem;color:var(--text-muted);">Inkwell Publishing</div>
+                            </div>
+                            <div class="col-2 d-flex flex-column align-items-center">
+                                <div
+                                    style="width:16px;height:16px;border-radius:50%;background:var(--primary);border:3px solid var(--white);box-shadow:0 0 0 3px var(--primary-light);flex-shrink:0;margin-top:4px;">
+                                </div>
+                            </div>
+                            <div class="col-5 ps-4">
+                                <p style="font-size:.9rem;color:var(--text-muted);">Created over 60 book cover and
+                                    interior illustrations for fantasy and science fiction publications sold
+                                    internationally.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <!-- Brand & Bio -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="footer-brand">Art<span>Vista</span></a>
+                    <p class="footer-desc">
+                        Pushing the boundaries of digital art through unique illustrations and visual storytelling.
+                        Available for international commissions and creative collaborations.
+                    </p>
+                    <div class="footer-social-enhanced">
+                        <a href="#" class="social-btn insta" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn artstation" title="ArtStation"><i
+                                class="fab fa-artstation"></i></a>
+                        <a href="#" class="social-btn behance" title="Behance"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-btn twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links Column 1 -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h5 class="footer-heading">Explore</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links Column 2 -->
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h5 class="footer-heading">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Custom Illustration</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Character Design</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Digital Artwork</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Concept Art</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Logo Design</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Contact</h5>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>aymaninfotechs@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-globe"></i>
+                        <span>Available Worldwide (Remote)</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Fast Response (24-48h)</span>
+                    </div>
+                    <div class="mt-4">
+                        <a href="contact.html" class="btn-primary-custom"
+                            style="padding:12px 28px; font-size:0.9rem; border-radius:12px;">
+                            <i class="fas fa-paper-plane"></i> Start Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 <span style="color:var(--white); font-weight:600;">ArtVista</span>. Crafted for creative
+                    professionals.
+                </div>
+                <div class="footer-legal">
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

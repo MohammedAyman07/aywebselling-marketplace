@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- =========================================================
+       VIDEOGRAPHER PORTFOLIO TEMPLATE - about.html
+       Author: Ayman InfoTechs | aymaninfotechs@gmail.com
+  ========================================================= -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Learn about our professional videographer — experience, equipment, creative process, and the passion behind every cinematic project." />
+    <title>About | CineVision Videography</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+        .timeline {
+            position: relative;
+            padding-left: 28px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--color-red), transparent);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 36px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 6px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--color-red);
+            border: 2px solid var(--color-black);
+            box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.3);
+        }
+
+        .timeline-year {
+            font-family: var(--font-heading);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: var(--color-red);
+            margin-bottom: 6px;
+        }
+
+        .timeline-title {
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-white);
+            margin-bottom: 6px;
+        }
+
+        .timeline-text {
+            font-size: 0.88rem;
+            color: var(--color-grey-3);
+            line-height: 1.7;
+        }
+
+        /* Award Card */
+        .award-card {
+            background: var(--color-dark-2);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 28px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: var(--transition);
+        }
+
+        .award-card:hover {
+            border-color: rgba(229, 9, 20, 0.25);
+            transform: translateX(6px);
+        }
+
+        .award-icon {
+            color: var(--color-red);
+            font-size: 1.8rem;
+            flex-shrink: 0;
+        }
+
+        .award-title {
+            font-family: var(--font-heading);
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--color-white);
+            margin-bottom: 4px;
+        }
+
+        .award-event {
+            font-size: 0.8rem;
+            color: var(--color-grey-3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div id="loader-wrapper">
+        <div class="loader-logo">Cine<span>Vision</span></div>
+        <div class="loader-bar">
+            <div class="loader-bar-fill"></div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Cine<span>Vision</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="toggler-icon"></span><span class="toggler-icon"></span><span class="toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link nav-cta" href="contact.html">Get In Touch</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-line" aria-hidden="true"></div>
+        <div class="container">
+            <p class="section-eyebrow">The Artist</p>
+            <h1 class="page-hero-title">About <em>CineVision</em></h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">About</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ABOUT INTRO -->
+    <section class="about-section section-padding">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 reveal-left">
+                    <div class="about-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1607462109225-6b64ae2dd3cb?w=700&q=80&fit=crop"
+                            alt="Videographer Alex Carter" class="about-img" />
+                        <div class="about-frame" aria-hidden="true"></div>
+                        <div class="about-badge">
+                            <span class="about-badge-number">8+</span>
+                            <span class="about-badge-text">Years of Excellence</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 reveal-right">
+                    <div class="about-content">
+                        <p class="section-eyebrow">My Story</p>
+                        <h2 class="section-title">Passion Meets <em>Precision</em></h2>
+
+                        <p class="about-lead">Hi, I'm Alex Carter — a professional videographer, filmmaker, and visual
+                            storyteller based in New York City, available for projects worldwide.</p>
+
+                        <p class="about-text">My journey began with a borrowed camera and an obsession with capturing
+                            moments that made people feel something. Over 8 years, that obsession evolved into a career,
+                            collaborating with brands, couples, recording artists, and filmmakers across three
+                            continents.</p>
+
+                        <p class="about-text">I believe great video isn't just about technical excellence — it's about
+                            connecting with your audience on an emotional level. Every project I take on starts with one
+                            question: <em style="color:var(--color-white);">What story do we want to tell?</em></p>
+
+                        <div class="row g-3 mt-3">
+                            <div class="col-6">
+                                <div
+                                    style="padding:20px; background:var(--color-dark-2); border-left:3px solid var(--color-red);">
+                                    <div
+                                        style="font-family:var(--font-heading); font-size:2rem; font-weight:700; color:var(--color-white);">
+                                        250+</div>
+                                    <div
+                                        style="font-size:0.78rem; color:var(--color-grey-3); letter-spacing:2px; text-transform:uppercase;">
+                                        Projects Completed</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div
+                                    style="padding:20px; background:var(--color-dark-2); border-left:3px solid var(--color-red);">
+                                    <div
+                                        style="font-family:var(--font-heading); font-size:2rem; font-weight:700; color:var(--color-white);">
+                                        12</div>
+                                    <div
+                                        style="font-size:0.78rem; color:var(--color-grey-3); letter-spacing:2px; text-transform:uppercase;">
+                                        Industry Awards</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 d-flex gap-3 flex-wrap">
+                            <a href="portfolio.html" class="btn-cinematic btn-primary-cine"><i
+                                    class="fa-solid fa-play"></i> Watch My Work</a>
+                            <a href="contact.html" class="btn-cinematic btn-outline-cine"><i
+                                    class="fa-solid fa-paper-plane"></i> Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS & SKILLS -->
+    <section style="background:var(--color-dark); padding:80px 0;">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 reveal-left">
+                    <p class="section-eyebrow">Skills</p>
+                    <h2 class="section-title mb-4">Technical <em>Expertise</em></h2>
+                    <div class="skill-item">
+                        <div class="skill-header"><span class="skill-name">Cinematography</span><span
+                                class="skill-value">95%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header"><span class="skill-name">Video Editing (Premiere Pro)</span><span
+                                class="skill-value">92%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header"><span class="skill-name">Color Grading (DaVinci Resolve)</span><span
+                                class="skill-value">90%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header"><span class="skill-name">Motion Graphics (After Effects)</span><span
+                                class="skill-value">82%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="82"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header"><span class="skill-name">Drone Operation (FAA Certified)</span><span
+                                class="skill-value">88%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header"><span class="skill-name">Sound Design & Audio Mixing</span><span
+                                class="skill-value">78%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-width="78"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 reveal-right">
+                    <p class="section-eyebrow">Experience</p>
+                    <h2 class="section-title mb-4">Career <em>Timeline</em></h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">2024 – Present</div>
+                            <div class="timeline-title">Lead Cinematographer &amp; Director</div>
+                            <div class="timeline-text">CineVision Studio — Independent productions, brand campaigns, and
+                                high-end wedding films for international clientele.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2021 – 2024</div>
+                            <div class="timeline-title">Senior Videographer</div>
+                            <div class="timeline-text">Apex Media Productions — Led video production for Fortune 500
+                                companies, luxury brands, and large-scale event coverage.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2018 – 2021</div>
+                            <div class="timeline-title">Videographer &amp; Editor</div>
+                            <div class="timeline-text">Freelance — Built client base across wedding, music, and
+                                commercial sectors while mastering post-production workflows.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2016 – 2018</div>
+                            <div class="timeline-title">Film School Graduate</div>
+                            <div class="timeline-text">New York Film Academy — Bachelor's in Film Production &amp;
+                                Cinematography. Graduated with honors. Short film winner at NYU Student Film Festival.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPMENT -->
+    <section style="background:var(--color-black); padding:80px 0;">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <p class="section-eyebrow">The Gear</p>
+                <h2 class="section-title">Professional <em>Equipment</em></h2>
+                <p class="section-desc">Cinema-grade gear for cinema-grade results. I invest in the tools that deliver
+                    uncompromising image quality.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 reveal delay-1">
+                    <div class="service-card text-center">
+                        <div class="service-icon mx-auto"><i class="fa-solid fa-camera"></i></div>
+                        <h4 class="service-title">Cameras</h4>
+                        <ul class="service-list" style="text-align:left;">
+                            <li>Sony FX9 (6K Full-Frame)</li>
+                            <li>Sony A7S III</li>
+                            <li>Blackmagic Pocket 6K</li>
+                            <li>Canon EOS C70</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 reveal delay-2">
+                    <div class="service-card text-center">
+                        <div class="service-icon mx-auto"><i class="fa-solid fa-sliders"></i></div>
+                        <h4 class="service-title">Stabilization</h4>
+                        <ul class="service-list" style="text-align:left;">
+                            <li>DJI Ronin 4D Gimbal</li>
+                            <li>Syrp Genie Motion Control</li>
+                            <li>DJI RS 3 Pro</li>
+                            <li>Shoulder Rig System</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 reveal delay-3">
+                    <div class="service-card text-center">
+                        <div class="service-icon mx-auto"><i class="fa-solid fa-helicopter"></i></div>
+                        <h4 class="service-title">Aerial</h4>
+                        <ul class="service-list" style="text-align:left;">
+                            <li>DJI Mavic 3 Pro (Cine)</li>
+                            <li>DJI Air 3</li>
+                            <li>FAA Part 107 Certified</li>
+                            <li>Fully insured</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 reveal delay-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon mx-auto"><i class="fa-solid fa-computer"></i></div>
+                        <h4 class="service-title">Post-Production</h4>
+                        <ul class="service-list" style="text-align:left;">
+                            <li>Adobe Premiere Pro</li>
+                            <li>DaVinci Resolve Studio</li>
+                            <li>After Effects</li>
+                            <li>Pro Tools / Logic Pro</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AWARDS -->
+    <section style="background:var(--color-dark); padding:80px 0;">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <p class="section-eyebrow">Recognition</p>
+                <h2 class="section-title">Awards &amp; <em>Achievements</em></h2>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-6 reveal delay-1">
+                    <div class="award-card"><i class="fa-solid fa-trophy award-icon"></i>
+                        <div>
+                            <div class="award-title">Best Wedding Film</div>
+                            <div class="award-event">Wedfilm Awards 2024, Los Angeles</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 reveal delay-2">
+                    <div class="award-card"><i class="fa-solid fa-trophy award-icon"></i>
+                        <div>
+                            <div class="award-title">Excellence in Cinematography</div>
+                            <div class="award-event">NYC Independent Film Festival 2023</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 reveal delay-1">
+                    <div class="award-card"><i class="fa-solid fa-medal award-icon"></i>
+                        <div>
+                            <div class="award-title">Best Commercial Video</div>
+                            <div class="award-event">Vimeo Staff Pick Award 2023</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 reveal delay-2">
+                    <div class="award-card"><i class="fa-solid fa-medal award-icon"></i>
+                        <div>
+                            <div class="award-title">Top 10 Videographers</div>
+                            <div class="award-event">Thumbtack Pro Awards 2022</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 reveal delay-1">
+                    <div class="award-card"><i class="fa-solid fa-star award-icon"></i>
+                        <div>
+                            <div class="award-title">Best Short Film</div>
+                            <div class="award-event">NYU Student Film Festival 2018</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 reveal delay-2">
+                    <div class="award-card"><i class="fa-solid fa-star award-icon"></i>
+                        <div>
+                            <div class="award-title">Rising Talent Award</div>
+                            <div class="award-event">American Society of Cinematographers 2021</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="background:var(--color-dark-2); padding:80px 0; text-align:center;">
+        <div class="container reveal">
+            <p class="section-eyebrow justify-content-center">Let's Collaborate</p>
+            <h2 class="section-title mb-3">Ready to Tell Your <em>Story?</em></h2>
+            <p class="section-desc mb-4">Whether it's a wedding, commercial, short film or music video — I'd love to
+                hear about your project.</p>
+            <a href="contact.html" class="btn-cinematic btn-primary-cine"><i class="fa-solid fa-paper-plane"></i> Get In
+                Touch</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="index.html" class="footer-brand">Cine<span>Vision</span></a>
+                    <p class="footer-desc">Professional videographer &amp; filmmaker crafting cinematic stories
+                        worldwide.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-vimeo-v"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Wedding Films</a></li>
+                        <li><a href="services.html">Event Coverage</a></li>
+                        <li><a href="services.html">Commercial Video</a></li>
+                        <li><a href="services.html">Video Editing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="footer-title">Get In Touch</h4>
+                    <div class="footer-contact-item"><i class="fa-solid fa-envelope"></i><span><a
+                                href="mailto:aymaninfotechs@gmail.com"
+                                style="color:inherit;">aymaninfotechs@gmail.com</a></span></div>
+                    <div class="footer-contact-item"><i class="fa-solid fa-phone"></i><span>+1 (000) 000-0000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom mt-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="footer-copy mb-0">&copy; <span id="currentYear"></span> <span>CineVision</span>. All
+                            rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="footer-copy mb-0">Template by Ayman InfoTechs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

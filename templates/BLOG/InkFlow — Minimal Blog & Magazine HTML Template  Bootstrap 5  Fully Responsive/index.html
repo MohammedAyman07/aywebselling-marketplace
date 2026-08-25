@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="InkFlow Blog - A clean and elegant blog for writers, publishers, and content creators. Read articles on technology, lifestyle, travel, and more." />
+  <meta name="keywords" content="blog, articles, technology, lifestyle, travel, writing, publishing" />
+  <meta name="author" content="AymanInfotech" />
+  <title>InkFlow Blog - Clean Blog Design for Writers &amp; Publishers</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✍️</text></svg>" />
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="spinner"></div>
+      <p>Loading InkFlow...</p>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="main-navbar navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-logo">
+          <div class="logo-icon"><i class="fas fa-feather-alt"></i></div>
+          <span class="brand-name">Ink<span>Flow</span></span>
+        </div>
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto gap-1">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Search -->
+        <div class="navbar-search d-flex align-items-center">
+          <input type="text" class="search-input" placeholder="Search articles..." aria-label="Search" />
+          <button class="search-btn" aria-label="Submit search"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero-section">
+    <div class="container position-relative" style="z-index:2;">
+      <div class="row align-items-center gy-5">
+        <!-- Left: Text -->
+        <div class="col-lg-5">
+          <div class="hero-tag fade-in-up">
+            <i class="fas fa-star"></i> Editor's Pick This Week
+          </div>
+          <h1 class="fade-in-up delay-1">
+            Clean Blog Design for <em>Writers</em> &amp; Publishers
+          </h1>
+          <p class="lead fade-in-up delay-2">
+            Share your ideas, stories, and knowledge with the world. A minimal, content-focused blog built for readers
+            and creators alike.
+          </p>
+          <div class="d-flex gap-3 flex-wrap fade-in-up delay-3">
+            <a href="blog.html" class="btn-primary-custom">
+              <i class="fas fa-book-open"></i> Read Articles
+            </a>
+            <a href="about.html" class="btn-outline-custom"
+              style="color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.3);">
+              <i class="fas fa-user"></i> About Us
+            </a>
+          </div>
+          <!-- Stats -->
+          <div class="hero-stats fade-in-up delay-4">
+            <div class="hero-stat">
+              <div class="stat-number">250+</div>
+              <div class="stat-label">Articles</div>
+            </div>
+            <div class="hero-stat">
+              <div class="stat-number">48K</div>
+              <div class="stat-label">Readers</div>
+            </div>
+            <div class="hero-stat">
+              <div class="stat-number">12</div>
+              <div class="stat-label">Categories</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center: Featured Card -->
+        <div class="col-lg-4 fade-in-up delay-2">
+          <div class="hero-featured-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&q=80"
+                alt="Featured Blog Post - Workspace" />
+              <span class="cat-badge">Featured</span>
+            </div>
+            <div class="card-body-custom">
+              <div class="meta-info">
+                <span class="author">
+                  <img src="https://i.pravatar.cc/40?img=1" alt="Author" />
+                  Sarah Mitchell
+                </span>
+                <span><i class="fas fa-calendar-alt"></i> Mar 5, 2026</span>
+              </div>
+              <h4><a href="post.html">The Art of Writing: How to Build a Consistent Creative Habit</a></h4>
+              <a href="post.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Side Cards -->
+        <div class="col-lg-3 fade-in-up delay-3">
+          <div class="hero-side-cards">
+            <div class="hero-mini-card">
+              <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=150&q=80" alt="AI Article" />
+              <div class="mini-content">
+                <div class="cat">Technology</div>
+                <h6>How AI is Shaping the Future of Content Creation</h6>
+                <span>Feb 28, 2026</span>
+              </div>
+            </div>
+            <div class="hero-mini-card">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=150&q=80" alt="Travel Article" />
+              <div class="mini-content">
+                <div class="cat">Travel</div>
+                <h6>10 Hidden Destinations Every Traveler Must Visit</h6>
+                <span>Feb 22, 2026</span>
+              </div>
+            </div>
+            <div class="hero-mini-card">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80"
+                alt="Business Article" />
+              <div class="mini-content">
+                <div class="cat">Business</div>
+                <h6>Building a 6-Figure Online Business From Scratch</h6>
+                <span>Feb 15, 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED POSTS ===== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="subtitle">Latest Articles</span>
+        <h2>Featured Blog Posts</h2>
+        <div class="divider"></div>
+        <p>Explore our handpicked articles covering technology, lifestyle, travel, and much more.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Large Featured Card -->
+        <div class="col-lg-6" data-reveal data-delay="1">
+          <div class="blog-card-featured">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+                alt="Productivity Blog Post" />
+              <div class="overlay">
+                <span class="card-category">Productivity</span>
+                <h3><a href="post.html" style="color:white;">5 Proven Strategies to Transform Your Morning Routine for
+                    Success</a></h3>
+                <div class="meta-info">
+                  <span><i class="fas fa-user me-1"></i> John Carter</span>
+                  <span><i class="fas fa-calendar me-1"></i> Mar 1, 2026</span>
+                  <span><i class="fas fa-clock me-1"></i> 6 min read</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 Stacked Cards -->
+        <div class="col-lg-6">
+          <div class="row g-4 h-100">
+            <div class="col-12" data-reveal data-delay="2">
+              <div class="blog-card flex-row flex-md-column flex-lg-row"
+                style="flex-direction:row !important; max-height:none;">
+                <div class="card-img-wrapper"
+                  style="height:160px; min-width:200px; max-width:200px; flex-shrink:0; border-radius:12px 0 0 12px;">
+                  <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=400&q=80" alt="Business Blog" />
+                  <span class="card-category">Business</span>
+                </div>
+                <div class="card-body-custom">
+                  <div class="meta-info">
+                    <span><i class="fas fa-user"></i> Mia Collins</span>
+                    <span><i class="fas fa-clock"></i> 4 min read</span>
+                  </div>
+                  <h4><a href="post.html">Why Every Entrepreneur Needs a Digital Marketing Strategy in 2026</a></h4>
+                  <a href="post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12" data-reveal data-delay="3">
+              <div class="blog-card" style="flex-direction:row !important; max-height:none;">
+                <div class="card-img-wrapper"
+                  style="height:160px; min-width:200px; max-width:200px; flex-shrink:0; border-radius:12px 0 0 12px;">
+                  <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&q=80"
+                    alt="Education Blog" />
+                  <span class="card-category">Education</span>
+                </div>
+                <div class="card-body-custom">
+                  <div class="meta-info">
+                    <span><i class="fas fa-user"></i> Alex Chen</span>
+                    <span><i class="fas fa-clock"></i> 5 min read</span>
+                  </div>
+                  <h4><a href="post.html">The Future of Online Learning: Trends Shaping Education in 2026</a></h4>
+                  <a href="post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES SECTION ===== -->
+  <section class="section-padding" style="background:var(--gray-light);">
+    <div class="container">
+      <div class="section-header text-center" data-reveal>
+        <span class="subtitle">Browse by Topic</span>
+        <h2>Explore Categories</h2>
+        <div class="divider center"></div>
+        <p class="mx-auto">Find articles that match your interests across our diverse range of topics.</p>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-2" data-reveal data-delay="1">
+          <a href="categories.html">
+            <div class="category-card">
+              <div class="cat-icon" style="background:#fff3ee; color:#ff6b35;">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <h5>Technology</h5>
+              <span class="post-count">42 Posts</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-reveal data-delay="2">
+          <a href="categories.html">
+            <div class="category-card">
+              <div class="cat-icon" style="background:#e8f4fd; color:#2196f3;">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h5>Business</h5>
+              <span class="post-count">35 Posts</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-reveal data-delay="3">
+          <a href="categories.html">
+            <div class="category-card">
+              <div class="cat-icon" style="background:#f3e8fd; color:#9c27b0;">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h5>Lifestyle</h5>
+              <span class="post-count">58 Posts</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-reveal data-delay="1">
+          <a href="categories.html">
+            <div class="category-card">
+              <div class="cat-icon" style="background:#e8fdf0; color:#4caf50;">
+                <i class="fas fa-plane"></i>
+              </div>
+              <h5>Travel</h5>
+              <span class="post-count">29 Posts</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-reveal data-delay="2">
+          <a href="categories.html">
+            <div class="category-card">
+              <div class="cat-icon" style="background:#fdf8e8; color:#ff9800;">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h5>Education</h5>
+              <span class="post-count">47 Posts</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-reveal data-delay="3">
+          <a href="categories.html">
+            <div class="category-card">
+              <div class="cat-icon" style="background:#fce8e8; color:#f44336;">
+                <i class="fas fa-utensils"></i>
+              </div>
+              <h5>Food</h5>
+              <span class="post-count">21 Posts</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRENDING + RECENT SPLIT ===== -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Recent Posts Grid -->
+        <div class="col-lg-8">
+          <div class="section-header" data-reveal>
+            <span class="subtitle">What's New</span>
+            <h2>Recent Articles</h2>
+            <div class="divider"></div>
+          </div>
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-6" data-reveal data-delay="1">
+              <div class="blog-card">
+                <div class="card-img-wrapper">
+                  <img src="https://images.unsplash.com/photo-1677442135968-6db3b0025fde?w=600&q=80"
+                    alt="AI Content Creation" />
+                  <span class="card-category">Technology</span>
+                </div>
+                <div class="card-body-custom">
+                  <div class="meta-info">
+                    <span class="author"><img src="https://i.pravatar.cc/30?img=5" alt="Author" /> Tom Wright</span>
+                    <span><i class="fas fa-calendar-alt"></i> Mar 3, 2026</span>
+                  </div>
+                  <h4><a href="post.html">How AI is Revolutionizing Content Creation for Bloggers</a></h4>
+                  <p>Artificial intelligence tools are changing the way writers research, draft, and publish their
+                    content online.</p>
+                  <a href="post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6" data-reveal data-delay="2">
+              <div class="blog-card">
+                <div class="card-img-wrapper">
+                  <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80"
+                    alt="Travel Destinations" />
+                  <span class="card-category">Travel</span>
+                </div>
+                <div class="card-body-custom">
+                  <div class="meta-info">
+                    <span class="author"><img src="https://i.pravatar.cc/30?img=9" alt="Author" /> Lisa Park</span>
+                    <span><i class="fas fa-calendar-alt"></i> Feb 27, 2026</span>
+                  </div>
+                  <h4><a href="post.html">10 Hidden Destinations Every Traveler Must Discover in 2026</a></h4>
+                  <p>From secret coves in Croatia to tranquil villages in Japan — these are the places you need to
+                    visit.</p>
+                  <a href="post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-6" data-reveal data-delay="1">
+              <div class="blog-card">
+                <div class="card-img-wrapper">
+                  <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80"
+                    alt="Lifestyle Blog" />
+                  <span class="card-category">Lifestyle</span>
+                </div>
+                <div class="card-body-custom">
+                  <div class="meta-info">
+                    <span class="author"><img src="https://i.pravatar.cc/30?img=16" alt="Author" /> Ana Rivera</span>
+                    <span><i class="fas fa-calendar-alt"></i> Feb 20, 2026</span>
+                  </div>
+                  <h4><a href="post.html">Mindful Living: 7 Simple Habits to Improve Your Daily Life</a></h4>
+                  <p>Small daily rituals that can create massive improvements in your mental health and overall
+                    wellbeing.</p>
+                  <a href="post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-6" data-reveal data-delay="2">
+              <div class="blog-card">
+                <div class="card-img-wrapper">
+                  <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&q=80"
+                    alt="Education Blog" />
+                  <span class="card-category">Education</span>
+                </div>
+                <div class="card-body-custom">
+                  <div class="meta-info">
+                    <span class="author"><img src="https://i.pravatar.cc/30?img=12" alt="Author" /> Kevin Brooks</span>
+                    <span><i class="fas fa-calendar-alt"></i> Feb 14, 2026</span>
+                  </div>
+                  <h4><a href="post.html">Mastering Self-Education: A Complete Roadmap for Lifelong Learners</a></h4>
+                  <p>How to structure your own curriculum, stay motivated, and acquire valuable skills in the digital
+                    age.</p>
+                  <a href="post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- View All -->
+          <div class="text-center mt-4" data-reveal>
+            <a href="blog.html" class="btn-outline-custom">
+              <i class="fas fa-th-large"></i> View All Articles
+            </a>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-lg-4">
+          <!-- Trending -->
+          <div class="sidebar-widget" data-reveal>
+            <div class="widget-title"><i class="fas fa-fire"></i> Trending Now</div>
+            <div class="trending-item">
+              <div class="trending-number">01</div>
+              <div class="trending-content">
+                <div class="trending-cat">Technology</div>
+                <div class="trending-title"><a href="post.html">The Rise of Generative AI in 2026</a></div>
+                <div class="trending-date">Mar 4, 2026 · 5 min read</div>
+              </div>
+            </div>
+            <div class="trending-item">
+              <div class="trending-number">02</div>
+              <div class="trending-content">
+                <div class="trending-cat">Business</div>
+                <div class="trending-title"><a href="post.html">How to Launch a Profitable Newsletter</a></div>
+                <div class="trending-date">Feb 28, 2026 · 7 min read</div>
+              </div>
+            </div>
+            <div class="trending-item">
+              <div class="trending-number">03</div>
+              <div class="trending-content">
+                <div class="trending-cat">Lifestyle</div>
+                <div class="trending-title"><a href="post.html">Digital Detox: Why You Need to Unplug</a></div>
+                <div class="trending-date">Feb 22, 2026 · 4 min read</div>
+              </div>
+            </div>
+            <div class="trending-item">
+              <div class="trending-number">04</div>
+              <div class="trending-content">
+                <div class="trending-cat">Travel</div>
+                <div class="trending-title"><a href="post.html">Solo Travel in Southeast Asia on a Budget</a></div>
+                <div class="trending-date">Feb 16, 2026 · 8 min read</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Popular Posts Widget -->
+          <div class="sidebar-widget" data-reveal>
+            <div class="widget-title"><i class="fas fa-thumbs-up"></i> Popular Posts</div>
+            <div class="popular-post-item">
+              <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=150&q=80" alt="Popular Post" />
+              <div class="post-info">
+                <h6><a href="post.html">The Art of Writing: Build a Consistent Creative Habit</a></h6>
+                <span><i class="fas fa-calendar-alt me-1"></i>Mar 5, 2026</span>
+              </div>
+            </div>
+            <div class="popular-post-item">
+              <img src="https://images.unsplash.com/photo-1554774853-aae0a22c8aa4?w=150&q=80" alt="Popular Post" />
+              <div class="post-info">
+                <h6><a href="post.html">Healthy Meal Prep: A Beginner's Complete Guide</a></h6>
+                <span><i class="fas fa-calendar-alt me-1"></i>Feb 10, 2026</span>
+              </div>
+            </div>
+            <div class="popular-post-item">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=150&q=80" alt="Popular Post" />
+              <div class="post-info">
+                <h6><a href="post.html">Learn Python in 30 Days — A Step-by-Step Journey</a></h6>
+                <span><i class="fas fa-calendar-alt me-1"></i>Jan 28, 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tags Widget -->
+          <div class="sidebar-widget" data-reveal>
+            <div class="widget-title"><i class="fas fa-tags"></i> Popular Tags</div>
+            <div class="tags-cloud">
+              <span class="tag-badge">Technology</span>
+              <span class="tag-badge">Writing</span>
+              <span class="tag-badge">Travel</span>
+              <span class="tag-badge">Lifestyle</span>
+              <span class="tag-badge">Business</span>
+              <span class="tag-badge">AI</span>
+              <span class="tag-badge">Education</span>
+              <span class="tag-badge">Design</span>
+              <span class="tag-badge">Food</span>
+              <span class="tag-badge">Health</span>
+              <span class="tag-badge">Startup</span>
+              <span class="tag-badge">Remote Work</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER SECTION ===== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-6" data-reveal>
+          <span class="subtitle"
+            style="color:var(--primary); font-size:0.82rem; font-weight:600; text-transform:uppercase; letter-spacing:3px; display:block; margin-bottom:10px;">Stay
+            Updated</span>
+          <h2>Subscribe to Our Newsletter</h2>
+          <p class="mb-4 mt-2">Get the latest articles and insights delivered straight to your inbox. No spam, ever.</p>
+          <form class="newsletter-form" novalidate>
+            <div class="input-group mx-auto">
+              <input type="email" class="form-control" placeholder="Enter your email address..." required />
+              <button type="submit" class="btn">
+                <i class="fas fa-paper-plane me-1"></i> Subscribe
+              </button>
+            </div>
+            <small style="color:rgba(255,255,255,0.4); display:block; margin-top:10px; font-size:0.78rem;">
+              Join 10,000+ readers. Unsubscribe anytime.
+            </small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Brand Column -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <div class="brand-logo">
+              <div class="logo-icon"><i class="fas fa-feather-alt"></i></div>
+              <span class="brand-name">Ink<span>Flow</span></span>
+            </div>
+            <p>A minimal, elegant blog for writers and publishers. We believe in the power of words to inspire, educate,
+              and connect people around the world.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-heading">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+            <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Categories</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-heading">Categories</div>
+          <ul class="footer-links">
+            <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Technology</a></li>
+            <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Business</a></li>
+            <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Lifestyle</a></li>
+            <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Travel</a></li>
+            <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Education</a></li>
+          </ul>
+        </div>
+
+        <!-- Recent Posts -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-heading">Recent Posts</div>
+          <div class="footer-recent-post">
+            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=100&q=80" alt="Recent Post" />
+            <div>
+              <h6><a href="post.html">The Art of Writing: Build a Consistent Creative Habit</a></h6>
+              <span>Mar 5, 2026</span>
+            </div>
+          </div>
+          <div class="footer-recent-post">
+            <img src="https://images.unsplash.com/photo-1677442135968-6db3b0025fde?w=100&q=80" alt="Recent Post" />
+            <div>
+              <h6><a href="post.html">How AI is Revolutionizing Content Creation</a></h6>
+              <span>Mar 3, 2026</span>
+            </div>
+          </div>
+          <div class="footer-recent-post">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=100&q=80" alt="Recent Post" />
+            <div>
+              <h6><a href="post.html">10 Hidden Destinations Every Traveler Must Visit</a></h6>
+              <span>Feb 27, 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p>&copy; 2026 <a href="#">InkFlow Blog</a>. All Rights Reserved. Developed by <a
+                href="https://aymaninfotech.com" target="_blank" rel="noopener">AymanInfotech</a>.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Use</a> &nbsp;·&nbsp; <a
+                href="contact.html">Support</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back To Top -->
+  <button id="backToTop" title="Back to top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

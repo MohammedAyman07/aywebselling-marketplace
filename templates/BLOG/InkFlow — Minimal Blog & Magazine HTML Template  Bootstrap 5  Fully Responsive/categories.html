@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Browse all blog categories on InkFlow — Technology, Business, Lifestyle, Travel, Education, and more." />
+    <meta name="author" content="AymanInfotech" />
+    <title>Categories - InkFlow Blog</title>
+
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✍️</text></svg>" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner"></div>
+            <p>Loading InkFlow...</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="main-navbar navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="brand-logo">
+                    <div class="logo-icon"><i class="fas fa-feather-alt"></i></div>
+                    <span class="brand-name">Ink<span>Flow</span></span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="categories.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="navbar-search d-flex align-items-center">
+                    <input type="text" class="search-input" placeholder="Search articles..." aria-label="Search" />
+                    <button class="search-btn" aria-label="Submit search"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Category Hero -->
+    <section class="category-hero">
+        <div class="container" data-reveal>
+            <span class="subtitle" style="color:var(--primary);">Discover Topics</span>
+            <h1>Browse Categories</h1>
+            <p class="lead" style="color:rgba(255,255,255,0.65);">Explore articles organized by topic to find exactly
+                what you're looking for.</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Categories</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- All Categories Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header text-center" data-reveal>
+                <span class="subtitle">All Topics</span>
+                <h2>Find Your Interests</h2>
+                <div class="divider center"></div>
+                <p class="mx-auto">With over 230 articles across 6 categories, there's something for every curious mind.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Technology -->
+                <div class="col-lg-4 col-md-6" data-reveal data-delay="1">
+                    <div style="border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); transition:var(--transition);"
+                        class="blog-card" style="display:block;">
+                        <div style="position:relative; height:220px; overflow:hidden;">
+                            <img src="https://images.unsplash.com/photo-1677442135968-6db3b0025fde?w=700&q=80"
+                                alt="Technology"
+                                style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;" />
+                            <div
+                                style="position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(0,0,0,0.75));">
+                            </div>
+                            <div style="position:absolute;bottom:16px;left:16px;">
+                                <div
+                                    style="width:44px;height:44px;background:rgba(255,107,53,0.9);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-size:1.1rem;margin-bottom:8px;">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                                <h3 style="color:white;font-size:1.4rem;margin:0;">Technology</h3>
+                            </div>
+                        </div>
+                        <div style="padding:20px;background:white;">
+                            <p style="font-size:0.88rem;color:var(--gray);margin-bottom:14px;">AI, cybersecurity,
+                                programming, gadgets, and everything digital that's shaping our world.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span style="font-size:0.82rem;font-weight:600;color:var(--primary);">42 Articles</span>
+                                <a href="blog.html" class="read-more">Explore <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business -->
+                <div class="col-lg-4 col-md-6" data-reveal data-delay="2">
+                    <div style="border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); transition:var(--transition);"
+                        class="blog-card">
+                        <div style="position:relative; height:220px; overflow:hidden;">
+                            <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=700&q=80"
+                                alt="Business"
+                                style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;" />
+                            <div
+                                style="position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(0,0,0,0.75));">
+                            </div>
+                            <div style="position:absolute;bottom:16px;left:16px;">
+                                <div
+                                    style="width:44px;height:44px;background:rgba(33,150,243,0.9);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-size:1.1rem;margin-bottom:8px;">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h3 style="color:white;font-size:1.4rem;margin:0;">Business</h3>
+                            </div>
+                        </div>
+                        <div style="padding:20px;background:white;">
+                            <p style="font-size:0.88rem;color:var(--gray);margin-bottom:14px;">Entrepreneurship,
+                                marketing, startups, finance, and strategies to grow your business.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span style="font-size:0.82rem;font-weight:600;color:var(--primary);">35 Articles</span>
+                                <a href="blog.html" class="read-more">Explore <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lifestyle -->
+                <div class="col-lg-4 col-md-6" data-reveal data-delay="3">
+                    <div style="border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); transition:var(--transition);"
+                        class="blog-card">
+                        <div style="position:relative; height:220px; overflow:hidden;">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=700&q=80"
+                                alt="Lifestyle"
+                                style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;" />
+                            <div
+                                style="position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(0,0,0,0.75));">
+                            </div>
+                            <div style="position:absolute;bottom:16px;left:16px;">
+                                <div
+                                    style="width:44px;height:44px;background:rgba(156,39,176,0.9);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-size:1.1rem;margin-bottom:8px;">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <h3 style="color:white;font-size:1.4rem;margin:0;">Lifestyle</h3>
+                            </div>
+                        </div>
+                        <div style="padding:20px;background:white;">
+                            <p style="font-size:0.88rem;color:var(--gray);margin-bottom:14px;">Wellness, mindfulness,
+                                fashion, home decor, and tips to live a more fulfilling life.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span style="font-size:0.82rem;font-weight:600;color:var(--primary);">58 Articles</span>
+                                <a href="blog.html" class="read-more">Explore <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travel -->
+                <div class="col-lg-4 col-md-6" data-reveal data-delay="1">
+                    <div style="border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); transition:var(--transition);"
+                        class="blog-card">
+                        <div style="position:relative; height:220px; overflow:hidden;">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=80"
+                                alt="Travel"
+                                style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;" />
+                            <div
+                                style="position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(0,0,0,0.75));">
+                            </div>
+                            <div style="position:absolute;bottom:16px;left:16px;">
+                                <div
+                                    style="width:44px;height:44px;background:rgba(76,175,80,0.9);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-size:1.1rem;margin-bottom:8px;">
+                                    <i class="fas fa-plane"></i>
+                                </div>
+                                <h3 style="color:white;font-size:1.4rem;margin:0;">Travel</h3>
+                            </div>
+                        </div>
+                        <div style="padding:20px;background:white;">
+                            <p style="font-size:0.88rem;color:var(--gray);margin-bottom:14px;">Destination guides,
+                                travel tips, hidden gems, budget travel, and adventure stories.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span style="font-size:0.82rem;font-weight:600;color:var(--primary);">29 Articles</span>
+                                <a href="blog.html" class="read-more">Explore <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="col-lg-4 col-md-6" data-reveal data-delay="2">
+                    <div style="border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); transition:var(--transition);"
+                        class="blog-card">
+                        <div style="position:relative; height:220px; overflow:hidden;">
+                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=700&q=80"
+                                alt="Education"
+                                style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;" />
+                            <div
+                                style="position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(0,0,0,0.75));">
+                            </div>
+                            <div style="position:absolute;bottom:16px;left:16px;">
+                                <div
+                                    style="width:44px;height:44px;background:rgba(255,152,0,0.9);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-size:1.1rem;margin-bottom:8px;">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h3 style="color:white;font-size:1.4rem;margin:0;">Education</h3>
+                            </div>
+                        </div>
+                        <div style="padding:20px;background:white;">
+                            <p style="font-size:0.88rem;color:var(--gray);margin-bottom:14px;">Online courses, learning
+                                strategies, career development, and self-education resources.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span style="font-size:0.82rem;font-weight:600;color:var(--primary);">47 Articles</span>
+                                <a href="blog.html" class="read-more">Explore <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food -->
+                <div class="col-lg-4 col-md-6" data-reveal data-delay="3">
+                    <div style="border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); transition:var(--transition);"
+                        class="blog-card">
+                        <div style="position:relative; height:220px; overflow:hidden;">
+                            <img src="https://images.unsplash.com/photo-1554774853-aae0a22c8aa4?w=700&q=80" alt="Food"
+                                style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;" />
+                            <div
+                                style="position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(0,0,0,0.75));">
+                            </div>
+                            <div style="position:absolute;bottom:16px;left:16px;">
+                                <div
+                                    style="width:44px;height:44px;background:rgba(244,67,54,0.9);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-size:1.1rem;margin-bottom:8px;">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <h3 style="color:white;font-size:1.4rem;margin:0;">Food</h3>
+                            </div>
+                        </div>
+                        <div style="padding:20px;background:white;">
+                            <p style="font-size:0.88rem;color:var(--gray);margin-bottom:14px;">Recipes, meal prep,
+                                nutrition science, food culture, and culinary adventures.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span style="font-size:0.82rem;font-weight:600;color:var(--primary);">21 Articles</span>
+                                <a href="blog.html" class="read-more">Explore <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured From Each Category -->
+    <section class="section-padding" style="background:var(--gray-light);">
+        <div class="container">
+            <div class="section-header text-center" data-reveal>
+                <span class="subtitle">Editor's Picks</span>
+                <h2>Top Articles by Category</h2>
+                <div class="divider center"></div>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-4" data-reveal>
+                <button class="category-filter-btn active" data-filter="all">All</button>
+                <button class="category-filter-btn" data-filter="technology">Technology</button>
+                <button class="category-filter-btn" data-filter="business">Business</button>
+                <button class="category-filter-btn" data-filter="lifestyle">Lifestyle</button>
+                <button class="category-filter-btn" data-filter="travel">Travel</button>
+                <button class="category-filter-btn" data-filter="education">Education</button>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="blog-card" data-category="technology">
+                        <div class="card-img-wrapper"><img
+                                src="https://images.unsplash.com/photo-1677442135968-6db3b0025fde?w=600&q=80"
+                                alt="AI" /><span class="card-category">Technology</span></div>
+                        <div class="card-body-custom">
+                            <div class="meta-info"><span><i class="fas fa-user"></i> Tom Wright</span><span><i
+                                        class="fas fa-clock"></i> 5 min</span></div>
+                            <h4><a href="post.html">How AI is Revolutionizing Content Creation for Bloggers</a></h4>
+                            <a href="post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card" data-category="business">
+                        <div class="card-img-wrapper"><img
+                                src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600&q=80"
+                                alt="Business" /><span class="card-category">Business</span></div>
+                        <div class="card-body-custom">
+                            <div class="meta-info"><span><i class="fas fa-user"></i> Mia Collins</span><span><i
+                                        class="fas fa-clock"></i> 6 min</span></div>
+                            <h4><a href="post.html">Why Every Entrepreneur Needs a Digital Marketing Strategy</a></h4>
+                            <a href="post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card" data-category="lifestyle">
+                        <div class="card-img-wrapper"><img
+                                src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80"
+                                alt="Lifestyle" /><span class="card-category">Lifestyle</span></div>
+                        <div class="card-body-custom">
+                            <div class="meta-info"><span><i class="fas fa-user"></i> Ana Rivera</span><span><i
+                                        class="fas fa-clock"></i> 4 min</span></div>
+                            <h4><a href="post.html">Mindful Living: 7 Simple Habits to Improve Your Daily Life</a></h4>
+                            <a href="post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card" data-category="travel">
+                        <div class="card-img-wrapper"><img
+                                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80"
+                                alt="Travel" /><span class="card-category">Travel</span></div>
+                        <div class="card-body-custom">
+                            <div class="meta-info"><span><i class="fas fa-user"></i> Lisa Park</span><span><i
+                                        class="fas fa-clock"></i> 7 min</span></div>
+                            <h4><a href="post.html">10 Hidden Destinations Every Traveler Must Discover in 2026</a></h4>
+                            <a href="post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card" data-category="education">
+                        <div class="card-img-wrapper"><img
+                                src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&q=80"
+                                alt="Education" /><span class="card-category">Education</span></div>
+                        <div class="card-body-custom">
+                            <div class="meta-info"><span><i class="fas fa-user"></i> Kevin Brooks</span><span><i
+                                        class="fas fa-clock"></i> 8 min</span></div>
+                            <h4><a href="post.html">Mastering Self-Education: A Roadmap for Lifelong Learners</a></h4>
+                            <a href="post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card" data-category="technology">
+                        <div class="card-img-wrapper"><img
+                                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80"
+                                alt="Coding" /><span class="card-category">Technology</span></div>
+                        <div class="card-body-custom">
+                            <div class="meta-info"><span><i class="fas fa-user"></i> James Nguyen</span><span><i
+                                        class="fas fa-clock"></i> 10 min</span></div>
+                            <h4><a href="post.html">Learn Python in 30 Days — A Step-by-Step Beginner's Journey</a></h4>
+                            <a href="post.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6" data-reveal>
+                    <h2>Subscribe &amp; Stay Updated</h2>
+                    <p class="mb-4 mt-2">Get the best articles from your favorite categories delivered to your inbox
+                        weekly.</p>
+                    <form class="newsletter-form" novalidate>
+                        <div class="input-group mx-auto">
+                            <input type="email" class="form-control" placeholder="Enter your email address..."
+                                required />
+                            <button type="submit" class="btn"><i class="fas fa-paper-plane me-1"></i> Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <div class="brand-logo">
+                            <div class="logo-icon"><i class="fas fa-feather-alt"></i></div>
+                            <span class="brand-name">Ink<span>Flow</span></span>
+                        </div>
+                        <p>A minimal, elegant blog for writers and publishers. We believe in the power of words to
+                            inspire and connect.</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-heading">Quick Links</div>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Categories</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-heading">Categories</div>
+                    <ul class="footer-links">
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Technology</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Business</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Lifestyle</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Travel</a></li>
+                        <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Education</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-heading">Recent Posts</div>
+                    <div class="footer-recent-post">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=100&q=80"
+                            alt="Recent Post" />
+                        <div>
+                            <h6><a href="post.html">The Art of Writing: Build a Consistent Creative Habit</a></h6>
+                            <span>Mar 5, 2026</span>
+                        </div>
+                    </div>
+                    <div class="footer-recent-post">
+                        <img src="https://images.unsplash.com/photo-1677442135968-6db3b0025fde?w=100&q=80"
+                            alt="Recent Post" />
+                        <div>
+                            <h6><a href="post.html">How AI is Revolutionizing Content Creation</a></h6><span>Mar 3,
+                                2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2026 <a href="#">InkFlow Blog</a>. All Rights Reserved. Developed by <a
+                                href="https://aymaninfotech.com" target="_blank" rel="noopener">AymanInfotech</a>.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Use</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" title="Back to top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

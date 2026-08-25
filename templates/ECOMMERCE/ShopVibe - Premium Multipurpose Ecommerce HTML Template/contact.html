@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact ShopVibe. We're here to help." />
+  <title>Contact Us - ShopVibe</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="page-loader" id="pageLoader"><div class="loader-spinner"></div></div>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container d-flex align-items-center justify-content-between">
+    <span class="hide-mobile"><i class="bi bi-envelope me-1"></i> aymaninfotechs@gmail.com</span>
+    <span>🚚 Free shipping on orders over $100!</span>
+    <div class="d-flex gap-3">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <div class="brand-logo"><div class="brand-icon"><i class="bi bi-bag-heart-fill"></i></div>Shop<span>Vibe</span></div>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list fs-4"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-2 mt-2 mt-lg-0">
+        <div class="navbar-icons">
+          <a href="cart.html" class="nav-icon">
+            <i class="bi bi-bag"></i><span class="cart-count" style="display:none;">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Contact Hero -->
+<section class="contact-hero">
+  <div class="container">
+    <h1 class="fade-in-up">Contact Us</h1>
+    <p class="fade-in-up" style="transition-delay:.1s">We'd love to hear from you. Get in touch with our team.</p>
+  </div>
+</section>
+
+<!-- Contact Content -->
+<section class="contact-section">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Info -->
+      <div class="col-lg-4 fade-in-up">
+        <div class="mb-5">
+          <h3 class="fw-800 mb-4">Get In Touch</h3>
+          <p class="text-muted mb-4" style="font-size:.9rem; line-height:1.7;">Whether you have a question about our products, shipping, returns, or anything else, our team is ready to answer all your questions.</p>
+        </div>
+        
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+          <div>
+            <h6>Head Office</h6>
+            <span>123 Commerce Street, Suite 400<br>New York, NY 10001, USA</span>
+          </div>
+        </div>
+        
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="bi bi-envelope-fill"></i></div>
+          <div>
+            <h6>Email Us</h6>
+            <span><a href="mailto:aymaninfotechs@gmail.com" class="text-muted">aymaninfotechs@gmail.com</a><br><a href="mailto:support@shopvibe.com" class="text-muted">support@shopvibe.com</a></span>
+          </div>
+        </div>
+        
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="bi bi-telephone-fill"></i></div>
+          <div>
+            <h6>Call Us</h6>
+            <span>+1 (800) 000-0000<br>+1 (800) 000-1111</span>
+          </div>
+        </div>
+        
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="bi bi-clock-fill"></i></div>
+          <div>
+            <h6>Business Hours</h6>
+            <span>Monday - Friday: 9am - 6pm EST<br>Saturday: 10am - 4pm EST<br>Sunday: Closed</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Form -->
+      <div class="col-lg-8 fade-in-up" style="transition-delay:.2s">
+        <div class="contact-card">
+          <h4 class="fw-800 mb-2">Send us a Message</h4>
+          <p class="text-muted mb-4" style="font-size:.9rem;">Fill out the form below and we will get back to you as soon as possible.</p>
+          
+          <form class="contact-form" id="contactForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label-custom">First Name *</label>
+                <input type="text" class="form-control-custom" placeholder="John" required />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-custom">Last Name *</label>
+                <input type="text" class="form-control-custom" placeholder="Doe" required />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-custom">Email Address *</label>
+                <input type="email" class="form-control-custom" placeholder="john@example.com" required />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-custom">Phone Number (Optional)</label>
+                <input type="tel" class="form-control-custom" placeholder="+1 (555) 000-0000" />
+              </div>
+              <div class="col-12">
+                <label class="form-label-custom">Subject *</label>
+                <input type="text" class="form-control-custom" placeholder="How can we help you?" required />
+              </div>
+              <div class="col-12">
+                <label class="form-label-custom">Message *</label>
+                <textarea class="form-control-custom" placeholder="Write your message here..." required></textarea>
+              </div>
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn btn-primary btn-lg"><i class="bi bi-send-fill me-2"></i>Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Map -->
+    <div class="map-wrap fade-in-up" style="transition-delay:.3s">
+      <div class="map-placeholder">
+        <i class="bi bi-map"></i>
+        <h5>Interactive Map Integration</h5>
+        <p style="font-size:.85rem;">(Embed Google Maps iframe here)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Strip -->
+<div class="features-strip bg-light-2" style="border-top:none; border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-6 col-md-3 text-center">
+        <div style="font-size:2rem; color:var(--primary); margin-bottom:.5rem;"><i class="bi bi-truck"></i></div>
+        <h6 class="fw-700 m-0">Free Shipping</h6><p class="text-muted" style="font-size:.8rem; margin:0;">On orders over $100</p>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <div style="font-size:2rem; color:var(--primary); margin-bottom:.5rem;"><i class="bi bi-arrow-return-left"></i></div>
+        <h6 class="fw-700 m-0">Easy Returns</h6><p class="text-muted" style="font-size:.8rem; margin:0;">30-day return policy</p>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <div style="font-size:2rem; color:var(--primary); margin-bottom:.5rem;"><i class="bi bi-shield-check"></i></div>
+        <h6 class="fw-700 m-0">Secure Payment</h6><p class="text-muted" style="font-size:.8rem; margin:0;">SSL encrypted checkout</p>
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <div style="font-size:2rem; color:var(--primary); margin-bottom:.5rem;"><i class="bi bi-headset"></i></div>
+        <h6 class="fw-700 m-0">24/7 Support</h6><p class="text-muted" style="font-size:.8rem; margin:0;">Always here to help</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-brand"><div class="brand-icon"><i class="bi bi-bag-heart-fill"></i></div>Shop<span>Vibe</span></div>
+        <p class="footer-desc">Your one-stop destination for premium products.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h6 class="footer-title">Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li>
+          <li><a href="cart.html">Cart</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 <a href="index.html">ShopVibe</a>. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop"><i class="bi bi-arrow-up"></i></button>
+<div class="toast-container" id="toastContainer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

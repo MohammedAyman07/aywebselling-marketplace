@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Digital Agency</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Agenc<span>y</span>.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title text-white">Our Portfolio</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Portfolio</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-area section-padding bg-darker">
+        <div class="container">
+            <!-- Filtering logic can be added later, currently a grid display -->
+            <div class="row">
+                <!-- Portfolio 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-item">
+                        <img src="images/portfolio-1.png" alt="Project 1" class="img-fluid portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Brand Identity</h4>
+                                <p>Branding</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-item">
+                        <img src="images/portfolio-2.png" alt="Project 2" class="img-fluid portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Fintech App UI</h4>
+                                <p>Web Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-item">
+                        <img src="images/portfolio-3.png" alt="Project 3" class="img-fluid portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Creative Dashboard</h4>
+                                <p>Web Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio 4 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="portfolio-item">
+                        <img src="images/portfolio-1.png" alt="Project 4" class="img-fluid portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Digital Marketing Setup</h4>
+                                <p>Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio 5 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="portfolio-item">
+                        <img src="images/portfolio-2.png" alt="Project 5" class="img-fluid portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Social Campaign</h4>
+                                <p>Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio 6 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="portfolio-item">
+                        <img src="images/portfolio-3.png" alt="Project 6" class="img-fluid portfolio-img">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Corporate Web Platform</h4>
+                                <p>Web Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a class="navbar-brand mb-3 d-inline-block" href="index.html"
+                        style="font-size: 32px;">Agenc<span>y</span>.</a>
+                    <div class="footer-about">
+                        <p>We are a modern digital agency helping brands grow with innovative design, development, and
+                            marketing solutions.</p>
+                    </div>
+                    <div class="footer-social mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-title">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">SEO Optimization</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Content Marketing</a></li>
+                        <li><a href="#">Digital Strategy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:10000000"><i class="fas fa-phone me-2"></i> 10000000</a></li>
+                        <li><a href="mailto:aymaninfotechs@gmail.com"><i class="fas fa-envelope me-2"></i>
+                                aymaninfotechs@gmail.com</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt me-2"></i> 123 Digital Ave, Tech City, USA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Agency. All Rights Reserved. Designed by AymanInfotech.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50, duration: 800 });
+    </script>
+</body>
+
+</html>

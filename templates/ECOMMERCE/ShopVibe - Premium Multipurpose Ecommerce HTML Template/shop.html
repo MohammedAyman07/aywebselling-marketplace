@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shop all products at ShopVibe. Browse fashion, electronics, home living, accessories, and beauty with great deals." />
+  <title>Shop - ShopVibe</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="page-loader" id="pageLoader"><div class="loader-spinner"></div></div>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container d-flex align-items-center justify-content-between">
+    <span class="hide-mobile"><i class="bi bi-envelope me-1"></i> aymaninfotechs@gmail.com</span>
+    <span>🚚 Free shipping on orders over $100!</span>
+    <div class="d-flex gap-3">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-twitter-x"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <div class="brand-logo"><div class="brand-icon"><i class="bi bi-bag-heart-fill"></i></div>Shop<span>Vibe</span></div>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list fs-4"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-2 mt-2 mt-lg-0">
+        <div class="search-bar d-none d-md-flex">
+          <i class="bi bi-search search-icon"></i>
+          <input type="text" placeholder="Search products..." id="shopSearch" />
+        </div>
+        <div class="navbar-icons">
+          <a href="#" class="nav-icon"><i class="bi bi-heart"></i></a>
+          <a href="cart.html" class="nav-icon" id="navCartIcon">
+            <i class="bi bi-bag"></i><span class="cart-count" style="display:none;">0</span>
+          </a>
+          <a href="#" class="nav-icon d-none d-lg-flex"><i class="bi bi-person"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Shop Hero -->
+<div class="shop-hero">
+  <div class="container">
+    <h1>Shop All Products</h1>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Shop</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<!-- Shop Content -->
+<section class="section-pad-sm" style="background: var(--light-2);">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Sidebar -->
+      <div class="col-lg-3">
+        <div class="filter-sidebar">
+          <!-- Search -->
+          <div class="filter-card">
+            <div class="filter-title">Search Products</div>
+            <div class="search-bar w-100">
+              <i class="bi bi-search search-icon"></i>
+              <input type="text" placeholder="Search..." id="sidebarSearch" style="width:100%; border-radius:8px;" />
+            </div>
+          </div>
+          <!-- Categories -->
+          <div class="filter-card">
+            <div class="filter-title">Categories</div>
+            <div class="filter-option"><label><input type="checkbox" checked /> All</label><span class="count">990</span></div>
+            <div class="filter-option"><label><input type="checkbox" /> Fashion</label><span class="count">240</span></div>
+            <div class="filter-option"><label><input type="checkbox" /> Electronics</label><span class="count">185</span></div>
+            <div class="filter-option"><label><input type="checkbox" /> Home & Living</label><span class="count">320</span></div>
+            <div class="filter-option"><label><input type="checkbox" /> Accessories</label><span class="count">150</span></div>
+            <div class="filter-option"><label><input type="checkbox" /> Beauty</label><span class="count">95</span></div>
+          </div>
+          <!-- Price Range -->
+          <div class="filter-card">
+            <div class="filter-title">Price Range</div>
+            <div class="price-range-wrap">
+              <input type="range" min="0" max="2000" value="1000" />
+              <div class="price-values"><span>$0</span><span>$1000</span></div>
+            </div>
+          </div>
+          <!-- Rating -->
+          <div class="filter-card">
+            <div class="filter-title">Rating</div>
+            <div class="filter-option"><label><input type="radio" name="rating" /> ★★★★★ (5 Stars)</label></div>
+            <div class="filter-option"><label><input type="radio" name="rating" /> ★★★★ & up</label></div>
+            <div class="filter-option"><label><input type="radio" name="rating" checked /> All Ratings</label></div>
+          </div>
+          <!-- Brand -->
+          <div class="filter-card">
+            <div class="filter-title">Availability</div>
+            <div class="filter-option"><label><input type="checkbox" checked /> In Stock</label><span class="count">850</span></div>
+            <div class="filter-option"><label><input type="checkbox" /> Sale Items</label><span class="count">214</span></div>
+            <div class="filter-option"><label><input type="checkbox" /> New Arrivals</label><span class="count">68</span></div>
+          </div>
+          <button class="btn btn-primary w-100">Apply Filters</button>
+        </div>
+      </div>
+
+      <!-- Products grid -->
+      <div class="col-lg-9">
+        <!-- Toolbar -->
+        <div class="shop-toolbar">
+          <span class="results">Showing <strong>1–12</strong> of 990 products</span>
+          <div class="d-flex align-items-center gap-2">
+            <select id="sortSelect">
+              <option>Default Sorting</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Newest First</option>
+              <option>Best Rating</option>
+              <option>Most Popular</option>
+            </select>
+            <div class="view-toggle d-flex gap-1">
+              <button class="active" data-view="grid" title="Grid view"><i class="bi bi-grid-3x3-gap"></i></button>
+              <button data-view="list" title="List view"><i class="bi bi-list-ul"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid -->
+        <div class="row row-cols-2 row-cols-md-3 g-4" id="productsGrid">
+          <!-- Products 1-12 -->
+          <div class="col product-card-wrap fade-in-up">
+            <div class="product-card">
+              <div class="product-badge"><span class="badge-custom badge-new">New</span></div>
+              <div class="product-img-wrap"><div class="product-img-placeholder">👟<span>Sneakers</span></div>
+                <div class="product-actions">
+                  <button class="btn-icon" data-wishlist><i class="bi bi-heart"></i></button>
+                  <button class="btn-icon" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-category">Fashion</div>
+                <div class="product-name">Urban Runner Pro Sneakers</div>
+                <div class="product-rating"><div class="stars">★★★★★</div><div class="count">(128)</div></div>
+                <div class="product-price"><span class="price-now">$89.99</span><span class="price-old">$119.99</span></div>
+                <button class="btn-cart" data-add-cart data-id="p001" data-name="Urban Runner Pro Sneakers" data-price="89.99" data-icon="👟"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product-card-wrap fade-in-up">
+            <div class="product-card">
+              <div class="product-badge"><span class="badge-custom badge-sale">Sale</span></div>
+              <div class="product-img-wrap"><div class="product-img-placeholder">📱<span>Smartphone</span></div>
+                <div class="product-actions">
+                  <button class="btn-icon" data-wishlist><i class="bi bi-heart"></i></button>
+                  <button class="btn-icon" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-category">Electronics</div>
+                <div class="product-name">ProMax X15 Smartphone 256GB</div>
+                <div class="product-rating"><div class="stars">★★★★☆</div><div class="count">(342)</div></div>
+                <div class="product-price"><span class="price-now">$699.00</span><span class="price-old">$899.00</span></div>
+                <button class="btn-cart" data-add-cart data-id="p002" data-name="ProMax X15 Smartphone" data-price="699.00" data-icon="📱"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product-card-wrap fade-in-up">
+            <div class="product-card">
+              <div class="product-badge"><span class="badge-custom badge-hot">Hot</span></div>
+              <div class="product-img-wrap"><div class="product-img-placeholder">🎧<span>Headphones</span></div>
+                <div class="product-actions">
+                  <button class="btn-icon" data-wishlist><i class="bi bi-heart"></i></button>
+                  <button class="btn-icon" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-category">Electronics</div>
+                <div class="product-name">AirPods Pro Wireless</div>
+                <div class="product-rating"><div class="stars">★★★★★</div><div class="count">(519)</div></div>
+                <div class="product-price"><span class="price-now">$149.99</span><span class="price-old">$199.99</span></div>
+                <button class="btn-cart" data-add-cart data-id="p003" data-name="AirPods Pro Wireless" data-price="149.99" data-icon="🎧"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product-card-wrap fade-in-up">
+            <div class="product-card">
+              <div class="product-img-wrap"><div class="product-img-placeholder">⌚<span>Smartwatch</span></div>
+                <div class="product-actions">
+                  <button class="btn-icon" data-wishlist><i class="bi bi-heart"></i></button>
+                  <button class="btn-icon" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-category">Accessories</div>
+                <div class="product-name">SmartBand Pro Health Tracker</div>
+                <div class="product-rating"><div class="stars">★★★★☆</div><div class="count">(201)</div></div>
+                <div class="product-price"><span class="price-now">$249.00</span></div>
+                <button class="btn-cart" data-add-cart data-id="p004" data-name="SmartBand Pro" data-price="249.00" data-icon="⌚"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product-card-wrap fade-in-up">
+            <div class="product-card">
+              <div class="product-badge"><span class="badge-custom badge-sale">Sale</span></div>
+              <div class="product-img-wrap"><div class="product-img-placeholder">👜<span>Handbag</span></div>
+                <div class="product-actions">
+                  <button class="btn-icon" data-wishlist><i class="bi bi-heart"></i></button>
+                  <button class="btn-icon" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-category">Fashion</div>
+                <div class="product-name">Luxe Leather Tote Bag</div>
+                <div class="product-rating"><div class="stars">★★★★★</div><div class="count">(94)</div></div>
+                <div class="product-price"><span class="price-now">$79.99</span><span class="price-old">$120.00</span></div>
+                <button class="btn-cart" data-add-cart data-id="p005" data-name="Luxe Leather Tote Bag" data-price="79.99" data-icon="👜"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product-card-wrap fade-in-up">
+            <div class="product-card">
+              <div class="product-badge"><span class="badge-custom badge-new">New</span></div>
+              <div class="product-img-wrap"><div class="product-img-placeholder">💻<span>Laptop</span></div>
+                <div class="product-actions">
+                  <button class="btn-icon" data-wishlist><i class="bi bi-heart"></i></button>
+                  <button class="btn-icon" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-category">Electronics</div>
+                <div class="product-name">UltraBook Air 15" i9 Laptop</div>
+                <div class="product-rating"><div class="stars">★★★★★</div><div class="count">(77)</div></div>
+                <div class="product-price"><span class="price-now">$1,299.00</span><span class="price-old">$1,599.00</span></div>
+                <button class="btn-cart" data-add-cart data-id="p006" data-name="UltraBook Air Laptop" data-price="1299.00" data-icon="💻"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product-card-wrap fade-in-up">
+            <div class="product-card">
+              <div class="product-img-wrap"><div class="product-img-placeholder">🏺<span>Home Decor</span></div>
+                <div class="product-actions">
+                  <button class="btn-icon" data-wishlist><i class="bi bi-heart"></i></button>
+                  <button class="btn-icon" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-category">Home & Living</div>
+                <div class="product-name">Ceramic Artisan Vase Set</div>
+                <div class="product-rating"><div class="stars">★★★★☆</div><div class="count">(63)</div></div>
+                <div class="product-price"><span class="price-now">$45.00</span></div>
+                <button class="btn-cart" data-add-cart data-id="p007" data-name="Ceramic Artisan Vase Set" data-price="45.00" data-icon="🏺"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product-card-wrap fade-in-up">
+            <div class="product-card">
+              <div class="product-badge"><span class="badge-custom badge-sale">Sale</span></div>
+              <div class="product-img-wrap"><div class="product-img-placeholder">🕶️<span>Sunglasses</span></div>
+                <div class="product-actions">
+                  <button class="btn-icon" data-wishlist><i class="bi bi-heart"></i></button>
+                  <button class="btn-icon" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-category">Accessories</div>
+                <div class="product-name">Polarized Aviator Sunglasses</div>
+                <div class="product-rating"><div class="stars">★★★★★</div><div class="count">(188)</div></div>
+                <div class="product-price"><span class="price-now">$34.99</span><span class="price-old">$59.99</span></div>
+                <button class="btn-cart" data-add-cart data-id="p008" data-name="Polarized Aviator Sunglasses" data-price="34.99" data-icon="🕶️"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product-card-wrap fade-in-up">
+            <div class="product-card">
+              <div class="product-img-wrap"><div class="product-img-placeholder">💄<span>Beauty</span></div>
+                <div class="product-actions">
+                  <button class="btn-icon" data-wishlist><i class="bi bi-heart"></i></button>
+                  <button class="btn-icon" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-category">Beauty</div>
+                <div class="product-name">Luxury Glow Skincare Set</div>
+                <div class="product-rating"><div class="stars">★★★★★</div><div class="count">(310)</div></div>
+                <div class="product-price"><span class="price-now">$65.00</span><span class="price-old">$89.00</span></div>
+                <button class="btn-cart" data-add-cart data-id="p009" data-name="Luxury Glow Skincare Set" data-price="65.00" data-icon="💄"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product-card-wrap fade-in-up">
+            <div class="product-card">
+              <div class="product-badge"><span class="badge-custom badge-new">New</span></div>
+              <div class="product-img-wrap"><div class="product-img-placeholder">📷<span>Camera</span></div>
+                <div class="product-actions">
+                  <button class="btn-icon" data-wishlist><i class="bi bi-heart"></i></button>
+                  <button class="btn-icon" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-category">Electronics</div>
+                <div class="product-name">4K Mirrorless Digital Camera</div>
+                <div class="product-rating"><div class="stars">★★★★★</div><div class="count">(44)</div></div>
+                <div class="product-price"><span class="price-now">$849.00</span></div>
+                <button class="btn-cart" data-add-cart data-id="p010" data-name="4K Mirrorless Camera" data-price="849.00" data-icon="📷"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product-card-wrap fade-in-up">
+            <div class="product-card">
+              <div class="product-badge"><span class="badge-custom badge-sale">Sale</span></div>
+              <div class="product-img-wrap"><div class="product-img-placeholder">🧥<span>Jacket</span></div>
+                <div class="product-actions">
+                  <button class="btn-icon" data-wishlist><i class="bi bi-heart"></i></button>
+                  <button class="btn-icon" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-category">Fashion</div>
+                <div class="product-name">Premium Leather Biker Jacket</div>
+                <div class="product-rating"><div class="stars">★★★★☆</div><div class="count">(129)</div></div>
+                <div class="product-price"><span class="price-now">$189.00</span><span class="price-old">$280.00</span></div>
+                <button class="btn-cart" data-add-cart data-id="p011" data-name="Premium Leather Jacket" data-price="189.00" data-icon="🧥"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product-card-wrap fade-in-up">
+            <div class="product-card">
+              <div class="product-img-wrap"><div class="product-img-placeholder">🧴<span>Perfume</span></div>
+                <div class="product-actions">
+                  <button class="btn-icon" data-wishlist><i class="bi bi-heart"></i></button>
+                  <button class="btn-icon" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-category">Beauty</div>
+                <div class="product-name">Aroma Luxe Perfume 100ml</div>
+                <div class="product-rating"><div class="stars">★★★★★</div><div class="count">(221)</div></div>
+                <div class="product-price"><span class="price-now">$55.00</span></div>
+                <button class="btn-cart" data-add-cart data-id="p012" data-name="Aroma Luxe Perfume" data-price="55.00" data-icon="🧴"><i class="bi bi-bag-plus"></i> Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <nav class="mt-5 d-flex justify-content-center">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">10</a></li>
+            <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      <div class="col-lg-6">
+        <h3 class="newsletter-title">Get Exclusive Deals in Your Inbox</h3>
+        <p class="newsletter-sub">Subscribe and get 10% off your first order.</p>
+      </div>
+      <div class="col-lg-6">
+        <form class="newsletter-form" style="max-width:100%;">
+          <input type="email" placeholder="Enter your email address..." required />
+          <button type="submit"><i class="bi bi-send me-1"></i>Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-brand"><div class="brand-icon"><i class="bi bi-bag-heart-fill"></i></div>Shop<span>Vibe</span></div>
+        <p class="footer-desc">Your one-stop destination for premium products.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h6 class="footer-title">Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li>
+          <li><a href="cart.html">Cart</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h6 class="footer-title">Categories</h6>
+        <ul class="footer-links">
+          <li><a href="#">Fashion</a></li><li><a href="#">Electronics</a></li>
+          <li><a href="#">Home & Living</a></li><li><a href="#">Accessories</a></li><li><a href="#">Beauty</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h6 class="footer-title">Support</h6>
+        <ul class="footer-links">
+          <li><a href="#">Help Center</a></li><li><a href="#">Return Policy</a></li>
+          <li><a href="#">Shipping Info</a></li><li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h6 class="footer-title">Contact Us</h6>
+        <ul class="footer-contact">
+          <li><i class="bi bi-envelope-fill"></i><span><a href="mailto:aymaninfotechs@gmail.com">aymaninfotechs@gmail.com</a></span></li>
+          <li><i class="bi bi-telephone-fill"></i><span>+1 (800) 000-0000</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 <a href="index.html">ShopVibe</a>. All rights reserved.</p>
+      <div class="payment-icons">
+        <span class="payment-icon">VISA</span><span class="payment-icon">MC</span>
+        <span class="payment-icon">PayPal</span><span class="payment-icon">Stripe</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop"><i class="bi bi-arrow-up"></i></button>
+<div class="toast-container" id="toastContainer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

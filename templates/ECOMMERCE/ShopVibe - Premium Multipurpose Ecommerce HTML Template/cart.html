@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="View your shopping cart at ShopVibe." />
+  <title>Shopping Cart - ShopVibe</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="page-loader" id="pageLoader"><div class="loader-spinner"></div></div>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container d-flex align-items-center justify-content-between">
+    <span class="hide-mobile"><i class="bi bi-envelope me-1"></i> aymaninfotechs@gmail.com</span>
+    <span>🚚 Free shipping on orders over $100!</span>
+    <div class="d-flex gap-3">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <div class="brand-logo"><div class="brand-icon"><i class="bi bi-bag-heart-fill"></i></div>Shop<span>Vibe</span></div>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list fs-4"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link active" href="cart.html">Cart</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-2 mt-2 mt-lg-0">
+        <div class="navbar-icons">
+          <a href="#" class="nav-icon"><i class="bi bi-heart"></i></a>
+          <a href="cart.html" class="nav-icon active">
+            <i class="bi bi-bag"></i><span class="cart-count" style="display:none;">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Breadcrumb -->
+<div class="shop-hero">
+  <div class="container">
+    <h1>Shopping Cart <span style="font-size:1.2rem; color:var(--text-muted); font-weight:600;">(<span id="cartItemCount">0</span> Items)</span></h1>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="shop.html">Shop</a></li>
+        <li class="breadcrumb-item active">Cart</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<!-- Cart Content -->
+<section class="cart-section">
+  <div class="container">
+    
+    <!-- Empty Cart Message -->
+    <div class="empty-cart" id="emptyCart" style="display:none;">
+      <div class="empty-icon"><i class="bi bi-cart-x"></i></div>
+      <h4>Your cart is empty</h4>
+      <p>Looks like you haven't added any items to the cart yet.</p>
+      <a href="shop.html" class="btn btn-primary btn-lg"><i class="bi bi-bag-fill"></i> Return to Shop</a>
+    </div>
+
+    <!-- Cart Items & Summary -->
+    <div class="row g-5" id="cartTableWrap">
+      <div class="col-lg-8">
+        <div class="cart-table-wrap table-responsive">
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th>Product Information</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="cartTableBody">
+              <!-- Handled by JS -->
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="d-flex flex-wrap align-items-center justify-content-between mt-4">
+          <div class="coupon-input m-0 mb-3 mb-sm-0" style="max-width:320px; width:100%;">
+            <input type="text" id="couponInput" placeholder="Coupon code (e.g. SAVE10)" />
+            <button id="applyCoupon">Apply</button>
+          </div>
+          <button class="btn btn-outline-primary" onclick="Cart.renderCart()"><i class="bi bi-arrow-clockwise"></i> Update Cart</button>
+        </div>
+      </div>
+      
+      <div class="col-lg-4">
+        <div class="cart-summary">
+          <h5>Cart Totals</h5>
+          <div class="summary-row">
+            <span class="label">Subtotal</span>
+            <span id="cartSubtotal">$0.00</span>
+          </div>
+          <div class="summary-row">
+            <span class="label">Shipping</span>
+            <span id="cartShipping">Calculated at checkout</span>
+          </div>
+          <div class="summary-row pt-2 pb-2">
+            <p class="text-muted m-0" style="font-size:.8rem;">Shipping to New York, NY.</p>
+          </div>
+          <div class="summary-row total">
+            <span class="label" style="color:var(--text);">Total</span>
+            <span id="cartTotal">$0.00</span>
+          </div>
+          <a href="checkout.html" class="btn btn-primary w-100 mt-3 btn-lg"><i class="bi bi-lock-fill"></i> Proceed to Checkout</a>
+          <div class="text-center mt-3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Visa_Logo.png/640px-Visa_Logo.png" alt="Visa" style="height:15px; display:inline; margin:0 5px;" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1024px-Mastercard-logo.svg.png" alt="Mastercard" style="height:15px; display:inline; margin:0 5px;" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png" alt="PayPal" style="height:15px; display:inline; margin:0 5px;" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-brand"><div class="brand-icon"><i class="bi bi-bag-heart-fill"></i></div>Shop<span>Vibe</span></div>
+        <p class="footer-desc">Your one-stop destination for premium products.</p>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h6 class="footer-title">Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li>
+          <li><a href="cart.html">Cart</a></li><li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h6 class="footer-title">Contact</h6>
+        <ul class="footer-contact">
+          <li><i class="bi bi-envelope-fill"></i><span><a href="mailto:aymaninfotechs@gmail.com">aymaninfotechs@gmail.com</a></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 <a href="index.html">ShopVibe</a>. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="toast-container" id="toastContainer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

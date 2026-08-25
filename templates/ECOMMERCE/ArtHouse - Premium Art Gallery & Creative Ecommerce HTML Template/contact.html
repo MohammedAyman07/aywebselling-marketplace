@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact ArtHouse - Get in Touch for Art Inquiries">
+    <title>Contact Us | ArtHouse</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Art<span>House</span></a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="fa fa-bars fs-4 text-dark"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop Art</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-icons">
+                    <button class="nav-icon-btn d-none d-lg-flex" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <a href="cart.html" class="nav-icon-btn d-none d-lg-flex">
+                        <i class="fa-solid fa-bag-shopping"></i><span class="cart-badge">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero animate-fadeInUp">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-page-section section-padding-sm mb-5">
+        <div class="container">
+            <!-- Map Section -->
+            <div class="contact-map mb-5 animate-on-scroll">
+                <i class="fa-solid fa-map-location-dot display-1 opacity-25"></i>
+                <!-- Embed Google Map here in production -->
+            </div>
+
+            <div class="row g-5">
+                <!-- Contact Information -->
+                <div class="col-lg-5 animate-on-scroll delay-1">
+                    <h3 class="font-serif mb-4">Get in Touch</h3>
+                    <p class="text-gray mb-5">Have a question about a piece? Interested in commissioning an artist? Or simply want to say hello? Our team is always here to help.</p>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h6>Visit our Gallery</h6>
+                            <p class="mb-0">123 Art Gallery Avenue<br>Creative District, NY 10012</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h6>Call Us</h6>
+                            <p class="mb-0">+1 (555) 123-4567<br><span class="small text-muted">Mon - Fri, 9am - 6pm EST</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h6>Email Us</h6>
+                            <p class="mb-0"><a href="mailto:aymaninfotechs@gmail.com" class="text-decoration-none text-gold">aymaninfotechs@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <h6 class="small text-uppercase letter-spacing-2 mb-3">Follow Us</h6>
+                        <div class="d-flex text-dark gap-3">
+                            <a href="#" class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center border-0 bg-light" style="width: 40px; height: 40px;"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center border-0 bg-light" style="width: 40px; height: 40px;"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center border-0 bg-light" style="width: 40px; height: 40px;"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="col-lg-7 animate-on-scroll delay-2">
+                    <div class="bg-white rounded-3 shadow-sm p-4 p-md-5 border h-100">
+                        <h3 class="font-serif mb-4">Send us a Message</h3>
+                        
+                        <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!'); this.reset();">
+                            <div class="row g-3">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="name" required placeholder="John Doe">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Your Email</label>
+                                    <input type="email" class="form-control" id="email" required placeholder="john@example.com">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select class="form-select" id="subject" required>
+                                    <option value="" selected disabled>Select an inquiry type</option>
+                                    <option value="artwork">Artwork Inquiry</option>
+                                    <option value="order">Order Status</option>
+                                    <option value="commission">Commission Request</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required placeholder="How can we help you?"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-dark px-5 py-3 w-100 w-md-auto ms-auto d-block rounded-2">Send Message <i class="fa-solid fa-paper-plane ms-2"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">Art<span>House</span></div>
+                    <p class="mb-4 pe-lg-4">Your premier destination for finding exceptional contemporary art, original paintings, and limited edition digital prints.</p>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6>Explore</h6>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="shop.html">Shop Art</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-12 text-md-end text-start mt-md-0 mt-4 align-self-end">
+                     <p class="mb-0 text-white-50 small">&copy; 2026 ArtHouse. Designed for aymaninfotechs@gmail.com. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div class="toast-container-custom"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserve your table at Savoria. Book online for an exquisite dining experience.">
+    <title>Reservation — Savoria Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Sav<span>oria</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="reservation.html">Reservation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link nav-cta" href="reservation.html">Book a Table</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Reservation</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Reservation</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-7 reveal">
+                    <div class="reservation-form-wrapper">
+                        <h3>Book Your Table</h3>
+                        <p class="form-subtitle">Fill in the details below and we'll confirm your reservation within 2
+                            hours.</p>
+                        <form id="reservationForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label-custom">Full Name *</label>
+                                    <input type="text" class="form-control-custom" placeholder="John Doe" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label-custom">Email Address *</label>
+                                    <input type="email" class="form-control-custom" placeholder="john@example.com"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label-custom">Phone Number *</label>
+                                    <input type="tel" class="form-control-custom" placeholder="+0 (000) 000-0000"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label-custom">Number of Guests *</label>
+                                    <select class="form-control-custom" required>
+                                        <option value="">Select guests</option>
+                                        <option value="1">1 Guest</option>
+                                        <option value="2">2 Guests</option>
+                                        <option value="3">3 Guests</option>
+                                        <option value="4">4 Guests</option>
+                                        <option value="5">5 Guests</option>
+                                        <option value="6">6 Guests</option>
+                                        <option value="7">7 Guests</option>
+                                        <option value="8">8+ Guests</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label-custom">Date *</label>
+                                    <input type="date" class="form-control-custom" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label-custom">Time *</label>
+                                    <select class="form-control-custom" required>
+                                        <option value="">Select time</option>
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="11:30">11:30 AM</option>
+                                        <option value="12:00">12:00 PM</option>
+                                        <option value="12:30">12:30 PM</option>
+                                        <option value="13:00">1:00 PM</option>
+                                        <option value="13:30">1:30 PM</option>
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="18:30">6:30 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="19:30">7:30 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="20:30">8:30 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label-custom">Special Requests</label>
+                                    <textarea class="form-control-custom" rows="4"
+                                        placeholder="Allergies, special occasions, seating preferences..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-primary-custom"
+                                        style="width:100%;text-align:center;padding:16px;">
+                                        <i class="bi bi-calendar-check"></i> &nbsp;Confirm Reservation
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 reveal">
+                    <div class="reservation-info">
+                        <div class="reservation-info-item">
+                            <i class="bi bi-clock"></i>
+                            <div>
+                                <h5>Opening Hours</h5>
+                                <p>Mon – Fri: 11:00 AM – 11:00 PM<br>Sat – Sun: 10:00 AM – 12:00 AM</p>
+                            </div>
+                        </div>
+                        <div class="reservation-info-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <div>
+                                <h5>Location</h5>
+                                <p>456 Starlight Boulevard, Aurora Heights<br>AH 99999</p>
+                            </div>
+                        </div>
+                        <div class="reservation-info-item">
+                            <i class="bi bi-telephone"></i>
+                            <div>
+                                <h5>Phone</h5>
+                                <p>+0 (000) 123-4567<br>+0 (000) 987-6543</p>
+                            </div>
+                        </div>
+                        <div class="reservation-info-item">
+                            <i class="bi bi-envelope"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <p>reservations@savoria.com<br>info@savoria.com</p>
+                            </div>
+                        </div>
+                        <div class="reservation-info-item">
+                            <i class="bi bi-info-circle"></i>
+                            <div>
+                                <h5>Good to Know</h5>
+                                <p>• Reservations recommended for dinner<br>• Private dining rooms available<br>• Valet
+                                    parking available<br>• Dress code: Smart casual</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section style="padding:0">
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878428698!3d40.74076794379132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sGoogle!5e0!3m2!1sen!2sus!4v1613572994023"
+                allowfullscreen="" loading="lazy" title="Restaurant Location"></iframe>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container text-center">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Get notified about exclusive events and special dining offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="footer-brand">Sav<span>oria</span></a>
+                    <p>An exquisite fine dining destination where culinary artistry meets warm hospitality.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="bi bi-chevron-right"></i> About</a></li>
+                        <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Menu</a></li>
+                        <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+                        <li><a href="reservation.html"><i class="bi bi-chevron-right"></i> Reservation</a></li>
+                        <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact Info</h5>
+                    <ul class="footer-contact">
+                        <li><i class="bi bi-geo-alt"></i><span>456 Starlight Boulevard, Aurora Heights, AH 99999</span></li>
+                        <li><i class="bi bi-telephone"></i><span>+0 (000) 123-4567</span></li>
+                        <li><i class="bi bi-envelope"></i><span>info@savoria.com</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Opening Hours</h5>
+                    <ul class="footer-hours">
+                        <li><span>Monday – Friday</span><span>11AM – 11PM</span></li>
+                        <li><span>Saturday</span><span>10AM – 12AM</span></li>
+                        <li><span>Sunday</span><span>10AM – 10PM</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Savoria. Designed by <a href="https://aymaninfotech.com" target="_blank"
+                        style="color:var(--primary)">AymanInfotech</a>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top"><i class="bi bi-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

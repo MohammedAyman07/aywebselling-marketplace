@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ShopVibe - Shop the Latest Products Online. Discover high-quality products at the best prices. Fashion, Electronics, Home & Living, and more." />
+  <meta name="keywords" content="ecommerce, online shop, fashion, electronics, home living, accessories, beauty" />
+  <meta name="author" content="AymanInfotechs" />
+  <title>ShopVibe - Shop the Latest Products Online</title>
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Page Loader -->
+<div class="page-loader" id="pageLoader"><div class="loader-spinner"></div></div>
+
+<!-- ============================================================
+     TOP BAR
+============================================================ -->
+<div class="top-bar">
+  <div class="container d-flex align-items-center justify-content-between">
+    <span class="hide-mobile"><i class="bi bi-envelope me-1"></i> aymaninfotechs@gmail.com</span>
+    <span class="hide-mobile"><i class="bi bi-telephone me-1"></i> +1 (800) 000-0000</span>
+    <span>🚚 Free shipping on orders over $100!</span>
+    <div class="d-flex gap-3">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-twitter-x"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand" href="index.html">
+      <div class="brand-logo">
+        <div class="brand-icon"><i class="bi bi-bag-heart-fill"></i></div>
+        Shop<span>Vibe</span>
+      </div>
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list fs-4"></i>
+    </button>
+
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Search + Icons -->
+      <div class="d-flex align-items-center gap-2 mt-2 mt-lg-0">
+        <div class="search-bar d-none d-md-flex">
+          <i class="bi bi-search search-icon"></i>
+          <input type="text" placeholder="Search products..." id="globalSearch" />
+        </div>
+        <div class="navbar-icons">
+          <a href="#" class="nav-icon" id="searchToggle" title="Search"><i class="bi bi-search"></i></a>
+          <a href="#" class="nav-icon" title="Wishlist"><i class="bi bi-heart"></i></a>
+          <a href="cart.html" class="nav-icon" title="Cart" id="navCartIcon">
+            <i class="bi bi-bag"></i>
+            <span class="cart-count" style="display:none;">0</span>
+          </a>
+          <a href="#" class="nav-icon d-none d-lg-flex" title="Account"><i class="bi bi-person"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO SECTION
+============================================================ -->
+<section class="hero-section" id="home">
+  <div class="container position-relative z-1">
+    <div class="row align-items-center gy-5">
+      <!-- Text -->
+      <div class="col-lg-6">
+        <div class="hero-badge"><i class="bi bi-lightning-fill"></i> New Collection 2025</div>
+        <h1 class="hero-title">Shop the <span class="highlight">Latest Products</span> Online</h1>
+        <p class="hero-sub">Discover high-quality products at the best prices. Thousands of items across fashion, electronics, home living, and more.</p>
+        <div class="d-flex flex-wrap gap-3" id="heroButtons">
+          <a href="shop.html" class="btn btn-primary btn-lg"><i class="bi bi-bag-fill"></i> Shop Now</a>
+          <a href="shop.html" class="btn btn-outline-light btn-lg">View Collection <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><strong>50K+</strong><span>Products</span></div>
+          <div class="hero-stat"><strong>200K+</strong><span>Customers</span></div>
+          <div class="hero-stat"><strong>4.9★</strong><span>Rating</span></div>
+        </div>
+      </div>
+      <!-- Image -->
+      <div class="col-lg-6">
+        <div class="hero-img-wrap">
+          <img src="images/hero-banner.png" alt="Featured Products" loading="lazy" />
+          <!-- Floating cards -->
+          <div class="hero-float-card card-1">
+            <div class="fc-icon orange"><i class="bi bi-truck"></i></div>
+            <strong>Free Delivery</strong>
+            <span>Orders over $100</span>
+          </div>
+          <div class="hero-float-card card-2">
+            <div class="fc-icon blue"><i class="bi bi-shield-check"></i></div>
+            <strong>Secure Payment</strong>
+            <span>100% Protected</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURES STRIP
+============================================================ -->
+<div class="features-strip bg-white">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-6 col-md-3 fade-in-up">
+        <div class="feature-item">
+          <div class="feature-icon"><i class="bi bi-truck"></i></div>
+          <div><h6>Free Shipping</h6><p>On orders over $100</p></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fade-in-up">
+        <div class="feature-item">
+          <div class="feature-icon"><i class="bi bi-arrow-return-left"></i></div>
+          <div><h6>Easy Returns</h6><p>30-day return policy</p></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fade-in-up">
+        <div class="feature-item">
+          <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+          <div><h6>Secure Payment</h6><p>SSL encrypted checkout</p></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 fade-in-up">
+        <div class="feature-item">
+          <div class="feature-icon"><i class="bi bi-headset"></i></div>
+          <div><h6>24/7 Support</h6><p>Always here to help</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     CATEGORIES SECTION
+============================================================ -->
+<section class="section-pad" id="categories">
+  <div class="container">
+    <div class="text-center mb-5 fade-in-up">
+      <div class="divider"></div>
+      <h2 class="section-title">Shop by Category</h2>
+      <p class="section-sub">Explore our wide range of product categories</p>
+    </div>
+    <div class="row g-4">
+      <!-- Fashion -->
+      <div class="col-6 col-md-4 col-lg-2-4 fade-in-up" style="flex: 0 0 20%; max-width: 20%;">
+        <a href="shop.html?cat=fashion">
+          <div class="category-card">
+            <img src="images/cat-fashion.png" alt="Fashion" />
+            <div class="category-overlay">
+              <div class="category-icon"><i class="bi bi-bag-heart"></i></div>
+              <h6>Fashion</h6><span>240+ Items</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- Electronics -->
+      <div class="col-6 col-md-4 col-lg-2-4 fade-in-up" style="flex: 0 0 20%; max-width: 20%;">
+        <a href="shop.html?cat=electronics">
+          <div class="category-card">
+            <img src="images/cat-electronics.png" alt="Electronics" />
+            <div class="category-overlay">
+              <div class="category-icon"><i class="bi bi-cpu"></i></div>
+              <h6>Electronics</h6><span>185+ Items</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- Home & Living -->
+      <div class="col-6 col-md-4 col-lg-2-4 fade-in-up" style="flex: 0 0 20%; max-width: 20%;">
+        <a href="shop.html?cat=home">
+          <div class="category-card">
+            <img src="images/cat-home.png" alt="Home & Living" />
+            <div class="category-overlay">
+              <div class="category-icon"><i class="bi bi-house-heart"></i></div>
+              <h6>Home & Living</h6><span>320+ Items</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- Accessories -->
+      <div class="col-6 col-md-4 col-lg-2-4 fade-in-up" style="flex: 0 0 20%; max-width: 20%;">
+        <a href="shop.html?cat=accessories">
+          <div class="category-card">
+            <img src="images/cat-accessories.png" alt="Accessories" />
+            <div class="category-overlay">
+              <div class="category-icon"><i class="bi bi-watch"></i></div>
+              <h6>Accessories</h6><span>150+ Items</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!-- Beauty -->
+      <div class="col-6 col-md-4 col-lg-2-4 fade-in-up" style="flex: 0 0 20%; max-width: 20%;">
+        <a href="shop.html?cat=beauty">
+          <div class="category-card" style="background: linear-gradient(135deg, #ffecd2, #fcb69f);">
+            <div style="height: 220px; display:flex; align-items:center; justify-content:center; font-size:5rem;">💄</div>
+            <div class="category-overlay">
+              <div class="category-icon"><i class="bi bi-stars"></i></div>
+              <h6>Beauty</h6><span>95+ Items</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- Mobile friendly fallback row for screens <lg -->
+    <div class="row g-3 d-lg-none mt-1">
+      <!-- hidden on large; large screens use the 5-col above -->
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURED PRODUCTS
+============================================================ -->
+<section class="section-pad bg-light-2" id="products">
+  <div class="container">
+    <div class="d-flex align-items-end justify-content-between mb-5 flex-wrap gap-3 fade-in-up">
+      <div>
+        <div class="divider"></div>
+        <h2 class="section-title mb-1">Featured Products</h2>
+        <p class="section-sub mb-0">Handpicked favourites loved by thousands of customers</p>
+      </div>
+      <a href="shop.html" class="btn btn-outline-primary">View All <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="row g-4">
+
+      <!-- Product 1 -->
+      <div class="col-6 col-md-4 col-lg-3 fade-in-up">
+        <div class="product-card">
+          <div class="product-badge"><span class="badge-custom badge-new">New</span></div>
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">👟<span>Sneakers</span></div>
+            <div class="product-actions">
+              <button class="btn-icon" data-wishlist title="Wishlist"><i class="bi bi-heart"></i></button>
+              <button class="btn-icon" title="Quick View" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Fashion</div>
+            <div class="product-name">Urban Runner Pro Sneakers</div>
+            <div class="product-rating">
+              <div class="stars">★★★★★</div>
+              <div class="count">(128)</div>
+            </div>
+            <div class="product-price">
+              <span class="price-now">$89.99</span>
+              <span class="price-old">$119.99</span>
+              <span class="price-save">-25%</span>
+            </div>
+            <button class="btn-cart" data-add-cart data-id="p001" data-name="Urban Runner Pro Sneakers" data-price="89.99" data-icon="👟">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-6 col-md-4 col-lg-3 fade-in-up">
+        <div class="product-card">
+          <div class="product-badge"><span class="badge-custom badge-sale">Sale</span></div>
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">📱<span>Smartphone</span></div>
+            <div class="product-actions">
+              <button class="btn-icon" data-wishlist title="Wishlist"><i class="bi bi-heart"></i></button>
+              <button class="btn-icon" title="Quick View" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Electronics</div>
+            <div class="product-name">ProMax X15 Smartphone 256GB</div>
+            <div class="product-rating">
+              <div class="stars">★★★★<span style="color:#d1d5db">★</span></div>
+              <div class="count">(342)</div>
+            </div>
+            <div class="product-price">
+              <span class="price-now">$699.00</span>
+              <span class="price-old">$899.00</span>
+              <span class="price-save">-22%</span>
+            </div>
+            <button class="btn-cart" data-add-cart data-id="p002" data-name="ProMax X15 Smartphone" data-price="699.00" data-icon="📱">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-6 col-md-4 col-lg-3 fade-in-up">
+        <div class="product-card">
+          <div class="product-badge"><span class="badge-custom badge-hot">Hot</span></div>
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">🎧<span>Headphones</span></div>
+            <div class="product-actions">
+              <button class="btn-icon" data-wishlist title="Wishlist"><i class="bi bi-heart"></i></button>
+              <button class="btn-icon" title="Quick View" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Electronics</div>
+            <div class="product-name">AirPods Pro Wireless Noise Cancelling</div>
+            <div class="product-rating">
+              <div class="stars">★★★★★</div>
+              <div class="count">(519)</div>
+            </div>
+            <div class="product-price">
+              <span class="price-now">$149.99</span>
+              <span class="price-old">$199.99</span>
+              <span class="price-save">-25%</span>
+            </div>
+            <button class="btn-cart" data-add-cart data-id="p003" data-name="AirPods Pro Wireless" data-price="149.99" data-icon="🎧">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-6 col-md-4 col-lg-3 fade-in-up">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">⌚<span>Smartwatch</span></div>
+            <div class="product-actions">
+              <button class="btn-icon" data-wishlist title="Wishlist"><i class="bi bi-heart"></i></button>
+              <button class="btn-icon" title="Quick View" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Accessories</div>
+            <div class="product-name">SmartBand Pro Health Tracker</div>
+            <div class="product-rating">
+              <div class="stars">★★★★<span style="color:#d1d5db">★</span></div>
+              <div class="count">(201)</div>
+            </div>
+            <div class="product-price">
+              <span class="price-now">$249.00</span>
+            </div>
+            <button class="btn-cart" data-add-cart data-id="p004" data-name="SmartBand Pro Health Tracker" data-price="249.00" data-icon="⌚">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-6 col-md-4 col-lg-3 fade-in-up">
+        <div class="product-card">
+          <div class="product-badge"><span class="badge-custom badge-sale">Sale</span></div>
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">👜<span>Handbag</span></div>
+            <div class="product-actions">
+              <button class="btn-icon" data-wishlist title="Wishlist"><i class="bi bi-heart"></i></button>
+              <button class="btn-icon" title="Quick View" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Fashion</div>
+            <div class="product-name">Luxe Leather Tote Bag</div>
+            <div class="product-rating">
+              <div class="stars">★★★★★</div>
+              <div class="count">(94)</div>
+            </div>
+            <div class="product-price">
+              <span class="price-now">$79.99</span>
+              <span class="price-old">$120.00</span>
+              <span class="price-save">-33%</span>
+            </div>
+            <button class="btn-cart" data-add-cart data-id="p005" data-name="Luxe Leather Tote Bag" data-price="79.99" data-icon="👜">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-6 col-md-4 col-lg-3 fade-in-up">
+        <div class="product-card">
+          <div class="product-badge"><span class="badge-custom badge-new">New</span></div>
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">💻<span>Laptop</span></div>
+            <div class="product-actions">
+              <button class="btn-icon" data-wishlist title="Wishlist"><i class="bi bi-heart"></i></button>
+              <button class="btn-icon" title="Quick View" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Electronics</div>
+            <div class="product-name">UltraBook Air 15" i9 Laptop</div>
+            <div class="product-rating">
+              <div class="stars">★★★★★</div>
+              <div class="count">(77)</div>
+            </div>
+            <div class="product-price">
+              <span class="price-now">$1,299.00</span>
+              <span class="price-old">$1,599.00</span>
+            </div>
+            <button class="btn-cart" data-add-cart data-id="p006" data-name="UltraBook Air 15 Laptop" data-price="1299.00" data-icon="💻">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="col-6 col-md-4 col-lg-3 fade-in-up">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">🏺<span>Home Decor</span></div>
+            <div class="product-actions">
+              <button class="btn-icon" data-wishlist title="Wishlist"><i class="bi bi-heart"></i></button>
+              <button class="btn-icon" title="Quick View" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Home & Living</div>
+            <div class="product-name">Ceramic Artisan Vase Set of 3</div>
+            <div class="product-rating">
+              <div class="stars">★★★★<span style="color:#d1d5db">★</span></div>
+              <div class="count">(63)</div>
+            </div>
+            <div class="product-price">
+              <span class="price-now">$45.00</span>
+            </div>
+            <button class="btn-cart" data-add-cart data-id="p007" data-name="Ceramic Artisan Vase Set" data-price="45.00" data-icon="🏺">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="col-6 col-md-4 col-lg-3 fade-in-up">
+        <div class="product-card">
+          <div class="product-badge"><span class="badge-custom badge-sale">Sale</span></div>
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder">🕶️<span>Sunglasses</span></div>
+            <div class="product-actions">
+              <button class="btn-icon" data-wishlist title="Wishlist"><i class="bi bi-heart"></i></button>
+              <button class="btn-icon" title="Quick View" onclick="window.location='product.html'"><i class="bi bi-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-category">Accessories</div>
+            <div class="product-name">Polarized Aviator Sunglasses UV400</div>
+            <div class="product-rating">
+              <div class="stars">★★★★★</div>
+              <div class="count">(188)</div>
+            </div>
+            <div class="product-price">
+              <span class="price-now">$34.99</span>
+              <span class="price-old">$59.99</span>
+              <span class="price-save">-42%</span>
+            </div>
+            <button class="btn-cart" data-add-cart data-id="p008" data-name="Polarized Aviator Sunglasses" data-price="34.99" data-icon="🕶️">
+              <i class="bi bi-bag-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end row -->
+  </div>
+</section>
+
+<!-- ============================================================
+     SPECIAL OFFERS
+============================================================ -->
+<section class="offers-section" id="offers">
+  <div class="container position-relative z-1">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <div class="offer-badge"><i class="bi bi-fire"></i> Limited Time Offer</div>
+        <h2 class="offer-title">Up to <span>50% Off</span><br>on Selected Products</h2>
+        <p class="offer-sub">Don't miss our biggest sale of the season. Premium products at unbeatable prices — limited stock available.</p>
+        <div class="countdown" id="countdown">
+          <div class="countdown-item"><span class="time" id="cd-days">00</span><span class="label">Days</span></div>
+          <div class="countdown-item"><span class="time" id="cd-hours">00</span><span class="label">Hours</span></div>
+          <div class="countdown-item"><span class="time" id="cd-mins">00</span><span class="label">Mins</span></div>
+          <div class="countdown-item"><span class="time" id="cd-secs">00</span><span class="label">Secs</span></div>
+        </div>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="shop.html" class="btn btn-primary btn-lg"><i class="bi bi-lightning-fill"></i> Shop Sale</a>
+          <a href="shop.html" class="btn btn-outline-light btn-lg">Browse All</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="offer-img-grid">
+          <div class="offer-img-item large" style="font-size:6rem;">👟</div>
+          <div class="offer-img-item" style="font-size:4rem;">📱</div>
+          <div class="offer-img-item" style="font-size:4rem;">🎧</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+============================================================ -->
+<section class="section-pad" id="testimonials">
+  <div class="container">
+    <div class="text-center mb-5 fade-in-up">
+      <div class="divider"></div>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-sub">Trusted by over 200,000 happy shoppers worldwide</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 fade-in-up">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Amazing quality products and lightning-fast shipping! The packaging was perfect. I'll definitely be ordering again."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">S</div>
+            <div><div class="author-name">Sarah Mitchell</div><div class="author-role">Regular Customer</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 fade-in-up">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"ShopVibe has the best collection of electronics at prices you can't beat anywhere else. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">J</div>
+            <div><div class="author-name">James Rodriguez</div><div class="author-role">Verified Buyer</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 fade-in-up">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Customer support was incredibly helpful. They resolved my issue within minutes. Best online shopping experience!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div><div class="author-name">Amina Hassan</div><div class="author-role">Premium Member</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     NEWSLETTER
+============================================================ -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      <div class="col-lg-6">
+        <h3 class="newsletter-title">Get Exclusive Deals in Your Inbox</h3>
+        <p class="newsletter-sub">Subscribe and get 10% off your first order. No spam, unsubscribe anytime.</p>
+      </div>
+      <div class="col-lg-6">
+        <form class="newsletter-form" style="max-width:100%;">
+          <input type="email" placeholder="Enter your email address..." required />
+          <button type="submit"><i class="bi bi-send me-1"></i> Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Brand -->
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-brand"><div class="brand-icon"><i class="bi bi-bag-heart-fill"></i></div>Shop<span>Vibe</span></div>
+        <p class="footer-desc">Your one-stop destination for premium products. Quality, style, and value combined.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-pinterest"></i></a>
+        </div>
+      </div>
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="footer-title">Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Categories -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="footer-title">Categories</h6>
+        <ul class="footer-links">
+          <li><a href="shop.html?cat=fashion">Fashion</a></li>
+          <li><a href="shop.html?cat=electronics">Electronics</a></li>
+          <li><a href="shop.html?cat=home">Home & Living</a></li>
+          <li><a href="shop.html?cat=accessories">Accessories</a></li>
+          <li><a href="shop.html?cat=beauty">Beauty</a></li>
+        </ul>
+      </div>
+      <!-- Support -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="footer-title">Support</h6>
+        <ul class="footer-links">
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="footer-title">Contact Us</h6>
+        <ul class="footer-contact">
+          <li><i class="bi bi-geo-alt-fill"></i><span>123 Commerce Street,<br>New York, NY 10001</span></li>
+          <li><i class="bi bi-telephone-fill"></i><span>+1 (800) 000-0000</span></li>
+          <li><i class="bi bi-envelope-fill"></i><span><a href="mailto:aymaninfotechs@gmail.com">aymaninfotechs@gmail.com</a></span></li>
+          <li><i class="bi bi-clock-fill"></i><span>Mon – Fri: 9am – 6pm EST</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 <a href="index.html">ShopVibe</a>. All rights reserved. Template by <a href="mailto:aymaninfotechs@gmail.com">AymanInfotechs</a>.</p>
+      <div class="payment-icons">
+        <span class="payment-icon">VISA</span>
+        <span class="payment-icon">MC</span>
+        <span class="payment-icon">PayPal</span>
+        <span class="payment-icon">AMEX</span>
+        <span class="payment-icon">Stripe</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to Top -->
+<button class="scroll-top" id="scrollTop" title="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<!-- Toast Container -->
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Browse the full artwork gallery of digital illustrations, paintings, concept art and character designs." />
+    <title>Gallery – ArtVista Creative Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="loader-ring"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Art<span>Vista</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavCollapse"
+                aria-controls="mainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavCollapse">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link nav-cta rounded-pill ms-2" href="contact.html">Hire Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Gallery</li>
+                </ol>
+            </nav>
+            <h1>Artwork <span class="text-gradient">Gallery</span></h1>
+            <p>Browse my complete collection of digital art, illustrations, paintings, and concept artworks</p>
+        </div>
+    </div>
+
+    <!-- GALLERY SECTION -->
+    <section style="background:var(--light);">
+        <div class="container">
+            <!-- Filter -->
+            <div class="gallery-filter mb-4" data-reveal>
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="digital">Digital Art</button>
+                <button class="filter-btn" data-filter="illustration">Illustrations</button>
+                <button class="filter-btn" data-filter="painting">Paintings</button>
+                <button class="filter-btn" data-filter="concept">Concept Art</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" data-reveal data-delay="100">
+
+                <div class="gallery-item" data-category="digital" data-src="images/gallery-1.jpg"
+                    data-caption="Mystic Forest – Digital Art">
+                    <img src="images/gallery-1.jpg" alt="Mystic Forest" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <div class="expand-icon"><i class="fas fa-expand-alt"></i></div>
+                        <h5>Mystic Forest</h5><span>Digital Art</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="concept" data-src="images/hero-banner.jpg"
+                    data-caption="Arcane Portal – Concept Art">
+                    <img src="images/hero-banner.jpg" alt="Arcane Portal" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <div class="expand-icon"><i class="fas fa-expand-alt"></i></div>
+                        <h5>Arcane Portal</h5><span>Concept Art</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration" data-src="images/gallery-1.jpg"
+                    data-caption="Cosmic Dreams – Illustration">
+                    <img src="images/gallery-1.jpg" alt="Cosmic Dreams" loading="lazy"
+                        style="filter:hue-rotate(54deg) saturate(1.3);" />
+                    <div class="gallery-overlay">
+                        <div class="expand-icon"><i class="fas fa-expand-alt"></i></div>
+                        <h5>Cosmic Dreams</h5><span>Illustration</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="painting" data-src="images/gallery-1.jpg"
+                    data-caption="Aurora Spirit – Painting">
+                    <img src="images/gallery-1.jpg" alt="Aurora Spirit" loading="lazy"
+                        style="filter:hue-rotate(160deg) saturate(1.5);" />
+                    <div class="gallery-overlay">
+                        <div class="expand-icon"><i class="fas fa-expand-alt"></i></div>
+                        <h5>Aurora Spirit</h5><span>Digital Painting</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="digital" data-src="images/hero-banner.jpg"
+                    data-caption="Nebula Walker – Digital Art">
+                    <img src="images/hero-banner.jpg" alt="Nebula Walker" loading="lazy"
+                        style="filter:hue-rotate(220deg) saturate(0.9);" />
+                    <div class="gallery-overlay">
+                        <div class="expand-icon"><i class="fas fa-expand-alt"></i></div>
+                        <h5>Nebula Walker</h5><span>Digital Art</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="illustration" data-src="images/gallery-1.jpg"
+                    data-caption="Crystal Realms – Illustration">
+                    <img src="images/gallery-1.jpg" alt="Crystal Realms" loading="lazy"
+                        style="filter:hue-rotate(300deg) saturate(1.2);" />
+                    <div class="gallery-overlay">
+                        <div class="expand-icon"><i class="fas fa-expand-alt"></i></div>
+                        <h5>Crystal Realms</h5><span>Illustration</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="concept" data-src="images/hero-banner.jpg"
+                    data-caption="Shadow Realm – Concept Art">
+                    <img src="images/hero-banner.jpg" alt="Shadow Realm" loading="lazy"
+                        style="filter:brightness(0.7) saturate(0.8);" />
+                    <div class="gallery-overlay">
+                        <div class="expand-icon"><i class="fas fa-expand-alt"></i></div>
+                        <h5>Shadow Realm</h5><span>Concept Art</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="painting" data-src="images/gallery-1.jpg"
+                    data-caption="Enchanted Grove – Painting">
+                    <img src="images/gallery-1.jpg" alt="Enchanted Grove" loading="lazy"
+                        style="filter:hue-rotate(90deg) brightness(1.1);" />
+                    <div class="gallery-overlay">
+                        <div class="expand-icon"><i class="fas fa-expand-alt"></i></div>
+                        <h5>Enchanted Grove</h5><span>Digital Painting</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="digital" data-src="images/gallery-1.jpg"
+                    data-caption="Void Wanderer – Digital Art">
+                    <img src="images/gallery-1.jpg" alt="Void Wanderer" loading="lazy"
+                        style="filter:invert(0.08) saturate(1.4) hue-rotate(200deg);" />
+                    <div class="gallery-overlay">
+                        <div class="expand-icon"><i class="fas fa-expand-alt"></i></div>
+                        <h5>Void Wanderer</h5><span>Digital Art</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightboxOverlay" class="lightbox-overlay" role="dialog" aria-modal="true">
+        <button id="lightboxClose" class="lightbox-close">&times;</button>
+        <button id="lightboxPrev" class="lightbox-nav lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+        <button id="lightboxNext" class="lightbox-nav lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-inner">
+            <img id="lightboxImg" src="" alt="" />
+            <div id="lightboxCaption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <!-- Brand & Bio -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="footer-brand">Art<span>Vista</span></a>
+                    <p class="footer-desc">
+                        Pushing the boundaries of digital art through unique illustrations and visual storytelling.
+                        Available for international commissions and creative collaborations.
+                    </p>
+                    <div class="footer-social-enhanced">
+                        <a href="#" class="social-btn insta" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn artstation" title="ArtStation"><i
+                                class="fab fa-artstation"></i></a>
+                        <a href="#" class="social-btn behance" title="Behance"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-btn twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links Column 1 -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h5 class="footer-heading">Explore</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links Column 2 -->
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h5 class="footer-heading">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Custom Illustration</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Character Design</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Digital Artwork</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Concept Art</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Logo Design</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Contact</h5>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>aymaninfotechs@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-globe"></i>
+                        <span>Available Worldwide (Remote)</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Fast Response (24-48h)</span>
+                    </div>
+                    <div class="mt-4">
+                        <a href="contact.html" class="btn-primary-custom"
+                            style="padding:12px 28px; font-size:0.9rem; border-radius:12px;">
+                            <i class="fas fa-paper-plane"></i> Start Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 <span style="color:var(--white); font-weight:600;">ArtVista</span>. Crafted for creative
+                    professionals.
+                </div>
+                <div class="footer-legal">
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- =========================================================
+       VIDEOGRAPHER PORTFOLIO TEMPLATE - contact.html
+       Author: Ayman InfoTechs | aymaninfotechs@gmail.com
+  ========================================================= -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Contact CineVision for professional videography services. Wedding films, commercial videos, event coverage and video editing." />
+    <title>Contact | CineVision Videography</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+        .map-placeholder {
+            width: 100%;
+            height: 320px;
+            background: var(--color-dark-2);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            color: var(--color-grey-3);
+            font-family: var(--font-heading);
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .map-placeholder i {
+            font-size: 2.5rem;
+            color: var(--color-red);
+        }
+
+        .map-placeholder::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 50% 50%, rgba(229, 9, 20, 0.06) 0%, transparent 70%);
+        }
+
+        .social-cta {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .social-cta-link {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 20px;
+            background: var(--color-dark-2);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            color: var(--color-white);
+            font-family: var(--font-heading);
+            font-size: 0.85rem;
+            letter-spacing: 1.5px;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .social-cta-link:hover {
+            border-color: rgba(229, 9, 20, 0.3);
+            color: var(--color-white);
+            transform: translateX(6px);
+        }
+
+        .social-cta-link i {
+            color: var(--color-red);
+            font-size: 1.1rem;
+            width: 22px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div id="loader-wrapper">
+        <div class="loader-logo">Cine<span>Vision</span></div>
+        <div class="loader-bar">
+            <div class="loader-bar-fill"></div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Cine<span>Vision</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="toggler-icon"></span><span class="toggler-icon"></span><span class="toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link nav-cta active" href="contact.html">Get In Touch</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-line" aria-hidden="true"></div>
+        <div class="container">
+            <p class="section-eyebrow">Say Hello</p>
+            <h1 class="page-hero-title">Contact <em>Us</em></h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Contact</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <p class="section-eyebrow">Get In Touch</p>
+                <h2 class="section-title">Let's Create Something <em>Cinematic</em></h2>
+                <p class="section-desc">Have a project in mind? I'd love to hear about it. Fill in the form below or
+                    reach out directly.</p>
+            </div>
+
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-lg-4 reveal-left">
+                    <div class="contact-info-card mb-4">
+                        <h3 class="section-title mb-4" style="font-size:1.5rem;">Direct <em>Contact</em></h3>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <div class="contact-info-label">Email</div>
+                                <div class="contact-info-value"><a
+                                        href="mailto:aymaninfotechs@gmail.com">aymaninfotechs@gmail.com</a></div>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <div class="contact-info-label">Phone / WhatsApp</div>
+                                <div class="contact-info-value"><a href="tel:+10000000000">+1 (000) 000-0000</a></div>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <div class="contact-info-label">Studio Location</div>
+                                <div class="contact-info-value">Manhattan, New York City<br>NY 10001, USA</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div>
+                                <div class="contact-info-label">Office Hours</div>
+                                <div class="contact-info-value">Mon – Friday: 9 AM – 7 PM<br>Saturday: 10 AM – 4 PM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <h4 class="footer-title">Find Me Online</h4>
+                    <div class="social-cta">
+                        <a href="#" class="social-cta-link"><i class="fa-brands fa-instagram"></i> Instagram —
+                            @cinevision</a>
+                        <a href="#" class="social-cta-link"><i class="fa-brands fa-youtube"></i> YouTube —
+                            CineVision</a>
+                        <a href="#" class="social-cta-link"><i class="fa-brands fa-vimeo-v"></i> Vimeo — cinevision</a>
+                        <a href="#" class="social-cta-link"><i class="fa-brands fa-linkedin-in"></i> LinkedIn — Alex
+                            Carter</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-8 reveal-right">
+                    <div class="contact-form-wrap">
+                        <h3 class="section-title mb-4" style="font-size:1.5rem;">Send a <em>Message</em></h3>
+                        <form id="contactForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label" for="contactName">Your Full Name *</label>
+                                    <input type="text" id="contactName" name="name" class="form-control"
+                                        placeholder="John Doe" required />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="contactEmail">Email Address *</label>
+                                    <input type="email" id="contactEmail" name="email" class="form-control"
+                                        placeholder="john@example.com" required />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="contactPhone">Phone Number</label>
+                                    <input type="tel" id="contactPhone" name="phone" class="form-control"
+                                        placeholder="+1 234 567 8900" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="contactService">Service Required *</label>
+                                    <select id="contactService" name="service" class="form-select form-control"
+                                        required>
+                                        <option value="" disabled selected>Select a service…</option>
+                                        <option value="wedding">Wedding Videography</option>
+                                        <option value="event">Event Videography</option>
+                                        <option value="commercial">Commercial Production</option>
+                                        <option value="shortfilm">Short Film</option>
+                                        <option value="music">Music Video</option>
+                                        <option value="editing">Video Editing Only</option>
+                                        <option value="other">Other / Not Sure</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="contactDate">Project / Event Date</label>
+                                    <input type="date" id="contactDate" name="date" class="form-control"
+                                        style="color-scheme:dark;" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="contactBudget">Approximate Budget</label>
+                                    <select id="contactBudget" name="budget" class="form-select form-control">
+                                        <option value="" disabled selected>Select budget range…</option>
+                                        <option value="under1k">Under $1,000</option>
+                                        <option value="1k-2.5k">$1,000 – $2,500</option>
+                                        <option value="2.5k-5k">$2,500 – $5,000</option>
+                                        <option value="5k-10k">$5,000 – $10,000</option>
+                                        <option value="10k+">$10,000+</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label" for="contactMessage">Project Details *</label>
+                                    <textarea id="contactMessage" name="message" class="form-control" rows="6"
+                                        placeholder="Tell me about your project — vision, location, timeline, and any specific requirements…"
+                                        required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-cinematic btn-primary-cine w-100"
+                                        id="contactSubmit">
+                                        <i class="fa-solid fa-paper-plane"></i> Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="map-placeholder mt-4 reveal">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <span>Manhattan, New York City</span>
+                        <span style="font-size:0.72rem; letter-spacing:1px; color:var(--color-grey-2);">Embed your
+                            Google Maps iframe here</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="index.html" class="footer-brand">Cine<span>Vision</span></a>
+                    <p class="footer-desc">Professional videographer &amp; filmmaker crafting cinematic stories
+                        worldwide.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-vimeo-v"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Wedding Films</a></li>
+                        <li><a href="services.html">Event Coverage</a></li>
+                        <li><a href="services.html">Commercial Video</a></li>
+                        <li><a href="services.html">Video Editing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="footer-title">Get In Touch</h4>
+                    <div class="footer-contact-item"><i class="fa-solid fa-envelope"></i><span><a
+                                href="mailto:aymaninfotechs@gmail.com"
+                                style="color:inherit;">aymaninfotechs@gmail.com</a></span></div>
+                    <div class="footer-contact-item"><i class="fa-solid fa-phone"></i><span>+1 (000) 000-0000</span>
+                    </div>
+                    <div class="footer-contact-item"><i class="fa-solid fa-location-dot"></i><span>Manhattan, New York
+                            City</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom mt-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="footer-copy mb-0">&copy; <span id="currentYear"></span> <span>CineVision</span>. All
+                            rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="footer-copy mb-0">Template by Ayman InfoTechs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

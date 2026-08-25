@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Savoria's full menu — appetizers, mains, desserts, and drinks. Discover our signature dishes and seasonal specials.">
+    <title>Our Menu — Savoria Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-custom scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Sav<span>oria</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link nav-cta" href="reservation.html">Book a Table</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Our Menu</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Menu</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="subtitle">Discover Our Flavors</span>
+                <h2>Explore the Menu</h2>
+                <div class="divider"></div>
+                <p>A curated selection of dishes prepared with passion and the finest ingredients.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="menu-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="appetizer">Appetizers</button>
+                <button class="filter-btn" data-filter="main">Main Course</button>
+                <button class="filter-btn" data-filter="pizza">Pizza & Pasta</button>
+                <button class="filter-btn" data-filter="dessert">Desserts</button>
+                <button class="filter-btn" data-filter="drinks">Drinks</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="row g-4">
+
+                <!-- Appetizers -->
+                <div class="col-lg-4 col-md-6 menu-item" data-category="appetizer">
+                    <div class="dish-card">
+                        <div class="dish-card-img">
+                            <img src="images/dish-pasta.png" alt="Bruschetta">
+                            <span class="badge-price">$12</span>
+                        </div>
+                        <div class="dish-card-body">
+                            <h4>Classic Bruschetta</h4>
+                            <p>Toasted ciabatta, fresh tomatoes, basil, garlic, balsamic glaze, extra virgin olive oil.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 menu-item" data-category="appetizer">
+                    <div class="dish-card">
+                        <div class="dish-card-img">
+                            <img src="images/dish-dessert.png" alt="Soup">
+                            <span class="badge-price">$14</span>
+                        </div>
+                        <div class="dish-card-body">
+                            <h4>Lobster Bisque</h4>
+                            <p>Rich creamy lobster bisque, cognac flambé, crème fraîche, chive oil drizzle.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 menu-item" data-category="appetizer">
+                    <div class="dish-card">
+                        <div class="dish-card-img">
+                            <img src="images/dish-pasta.png" alt="Carpaccio">
+                            <span class="badge-price">$16</span>
+                            <span class="badge-tag">Popular</span>
+                        </div>
+                        <div class="dish-card-body">
+                            <h4>Beef Carpaccio</h4>
+                            <p>Paper-thin aged beef, arugula, capers, shaved Parmigiano-Reggiano, truffle dressing.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Course -->
+                <div class="col-lg-4 col-md-6 menu-item" data-category="main">
+                    <div class="dish-card">
+                        <div class="dish-card-img">
+                            <img src="images/dish-steak.png" alt="Ribeye Steak">
+                            <span class="badge-price">$38</span>
+                            <span class="badge-tag">Chef's Pick</span>
+                        </div>
+                        <div class="dish-card-body">
+                            <h4>Grilled Ribeye Steak</h4>
+                            <p>Premium 28-day aged ribeye, herb butter, roasted vegetables, red wine jus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 menu-item" data-category="main">
+                    <div class="dish-card">
+                        <div class="dish-card-img">
+                            <img src="images/dish-steak.png" alt="Lamb Rack">
+                            <span class="badge-price">$42</span>
+                        </div>
+                        <div class="dish-card-body">
+                            <h4>Herb-Crusted Lamb Rack</h4>
+                            <p>New Zealand lamb, rosemary crust, minted pea purée, fondant potato, lamb jus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 menu-item" data-category="main">
+                    <div class="dish-card">
+                        <div class="dish-card-img">
+                            <img src="images/dish-burger.png" alt="Wagyu Burger">
+                            <span class="badge-price">$22</span>
+                            <span class="badge-tag">New</span>
+                        </div>
+                        <div class="dish-card-body">
+                            <h4>Wagyu Beef Burger</h4>
+                            <p>Prime wagyu patty, aged cheddar, caramelized onions, brioche bun, truffle fries.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 menu-item" data-category="main">
+                    <div class="dish-card">
+                        <div class="dish-card-img">
+                            <img src="images/dish-pasta.png" alt="Sea Bass">
+                            <span class="badge-price">$34</span>
+                        </div>
+                        <div class="dish-card-body">
+                            <h4>Pan-Seared Sea Bass</h4>
+                            <p>Chilean sea bass, saffron risotto, asparagus, lemon beurre blanc, micro herbs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza & Pasta -->
+                <div class="col-lg-4 col-md-6 menu-item" data-category="pizza">
+                    <div class="dish-card">
+                        <div class="dish-card-img">
+                            <img src="images/dish-pizza.png" alt="Margherita">
+                            <span class="badge-price">$18</span>
+                            <span class="badge-tag">Popular</span>
+                        </div>
+                        <div class="dish-card-body">
+                            <h4>Wood-Fired Margherita</h4>
+                            <p>San Marzano tomatoes, buffalo mozzarella, fresh basil, extra virgin olive oil.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 menu-item" data-category="pizza">
+                    <div class="dish-card">
+                        <div class="dish-card-img">
+                            <img src="images/dish-pasta.png" alt="Truffle Pasta">
+                            <span class="badge-price">$26</span>
+                        </div>
+                        <div class="dish-card-body">
+                            <h4>Truffle Cream Fettuccine</h4>
+                            <p>Handmade fettuccine, black truffle cream, aged Parmigiano, fresh thyme.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 menu-item" data-category="pizza">
+                    <div class="dish-card">
+                        <div class="dish-card-img">
+                            <img src="images/dish-pasta.png" alt="Seafood Linguine">
+                            <span class="badge-price">$32</span>
+                        </div>
+                        <div class="dish-card-body">
+                            <h4>Seafood Linguine</h4>
+                            <p>King prawns, mussels, calamari, cherry tomatoes, white wine garlic sauce.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="col-lg-4 col-md-6 menu-item" data-category="dessert">
+                    <div class="dish-card">
+                        <div class="dish-card-img">
+                            <img src="images/dish-dessert.png" alt="Lava Cake">
+                            <span class="badge-price">$14</span>
+                            <span class="badge-tag">Must Try</span>
+                        </div>
+                        <div class="dish-card-body">
+                            <h4>Chocolate Lava Cake</h4>
+                            <p>Warm molten chocolate center, vanilla bean ice cream, raspberry coulis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 menu-item" data-category="dessert">
+                    <div class="dish-card">
+                        <div class="dish-card-img">
+                            <img src="images/dish-dessert.png" alt="Tiramisu">
+                            <span class="badge-price">$12</span>
+                        </div>
+                        <div class="dish-card-body">
+                            <h4>Classic Tiramisu</h4>
+                            <p>Espresso-soaked ladyfingers, mascarpone cream, cocoa powder, amaretto.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 menu-item" data-category="dessert">
+                    <div class="dish-card">
+                        <div class="dish-card-img">
+                            <img src="images/dish-dessert.png" alt="Crème Brûlée">
+                            <span class="badge-price">$11</span>
+                        </div>
+                        <div class="dish-card-body">
+                            <h4>Crème Brûlée</h4>
+                            <p>Madagascar vanilla custard, caramelized sugar crust, fresh berries.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="col-lg-4 col-md-6 menu-item" data-category="drinks">
+                    <div class="dish-card">
+                        <div class="dish-card-img">
+                            <img src="images/hero-bg.png" alt="Wine">
+                            <span class="badge-price">$16</span>
+                        </div>
+                        <div class="dish-card-body">
+                            <h4>House Red Wine</h4>
+                            <p>Curated selection of premium Italian red wines by the glass. Ask your sommelier.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 menu-item" data-category="drinks">
+                    <div class="dish-card">
+                        <div class="dish-card-img">
+                            <img src="images/hero-bg.png" alt="Cocktail">
+                            <span class="badge-price">$18</span>
+                            <span class="badge-tag">Signature</span>
+                        </div>
+                        <div class="dish-card-body">
+                            <h4>Savoria Sunset Cocktail</h4>
+                            <p>House-crafted cocktail with aged rum, passion fruit, lime, and edible gold flakes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 menu-item" data-category="drinks">
+                    <div class="dish-card">
+                        <div class="dish-card-img">
+                            <img src="images/hero-bg.png" alt="Espresso">
+                            <span class="badge-price">$6</span>
+                        </div>
+                        <div class="dish-card-body">
+                            <h4>Italian Espresso</h4>
+                            <p>Single-origin beans, freshly ground, hand-pulled espresso shot. Rich and bold.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="special-offer" style="background-image:url('images/hero-bg.png')">
+        <div class="container">
+            <div class="special-offer-content reveal">
+                <span class="subtitle"
+                    style="color:var(--primary);letter-spacing:4px;font-size:0.85rem;font-weight:600;text-transform:uppercase;">Can't
+                    Decide?</span>
+                <h2>Try Our Chef's Tasting Menu</h2>
+                <p>Let our Executive Chef curate a 7-course journey through the finest flavors Savoria has to offer. A
+                    truly unforgettable experience.</p>
+                <a href="reservation.html" class="btn-primary-custom">Book the Experience</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container text-center">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Get the latest updates on seasonal menus and exclusive offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="footer-brand">Sav<span>oria</span></a>
+                    <p>An exquisite fine dining destination where culinary artistry meets warm hospitality.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="bi bi-chevron-right"></i> About</a></li>
+                        <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Menu</a></li>
+                        <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+                        <li><a href="reservation.html"><i class="bi bi-chevron-right"></i> Reservation</a></li>
+                        <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact Info</h5>
+                    <ul class="footer-contact">
+                        <li><i class="bi bi-geo-alt"></i><span>456 Starlight Boulevard, Aurora Heights, AH 99999</span></li>
+                        <li><i class="bi bi-telephone"></i><span>+0 (000) 123-4567</span></li>
+                        <li><i class="bi bi-envelope"></i><span>info@savoria.com</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Opening Hours</h5>
+                    <ul class="footer-hours">
+                        <li><span>Monday – Friday</span><span>11AM – 11PM</span></li>
+                        <li><span>Saturday</span><span>10AM – 12AM</span></li>
+                        <li><span>Sunday</span><span>10AM – 10PM</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Savoria. Designed by <a href="https://aymaninfotech.com" target="_blank"
+                        style="color:var(--primary)">AymanInfotech</a>. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top"><i class="bi bi-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

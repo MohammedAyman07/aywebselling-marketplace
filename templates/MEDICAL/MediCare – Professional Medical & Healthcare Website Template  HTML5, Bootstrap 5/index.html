@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="MediCare – Professional medical care you can trust. Book appointments, meet our doctors and explore our services." />
+  <meta name="keywords" content="medical, hospital, clinic, doctor, appointment, healthcare, MediCare" />
+  <meta name="author" content="AymanInfotech" />
+  <title>MediCare – Professional Medical Care You Can Trust</title>
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+     NAVIGATION
+============================================================ -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-icon"><i class="fas fa-heartbeat"></i></div>
+        Medi<span>Care</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="appointment.html" class="nav-link navbar-btn ms-lg-3">
+          <i class="fas fa-calendar-check me-1"></i> Book Appointment
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+     HERO SECTION
+============================================================ -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- Hero Content -->
+        <div class="col-lg-6">
+          <div class="hero-content">
+            <span class="badge-pill reveal"><i class="fas fa-shield-alt me-1"></i> Trusted Healthcare Since 2005</span>
+            <h1 class="hero-title reveal reveal-delay-1">
+              Professional Medical Care <span class="text-gradient">You Can Trust</span>
+            </h1>
+            <p class="hero-desc reveal reveal-delay-2">
+              We are committed to providing exceptional healthcare services with compassion and clinical excellence.
+              Your well-being is our highest priority.
+            </p>
+            <div class="hero-buttons reveal reveal-delay-3">
+              <a href="appointment.html" class="btn-primary-custom">
+                <i class="fas fa-calendar-check"></i> Book Appointment
+              </a>
+              <a href="doctors.html" class="btn-outline-custom">
+                <i class="fas fa-user-md"></i> Meet Our Doctors
+              </a>
+            </div>
+
+            <!-- Stats -->
+            <div class="hero-stats reveal reveal-delay-4">
+              <div class="hero-stat-item">
+                <div class="hero-stat-number"><span data-target="25000" data-suffix="+">0</span></div>
+                <div class="hero-stat-label">Patients Treated</div>
+              </div>
+              <div class="hero-stat-item">
+                <div class="hero-stat-number"><span data-target="120" data-suffix="+">0</span></div>
+                <div class="hero-stat-label">Specialist Doctors</div>
+              </div>
+              <div class="hero-stat-item">
+                <div class="hero-stat-number"><span data-target="18" data-suffix="+">0</span></div>
+                <div class="hero-stat-label">Years Experience</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="col-lg-6">
+          <div class="hero-image-wrapper reveal reveal-delay-2">
+            <img src="https://placehold.co/700x520/dbeafe/1e40af?text=Medical+Care" alt="Medical care illustration"
+              class="hero-img" />
+            <!-- Floating Badge 1 -->
+            <div class="hero-badge-floating badge-1">
+              <div class="hero-badge-icon badge-icon-green">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div class="hero-badge-text">
+                <div class="badge-number">98%</div>
+                <div class="badge-label">Patient Satisfaction</div>
+              </div>
+            </div>
+            <!-- Floating Badge 2 -->
+            <div class="hero-badge-floating badge-2">
+              <div class="hero-badge-icon badge-icon-blue">
+                <i class="fas fa-award"></i>
+              </div>
+              <div class="hero-badge-text">
+                <div class="badge-number">ISO 9001</div>
+                <div class="badge-label">Certified Hospital</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     SERVICES PREVIEW
+============================================================ -->
+  <section class="services-section section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge-pill reveal">Our Specialties</span>
+        <h2 class="section-title reveal reveal-delay-1">World-Class Medical <span class="text-gradient">Services</span>
+        </h2>
+        <p class="section-subtitle reveal reveal-delay-2">We offer a wide range of specialized medical services
+          delivered by expert professionals using advanced technology.</p>
+      </div>
+      <div class="row g-4">
+
+        <!-- Service 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card reveal">
+            <div class="service-icon"><i class="fas fa-stethoscope"></i></div>
+            <h5>General Checkup</h5>
+            <p>Comprehensive health evaluations to monitor your overall wellness and detect any early warning signs.</p>
+            <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
+            <h5>Cardiology</h5>
+            <p>Advanced cardiac care including diagnostics, treatment, and rehabilitation for heart conditions.</p>
+            <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-icon"><i class="fas fa-tooth"></i></div>
+            <h5>Dental Care</h5>
+            <p>Complete dental services from routine cleanings to cosmetic procedures and orthodontic care.</p>
+            <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card reveal reveal-delay-3">
+            <div class="service-icon"><i class="fas fa-baby"></i></div>
+            <h5>Pediatrics</h5>
+            <p>Specialized child healthcare from newborns through adolescence with gentle, compassionate care.</p>
+            <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card reveal reveal-delay-4">
+            <div class="service-icon"><i class="fas fa-ambulance"></i></div>
+            <h5>Emergency Care</h5>
+            <p>24/7 emergency medical services with rapid response teams and state-of-the-art emergency facilities.</p>
+            <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card reveal reveal-delay-5">
+            <div class="service-icon"><i class="fas fa-flask"></i></div>
+            <h5>Laboratory Tests</h5>
+            <p>Accurate and fast laboratory diagnostics with cutting-edge equipment and certified technicians.</p>
+            <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="text-center mt-5 reveal">
+        <a href="services.html" class="btn-primary-custom">View All Services <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     STATS / COUNTER SECTION
+============================================================ -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-md-3 col-6">
+          <div class="stat-card">
+            <div class="stat-number"><span data-target="25000" data-suffix="+">0</span></div>
+            <div class="stat-label"><i class="fas fa-user-injured me-1"></i> Happy Patients</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="stat-card">
+            <div class="stat-number"><span data-target="120" data-suffix="+">0</span></div>
+            <div class="stat-label"><i class="fas fa-user-md me-1"></i> Expert Doctors</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="stat-card">
+            <div class="stat-number"><span data-target="18" data-suffix="+">0</span></div>
+            <div class="stat-label"><i class="fas fa-hospital me-1"></i> Years of Service</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="stat-card">
+            <div class="stat-number"><span data-target="50" data-suffix="+">0</span></div>
+            <div class="stat-label"><i class="fas fa-award me-1"></i> Awards Won</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     DOCTORS PREVIEW
+============================================================ -->
+  <section class="doctors-section section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge-pill reveal">Our Experts</span>
+        <h2 class="section-title reveal reveal-delay-1">Meet Our <span class="text-gradient">Specialist Doctors</span>
+        </h2>
+        <p class="section-subtitle reveal reveal-delay-2">Our team of board-certified specialists brings decades of
+          combined experience to deliver the highest standard of care.</p>
+      </div>
+      <div class="row g-4">
+
+        <!-- Doctor 1 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="doctor-card reveal">
+            <div class="doctor-img-wrapper">
+              <img src="https://placehold.co/400x260/dbeafe/1e40af?text=Dr.+Carter" alt="Doctor profile placeholder" />
+              <div class="doctor-overlay">
+                <a href="#" class="doctor-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="doctor-social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="doctor-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="doctor-info">
+              <h5>Dr. James Carter</h5>
+              <div class="doctor-specialty">Cardiologist</div>
+              <div class="doctor-exp"><i class="fas fa-briefcase-medical text-primary me-1"></i> 15 Years Experience
+              </div>
+              <div class="doctor-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span>(4.9)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 2 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="doctor-card reveal reveal-delay-1">
+            <div class="doctor-img-wrapper">
+              <img src="https://placehold.co/400x260/d1fae5/065f46?text=Dr.+Mitchell"
+                alt="Doctor profile placeholder" />
+              <div class="doctor-overlay">
+                <a href="#" class="doctor-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="doctor-social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="doctor-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="doctor-info">
+              <h5>Dr. Sarah Mitchell</h5>
+              <div class="doctor-specialty">Pediatrician</div>
+              <div class="doctor-exp"><i class="fas fa-briefcase-medical text-primary me-1"></i> 12 Years Experience
+              </div>
+              <div class="doctor-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                <span>(4.8)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 3 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="doctor-card reveal reveal-delay-2">
+            <div class="doctor-img-wrapper">
+              <img src="https://placehold.co/400x260/ede9fe/4c1d95?text=Dr.+Chen" alt="Doctor profile placeholder" />
+              <div class="doctor-overlay">
+                <a href="#" class="doctor-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="doctor-social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="doctor-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="doctor-info">
+              <h5>Dr. Robert Chen</h5>
+              <div class="doctor-specialty">Dental Surgeon</div>
+              <div class="doctor-exp"><i class="fas fa-briefcase-medical text-primary me-1"></i> 10 Years Experience
+              </div>
+              <div class="doctor-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span>(4.9)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 4 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="doctor-card reveal reveal-delay-3">
+            <div class="doctor-img-wrapper">
+              <img src="https://placehold.co/400x260/fce7f3/9d174d?text=Dr.+Rogers" alt="Doctor profile placeholder" />
+              <div class="doctor-overlay">
+                <a href="#" class="doctor-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="doctor-social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="doctor-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="doctor-info">
+              <h5>Dr. Emily Rogers</h5>
+              <div class="doctor-specialty">Neurologist</div>
+              <div class="doctor-exp"><i class="fas fa-briefcase-medical text-primary me-1"></i> 14 Years Experience
+              </div>
+              <div class="doctor-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                <span>(4.7)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="text-center mt-5 reveal">
+        <a href="doctors.html" class="btn-primary-custom">View All Doctors <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     WHY CHOOSE US
+============================================================ -->
+  <section class="why-section section-padding" style="background: var(--light);">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <img src="https://placehold.co/700x500/dbeafe/1e40af?text=Our+Medical+Team" alt="Medical team illustration"
+            style="border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); width:100%;" class="reveal" />
+        </div>
+        <div class="col-lg-6">
+          <span class="badge-pill reveal">Why MediCare</span>
+          <h2 class="section-title reveal reveal-delay-1">Why Patients Choose <span class="text-gradient">Our
+              Hospital</span></h2>
+          <p class="text-muted mb-4 reveal reveal-delay-2">We combine clinical excellence with patient-centered care to
+            deliver outcomes that matter.</p>
+
+          <div class="why-icon-box reveal reveal-delay-2">
+            <div class="why-icon"><i class="fas fa-user-md"></i></div>
+            <div class="why-text">
+              <h6>Expert Specialists</h6>
+              <p>Board-certified doctors with sub-specialty training and continuous medical education.</p>
+            </div>
+          </div>
+          <div class="why-icon-box reveal reveal-delay-3">
+            <div class="why-icon"><i class="fas fa-microscope"></i></div>
+            <div class="why-text">
+              <h6>Advanced Technology</h6>
+              <p>State-of-the-art diagnostic equipment ensuring accurate and fast results.</p>
+            </div>
+          </div>
+          <div class="why-icon-box reveal reveal-delay-4">
+            <div class="why-icon"><i class="fas fa-clock"></i></div>
+            <div class="why-text">
+              <h6>24/7 Availability</h6>
+              <p>Round-the-clock emergency care and telemedicine services whenever you need us.</p>
+            </div>
+          </div>
+          <div class="why-icon-box reveal reveal-delay-5">
+            <div class="why-icon"><i class="fas fa-hand-holding-heart"></i></div>
+            <div class="why-text">
+              <h6>Patient-Centered Care</h6>
+              <p>Personalized treatment plans designed around you – not just the disease.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     TESTIMONIALS
+============================================================ -->
+  <section class="testimonials-section section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge-pill reveal">Patient Stories</span>
+        <h2 class="section-title reveal reveal-delay-1">What Our <span class="text-gradient">Patients Say</span></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text">"The care at MediCare was exceptional. The doctors were thorough, attentive, and
+              genuinely cared about my recovery. I couldn't be more grateful."</p>
+            <div class="testimonial-author">
+              <img src="https://placehold.co/48x48/dbeafe/1e40af?text=MJ" alt="Patient testimonial"
+                class="testimonial-avatar" />
+              <div class="testimonial-author-info">
+                <h6>Maria Johnson</h6>
+                <span>Cardiac Patient</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card reveal reveal-delay-1">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text">"Brought my child here for the pediatrics department. The staff was incredibly
+              patient and kind. My daughter felt comfortable the whole time."</p>
+            <div class="testimonial-author">
+              <img src="https://placehold.co/48x48/d1fae5/065f46?text=DW" alt="Patient testimonial"
+                class="testimonial-avatar" />
+              <div class="testimonial-author-info">
+                <h6>David Williams</h6>
+                <span>Parent of Pediatric Patient</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card reveal reveal-delay-2">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+            <p class="testimonial-text">"The online appointment booking was so easy, and the consultation was
+              professional. MediCare has set a new standard for what healthcare should be."</p>
+            <div class="testimonial-author">
+              <img src="https://placehold.co/48x48/ede9fe/4c1d95?text=PS" alt="Patient testimonial"
+                class="testimonial-avatar" />
+              <div class="testimonial-author-info">
+                <h6>Priya Sharma</h6>
+                <span>Regular Patient</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     APPOINTMENT CTA
+============================================================ -->
+  <section class="section-padding-sm" style="background: var(--light);">
+    <div class="container">
+      <div class="appointment-cta">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <span class="badge-pill">Book Today</span>
+            <h2 class="section-title mt-2">Ready to Schedule Your <span class="text-gradient">Appointment?</span></h2>
+            <p class="text-muted mb-0">Don't wait — take the first step toward better health. Our team is ready to
+              provide you with exceptional care.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="appointment.html" class="btn-primary-custom">
+              <i class="fas fa-calendar-check"></i> Book Appointment
+            </a>
+            <div class="mt-3">
+              <i class="fas fa-phone text-primary me-2"></i>
+              <span class="fw-600" style="font-weight:600; color: var(--dark);">Emergency: </span>
+              <a href="tel:+10000000000" style="color: var(--primary); font-weight:700;">+1 (000) 000-0000</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     NEWSLETTER
+============================================================ -->
+  <section class="newsletter-section">
+    <div class="container text-center">
+      <span class="badge-pill" style="background: rgba(255,255,255,.15); color:white;">Stay Updated</span>
+      <h2 class="mt-2 mb-2" style="color:white; font-family:'Poppins',sans-serif; font-weight:800;">Subscribe to Our
+        Health Newsletter</h2>
+      <p style="color:rgba(255,255,255,.8); margin-bottom: 28px;">Get health tips, news, and appointment reminders
+        delivered to your inbox.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" class="newsletter-input" placeholder="Enter your email address" required
+          aria-label="Email address" />
+        <button type="submit" class="newsletter-btn">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     FOOTER
+============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Brand -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <div class="brand-icon"><i class="fas fa-heartbeat"></i></div>
+            Medi<span style="color:var(--primary)">Care</span>
+          </div>
+          <p>Providing world-class healthcare services with compassion and clinical excellence since 2005. Your health
+            is our highest calling.</p>
+          <div class="footer-social">
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right me-1 small"></i>Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right me-1 small"></i>About Us</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right me-1 small"></i>Services</a></li>
+            <li><a href="doctors.html"><i class="fas fa-chevron-right me-1 small"></i>Doctors</a></li>
+            <li><a href="appointment.html"><i class="fas fa-chevron-right me-1 small"></i>Appointment</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right me-1 small"></i>Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-3 col-md-6">
+          <h6>Our Services</h6>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="fas fa-chevron-right me-1 small"></i>General Checkup</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right me-1 small"></i>Cardiology</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right me-1 small"></i>Dental Care</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right me-1 small"></i>Pediatrics</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right me-1 small"></i>Emergency Care</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right me-1 small"></i>Laboratory Tests</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-3 col-md-6">
+          <h6>Contact Us</h6>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:aymaninfotechs@gmail.com">aymaninfotechs@gmail.com</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+10000000000">+1 (000) 000-0000</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-clock"></i>
+            <span>Mon – Sat: 8:00 AM – 8:00 PM</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-ambulance"></i>
+            <span>Emergency: 24/7 Available</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2">
+        <span>&copy; 2026 MediCare. All rights reserved.</span>
+        <span>Developed by <a href="https://aymaninfotech.com" target="_blank">AymanInfotech</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

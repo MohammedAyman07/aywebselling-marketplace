@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LUXE Fashion – Discover the latest fashion trends. Shop stylish clothing and accessories for every occasion.">
+  <title>LUXE Fashion – Discover the Latest Fashion Trends</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    Free shipping on orders over $150 <span>•</span> Use code <strong>LUXE10</strong> for 10% off <span>•</span> New arrivals every Friday
+  </div>
+
+  <!-- ==============================
+       NAVBAR
+       ============================== -->
+  <nav class="navbar navbar-expand-lg sticky-top sticky-top-bar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">LUXE<span>.</span></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-icons d-flex align-items-center">
+        <a href="#" aria-label="Search"><i class="bi bi-search"></i></a>
+        <a href="#" aria-label="Wishlist"><i class="bi bi-heart"></i></a>
+        <a href="cart.html" aria-label="Cart" style="position:relative;">
+          <i class="bi bi-bag"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==============================
+       HERO SECTION
+       ============================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-7">
+          <div class="hero-badge">New Collection 2025</div>
+          <h1 class="hero-title">
+            Discover the<br>
+            <em>Latest Fashion</em><br>
+            Trends
+          </h1>
+          <p class="hero-subtitle">Shop stylish clothing and accessories for every occasion. Redefine your style with our curated collections.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="shop.html" class="btn-dark-custom">Shop Now</a>
+            <a href="shop.html" class="btn-outline-custom">View Collection</a>
+          </div>
+          <div class="hero-stats d-flex gap-5 mt-5">
+            <div class="hero-stat-item">
+              <div class="number">500+</div>
+              <div class="label">Styles</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="number">50K+</div>
+              <div class="label">Customers</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="number">4.9★</div>
+              <div class="label">Rating</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ==============================
+       CATEGORIES SECTION
+       ============================== -->
+  <section class="categories-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">Browse by Style</span>
+        <h2 class="section-title">Shop by Category</h2>
+        <p class="section-subtitle">Explore our curated collections for every style and occasion.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Men's Fashion -->
+        <div class="col-lg-3 col-md-6 fade-up">
+          <a href="shop.html" class="category-card d-block">
+            <img src="https://images.unsplash.com/photo-1610652492500-abb3a6b7f7c3?w=500&q=80" alt="Men's Fashion">
+            <div class="category-card-overlay"></div>
+            <div class="category-card-body">
+              <h4>Men's Fashion</h4>
+              <p>120 Products</p>
+              <span class="explore-btn">Explore →</span>
+            </div>
+          </a>
+        </div>
+        <!-- Women's Fashion -->
+        <div class="col-lg-3 col-md-6 fade-up" style="transition-delay:0.1s">
+          <a href="shop.html" class="category-card d-block">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500&q=80" alt="Women's Fashion">
+            <div class="category-card-overlay"></div>
+            <div class="category-card-body">
+              <h4>Women's Fashion</h4>
+              <p>240 Products</p>
+              <span class="explore-btn">Explore →</span>
+            </div>
+          </a>
+        </div>
+        <!-- Shoes -->
+        <div class="col-lg-3 col-md-6 fade-up" style="transition-delay:0.2s">
+          <a href="shop.html" class="category-card d-block">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80" alt="Shoes">
+            <div class="category-card-overlay"></div>
+            <div class="category-card-body">
+              <h4>Shoes</h4>
+              <p>85 Products</p>
+              <span class="explore-btn">Explore →</span>
+            </div>
+          </a>
+        </div>
+        <!-- Accessories -->
+        <div class="col-lg-3 col-md-6 fade-up" style="transition-delay:0.3s">
+          <a href="shop.html" class="category-card d-block">
+            <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=500&q=80" alt="Accessories">
+            <div class="category-card-overlay"></div>
+            <div class="category-card-body">
+              <h4>Accessories</h4>
+              <p>60 Products</p>
+              <span class="explore-btn">Explore →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       FEATURED PRODUCTS SECTION
+       ============================== -->
+  <section class="featured-section">
+    <div class="container">
+      <div class="text-center mb-2">
+        <span class="section-label">Handpicked for You</span>
+        <h2 class="section-title">Featured Products</h2>
+      </div>
+      <!-- Filter Tabs -->
+      <div class="text-center filter-tabs">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="women">Women</button>
+        <button class="filter-tab" data-filter="men">Men</button>
+        <button class="filter-tab" data-filter="shoes">Shoes</button>
+        <button class="filter-tab" data-filter="accessories">Accessories</button>
+      </div>
+      <div class="row g-4">
+        <!-- Product 1 -->
+        <div class="col-lg-3 col-md-6 fade-up product-filterable" data-category="women">
+          <div class="product-card">
+            <div class="product-image-wrap">
+              <span class="product-badge badge-new">New</span>
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&q=80" alt="Floral Wrap Dress">
+              <div class="product-actions">
+                <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                <button class="product-action-btn" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Women</div>
+              <h3 class="product-name"><a href="product.html">Floral Wrap Dress</a></h3>
+              <div class="product-stars">★★★★★ <span>(48)</span></div>
+              <div class="product-price">
+                <span class="price-current">$89.00</span>
+              </div>
+              <button class="btn-add-cart" data-add-cart data-id="p1" data-name="Floral Wrap Dress" data-price="89" data-image="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=80">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="col-lg-3 col-md-6 fade-up product-filterable" data-category="men" style="transition-delay:0.1s">
+          <div class="product-card">
+            <div class="product-image-wrap">
+              <span class="product-badge badge-sale">Sale</span>
+              <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=400&q=80" alt="Classic Slim Blazer">
+              <div class="product-actions">
+                <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                <button class="product-action-btn" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Men</div>
+              <h3 class="product-name"><a href="product.html">Classic Slim Blazer</a></h3>
+              <div class="product-stars">★★★★★ <span>(32)</span></div>
+              <div class="product-price">
+                <span class="price-current">$129.00</span>
+                <span class="price-original">$180.00</span>
+                <span class="price-discount">-28%</span>
+              </div>
+              <button class="btn-add-cart" data-add-cart data-id="p2" data-name="Classic Slim Blazer" data-price="129" data-image="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=80">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col-lg-3 col-md-6 fade-up product-filterable" data-category="shoes" style="transition-delay:0.2s">
+          <div class="product-card">
+            <div class="product-image-wrap">
+              <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=400&q=80" alt="Minimalist White Sneakers">
+              <div class="product-actions">
+                <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                <button class="product-action-btn" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Shoes</div>
+              <h3 class="product-name"><a href="product.html">Minimalist White Sneakers</a></h3>
+              <div class="product-stars">★★★★☆ <span>(27)</span></div>
+              <div class="product-price">
+                <span class="price-current">$95.00</span>
+              </div>
+              <button class="btn-add-cart" data-add-cart data-id="p3" data-name="Minimalist White Sneakers" data-price="95" data-image="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=80">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="col-lg-3 col-md-6 fade-up product-filterable" data-category="accessories" style="transition-delay:0.3s">
+          <div class="product-card">
+            <div class="product-image-wrap">
+              <span class="product-badge badge-new">New</span>
+              <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&q=80" alt="Leather Crossbody Bag">
+              <div class="product-actions">
+                <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                <button class="product-action-btn" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Accessories</div>
+              <h3 class="product-name"><a href="product.html">Leather Crossbody Bag</a></h3>
+              <div class="product-stars">★★★★★ <span>(61)</span></div>
+              <div class="product-price">
+                <span class="price-current">$149.00</span>
+              </div>
+              <button class="btn-add-cart" data-add-cart data-id="p4" data-name="Leather Crossbody Bag" data-price="149" data-image="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=80">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 5 -->
+        <div class="col-lg-3 col-md-6 fade-up product-filterable" data-category="women" style="transition-delay:0.0s">
+          <div class="product-card">
+            <div class="product-image-wrap">
+              <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=400&q=80" alt="Silk Blouse">
+              <div class="product-actions">
+                <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                <button class="product-action-btn" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Women</div>
+              <h3 class="product-name"><a href="product.html">Silk Satin Blouse</a></h3>
+              <div class="product-stars">★★★★★ <span>(39)</span></div>
+              <div class="product-price">
+                <span class="price-current">$72.00</span>
+              </div>
+              <button class="btn-add-cart" data-add-cart data-id="p5" data-name="Silk Satin Blouse" data-price="72" data-image="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=80">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="col-lg-3 col-md-6 fade-up product-filterable" data-category="men" style="transition-delay:0.1s">
+          <div class="product-card">
+            <div class="product-image-wrap">
+              <span class="product-badge badge-sale">Sale</span>
+              <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&q=80" alt="Linen Trousers">
+              <div class="product-actions">
+                <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                <button class="product-action-btn" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Men</div>
+              <h3 class="product-name"><a href="product.html">Premium Linen Trousers</a></h3>
+              <div class="product-stars">★★★★☆ <span>(21)</span></div>
+              <div class="product-price">
+                <span class="price-current">$68.00</span>
+                <span class="price-original">$95.00</span>
+                <span class="price-discount">-28%</span>
+              </div>
+              <button class="btn-add-cart" data-add-cart data-id="p6" data-name="Premium Linen Trousers" data-price="68" data-image="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=80">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 7 -->
+        <div class="col-lg-3 col-md-6 fade-up product-filterable" data-category="shoes" style="transition-delay:0.2s">
+          <div class="product-card">
+            <div class="product-image-wrap">
+              <span class="product-badge badge-new">New</span>
+              <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400&q=80" alt="Chelsea Boots">
+              <div class="product-actions">
+                <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                <button class="product-action-btn" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Shoes</div>
+              <h3 class="product-name"><a href="product.html">Premium Chelsea Boots</a></h3>
+              <div class="product-stars">★★★★★ <span>(44)</span></div>
+              <div class="product-price">
+                <span class="price-current">$185.00</span>
+              </div>
+              <button class="btn-add-cart" data-add-cart data-id="p7" data-name="Premium Chelsea Boots" data-price="185" data-image="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=80">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 8 -->
+        <div class="col-lg-3 col-md-6 fade-up product-filterable" data-category="accessories" style="transition-delay:0.3s">
+          <div class="product-card">
+            <div class="product-image-wrap">
+              <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=400&q=80" alt="Gold Wristwatch">
+              <div class="product-actions">
+                <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                <button class="product-action-btn" aria-label="Quick View"><i class="bi bi-eye"></i></button>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category">Accessories</div>
+              <h3 class="product-name"><a href="product.html">Gold Accent Wristwatch</a></h3>
+              <div class="product-stars">★★★★★ <span>(58)</span></div>
+              <div class="product-price">
+                <span class="price-current">$299.00</span>
+              </div>
+              <button class="btn-add-cart" data-add-cart data-id="p8" data-name="Gold Accent Wristwatch" data-price="299" data-image="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=80">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="shop.html" class="btn-dark-custom">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       PROMO BANNER
+       ============================== -->
+  <section class="promo-banner">
+    <div class="container">
+      <span class="section-label text-center d-block">Limited Offer</span>
+      <h2>End of Season Sale</h2>
+      <p>Up to 40% off on selected items. Don't miss out!</p>
+      <div class="promo-countdown">
+        <div class="countdown-unit">
+          <span class="num" id="count-d">00</span>
+          <span class="lbl">Days</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="num" id="count-h">00</span>
+          <span class="lbl">Hours</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="num" id="count-m">00</span>
+          <span class="lbl">Mins</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="num" id="count-s">00</span>
+          <span class="lbl">Secs</span>
+        </div>
+      </div>
+      <a href="shop.html" class="btn-gold">Shop the Sale</a>
+    </div>
+  </section>
+
+  <!-- ==============================
+       NEW ARRIVALS SECTION
+       ============================== -->
+  <section class="new-arrivals-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">Just Dropped</span>
+        <h2 class="section-title">New Arrivals</h2>
+        <p class="section-subtitle">Fresh styles added weekly. Be the first to wear the latest trends.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Featured Large Card -->
+        <div class="col-lg-6 fade-in">
+          <div class="arrivals-highlight">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=700&q=80" alt="New Arrivals Collection">
+            <div class="arrivals-highlight-body">
+              <span class="tag">New Drop</span>
+              <h3>Summer Linen Collection</h3>
+              <p>Breathable, effortless, and timelessly chic. Perfect for warm days and cool evenings.</p>
+              <a href="shop.html" class="btn-outline-custom">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Side Products -->
+        <div class="col-lg-6">
+          <div class="row g-4">
+            <div class="col-6 fade-up">
+              <div class="product-card">
+                <div class="product-image-wrap">
+                  <span class="product-badge badge-new">New</span>
+                  <img src="https://images.unsplash.com/photo-1594938298603-c8148c4b4357?w=400&q=80" alt="Cashmere Sweater" style="height:200px">
+                  <div class="product-actions">
+                    <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                  </div>
+                </div>
+                <div class="product-body">
+                  <div class="product-category">Women</div>
+                  <h3 class="product-name" style="font-size:1rem"><a href="product.html">Cashmere Sweater</a></h3>
+                  <div class="product-price"><span class="price-current">$115.00</span></div>
+                  <button class="btn-add-cart" data-add-cart data-id="p9" data-name="Cashmere Sweater" data-price="115" data-image="https://images.unsplash.com/photo-1594938298603-c8148c4b4357?w=80">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 fade-up" style="transition-delay:0.1s">
+              <div class="product-card">
+                <div class="product-image-wrap">
+                  <span class="product-badge badge-new">New</span>
+                  <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=400&q=80" alt="Wide Leg Pants" style="height:200px">
+                  <div class="product-actions">
+                    <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                  </div>
+                </div>
+                <div class="product-body">
+                  <div class="product-category">Women</div>
+                  <h3 class="product-name" style="font-size:1rem"><a href="product.html">Wide Leg Pants</a></h3>
+                  <div class="product-price"><span class="price-current">$79.00</span></div>
+                  <button class="btn-add-cart" data-add-cart data-id="p10" data-name="Wide Leg Pants" data-price="79" data-image="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=80">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 fade-up" style="transition-delay:0.2s">
+              <div class="product-card">
+                <div class="product-image-wrap">
+                  <span class="product-badge badge-new">New</span>
+                  <img src="https://images.unsplash.com/photo-1622519407650-3df9883f76a5?w=400&q=80" alt="Linen Shirt" style="height:200px">
+                  <div class="product-actions">
+                    <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                  </div>
+                </div>
+                <div class="product-body">
+                  <div class="product-category">Men</div>
+                  <h3 class="product-name" style="font-size:1rem"><a href="product.html">Linen Shirt</a></h3>
+                  <div class="product-price"><span class="price-current">$65.00</span></div>
+                  <button class="btn-add-cart" data-add-cart data-id="p11" data-name="Linen Shirt" data-price="65" data-image="https://images.unsplash.com/photo-1622519407650-3df9883f76a5?w=80">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 fade-up" style="transition-delay:0.3s">
+              <div class="product-card">
+                <div class="product-image-wrap">
+                  <span class="product-badge badge-new">New</span>
+                  <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=400&q=80" alt="Platform Heels" style="height:200px">
+                  <div class="product-actions">
+                    <button class="product-action-btn" aria-label="Wishlist"><i class="bi bi-heart"></i></button>
+                  </div>
+                </div>
+                <div class="product-body">
+                  <div class="product-category">Shoes</div>
+                  <h3 class="product-name" style="font-size:1rem"><a href="product.html">Platform Block Heels</a></h3>
+                  <div class="product-price"><span class="price-current">$139.00</span></div>
+                  <button class="btn-add-cart" data-add-cart data-id="p12" data-name="Platform Block Heels" data-price="139" data-image="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=80">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       TESTIMONIALS
+       ============================== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">Happy Customers</span>
+        <h2 class="section-title">What They Say</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 fade-up">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The quality is absolutely exceptional. My LUXE blazer gets compliments every time I wear it. Will definitely be ordering more!"</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&q=80" alt="Sarah M.">
+              <div>
+                <div class="name">Sarah M.</div>
+                <div class="role">Fashion Blogger</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 fade-up" style="transition-delay:0.1s">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Fast shipping, beautiful packaging, and the clothes look even better in person than in the photos. LUXE has become my go-to fashion brand."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&q=80" alt="James T.">
+              <div>
+                <div class="name">James T.</div>
+                <div class="role">Entrepreneur</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 fade-up" style="transition-delay:0.2s">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"I ordered three dresses and each one is perfect. The fit is exactly as described. Customer service was also incredibly helpful. 10/10!"</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&q=80" alt="Amira K.">
+              <div>
+                <div class="name">Amira K.</div>
+                <div class="role">Interior Designer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       NEWSLETTER SECTION
+       ============================== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <span class="section-label d-block text-center">Stay in the Loop</span>
+      <h2 class="section-title text-center">Join Our Community</h2>
+      <p class="section-subtitle text-center mx-auto">Subscribe for exclusive drops, style tips, and members-only discounts.</p>
+      <form class="newsletter-form" novalidate>
+        <div class="input-group">
+          <input type="email" class="form-control" placeholder="Enter your email address" required>
+          <button class="btn-subscribe" type="submit">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==============================
+       FOOTER
+       ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">LUXE<span>.</span></div>
+          <p class="footer-about">A premium fashion destination where style meets sophistication. We curate the finest clothing and accessories for every wardrobe.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Shop</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html">New Arrivals</a></li>
+            <li><a href="shop.html">Men's Fashion</a></li>
+            <li><a href="shop.html">Women's Fashion</a></li>
+            <li><a href="shop.html">Shoes</a></li>
+            <li><a href="shop.html">Accessories</a></li>
+            <li><a href="shop.html">Sale</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Info</h5>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-heading">Contact Us</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <span><a href="mailto:aymaninfotechs@gmail.com" style="color:rgba(255,255,255,0.6)">aymaninfotechs@gmail.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone"></i>
+            <span>+1 (800) 123-4567</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <span>123 Fashion Avenue,<br>New York, NY 10001</span>
+          </div>
+          <div class="footer-contact-item mt-3">
+            <i class="bi bi-clock"></i>
+            <span>Mon–Fri: 9 AM – 6 PM EST</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <p>© 2025 <a href="#">LUXE Fashion</a>. All rights reserved.</p>
+        <p>Template by <a href="#">LuxeTemplate</a> · Designed with ♥</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>

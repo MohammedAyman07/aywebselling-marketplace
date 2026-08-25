@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies - Consulting Business HTML Template</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(13, 32, 64, 0.9), rgba(13, 32, 64, 0.9)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            padding: 180px 0 100px;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: var(--white);
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb {
+            justify-content: center;
+            background: transparent;
+            padding: 0;
+            margin: 0;
+        }
+
+        .breadcrumb-item a {
+            color: var(--accent-color);
+        }
+
+        .breadcrumb-item.active {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .breadcrumb-item+.breadcrumb-item::before {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top sticky">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Consult<span>ing</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="case-studies.html">Case Studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary-custom ms-lg-3">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Success Stories</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Case Studies</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies section-padding bg-light-grey">
+        <div class="container">
+            <div class="row">
+                <!-- Case 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="case-card">
+                        <div class="case-img">
+                            <span class="case-category">Finance</span>
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Case Study 1">
+                        </div>
+                        <div class="case-content">
+                            <h3>Corporate Restructuring</h3>
+                            <p>Helped a mid-sized enterprise streamline operations and optimize their financial
+                                structure during an acquisition.</p>
+                            <div class="case-results">
+                                <div class="result-item">140% <span>Growth YoY</span></div>
+                                <div class="result-item">$2.5M <span>Cost Saved</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Case 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="case-card">
+                        <div class="case-img">
+                            <span class="case-category">Marketing</span>
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Case Study 2">
+                        </div>
+                        <div class="case-content">
+                            <h3>Global Market Expansion</h3>
+                            <p>Developed a comprehensive go-to-market strategy for a tech startup expanding into
+                                European markets.</p>
+                            <div class="case-results">
+                                <div class="result-item">3x <span>User Base</span></div>
+                                <div class="result-item">6 Mo <span>To Profit</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Case 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="case-card">
+                        <div class="case-img">
+                            <span class="case-category">Strategy</span>
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Case Study 3">
+                        </div>
+                        <div class="case-content">
+                            <h3>Digital Transformation</h3>
+                            <p>Guided a traditional retail company through a complete digital transformation and
+                                e-commerce launch.</p>
+                            <div class="case-results">
+                                <div class="result-item">210% <span>Online Sales</span></div>
+                                <div class="result-item">45% <span>Margin Inc.</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Case 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="case-card">
+                        <div class="case-img">
+                            <span class="case-category">Operations</span>
+                            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Case Study 4">
+                        </div>
+                        <div class="case-content">
+                            <h3>Supply Chain Optimization</h3>
+                            <p>Restructured global supply chains for a manufacturing firm, drastically reducing shipping
+                                times and waste.</p>
+                            <div class="case-results">
+                                <div class="result-item">30% <span>Faster Delivery</span></div>
+                                <div class="result-item">$4.1M <span>Waste Reduced</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Case 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="case-card">
+                        <div class="case-img">
+                            <span class="case-category">Risk</span>
+                            <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Case Study 5">
+                        </div>
+                        <div class="case-content">
+                            <h3>Compliance Overhaul</h3>
+                            <p>Secured regulatory compliance across 5 global regions for a fintech startup ahead of
+                                their Series B funding.</p>
+                            <div class="case-results">
+                                <div class="result-item">5/5 <span>Regions Audit Passed</span></div>
+                                <div class="result-item">0 <span>Fines</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Case 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="case-card">
+                        <div class="case-img">
+                            <span class="case-category">HR</span>
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Case Study 6">
+                        </div>
+                        <div class="case-content">
+                            <h3>Talent Acquisition Strategy</h3>
+                            <p>Developed an enduring talent engine for a high-growth AI firm scaling from 50 to 300
+                                employees.</p>
+                            <div class="case-results">
+                                <div class="result-item">40% <span>Lower CPA</span></div>
+                                <div class="result-item">92% <span>Retention Rate</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-0">
+        <div class="container">
+            <div class="row pb-4">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <a class="navbar-brand text-white text-decoration-none d-block mb-4" style="font-size: 1.8rem;"
+                        href="index.html">Consult<span class="text-gold">ing</span></a>
+                    <p class="footer-text">We provide expert consulting services to help modern businesses overcome
+                        challenges, optimize operations, and achieve unprecedented growth.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <div class="footer-widget">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="case-studies.html">Case Studies</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                    <div class="footer-widget">
+                        <h3>Our Services</h3>
+                        <ul class="footer-links">
+                            <li><a href="services.html">Business Strategy</a></li>
+                            <li><a href="services.html">Financial Planning</a></li>
+                            <li><a href="services.html">Marketing Consulting</a></li>
+                            <li><a href="services.html">Investment Advisory</a></li>
+                            <li><a href="services.html">Risk Management</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-widget">
+                        <h3>Newsletter</h3>
+                        <p class="footer-text mb-3">Subscribe to our newsletter for insights and updates.</p>
+                        <form class="d-flex">
+                            <input type="email" class="form-control me-2" placeholder="Email Address" required>
+                            <button class="btn btn-accent-custom px-3" type="submit"><i
+                                    class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="m-0">&copy; 2026 Consulting Template by AymanInfotech. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

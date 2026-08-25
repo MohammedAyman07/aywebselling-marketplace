@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop Premium Artworks at ArtHouse">
+    <title>Shop Art | ArtHouse</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation (Same as index) -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Art<span>House</span></a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="fa fa-bars fs-4 text-dark"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="shop.html">Shop Art</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-icons">
+                    <button class="nav-icon-btn d-none d-lg-flex" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <a href="cart.html" class="nav-icon-btn d-none d-lg-flex">
+                        <i class="fa-solid fa-bag-shopping"></i><span class="cart-badge">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero animate-fadeInUp">
+        <div class="container">
+            <h1>Shop Artworks</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="shop-section section-padding-sm">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar Filters -->
+                <div class="col-lg-3 mb-5 mb-lg-0 animate-on-scroll">
+                    <div class="filter-sidebar">
+                        <div class="filter-group">
+                            <h5>Categories</h5>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="cat1" checked>
+                                <label class="form-check-label" for="cat1">All Artworks</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="cat2">
+                                <label class="form-check-label" for="cat2">Paintings (120)</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="cat3">
+                                <label class="form-check-label" for="cat3">Digital Art (85)</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="cat4">
+                                <label class="form-check-label" for="cat4">Illustrations (94)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cat5">
+                                <label class="form-check-label" for="cat5">Wall Art (210)</label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h5>Price Range</h5>
+                            <input type="range" class="form-range" min="50" max="2000" id="priceRange" value="1500">
+                            <div class="price-range-display mt-2">
+                                <span>$50</span>
+                                <span>$1,500+</span>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h5>Medium</h5>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="med1">
+                                <label class="form-check-label" for="med1">Oil on Canvas</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="med2">
+                                <label class="form-check-label" for="med2">Watercolor</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="med3">
+                                <label class="form-check-label" for="med3">Digital Print</label>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-dark w-100 justify-content-center mt-2">Filter Results</button>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="col-lg-9">
+                    <!-- Shop Toolbar -->
+                    <div class="shop-toolbar animate-on-scroll">
+                        <div class="results-count">Showing 1-9 of 54 artworks</div>
+                        <div class="d-flex align-items-center gap-3">
+                            <select class="sort-select">
+                                <option>Sort by: Featured</option>
+                                <option>Price: Low to High</option>
+                                <option>Price: High to Low</option>
+                                <option>Newest Arrivals</option>
+                            </select>
+                            <div class="view-toggle d-none d-sm-flex gap-2">
+                                <button id="grid-view-btn" class="active"><i class="fa-solid fa-border-all"></i></button>
+                                <button id="list-view-btn"><i class="fa-solid fa-list-ul"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Products -->
+                    <div class="row g-4 product-grid-container">
+                        <!-- Art 1 -->
+                        <div class="col-md-4 col-sm-6 animate-on-scroll delay-1">
+                            <div class="artwork-card">
+                                <div class="artwork-img-wrapper">
+                                    <span class="artwork-badge-new">New</span>
+                                    <div class="artwork-actions">
+                                        <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+                                        <a href="artwork.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+                                    </div>
+                                    <div class="artwork-img-placeholder art1"><i class="fa-solid fa-paintbrush"></i></div>
+                                </div>
+                                <div class="artwork-info w-100">
+                                    <div class="artist-name">Elena Rossi</div>
+                                    <a href="artwork.html"><h5>Abstract Harmony</h5></a>
+                                    <div class="price-row">
+                                        <div class="price">$450.00</div>
+                                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Art 2 -->
+                        <div class="col-md-4 col-sm-6 animate-on-scroll delay-2">
+                            <div class="artwork-card">
+                                <div class="artwork-img-wrapper">
+                                    <div class="artwork-actions">
+                                        <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+                                        <a href="artwork.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+                                    </div>
+                                    <div class="artwork-img-placeholder art2"><i class="fa-solid fa-mountain-sun"></i></div>
+                                </div>
+                                <div class="artwork-info w-100">
+                                    <div class="artist-name">Julian Fox</div>
+                                    <a href="artwork.html"><h5>Midnight Ocean</h5></a>
+                                    <div class="price-row">
+                                        <div class="price">$320.00</div>
+                                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Art 3 -->
+                        <div class="col-md-4 col-sm-6 animate-on-scroll delay-3">
+                            <div class="artwork-card">
+                                <div class="artwork-img-wrapper">
+                                    <span class="artwork-badge-sale">Sale</span>
+                                    <div class="artwork-actions">
+                                        <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+                                        <a href="artwork.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+                                    </div>
+                                    <div class="artwork-img-placeholder art3"><i class="fa-solid fa-leaf"></i></div>
+                                </div>
+                                <div class="artwork-info w-100">
+                                    <div class="artist-name">Maya Lee</div>
+                                    <a href="artwork.html"><h5>Spring Bloom</h5></a>
+                                    <div class="price-row">
+                                        <div><span class="price">$180.00</span> <span class="price-old">$220.00</span></div>
+                                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Art 4 -->
+                        <div class="col-md-4 col-sm-6 animate-on-scroll delay-1">
+                            <div class="artwork-card">
+                                <div class="artwork-img-wrapper">
+                                    <div class="artwork-actions">
+                                        <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+                                        <a href="artwork.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+                                    </div>
+                                    <div class="artwork-img-placeholder art4"><i class="fa-solid fa-cube"></i></div>
+                                </div>
+                                <div class="artwork-info w-100">
+                                    <div class="artist-name">David Chen</div>
+                                    <a href="artwork.html"><h5>Geometric Vision</h5></a>
+                                    <div class="price-row">
+                                        <div class="price">$550.00</div>
+                                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Art 5 -->
+                        <div class="col-md-4 col-sm-6 animate-on-scroll delay-2">
+                            <div class="artwork-card">
+                                <div class="artwork-img-wrapper">
+                                    <div class="artwork-actions">
+                                        <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+                                        <a href="artwork.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+                                    </div>
+                                    <div class="artwork-img-placeholder art5"><i class="fa-solid fa-moon"></i></div>
+                                </div>
+                                <div class="artwork-info w-100">
+                                    <div class="artist-name">Elena Rossi</div>
+                                    <a href="artwork.html"><h5>Purple Dreamscape</h5></a>
+                                    <div class="price-row">
+                                        <div class="price">$410.00</div>
+                                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Art 6 -->
+                        <div class="col-md-4 col-sm-6 animate-on-scroll delay-3">
+                            <div class="artwork-card">
+                                <div class="artwork-img-wrapper">
+                                    <div class="artwork-actions">
+                                        <button class="action-btn"><i class="fa-regular fa-heart"></i></button>
+                                        <a href="artwork.html" class="action-btn"><i class="fa-regular fa-eye"></i></a>
+                                    </div>
+                                    <div class="artwork-img-placeholder art6"><i class="fa-solid fa-sun text-white-50"></i></div>
+                                </div>
+                                <div class="artwork-info w-100">
+                                    <div class="artist-name">Sarah Jenkins</div>
+                                    <a href="artwork.html"><h5>Golden Horizon</h5></a>
+                                    <div class="price-row">
+                                        <div class="price">$890.00</div>
+                                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav class="mt-5 animate-on-scroll" aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link border-0 text-muted" href="#">Prev</a></li>
+                            <li class="page-item active"><a class="page-link border-0 bg-gold text-white rounded-circle mx-1" href="#" style="background:var(--color-gold);width:40px;height:40px;display:flex;align-items:center;justify-content:center;">1</a></li>
+                            <li class="page-item"><a class="page-link border-0 text-dark rounded-circle mx-1" href="#" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;">2</a></li>
+                            <li class="page-item"><a class="page-link border-0 text-dark rounded-circle mx-1" href="#" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;">3</a></li>
+                            <li class="page-item"><a class="page-link border-0 text-dark" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom text-center mt-0 pt-0 border-0">
+                <p class="mb-0">&copy; 2026 ArtHouse. Designed for aymaninfotechs@gmail.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div class="toast-container-custom"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

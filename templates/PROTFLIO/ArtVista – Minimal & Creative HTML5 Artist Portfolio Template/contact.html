@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Contact the artist for commissions, collaborations, or inquiries. Reach out via email or the contact form." />
+    <title>Contact – ArtVista Creative Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="loader-ring"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Art<span>Vista</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavCollapse"
+                aria-controls="mainNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavCollapse">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link nav-cta rounded-pill ms-2 active" href="contact.html">Hire
+                            Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Contact</li>
+                </ol>
+            </nav>
+            <h1>Let's <span class="text-gradient">Create Together</span></h1>
+            <p>Have a project in mind? Send me a message and let's make something amazing</p>
+        </div>
+    </div>
+
+    <!-- CONTACT MAIN -->
+    <section>
+        <div class="container">
+            <div class="row g-5 align-items-stretch">
+
+                <!-- Contact Info -->
+                <div class="col-lg-4" data-reveal="left">
+                    <div class="contact-info-card">
+                        <h3>Get In Touch</h3>
+                        <p>Ready to collaborate? I'm open for commissions, freelance projects and creative partnerships
+                            worldwide.</p>
+
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-info-text">
+                                <strong>Email</strong>
+                                <span>aymaninfotechs@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-info-text">
+                                <strong>Location</strong>
+                                <span>Available Worldwide (Remote)</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+                            <div class="contact-info-text">
+                                <strong>Response Time</strong>
+                                <span>Within 24 hours</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-calendar-check"></i></div>
+                            <div class="contact-info-text">
+                                <strong>Availability</strong>
+                                <span>Open for Commissions</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" title="ArtStation"><i class="fab fa-artstation"></i></a>
+                            <a href="#" class="social-link" title="Behance"><i class="fab fa-behance"></i></a>
+                            <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link" title="DeviantArt"><i class="fab fa-deviantart"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-8" data-reveal="right">
+                    <div class="contact-form-wrap" style="height:100%;">
+                        <h3 style="font-family:var(--font-display);margin-bottom:8px;">Commission Request</h3>
+                        <p style="color:var(--text-muted);margin-bottom:28px;font-size:.95rem;">Fill in the details
+                            below and I'll get back to you with a quote within 24 hours.</p>
+
+                        <form id="contactForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <label class="form-label-custom" for="cf-name">Full Name *</label>
+                                    <input type="text" id="cf-name" class="form-control-custom"
+                                        placeholder="e.g. John Doe" required />
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label-custom" for="cf-email">Email Address *</label>
+                                    <input type="email" id="cf-email" class="form-control-custom"
+                                        placeholder="email@example.com" required />
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label-custom" for="cf-subject">Project Type *</label>
+                                    <select id="cf-subject" class="form-control-custom" required>
+                                        <option value="" disabled selected>Select service...</option>
+                                        <option>Custom Illustration</option>
+                                        <option>Digital Artwork</option>
+                                        <option>Character Design</option>
+                                        <option>Logo Design</option>
+                                        <option>Concept Art</option>
+                                        <option>Book Cover</option>
+                                        <option>Album Artwork</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label-custom" for="cf-budget">Budget Range</label>
+                                    <select id="cf-budget" class="form-control-custom">
+                                        <option value="" disabled selected>Select budget...</option>
+                                        <option>Under $100</option>
+                                        <option>$100 – $250</option>
+                                        <option>$250 – $500</option>
+                                        <option>$500 – $1,000</option>
+                                        <option>$1,000+</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label-custom" for="cf-deadline">Deadline</label>
+                                    <input type="date" id="cf-deadline" class="form-control-custom" />
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label-custom" for="cf-refs">Style References</label>
+                                    <input type="url" id="cf-refs" class="form-control-custom"
+                                        placeholder="Link to Moodboard / Pinterest" />
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label-custom" for="cf-message">Project Description *</label>
+                                    <textarea id="cf-message" rows="5" class="form-control-custom"
+                                        placeholder="Describe your project in detail: characters, setting, mood, style, intended use..."
+                                        required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <label
+                                        style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;font-size:.88rem;color:var(--text-muted);">
+                                        <input type="checkbox" style="margin-top:3px;accent-color:var(--primary);"
+                                            required />
+                                        I agree that this commission is for personal or commercial use as specified and
+                                        will not be resold or modified without permission.
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-primary-custom w-100 justify-content-center"
+                                        style="border-radius:var(--radius-sm);padding:16px;font-size:1rem;">
+                                        <i class="fas fa-paper-plane"></i> Send Commission Request
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP AREA (simple decorative) -->
+    <section style="padding:0;background:var(--light);">
+        <div
+            style="height:300px;background:linear-gradient(135deg,var(--dark) 0%,var(--dark-alt) 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+            <div
+                style="position:absolute;inset:0;opacity:.15;background:repeating-linear-gradient(0deg,transparent,transparent 40px,rgba(255,255,255,.05) 40px,rgba(255,255,255,.05) 41px),repeating-linear-gradient(90deg,transparent,transparent 40px,rgba(255,255,255,.05) 40px,rgba(255,255,255,.05) 41px);">
+            </div>
+            <div style="text-align:center;position:relative;z-index:1;">
+                <div
+                    style="width:60px;height:60px;background:linear-gradient(135deg,var(--primary),var(--primary-dark));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 0 40px rgba(124,58,237,.4);">
+                    <i class="fas fa-globe" style="color:white;font-size:1.4rem;"></i>
+                </div>
+                <div style="color:white;font-family:var(--font-display);font-size:1.6rem;margin-bottom:8px;">Available
+                    Worldwide</div>
+                <div style="color:rgba(255,255,255,.5);font-size:.95rem;">Remote collaborations from anywhere on the
+                    globe</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <!-- Brand & Bio -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="footer-brand">Art<span>Vista</span></a>
+                    <p class="footer-desc">
+                        Pushing the boundaries of digital art through unique illustrations and visual storytelling.
+                        Available for international commissions and creative collaborations.
+                    </p>
+                    <div class="footer-social-enhanced">
+                        <a href="#" class="social-btn insta" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn artstation" title="ArtStation"><i
+                                class="fab fa-artstation"></i></a>
+                        <a href="#" class="social-btn behance" title="Behance"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-btn twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links Column 1 -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h5 class="footer-heading">Explore</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links Column 2 -->
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h5 class="footer-heading">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Custom Illustration</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Character Design</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Digital Artwork</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Concept Art</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Logo Design</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Contact</h5>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>aymaninfotechs@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-globe"></i>
+                        <span>Available Worldwide (Remote)</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Fast Response (24-48h)</span>
+                    </div>
+                    <div class="mt-4">
+                        <a href="contact.html" class="btn-primary-custom"
+                            style="padding:12px 28px; font-size:0.9rem; border-radius:12px;">
+                            <i class="fas fa-paper-plane"></i> Start Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 <span style="color:var(--white); font-weight:600;">ArtVista</span>. Crafted for creative
+                    professionals.
+                </div>
+                <div class="footer-legal">
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
