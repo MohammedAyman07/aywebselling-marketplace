@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A digital marketplace landing page for HTML templates, generated statically.",
   "scripts": {
-    "build:html": "node build.js",
-    "start": "npx serve ."
+    "build": "node build.js",
+    "start": "npx serve public"
   },
   "author": "",
   "license": "MIT"

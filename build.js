@@ -1,8 +1,39 @@
 ﻿const fs = require('fs');
 const path = require('path');
 
+const publicDir = path.join(__dirname, 'public');
 const templatesDir = path.join(__dirname, 'templates');
-const outputFile = path.join(__dirname, 'index.html');
+const assetsDir = path.join(__dirname, 'assets');
+const outputFile = path.join(publicDir, 'index.html');
+
+// Create public directory if it doesn't exist
+if (!fs.existsSync(publicDir)) {
+    fs.mkdirSync(publicDir, { recursive: true });
+}
+
+// Helper to copy directories recursively
+function copyDirRecursive(src, dest) {
+    if (!fs.existsSync(src)) return;
+    if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
+    
+    const entries = fs.readdirSync(src, { withFileTypes: true });
+    for (let entry of entries) {
+        const srcPath = path.join(src, entry.name);
+        const destPath = path.join(dest, entry.name);
+        
+        if (entry.isDirectory()) {
+            copyDirRecursive(srcPath, destPath);
+        } else {
+            fs.copyFileSync(srcPath, destPath);
+        }
+    }
+}
+
+// Copy assets and templates to public directory
+console.log('Copying assets to public...');
+copyDirRecursive(assetsDir, path.join(publicDir, 'assets'));
+console.log('Copying templates to public...');
+copyDirRecursive(templatesDir, path.join(publicDir, 'templates'));
 
 let html = `
 <!DOCTYPE html>
@@ -125,4 +156,4 @@ html += `
 `;
 
 fs.writeFileSync(outputFile, html, 'utf8');
-console.log('Successfully generated index.html');
+console.log('Successfully generated public/index.html');
