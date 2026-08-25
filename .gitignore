@@ -1,0 +1,5 @@
+
+# Build output
+public/
+node_modules/
+.vercel/
